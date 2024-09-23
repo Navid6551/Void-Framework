@@ -12,18 +12,16 @@ files {
 
 shared_script "@vrp-lib/shared/sh_util.lua"
 
-client_script "@vpx/client/lib.js"
 client_script "@vrp-sync/client/lib.lua"
 client_script "@vrp-lib/client/cl_ui.lua"
+client_script "@vrp-lib/client/cl_rpc.lua"
 client_script "@vrp-lib/client/cl_polyhooks.lua"
 client_script "@PolyZone/client.lua"
 
 
-server_script "@vpx/server/lib.js"
-server_script "@vrp-lib/server/sv_asyncExports.lua"
+server_script "@vrp-lib/server/sv_rpc.lua"
 
 shared_script "_configs/cfg_general.lua"
-shared_script "@vpx/shared/lib.lua"
 
 client_scripts {
   "client/cl_*.lua"

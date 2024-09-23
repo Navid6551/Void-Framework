@@ -151,7 +151,7 @@ export async function executeBind(pKey) {
 
 export async function getValidVehicles() {
     if (validVehicles.length >= 1) return validVehicles;
-    const carConfig = []//await RPC.execute<any[]>('showroom:getCarConfig');
+    const carConfig = await RPC.execute<any[]>('showroom:getCarConfig');
     const vehicles = [];
     for (const key in carConfig[0]) {
         if (carConfig[0]) {

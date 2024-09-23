@@ -235,11 +235,8 @@ export async function SetVehicleInfo(pVehicle: number, pInfo: VehicleInfo): Prom
         );
     }
 
-    const wheelfitment = await SQL.execute<any[]>("SELECT * FROM _vehicle WHERE vin = ?", [pInfo.vin]);
-
-    if (wheelfitment[0]?.wheelfitment) {
-        const wheelfitmentData = JSON.parse(wheelfitment[0].wheelfitment || "{}");
-        emitNet("vrp-wheelfitment_cl:applySavedWheelFitment", owner, wheelfitmentData, netId);
+    if (pInfo.metadata?.wheelFitment) {
+        emitNet("vrp-wheelfitment_cl:applySavedWheelFitment", owner, pInfo.metadata?.wheelFitment, netId);
     }
 
     stateBag.state.vin = pInfo.vin;

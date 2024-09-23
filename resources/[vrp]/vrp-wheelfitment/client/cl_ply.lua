@@ -51,7 +51,7 @@ function SyncWheelFitment()
         DecorSetFloat(plyVeh, "vrp-wheelfitment_w_rl", roundNum(GetVehicleWheelXOffset(plyVeh, 2), 2))
         DecorSetFloat(plyVeh, "vrp-wheelfitment_w_rr", roundNum(GetVehicleWheelXOffset(plyVeh, 3), 2))
 
-        VPX.Procedures.execute("vrp-wheelfitment_sv:saveWheelfitment", NetworkGetNetworkIdFromEntity(plyVeh), currentFitmentsToSet)
+        RPC.execute("vrp-wheelfitment_sv:saveWheelfitment", NetworkGetNetworkIdFromEntity(plyVeh), currentFitmentsToSet)
         
         didPlyAdjustFitments = false
     end
@@ -66,7 +66,7 @@ function SyncWheelFitment()
     FreezeEntityPosition(plyVeh, false)
     SetEntityCollision(plyVeh, true, true)
 
-    VPX.Procedures.execute("vrp-wheelfitment_sv:setIsWheelFitmentInUse", false)
+    RPC.execute("vrp-wheelfitment_sv:setIsWheelFitmentInUse", false)
 end
 
 function AdjustWheelFitment(state, wheel, amount)
@@ -221,8 +221,7 @@ AddEventHandler("vrp-polyzone:enter", function(zone, data)
         local plyPed = PlayerPedId()
         inZone = true
         zoneName = zone
-        local isWheelFitmentInUse = VPX.Procedures.execute("vrp-wheelfitment_sv:getIsWheelFitmentInUse", zone)
-        
+        local isWheelFitmentInUse = RPC.execute("vrp-wheelfitment_sv:getIsWheelFitmentInUse", zone)
         local cid = exports['isPed']:isPed('cid')
         
         while inZone and (devmode or WhitelistedChars[cid]) do
@@ -252,7 +251,7 @@ AddEventHandler("vrp-polyzone:enter", function(zone, data)
                             FreezeEntityPosition(plyVeh, true)
                             SetEntityCollision(plyVeh, false, true)
 
-                            VPX.Procedures.execute("vrp-wheelfitment_sv:setIsWheelFitmentInUse", zone, true)
+                            RPC.execute("vrp-wheelfitment_sv:setIsWheelFitmentInUse", zone, true)
 
                             for i = 0.0, 1.56, 0.01 do
                                 slider_wWidth[#slider_wWidth + 1] = roundNum(i, 2)
@@ -324,7 +323,8 @@ end)
 
 -- #[Event Handlers]#--
 RegisterNetEvent("vrp-wheelfitment_cl:applySavedWheelFitment")
-AddEventHandler("vrp-wheelfitment_cl:applySavedWheelFitment", function(wheelFitments, plyVeh)
+AddEventHandler("vrp-wheelfitment_cl:applySavedWheelFitment", function(wheelFitments, netId)
+    local plyVeh = NetToVeh(netId)
     performVehicleCheck = false
 
     SetVehicleWheelWidth(plyVeh, wheelFitments.width)
@@ -362,7 +362,7 @@ AddEventHandler("vrp-wheelfitment_cl:forceMenuClose", function()
         end
     end
 
-    VPX.Procedures.execute("vrp-wheelfitment_sv:setIsWheelFitmentInUse", zoneName, false)
+    RPC.execute("vrp-wheelfitment_sv:setIsWheelFitmentInUse", zoneName, false)
 
     SyncWheelFitment()
     DisplayMenu(false)

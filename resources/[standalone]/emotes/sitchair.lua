@@ -1789,8 +1789,8 @@ function sitRedux(pChairEntity, pChairModel)
 end
 
 
-RegisterNetEvent("np-emotes:sitOnChair")
-AddEventHandler("np-emotes:sitOnChair", function(pArgs, pEntity, pContext)
+RegisterNetEvent("vrp-emotes:sitOnChair")
+AddEventHandler("vrp-emotes:sitOnChair", function(pArgs, pEntity, pContext)
   sitRedux(pEntity or nil, pContext and pContext.model or nil)
 end)
 

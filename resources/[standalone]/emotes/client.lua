@@ -177,8 +177,8 @@ AddEventHandler("Animation:Set:Gait", function(pArgs)
     AnimSet = setGait
     TriggerServerEvent("police:setAnimData", AnimSet)
     if setGait == "move_m@swagger" then
-      if exports["np-inventory"]:hasEnoughOfItem("pimpcane", 1) then
-        TriggerEvent("np-propattach:attach", "prop_cs_walking_stick")
+      if exports["vrp-inventory"]:hasEnoughOfItem("pimpcane", 1) then
+        TriggerEvent("vrp-propattach:attach", "prop_cs_walking_stick")
       end
     end
 end)
@@ -281,9 +281,9 @@ anims = {
     },
 
     ["c"] = function(ped)
-        if exports["np-flags"]:HasPedFlag(PlayerPedId(), 'isSittingOnChair') then
-          TriggerEvent("np-emotes:sitOnChair")
-        elseif exports["np-flags"]:HasPedFlag(PlayerPedId(), 'isPoledancing') then
+        if exports["vrp-flags"]:HasPedFlag(PlayerPedId(), 'isSittingOnChair') then
+          TriggerEvent("vrp-emotes:sitOnChair")
+        elseif exports["vrp-flags"]:HasPedFlag(PlayerPedId(), 'isPoledancing') then
           TriggerEvent("poledance:toggle")
         else
           ClearPedTasks(ped)
@@ -2199,11 +2199,11 @@ anims = {
             ClearPedTasks(ped)
         else
             TriggerEvent("destroyPropPerm")
-            if exports["np-inventory"]:hasEnoughOfItem("umbrella", 1) then
+            if exports["vrp-inventory"]:hasEnoughOfItem("umbrella", 1) then
 
                 TriggerEvent("actionbar:setEmptyHanded")
 
-                local finished = exports["np-taskbar"]:taskBar(2500,"Opening Umbrella")
+                local finished = exports["vrp-taskbar"]:taskBar(2500,"Opening Umbrella")
                 if finished == 100 then
 
                     loadAnimDict("amb@code_human_wander_drinking@male@base")
@@ -3734,7 +3734,7 @@ anims = {
             TriggerEvent("DoLongHudText", "You cannot smoke cigarettes inside vehicles!", 2)
             return
         end
-        if exports["np-inventory"]:hasEnoughOfItem("ciggy", 1) then
+        if exports["vrp-inventory"]:hasEnoughOfItem("ciggy", 1) then
             ClearPedTasks(PlayerPedId())
             TaskStartScenarioInPlace(PlayerPedId(), "WORLD_HUMAN_SMOKING", 0, true)
             TriggerEvent("inventory:removeItem","ciggy", 1)
@@ -3744,7 +3744,7 @@ anims = {
     end,
 
     ["smokemale"] = function(ped)
-        if exports["np-inventory"]:hasEnoughOfItem("ciggy", 1) then
+        if exports["vrp-inventory"]:hasEnoughOfItem("ciggy", 1) then
             local animDict = "amb@world_human_smoking@male@male_a@base"
             local animation = "base"
             if IsPedArmed(ped, 7) then
@@ -3766,7 +3766,7 @@ anims = {
     end,
 
     ["smokefemale"] = function(ped)
-        if exports["np-inventory"]:hasEnoughOfItem("ciggy", 1) then
+        if exports["vrp-inventory"]:hasEnoughOfItem("ciggy", 1) then
             local animDict = "amb@world_human_smoking@female@idle_a"
             local animation = "idle_b"
             if IsPedArmed(ped, 7) then
@@ -3788,7 +3788,7 @@ anims = {
     end,
 
     ["cigarette"] = function(ped)
-        if exports["np-inventory"]:hasEnoughOfItem("ciggy", 1) then
+        if exports["vrp-inventory"]:hasEnoughOfItem("ciggy", 1) then
             local animDict = "amb@world_human_smoking@male@male_a@enter"
             local animation = "enter"
             if IsPedArmed(ped, 7) then
@@ -3810,7 +3810,7 @@ anims = {
     end,
 
     ["cigar"] = function(ped)
-        if exports["np-inventory"]:hasEnoughOfItem("cigar", 1) then
+        if exports["vrp-inventory"]:hasEnoughOfItem("cigar", 1) then
             local animDict = "amb@world_human_smoking@male@male_a@enter"
             local animation = "enter"
             if IsPedArmed(ped, 7) then
@@ -3832,7 +3832,7 @@ anims = {
     end,
 
     ["cigar2"] = function(ped)
-        if exports["np-inventory"]:hasEnoughOfItem("cigar", 1) then
+        if exports["vrp-inventory"]:hasEnoughOfItem("cigar", 1) then
             local animDict = "amb@world_human_smoking@male@male_a@enter"
             local animation = "enter"
             if IsPedArmed(ped, 7) then
@@ -3854,7 +3854,7 @@ anims = {
     end,
 
     ["cigar3"] = function(ped)
-        if exports["np-inventory"]:hasEnoughOfItem("cigar", 1) then
+        if exports["vrp-inventory"]:hasEnoughOfItem("cigar", 1) then
             local animDict = "amb@world_human_smoking@male@male_a@enter"
             local animation = "enter"
             if IsPedArmed(ped, 7) then
@@ -8216,7 +8216,7 @@ animsDog = {
 
     ["carenter"] = function(ped)
         local animDict = "creatures@rottweiler@in_vehicle@std_car"
-        local currentTarget = exports['np-target']:GetCurrentEntity()
+        local currentTarget = exports['vrp-target']:GetCurrentEntity()
         local playerVeh = IsModelAVehicle(GetEntityModel(currentTarget)) and currentTarget or 0
         if playerVeh == 0 then return end
 
@@ -8238,7 +8238,7 @@ animsDog = {
         loadAnimDict(animDict)
 
         local seatBone, doorIndex, seatIndex, zRot = nil, nil, nil, 0.0
-        local currentTargetCoords = exports['np-target']:GetCurrentTargetCoords()
+        local currentTargetCoords = exports['vrp-target']:GetCurrentTargetCoords()
         local frontPassengerSideDist = #(currentTargetCoords - GetWorldPositionOfEntityBone(playerVeh, GetEntityBoneIndexByName(playerVeh, "seat_pside_f")))
         local rearPassengerSideDist = #(currentTargetCoords - GetWorldPositionOfEntityBone(playerVeh, GetEntityBoneIndexByName(playerVeh, "seat_pside_r")))
         local rearDriverSideDist = #(currentTargetCoords - GetWorldPositionOfEntityBone(playerVeh, GetEntityBoneIndexByName(playerVeh, "seat_dside_r")))
@@ -8870,7 +8870,7 @@ function StressTest(animName)
             #(GetEntityCoords(PlayerPedId()) - vector3(1777.21, 2495.7, 45.83)) <
             10.0) then
         local finished =
-            exports["np-taskbar"]:taskBar(15000, "Relieving Stress")
+            exports["vrp-taskbar"]:taskBar(15000, "Relieving Stress")
         if finished == 100 then
             TriggerEvent("client:newStress", false, math.random(100, 550))
             playing_emote = false
