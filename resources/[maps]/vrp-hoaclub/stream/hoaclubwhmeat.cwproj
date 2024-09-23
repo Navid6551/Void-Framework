@@ -1,0 +1,34 @@
+<CodeWalkerProject>
+  <Name>hoaclubwh</Name>
+  <Version value="1" />
+  <YmapFilenames>
+    <Item>hoaclubwh_milo_.ymap</Item>
+    <Item>hoaclubwhmeatexteriormap.ymap</Item>
+  </YmapFilenames>
+  <YtypFilenames>
+    <Item>hoaclubwh.ytyp</Item>
+    <Item>hoaclubwhprops.ytyp</Item>
+  </YtypFilenames>
+  <YbnFilenames>
+    <Item>hoaclubwh_col.ybn</Item>
+  </YbnFilenames>
+  <YndFilenames />
+  <YnvFilenames />
+  <TrainsFilenames />
+  <ScenarioFilenames />
+  <AudioRelFilenames />
+  <YdrFilenames>
+    <Item>hoaclubwh_shell.ydr</Item>
+    <Item>..\..\..\[hoaclubhouse]\hoaclubhouse\stream\hei_hw1_13_biker_aux.ydr</Item>
+    <Item>..\..\..\[hoaclubhouse]\hoaclubhouse\stream\hei_hw1_13_biker_aux_door.ydr</Item>
+    <Item>..\..\..\[hoaclubhouse]\hoaclubhouse\stream\hei_hw1_13_bikergnd_a.ydr</Item>
+    <Item>..\..\..\[hoaclubhouse]\hoaclubhouse\stream\hw1_13_bikergnd.ydr</Item>
+    <Item>..\..\..\[hoaclubhouse]\hoaclubhouse\stream\hw1_13_bkrgnd_noshadow.ydr</Item>
+    <Item>hoaclubwhbeams3.ydr</Item>
+  </YdrFilenames>
+  <YddFilenames />
+  <YftFilenames />
+  <YtdFilenames>
+    <Item>hoaclubwh.ytd</Item>
+  </YtdFilenames>
+</CodeWalkerProject>
