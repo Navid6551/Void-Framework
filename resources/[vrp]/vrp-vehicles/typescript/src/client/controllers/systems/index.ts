@@ -10,6 +10,7 @@ import { InitPursuit } from './pursuitModes';
 import { InitCarPolish } from './carpolish';
 import { InitElectric } from './electric';
 import { InitSelfDriving } from './selfdriving';
+import { InitWheelfitment } from './wheelfitment';
 
 export async function InitSystems(): Promise<void> {
     await InitHandling();
@@ -20,7 +21,7 @@ export async function InitSystems(): Promise<void> {
     await InitMileage();
     await InitHotwire();
     await InitAfterMarkets();
-    //await InitWheelfitment();
+    await InitWheelfitment();
     await InitPursuit();
     await InitCarPolish();
     //await InitXenonLights();

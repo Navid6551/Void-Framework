@@ -1,5 +1,5 @@
 import * as Vehicle from "../state/vehicle";
-export async function SaveVehicleWheelFitment(pVin: string, pNetId: number, pChanged: any) {
+export async function SaveVehicleWheelFitment(pNetId: number, pChanged: any) {
     const vehicle = NetworkGetEntityFromNetworkId(pNetId);
     const bag = Entity(Number(vehicle));
 

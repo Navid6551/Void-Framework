@@ -12,6 +12,7 @@ import { AddVehicleFuel, SetVehicleFuel } from './systems/fuel';
 import { AddVehicleHarness, DoHarnessDamage } from './systems/harness';
 import { AddVehicleMileage } from './systems/mileage';
 import { AddVehicleNitrous, NitroUsed } from './systems/nitro';
+import { SaveVehicleWheelFitment } from './systems/wheelfitment';
 const QBCore = globalThis.exports['vrp-core'].GetCoreObject()
 
 
@@ -366,3 +367,5 @@ onNet("vrp:vehicles:gotKeys", async (pNetId: number, pModel: number, pSource?: n
 onNet("vrp:vehicles:generateMetadata", (pNetId: number) => {
     GenerateMetadata(pNetId);
 });
+
+globalThis.exports('SaveVehicleWheelFitment', SaveVehicleWheelFitment)
