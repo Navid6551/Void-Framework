@@ -10,6 +10,8 @@ export const createBusiness: CommandData = {
     name: 'createBusiness',
     value: RankValue.dev,
     executedFunction: async function cmdDefault(pUser: UserData, pArgs: CreateBusinessArgs) {
+        const code = pArgs?.Name;
+        if (!code) return 'Failed to create business. Code is empty.';
         const name = pArgs?.Name;
         if (!name) return 'Failed to create business. Name is empty.';
         const type = pArgs?.Type;
@@ -17,12 +19,13 @@ export const createBusiness: CommandData = {
         const owner = pArgs?.Owner;
         if (!owner || isNaN(owner)) return 'Failed to create business. Owner is not valid.';
 
-        const [success, message] = global.exports["vrp-business"].CreateBusiness({
+        global.exports["vrp-business"].CreateBusiness({
+            owner_id: Number(owner),
+            business_type_id: Number(type),
+            code: code,
             name: name,
-            business_type_id: type,
-            owner_id: owner
         });
-        if (!success) return message;
+        // if (!success) return message;
 
         return '' + name + ')';
     },
@@ -36,7 +39,7 @@ export const createBusiness: CommandData = {
                 title: 'Create Business',
                 cat: 'Utility',
                 child: {
-                    inputs: ['Name', 'Type', 'Owner'],
+                    inputs: ['Code', 'Name', 'Type', 'Owner'],
                 },
             },
             options: { bindKey: null }

@@ -200,7 +200,7 @@ function CreateBusiness(pData)
         ["employees"] = json.encode(employees),
         ["roles"] = json.encode(roles)
     }))
-end
+end exports('CreateBusiness', CreateBusiness)
 
 function hasPermission(pSource, pBiz, pPerm)
     local Player = QBCore.Functions.GetPlayer(pSource)
