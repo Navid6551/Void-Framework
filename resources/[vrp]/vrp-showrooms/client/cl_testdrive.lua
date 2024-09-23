@@ -18,7 +18,12 @@ function setTestDriveLocation(loc)
     return
   end
   testDriveSpawnPoint3 = vector3(loc.x, loc.y, loc.z)
-  testDriveSpawnPoint4 = loc
+  testDriveSpawnPoint4 = {
+    x = loc.x,
+    y = loc.y,
+    z = loc.z,
+    w = loc.w,
+  }
 end
 
 local function testDriveVehicle(model)

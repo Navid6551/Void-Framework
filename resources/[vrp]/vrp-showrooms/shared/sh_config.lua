@@ -115,37 +115,37 @@ local config = {
       {
         ["coords"] = vector4(151.76,-3039.76,6.78,31.26),
         ["info"] = "Car Spot 1",
-        ["model"] = "zx10",
+        ["model"] = "sultan",
       },
       {
         ["coords"] = vector4(151.24,-3044.06,6.33,32.22),
         ["info"] = "Car Spot 2",
-        ["model"] = "m4",
+        ["model"] = "sultanrs",
       },
       {
         ["coords"] = vector4(144.61,-3048.05,6.32,269.87),
         ["info"] = "Car Spot 3",
-        ["model"] = "dc5",
+        ["model"] = "sultan3",
       },
       {
         ["coords"] = vector4(139.24,-3047.0,6.5,323.89),
         ["info"] = "Car Spot 4",
-        ["model"] = "gauntlet4r",
+        ["model"] = "sultan2",
       },
       {
         ["coords"] = vector4(132.81,-3047.58,6.57,0.86),
         ["info"] = "Car Spot 5",
-        ["model"] = "lwlp670",
+        ["model"] = "sultan",
       },
       {
         ["coords"] = vector4(0.0,-3030.38,-16.39,0.09),
         ["info"] = "Lift Bay 1",
-        ["model"] = "gt2rwb",
+        ["model"] = "sultan",
       },
       {
         ["coords"] = vector4(0.0,-3030.38,-16.39,0.09),
         ["info"] = "Center Vehicle",
-        ["model"] = "bdragon",
+        ["model"] = "sultan",
       },
     },
     polyZone = {
