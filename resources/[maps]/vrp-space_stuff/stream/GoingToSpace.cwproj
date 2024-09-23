@@ -1,0 +1,27 @@
+<CodeWalkerProject>
+  <Name>New CodeWalker Project</Name>
+  <Version value="1" />
+  <YmapFilenames>
+    <Item>sandy_construction.ymap</Item>
+    <Item>np_space_hangar_details.ymap</Item>
+    <Item>np_space_satelite_dish.ymap</Item>
+    <Item>lr_cs4_05_strm_3.ymap</Item>
+    <Item>watch_tower.ymap</Item>
+    <Item>np_space_tower_milo_.ymap</Item>
+    <Item>space_race_lodlights.ymap</Item>
+    <Item>space_race_distantlights.ymap</Item>
+  </YmapFilenames>
+  <YtypFilenames>
+    <Item>space_stuff.ytyp</Item>
+  </YtypFilenames>
+  <YbnFilenames />
+  <YndFilenames />
+  <YnvFilenames />
+  <TrainsFilenames />
+  <ScenarioFilenames />
+  <AudioRelFilenames />
+  <YdrFilenames />
+  <YddFilenames />
+  <YftFilenames />
+  <YtdFilenames />
+</CodeWalkerProject>
