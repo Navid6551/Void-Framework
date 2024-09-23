@@ -21,6 +21,7 @@ RPC.register('vrp-car-clothing:saveCurrentOutfit', function(pSource, pNetId, pIn
     return true
 end)
 
+RPC.register('vrp-car-clothing:swapCurrentOutfit', function(pSource, pNetId, pInputs)
     local vin = exports['vrp-vehicles']:GetVehicleIdentifier(pNetId)
     if not vin then
         TriggerClientEvent('DoLongHudText', pSource, 'This vehicle does not exist!', 2)
