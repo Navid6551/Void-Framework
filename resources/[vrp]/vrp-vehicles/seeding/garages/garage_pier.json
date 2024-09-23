@@ -1,0 +1,79 @@
+{
+    "garage_id": "garage_pier",
+    "name": "Pier Garage",
+    "type": "public",
+    "parking_limit": 10,
+    "location": {
+        "vectors": {
+            "x": -1587.39,
+            "y": -898.65,
+            "z": 9.74
+        },
+        "length": 6.0,
+        "width": 12.8,
+        "options": {
+            "heading": 320.0,
+            "minZ": 7.94,
+            "maxZ": 11.94,
+            "debugPoly": false
+        }
+    },
+    "vehicle_types": ["land"],
+    "parking_spots": [
+        {
+            "type": "land",
+            "size": 2,
+            "distance": 1.2,
+            "heading": 140.0,
+            "coords": {
+                "x": -1590.957,
+                "y": -895.5,
+                "z": 8.547
+            }
+        },
+        {
+            "type": "land",
+            "size": 2,
+            "distance": 1.2,
+            "heading": 140.0,
+            "coords": {
+                "x": -1588.607,
+                "y": -897.503,
+                "z": 8.566
+            }
+        },
+        {
+            "type": "land",
+            "size": 2,
+            "distance": 1.2,
+            "heading": 140.0,
+            "coords": {
+                "x": -1586.256,
+                "y": -899.507,
+                "z": 8.586
+            }
+        },
+        {
+            "type": "land",
+            "size": 2,
+            "distance": 1.2,
+            "heading": 140.0,
+            "coords": {
+                "x": -1583.906,
+                "y": -901.51,
+                "z": 8.606
+            }
+        },
+        {
+            "type": "land",
+            "size": 2,
+            "distance": 1.2,
+            "heading": 140.0,
+            "coords": {
+                "x": -1581.555,
+                "y": -903.513,
+                "z": 8.626
+            }
+        }
+    ]
+}

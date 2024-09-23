@@ -1,0 +1,9 @@
+{
+    "configId": "vrp-restaurants",
+    "data": {
+        "maxEmployees": 6,
+        "maxReceiptsPerHour": 40,
+        "menuChangeCooldown": 60,
+        "receiptsInterval": 2.5
+    }
+}

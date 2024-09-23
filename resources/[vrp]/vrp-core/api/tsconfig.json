@@ -1,0 +1,13 @@
+{
+  "compilerOptions": {
+    "target": "ES6",
+    "module": "commonjs",
+    "strict": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "outDir": "./dist",
+    "types": ["@citizenfx/client", "@citizenfx/server"]
+  },
+  "include": ["src"],
+  "exclude": ["node_modules"]
+}

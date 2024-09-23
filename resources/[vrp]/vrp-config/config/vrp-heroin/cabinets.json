@@ -1,0 +1,14 @@
+{
+    "configId": "vrp-heroin:cabinets",
+    "data": {
+        "locations": [
+            {
+                "position": { "x": 0, "y": 0, "z": 0 },
+                "width": 0,
+                "length": 0,
+                "options": {}
+            }
+        ],
+        "searchTime": 0
+    }
+}

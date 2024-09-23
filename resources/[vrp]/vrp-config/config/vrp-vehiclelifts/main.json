@@ -1,0 +1,35 @@
+{
+    "configId": "vrp-vehiclelifts",
+    "data": {
+        "liftModels": [
+            "denis3d_carlift_02",
+            "denis3d_carlift_01",
+            "denis3d_carlift_03"
+        ],
+        "lifts": [
+            {
+                "name": "Test Lift",
+                "business": "tuner_shop",
+                "coords": {
+                    "x": 198.20463,
+                    "y": -3036.846,
+                    "z": 4.8008203
+                },
+                "heading": 357.81399,
+                "polyZone": "test_zone",
+                "panelPoly": {
+                    "coords": {
+                        "x": 201.04,
+                        "y": -3038.58,
+                        "z": 5.79
+                    },
+                    "length": 0.15,
+                    "width": 0.25,
+                    "minZ": 6.14,
+                    "maxZ": 6.54,
+                    "heading": 0
+                }
+            }
+        ]
+    }
+}

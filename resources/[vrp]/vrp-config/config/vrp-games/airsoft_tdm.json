@@ -1,0 +1,140 @@
+{
+    "configId": "vrp-games:airsoft:tdm",
+    "data": {
+        "id": "tdm",
+        "maps": [
+            {
+                "id:": "cafe_redemption",
+                "name": "Cafe Redemption",
+                "spawnCameraPos": [0, 0, 0],
+                "spawns": [
+                    {
+                        "points": [
+                            {
+                                "pos": [0, 0, 0]
+                            },
+                            {
+                                "pos": [0, 0, 0]
+                            },
+                            {
+                                "pos": [0, 0, 0]
+                            },
+                            {
+                                "pos": [0, 0, 0]
+                            },
+                            {
+                                "pos": [0, 0, 0]
+                            }
+                        ]
+                    },
+                    {
+                        "points": [
+                            {
+                                "pos": [0, 0, 0]
+                            },
+                            {
+                                "pos": [0, 0, 0]
+                            },
+                            {
+                                "pos": [0, 0, 0]
+                            },
+                            {
+                                "pos": [0, 0, 0]
+                            },
+                            {
+                                "pos": [0, 0, 0]
+                            }
+                        ]
+                    }
+                ]
+            }
+        ],
+        "weapons": {
+            "sniper": [
+                {
+                    "id": "",
+                    "name": ""
+                }
+            ],
+            "dmr": [
+                {
+                    "id": "",
+                    "name": ""
+                }
+            ],
+            "mg": [
+                {
+                    "id": "",
+                    "name": ""
+                }
+            ],
+            "smg": [
+                {
+                    "id": "",
+                    "name": ""
+                }
+            ],
+            "shotgun": [
+                {
+                    "id": "",
+                    "name": ""
+                }
+            ],
+            "pistol": [
+                {
+                    "id": "",
+                    "name": ""
+                }
+            ],
+            "melee": [
+                {
+                    "id": "",
+                    "name": ""
+                }
+            ],
+            "explosives": [
+                {
+                    "id": "",
+                    "name": ""
+                }
+            ]
+        },
+        "secondaryWeapons": [""],
+        "ammos": {
+            "sniper": {
+                "id": "sniperammo",
+                "type": 1285032059
+            },
+            "dmr": {
+                "id": "dmrammo",
+                "type": 0
+            },
+            "mg": {
+                "id": "minigunammo",
+                "type": 1119849093
+            },
+            "smg": {
+                "id": "subammo",
+                "type": 1820140472
+            },
+            "shotgun": {
+                "id": "shotgunammo",
+                "type": -1878508229
+            },
+            "pistol": {
+                "id": "pistolammo",
+                "type": 1950175060
+            },
+            "melee": {
+                "id": "meleeammo",
+                "type": 0
+            },
+            "explosives": {
+                "id": "explosiveammo",
+                "type": 741814745
+            }
+        },
+        "arcadePos": [-608.0369, 286.97943, 81.154945, 176.13018],
+        "playerHealth": 200
+    }
+}

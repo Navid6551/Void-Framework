@@ -1,0 +1,83 @@
+{
+    "configId": "vrp-pettycrime",
+    "data": {
+        "constructionsites": {
+            "usedObjects": [],
+            "searchTime": 10000,
+            "animation": {
+                "dict": "",
+                "name": ""
+            }
+        },
+        "lights": {
+            "usedObjects": [
+                "prop_streetlight_01",
+                "prop_streetlight_01b",
+                "prop_streetlight_02",
+                "prop_streetlight_03",
+                "prop_streetlight_03b",
+                "prop_streetlight_03c",
+                "prop_streetlight_05_b",
+                "prop_streetlight_06",
+                "prop_streetlight_07a",
+                "prop_streetlight_07b",
+                "prop_streetlight_08",
+                "prop_streetlight_09",
+                "prop_streetlight_10",
+                "prop_streetlight_11a",
+                "prop_streetlight_11b",
+                "prop_streetlight_11c",
+                "prop_streetlight_12a",
+                "prop_streetlight_12b",
+                "prop_streetlight_14a",
+                "prop_streetlight_15a",
+                "prop_streetlight_16a",
+                "prop_traffic_01a",
+                "prop_traffic_01b",
+                "prop_traffic_01d",
+                "prop_traffic_02a",
+                "prop_traffic_02b",
+                "prop_traffic_03a",
+                "prop_traffic_03b"
+            ],
+            "scrapTime": 10000,
+            "animation": {
+                "dict": "anim@amb@clubhouse@tutorial@bkr_tut_ig3@",
+                "name": "machinic_loop_mechandplayer"
+            }
+        },
+        "rims": {
+            "stealTime": 10000,
+            "animation": {
+                "dict": "anim@amb@clubhouse@tutorial@bkr_tut_ig3@",
+                "name": "machinic_loop_mechandplayer"
+            }
+        },
+        "vendor": {
+            "usedObjects": [
+                "prop_vend_soda_01",
+                "prop_vend_soda_02",
+                "prop_vend_snak_01",
+                "prop_vend_snak_01_tu",
+                "prop_vend_snak_02",
+                "prop_vend_water_01",
+                "prop_vend_water_01_tu"
+            ],
+            "minHealth": 900,
+            "robTime": 10000,
+            "animation": {
+                "dict": "anim@amb@clubhouse@tutorial@bkr_tut_ig3@",
+                "name": " machinic_loop_mechandplayer"
+            }
+        },
+        "atms": {
+            "weightRequired": 3000,
+            "models": ["prop_atm_02", "prop_atm_03", "prop_fleeca_atm"],
+            "consoleModels": ["prop_atm_02", "prop_atm_03", "prop_fleeca_atm"],
+            "destroyedModels": ["prop_atm_02", "prop_atm_03", "prop_fleeca_atm"],
+            "modelOffsets": [0, 0, 0],
+            "robberyCompletionCleanUpTime": 300000,
+            "pullTime": 0
+        }
+    }
+}

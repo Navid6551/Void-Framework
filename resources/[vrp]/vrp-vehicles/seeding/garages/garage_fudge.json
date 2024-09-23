@@ -1,0 +1,36 @@
+{
+    "garage_id": "garage_fudge",
+    "name": "Garage Fudge Lane",
+    "type": "public",
+    "parking_limit": 10,
+    "location": {
+        "vectors": {
+            "x": 1160.65,
+            "y": -1645.87,
+            "z": 36.92
+        },
+        "length": 5.4,
+        "width": 5.8,
+        "options": {
+            "heading": 300.0,
+            "minZ": 35.92,
+            "maxZ": 39.92,
+            "debugPoly": false
+        },
+        "hidden": true
+    },
+    "vehicle_types": ["land"],
+    "parking_spots": [
+        {
+            "type": "land",
+            "size": 2,
+            "distance": 1.2,
+            "heading": 210.32487,
+            "coords": {
+                "x": 1160.924,
+                "y": -1646.432,
+                "z": 35.917
+            }
+        }
+    ]
+}

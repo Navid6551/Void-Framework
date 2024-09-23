@@ -1,0 +1,1 @@
+call ..\server-files\FXServer.exe +exec server.cfg +set onesync on

@@ -1,0 +1,555 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CVehicleMetadataMgr>
+	<VehicleScenarioLayoutInfos>
+		<!--
+		<Item type="CVehicleScenarioLayoutInfo">
+			<Name>SCENARIO_BALLOON_SERVICE</Name>
+			<ScenarioPoints>
+				<Item>
+					<name/>
+					<offsetPosition x="0.150000" y="1.300000" z="0.000000"/>
+					<offsetRotation x="0.000000" y="0.000000" z="0.000000" w="1.000000"/>
+					<spawnType>WORLD_HUMAN_STAND_IMPATIENT</spawnType>
+					<pedType>Any</pedType>
+					<group/>
+					<interior/>
+					<requiredImap/>
+					<availableInMpSp>kBoth</availableInMpSp>
+					<probability value="0.000000"/>
+					<timeTillPedLeaves value="96.000000"/>
+					<radius value="0.000000"/>
+					<start value="8"/>
+					<end value="19"/>
+					<flags/>
+					<highPri value="false"/>
+					<extendedRange value="false"/>
+					<shortRange value="false"/>
+				</Item>
+				<Item>
+					<name/>
+					<offsetPosition x="6.10000" y="5.200000" z="0.000000"/>
+					<offsetRotation x="0.000000" y="0.000000" z="0.000000" w="1.000000"/>
+					<spawnType>WORLD_HUMAN_BINOCULARS</spawnType>
+					<pedType>Any</pedType>
+					<group/>
+					<interior/>
+					<requiredImap/>
+					<availableInMpSp>kBoth</availableInMpSp>
+					<probability value="0.000000"/>
+					<timeTillPedLeaves value="96.000000"/>
+					<radius value="0.000000"/>
+					<start value="8"/>
+					<end value="19"/>
+					<flags/>
+					<highPri value="true"/>
+					<extendedRange value="false"/>
+					<shortRange value="false"/>
+				</Item>
+				<Item>
+					<name/>
+					<offsetPosition x="-2.00000" y="1.200000" z="0.000000"/>
+					<offsetRotation x="0.000000" y="0.000000" z="0.000000" w="1.000000"/>
+					<spawnType>WORLD_HUMAN_BINOCULARS</spawnType>
+					<pedType>Any</pedType>
+					<group/>
+					<interior/>
+					<requiredImap/>
+					<availableInMpSp>kBoth</availableInMpSp>
+					<probability value="0.000000"/>
+					<timeTillPedLeaves value="96.000000"/>
+					<radius value="0.000000"/>
+					<start value="8"/>
+					<end value="19"/>
+					<flags/>
+					<highPri value="true"/>
+					<extendedRange value="false"/>
+					<shortRange value="false"/>
+				</Item>
+			</ScenarioPoints>
+		</Item>
+		-->
+	</VehicleScenarioLayoutInfos>
+	<VehicleExplosionInfos>
+		<Item type="CVehicleExplosionInfo">
+			<Name>EXPLOSION_INFO_HOT_AIR_BALLOON</Name>
+			<ExplosionData>
+				<!-- Propane tank -->
+				<Item>
+					<ExplosionTag>BIKE</ExplosionTag>
+					<PositionAtPetrolTank value="true"/>
+					<PositionInBoundingBox value="false"/>
+					<DelayTimeMs value="0"/>
+					<Scale value="0.6"/>
+					<PositionOffset x="0" y="0" z="0"/>
+				</Item>
+				<!-- Burner -->
+				<Item>
+					<ExplosionTag>BIKE</ExplosionTag>
+					<PositionAtPetrolTank value="false"/>
+					<PositionInBoundingBox value="false"/>
+					<DelayTimeMs value="96"/>
+					<Scale value="1"/>
+					<PositionOffset x="0" y="0" z="1.52"/>
+				</Item>
+				<!-- Envelope smoke & debris -->
+				<!-- Low -->
+				<Item>
+					<ExplosionTag>EXP_TAG_BLIMP2</ExplosionTag>
+					<PositionAtPetrolTank value="false"/>
+					<PositionInBoundingBox value="false"/>
+					<DelayTimeMs value="40"/>
+					<Scale value="0.6"/>
+					<PositionOffset x="0" y="0" z="8"/>
+				</Item>
+				<!-- Mid -->
+				<Item>
+					<ExplosionTag>EXP_TAG_BLIMP2</ExplosionTag>
+					<PositionAtPetrolTank value="false"/>
+					<PositionInBoundingBox value="false"/>
+					<DelayTimeMs value="62"/>
+					<Scale value="1.35"/>
+					<PositionOffset x="0" y="0" z="15"/>
+				</Item>
+				<!-- High -->
+				<Item>
+					<ExplosionTag>EXP_TAG_BLIMP2</ExplosionTag>
+					<PositionAtPetrolTank value="false"/>
+					<PositionInBoundingBox value="false"/>
+					<DelayTimeMs value="96"/>
+					<Scale value="1.8"/>
+					<PositionOffset x="0" y="0" z="18.5"/>
+				</Item>
+			</ExplosionData>
+			<AdditionalPartVelocityMinAngle value="0.000000"/>
+			<AdditionalPartVelocityMaxAngle value="90.000000"/>
+			<AdditionalPartVelocityMinMagnitude value="3.000000"/>
+			<AdditionalPartVelocityMaxMagnitude value="8.000000"/>
+			<VehicleExplosionLODs>
+				<Item>
+					<Radius value="1"/>
+					<PartDeletionChance value="0.6"/>
+				</Item>
+				<Item>
+					<Radius value="2.5"/>
+					<PartDeletionChance value="0.3"/>
+				</Item>
+				<Item>
+					<Radius value="5"/>
+					<PartDeletionChance value="0"/>
+				</Item>
+			</VehicleExplosionLODs>
+		</Item>
+	</VehicleExplosionInfos>
+	<VehicleSeatAnimInfos>
+		<Item type="CVehicleSeatAnimInfo">
+			<Name>SEAT_ANIM_BALLOON_FRONT</Name>
+			<DriveByInfo ref="DRIVEBY_BALLOON_FRONT"/>
+			<InsideClipSetMap ref="INSIDE_CLIPSET_MAP_BOAT_PREDATOR_FRONT_RIGHT"/>
+			<PanicClipSet/>
+			<AgitatedClipSet/>
+			<DuckedClipSet/>
+			<FemaleClipSet/>
+			<LowLODIdleAnim>BOAT_PASSENGER</LowLODIdleAnim>
+			<SeatAmbientContext/>
+			<InVehicleMoveNetwork>VEHICLE_DEFAULT</InVehicleMoveNetwork>
+			<!-- SupportsInAirState -->
+			<SeatAnimFlags>FallsOutWhenDead CanDetachViaRagdoll RagdollWhenVehicleUpsideDown WeaponAttachedToLeftHand CannotBeJacked NoIK UseBoatInVehicleAnims KeepCollisionOnWhenInVehicle</SeatAnimFlags>
+			<SteeringSmoothing value="0.000000"/>
+			<ExitToAimInfoName/>
+			<MaleGestureClipSetId/>
+			<FemaleGestureClipSetId/>
+			<FPSMinSteeringRateOverride value="-1.000000"/>
+			<FPSMaxSteeringRateOverride value="-1.000000"/>
+			<SeatCollisionBoundsOffset x="0.000000" y="0.000000" z="0.000000"/>
+		</Item>
+		<Item type="CVehicleSeatAnimInfo">
+			<Name>SEAT_ANIM_BALLOON_LEFT</Name>
+			<DriveByInfo ref="DRIVEBY_TRUCK_WASTELANDER_SIDE_LEFT_1"/>
+			<InsideClipSetMap ref="INSIDE_CLIPSET_MAP_TRUCK_WASTELANDER_REAR_LEFT_2"/>
+			<PanicClipSet/>
+			<AgitatedClipSet/>
+			<DuckedClipSet/>
+			<FemaleClipSet/>
+			<LowLODIdleAnim>WASTELANDER_REAR_LEFT_IDLE</LowLODIdleAnim>
+			<SeatAmbientContext/>
+			<InVehicleMoveNetwork>VEHICLE_DEFAULT</InVehicleMoveNetwork>
+			<SeatAnimFlags>FallsOutWhenDead CanDetachViaRagdoll RagdollWhenVehicleUpsideDown WeaponAttachedToLeftHand CannotBeJacked NoIK UseBoatInVehicleAnims KeepCollisionOnWhenInVehicle</SeatAnimFlags>
+			<SteeringSmoothing value="0.000000"/>
+			<ExitToAimInfoName/>
+			<MaleGestureClipSetId/>
+			<FemaleGestureClipSetId/>
+			<FPSMinSteeringRateOverride value="-1.000000"/>
+			<FPSMaxSteeringRateOverride value="-1.000000"/>
+			<SeatCollisionBoundsOffset x="0.000000" y="0.000000" z="0.000000"/>
+		</Item>
+		<Item type="CVehicleSeatAnimInfo">
+			<Name>SEAT_ANIM_BALLOON_RIGHT</Name>
+			<DriveByInfo ref="DRIVEBY_TRUCK_WASTELANDER_SIDE_RIGHT_1"/>
+			<InsideClipSetMap ref="INSIDE_CLIPSET_MAP_TRUCK_WASTELANDER_REAR_RIGHT_2"/>
+			<PanicClipSet/>
+			<AgitatedClipSet/>
+			<DuckedClipSet/>
+			<FemaleClipSet/>
+			<LowLODIdleAnim>WASTELANDER_REAR_RIGHT_IDLE</LowLODIdleAnim>
+			<SeatAmbientContext/>
+			<InVehicleMoveNetwork>VEHICLE_DEFAULT</InVehicleMoveNetwork>
+			<SeatAnimFlags>FallsOutWhenDead CanDetachViaRagdoll RagdollWhenVehicleUpsideDown CannotBeJacked NoIK UseBoatInVehicleAnims KeepCollisionOnWhenInVehicle</SeatAnimFlags>
+			<SteeringSmoothing value="0.000000"/>
+			<ExitToAimInfoName/>
+			<MaleGestureClipSetId/>
+			<FemaleGestureClipSetId/>
+			<FPSMinSteeringRateOverride value="-1.000000"/>
+			<FPSMaxSteeringRateOverride value="-1.000000"/>
+			<SeatCollisionBoundsOffset x="0.000000" y="0.000000" z="0.000000"/>
+		</Item>
+	</VehicleSeatAnimInfos>
+	<VehicleSeatInfos>
+		<Item type="CVehicleSeatInfo">
+			<Name>SEAT_BALLOON_FRONT</Name>
+			<SeatBoneName>seat_dside_f</SeatBoneName>
+			<ShuffleLink/>
+			<RearSeatLink/>
+			<DefaultCarTask>TASK_DRIVE_WANDER</DefaultCarTask>
+			<SeatFlags>IsFrontSeat KeepOnHeadProp</SeatFlags>
+			<HairScale value="1.000000"/>
+		</Item>
+		<Item type="CVehicleSeatInfo">
+			<Name>SEAT_BALLOON_LEFT</Name>
+			<SeatBoneName>seat_dside_r</SeatBoneName>
+			<ShuffleLink/>
+			<RearSeatLink/>
+			<DefaultCarTask>TASK_DRIVE_WANDER</DefaultCarTask>
+			<SeatFlags>IsIdleSeat KeepOnHeadProp</SeatFlags>
+			<HairScale value="1.000000"/>
+			<ShuffleLink2/>
+		</Item>
+		<Item type="CVehicleSeatInfo">
+			<Name>SEAT_BALLOON_RIGHT</Name>
+			<SeatBoneName>seat_pside_r</SeatBoneName>
+			<ShuffleLink/>
+			<RearSeatLink/>
+			<DefaultCarTask>TASK_DRIVE_WANDER</DefaultCarTask>
+			<SeatFlags>IsIdleSeat KeepOnHeadProp</SeatFlags>
+			<HairScale value="1.000000"/>
+			<ShuffleLink2/>
+		</Item>
+	</VehicleSeatInfos>	<VehicleDriveByInfos>
+		<Item type="CVehicleDriveByInfo">
+			<Name>DRIVEBY_BALLOON_FRONT</Name>
+			<MinAimSweepHeadingAngleDegs value="-200.000000"/>
+			<MaxAimSweepHeadingAngleDegs value="200.00000"/>
+			<FirstPersonMinAimSweepHeadingAngleDegs value="-190.000000"/>
+			<FirstPersonMaxAimSweepHeadingAngleDegs value="190.000000"/>
+			<FirstPersonUnarmedMinAimSweepHeadingAngleDegs value="-190.000000"/>
+			<FirstPersonUnarmedMaxAimSweepHeadingAngleDegs value="190.000000"/>
+			<MinRestrictedAimSweepHeadingAngleDegs value="-190.000000"/>
+			<MaxRestrictedAimSweepHeadingAngleDegs value="190.000000"/>
+			<MinSmashWindowAngleDegs value="-180.000000"/>
+			<MaxSmashWindowAngleDegs value="0.000000"/>
+			<MinSmashWindowAngleFirstPersonDegs value="-180.000000"/>
+			<MaxSmashWindowAngleFirstPersonDegs value="0.000000"/>
+			<MaxSpeedParam value="0.500000"/>
+			<MaxLongitudinalLeanBlendWeightDelta value="0.250000"/>
+			<MaxLateralLeanBlendWeightDelta value="0.250000"/>
+			<ApproachSpeedToWithinMaxBlendDelta value="1.000000"/>
+			<SpineAdditiveBlendInDelay value="0.050000"/>
+			<SpineAdditiveBlendInDurationStill value="0.150000"/>
+			<SpineAdditiveBlendInDuration value="0.750000"/>
+			<SpineAdditiveBlendOutDelay value="0.000000"/>
+			<SpineAdditiveBlendOutDuration value="0.500000"/>
+			<DriveByAnimInfos>
+				<Item ref="BOAT_PREDATOR_DB_ANIM_INFO_UNARMED_PS"/>
+				<Item ref="BOAT_PREDATOR_DB_ANIM_INFO_ONE_HANDED_PS"/>
+			</DriveByAnimInfos>
+			<DriveByCamera>PARACHUTE_AIM_CAMERA</DriveByCamera>
+			<DriveByFlags>UsePedAsCamEntity UseMountedProjectileTask LeftHandedFirstPersonAnims LeftHandedUnarmedFirstPersonAnims</DriveByFlags>
+		</Item>
+		<Item type="CVehicleDriveByInfo">
+			<Name>DRIVEBY_BALLOON_SIDE_LEFT</Name>
+			<MinAimSweepHeadingAngleDegs value="-185.000000"/>
+			<MaxAimSweepHeadingAngleDegs value="185.000000"/>
+			<FirstPersonMinAimSweepHeadingAngleDegs value="-180.000000"/>
+			<FirstPersonMaxAimSweepHeadingAngleDegs value="180.000000"/>
+			<FirstPersonUnarmedMinAimSweepHeadingAngleDegs value="-180.000000"/>
+			<FirstPersonUnarmedMaxAimSweepHeadingAngleDegs value="180.000000"/>
+			<MinRestrictedAimSweepHeadingAngleDegs value="-185.000000"/>
+			<MaxRestrictedAimSweepHeadingAngleDegs value="185.000000"/>
+			<MinSmashWindowAngleDegs value="0.000000"/>
+			<MaxSmashWindowAngleDegs value="0.000000"/>
+			<MinSmashWindowAngleFirstPersonDegs value="0.000000"/>
+			<MaxSmashWindowAngleFirstPersonDegs value="0.000000"/>
+			<MaxSpeedParam value="0.500000"/>
+			<MaxLongitudinalLeanBlendWeightDelta value="0.250000"/>
+			<MaxLateralLeanBlendWeightDelta value="0.250000"/>
+			<ApproachSpeedToWithinMaxBlendDelta value="1.000000"/>
+			<SpineAdditiveBlendInDelay value="0.050000"/>
+			<SpineAdditiveBlendInDurationStill value="0.150000"/>
+			<SpineAdditiveBlendInDuration value="0.750000"/>
+			<SpineAdditiveBlendOutDelay value="0.000000"/>
+			<SpineAdditiveBlendOutDuration value="0.500000"/>
+			<MinUnarmedDrivebyYawIfWindowRolledUp value="-3.140000"/>
+			<MaxUnarmedDrivebyYawIfWindowRolledUp value="3.140000"/>
+			<DriveByAnimInfos>
+				<Item ref="WASTELANDER_DB_ANIM_INFO_UNARMED_RDS_REAR"/>
+				<Item ref="WASTELANDER_DB_ANIM_INFO_ONE_HANDED_RDS_REAR"/>
+				<Item ref="WASTELANDER_DB_ANIM_INFO_TWO_HANDED_RDS_REAR"/>
+				<Item ref="WASTELANDER_DB_ANIM_INFO_THROWN_RDS_REAR"/>
+			</DriveByAnimInfos>
+			<DriveByCamera>FIRST_PERSON_HELI_REAR_LEFT_PASSENGER_AIM_CAMERA</DriveByCamera>
+			<DriveByFlags>UsePedAsCamEntity UseMountedProjectileTask LeftHandedProjctiles LeftHandedFirstPersonAnims LeftHandedUnarmedFirstPersonAnims</DriveByFlags>
+		</Item>
+		<Item type="CVehicleDriveByInfo">
+			<Name>DRIVEBY_BALLOON_SIDE_RIGHT</Name>
+			<MinAimSweepHeadingAngleDegs value="-185.000000"/>
+			<MaxAimSweepHeadingAngleDegs value="185.000000"/>
+			<FirstPersonMinAimSweepHeadingAngleDegs value="-180.000000"/>
+			<FirstPersonMaxAimSweepHeadingAngleDegs value="180.000000"/>
+			<FirstPersonUnarmedMinAimSweepHeadingAngleDegs value="-180.000000"/>
+			<FirstPersonUnarmedMaxAimSweepHeadingAngleDegs value="180.000000"/>
+			<MinRestrictedAimSweepHeadingAngleDegs value="-185.000000"/>
+			<MaxRestrictedAimSweepHeadingAngleDegs value="185.000000"/>
+			<MinSmashWindowAngleDegs value="0.000000"/>
+			<MaxSmashWindowAngleDegs value="0.000000"/>
+			<MinSmashWindowAngleFirstPersonDegs value="0.000000"/>
+			<MaxSmashWindowAngleFirstPersonDegs value="0.000000"/>
+			<MaxSpeedParam value="0.500000"/>
+			<MaxLongitudinalLeanBlendWeightDelta value="0.250000"/>
+			<MaxLateralLeanBlendWeightDelta value="0.250000"/>
+			<ApproachSpeedToWithinMaxBlendDelta value="1.000000"/>
+			<SpineAdditiveBlendInDelay value="0.050000"/>
+			<SpineAdditiveBlendInDurationStill value="0.150000"/>
+			<SpineAdditiveBlendInDuration value="0.750000"/>
+			<SpineAdditiveBlendOutDelay value="0.000000"/>
+			<SpineAdditiveBlendOutDuration value="0.500000"/>
+			<MinUnarmedDrivebyYawIfWindowRolledUp value="-3.140000"/>
+			<MaxUnarmedDrivebyYawIfWindowRolledUp value="3.140000"/>
+			<DriveByAnimInfos>
+				<Item ref="WASTELANDER_DB_ANIM_INFO_UNARMED_RPS_REAR"/>
+				<Item ref="WASTELANDER_DB_ANIM_INFO_ONE_HANDED_RPS_REAR"/>
+				<Item ref="WASTELANDER_DB_ANIM_INFO_TWO_HANDED_RPS_REAR"/>
+				<Item ref="WASTELANDER_DB_ANIM_INFO_THROWN_RPS_REAR"/>
+			</DriveByAnimInfos>
+			<DriveByCamera>FIRST_PERSON_HELI_REAR_RIGHT_PASSENGER_AIM_CAMERA</DriveByCamera>
+			<DriveByFlags>UsePedAsCamEntity UseMountedProjectileTask</DriveByFlags>
+		</Item>
+	</VehicleDriveByInfos>
+	<VehicleEntryPointInfos>
+		<Item type="CVehicleEntryPointInfo">
+			<Name>ENTRY_POINT_BALLOON_BASKET_FRONT</Name>
+			<DoorBoneName/>
+			<SecondDoorBoneName/>
+			<DoorHandleBoneName/>
+			<WindowId>INVALID</WindowId>
+			<VehicleSide>SIDE_RIGHT</VehicleSide>
+			<AccessableSeats>
+				<Item ref="SEAT_BALLOON_FRONT"/>
+			</AccessableSeats>
+			<VehicleExtraPointsInfo ref="NULL"/>
+			<Flags/>
+			<BlockJackReactionSides/>
+			<BreakoutTestPoint>POINT_TYPE_MAX</BreakoutTestPoint>
+		</Item>
+		<Item type="CVehicleEntryPointInfo">
+			<Name>ENTRY_POINT_BALLOON_BASKET_LEFT</Name>
+			<DoorBoneName/>
+			<SecondDoorBoneName/>
+			<DoorHandleBoneName/>
+			<WindowId>INVALID</WindowId>
+			<VehicleSide>SIDE_LEFT</VehicleSide>
+			<AccessableSeats>
+				<Item ref="SEAT_BALLOON_LEFT"/>
+			</AccessableSeats>
+			<VehicleExtraPointsInfo ref="NULL"/>
+			<Flags/>
+			<BlockJackReactionSides/>
+			<BreakoutTestPoint>POINT_TYPE_MAX</BreakoutTestPoint>
+		</Item>
+		<Item type="CVehicleEntryPointInfo">
+			<Name>ENTRY_POINT_BALLOON_BASKET_RIGHT</Name>
+			<DoorBoneName/>
+			<SecondDoorBoneName/>
+			<DoorHandleBoneName/>
+			<WindowId>INVALID</WindowId>
+			<VehicleSide>SIDE_RIGHT</VehicleSide>
+			<AccessableSeats>
+				<Item ref="SEAT_BALLOON_RIGHT"/>
+			</AccessableSeats>
+			<VehicleExtraPointsInfo ref="NULL"/>
+			<Flags/>
+			<BlockJackReactionSides/>
+			<BreakoutTestPoint>POINT_TYPE_MAX</BreakoutTestPoint>
+		</Item>
+		<Item type="CVehicleEntryPointInfo">
+			<Name>ENTRY_POINT_BALLOON_WARP</Name>
+			<DoorBoneName/>
+			<SecondDoorBoneName/>
+			<DoorHandleBoneName/>
+			<WindowId>INVALID</WindowId>
+			<VehicleSide>SIDE_REAR</VehicleSide>
+			<AccessableSeats>
+				<Item ref="SEAT_BALLOON_FRONT"/>
+				<Item ref="SEAT_BALLOON_LEFT"/>
+				<Item ref="SEAT_BALLOON_RIGHT"/>
+			</AccessableSeats>
+			<VehicleExtraPointsInfo ref="NULL"/>
+			<Flags>MPWarpInOut</Flags>
+			<BlockJackReactionSides/>
+		</Item>
+	</VehicleEntryPointInfos>
+	<VehicleExtraPointsInfos>
+		<Item type="CVehicleExtraPointsInfo">
+			<Name>EXTRA_VEHICLE_POINTS_BALLOON_BASKET</Name>
+			<ExtraVehiclePoints>
+				<Item>
+					<LocationType>SEAT_RELATIVE</LocationType>
+					<PointType>GET_IN</PointType>
+					<Position x="0.0" y="-0.105" z="0.0"/>
+					<Heading value="0.0"/>
+					<BoneName/>
+				</Item>
+				<Item>
+					<LocationType>SEAT_RELATIVE</LocationType>
+					<PointType>GET_OUT</PointType>
+					<Position x="0.0" y="-0.105" z="0.0"/>
+					<Heading value="3.14"/>
+					<BoneName/>
+				</Item>
+			</ExtraVehiclePoints>
+		</Item>
+	</VehicleExtraPointsInfos>
+	<VehicleEntryPointAnimInfos>
+		<Item type="CVehicleEntryPointAnimInfo">
+			<Name>ENTRY_POINT_ANIM_BALLOON_BASKET_FRONT</Name>
+			<CommonClipSetMap ref="COMMON_CLIPSET_MAP_BOAT_SPEED_FRONT_RIGHT"/>
+			<EntryClipSetMap ref="ENTRY_CLIPSET_MAP_BOAT_PREDATOR_FRONT_RIGHT"/>
+			<ExitClipSetMap ref="EXIT_CLIPSET_MAP_BOAT_PREDATOR_FRONT_RIGHT"/>
+			<AlternateTryLockedDoorClipId/>
+			<AlternateForcedEntryClipId/>
+			<AlternateJackFromOutSideClipId/>
+			<AlternateBeJackedFromOutSideClipId/>
+			<AlternateEntryPointClipSetId/>
+			<EnterVehicleMoveNetwork>ENTER_VEHICLE_STD</EnterVehicleMoveNetwork>
+			<EntryTranslation x="-0.105" y="-0.35" z="0.0"/>
+			<OpenDoorTranslation x="0.000000" y="0.000000"/>
+			<OpenDoorHeadingChange value="0.000000"/>
+			<EntryHeadingChange value="0.000000"/>
+			<ExtraZForMPPlaneWarp value="0.000000"/>
+			<EntryPointFlags>DisableJacking HasGetOutToVehicle HasOnVehicleEntry UseSeatClipSetAnims</EntryPointFlags>
+			<EntryAnimVariations ref="NULL"/>
+			<NMJumpFromVehicleTuningSet>SLOWTRUCK</NMJumpFromVehicleTuningSet>
+		</Item>
+		<Item type="CVehicleEntryPointAnimInfo">
+			<Name>ENTRY_POINT_ANIM_BALLOON_BASKET_LEFT</Name>
+			<CommonClipSetMap ref="COMMON_CLIPSET_MAP_BOAT_SPEED_FRONT_RIGHT"/>
+			<EntryClipSetMap ref="ENTRY_CLIPSET_MAP_BOAT_PREDATOR_FRONT_LEFT"/>
+			<ExitClipSetMap ref="EXIT_CLIPSET_MAP_BOAT_PREDATOR_FRONT_LEFT"/>
+			<AlternateTryLockedDoorClipId/>
+			<AlternateForcedEntryClipId/>
+			<AlternateJackFromOutSideClipId/>
+			<AlternateBeJackedFromOutSideClipId/>
+			<AlternateEntryPointClipSetId/>
+			<EnterVehicleMoveNetwork>ENTER_VEHICLE_STD</EnterVehicleMoveNetwork>
+			<EntryTranslation x="0.382" y="-0.20" z="0.0"/>
+			<OpenDoorTranslation x="0.000000" y="0.000000"/>
+			<OpenDoorHeadingChange value="0.000000"/>
+			<EntryHeadingChange value="-1.5700000"/>
+			<ExtraZForMPPlaneWarp value="0.000000"/>
+			<EntryPointFlags>DisableJacking HasGetOutToVehicle HasOnVehicleEntry UseSeatClipSetAnims</EntryPointFlags>
+			<EntryAnimVariations ref="NULL"/>
+			<NMJumpFromVehicleTuningSet/>
+			<NMJumpFromVehicleTuningSet>SLOWTRUCK</NMJumpFromVehicleTuningSet>
+		</Item>
+		<Item type="CVehicleEntryPointAnimInfo">
+			<Name>ENTRY_POINT_ANIM_BALLOON_BASKET_RIGHT</Name>
+			<CommonClipSetMap ref="COMMON_CLIPSET_MAP_BOAT_SPEED_FRONT_RIGHT"/>
+			<EntryClipSetMap ref="ENTRY_CLIPSET_MAP_BOAT_PREDATOR_FRONT_RIGHT"/>
+			<ExitClipSetMap ref="EXIT_CLIPSET_MAP_BOAT_PREDATOR_FRONT_RIGHT"/>
+			<AlternateTryLockedDoorClipId/>
+			<AlternateForcedEntryClipId/>
+			<AlternateJackFromOutSideClipId/>
+			<AlternateBeJackedFromOutSideClipId/>
+			<AlternateEntryPointClipSetId/>
+			<EnterVehicleMoveNetwork>ENTER_VEHICLE_STD</EnterVehicleMoveNetwork>
+			<EntryTranslation x="-0.382" y="-0.20" z="0.0"/>
+			<OpenDoorTranslation x="0.000000" y="0.000000"/>
+			<OpenDoorHeadingChange value="0.000000"/>
+			<EntryHeadingChange value="1.570000"/>
+			<ExtraZForMPPlaneWarp value="0.000000"/>
+			<EntryPointFlags>DisableJacking HasGetOutToVehicle HasOnVehicleEntry UseSeatClipSetAnims</EntryPointFlags>
+			<EntryAnimVariations ref="NULL"/>
+			<NMJumpFromVehicleTuningSet/>
+			<NMJumpFromVehicleTuningSet>SLOWTRUCK</NMJumpFromVehicleTuningSet>
+		</Item>
+		<Item type="CVehicleEntryPointAnimInfo">
+			<Name>ENTRY_POINT_ANIM_BALLOON_WARP</Name>
+			<CommonClipSetMap ref="COMMON_CLIPSET_MAP_BOAT_SPEED_FRONT_RIGHT"/>
+			<EntryClipSetMap ref="ENTRY_CLIPSET_MAP_BOAT_PREDATOR_FRONT_RIGHT"/>
+			<ExitClipSetMap ref="EXIT_CLIPSET_MAP_BOAT_PREDATOR_FRONT_RIGHT"/>
+			<AlternateTryLockedDoorClipId/>
+			<AlternateForcedEntryClipId/>
+			<AlternateJackFromOutSideClipId/>
+			<AlternateBeJackedFromOutSideClipId/>
+			<AlternateEntryPointClipSetId/>
+			<EnterVehicleMoveNetwork>ENTER_VEHICLE_STD</EnterVehicleMoveNetwork>
+			<EntryTranslation x="0.000000" y="-1.65" z="0.135"/>
+			<OpenDoorTranslation x="0.000000" y="0.000000"/>
+			<OpenDoorHeadingChange value="0.00000"/>
+			<EntryHeadingChange value="0.00000"/>
+			<ExtraZForWaterEntry value="0.000000"/>
+			<EntryPointFlags>DisableJacking UseVehicleRelativeEntryPosition HasGetOutToVehicle NavigateToWarpEntryPoint</EntryPointFlags>
+			<EntryAnimVariations ref="NULL"/>
+		</Item>
+	</VehicleEntryPointAnimInfos>
+	<VehicleLayoutInfos>
+		<Item type="CVehicleLayoutInfo">
+			<Name>LAYOUT_HOT_AIR_BALLOON</Name>
+			<Seats>
+				<Item>
+					<SeatInfo ref="SEAT_BALLOON_FRONT"/>
+					<SeatAnimInfo ref="SEAT_ANIM_BALLOON_FRONT"/>
+				</Item>
+				<Item>
+					<SeatInfo ref="SEAT_BALLOON_LEFT"/>
+					<SeatAnimInfo ref="SEAT_ANIM_BALLOON_LEFT"/>
+				</Item>
+				<Item>
+					<SeatInfo ref="SEAT_BALLOON_RIGHT"/>
+					<SeatAnimInfo ref="SEAT_ANIM_BALLOON_RIGHT"/>
+				</Item>
+			</Seats>
+			<EntryPoints>
+				<Item>
+					<EntryPointInfo ref="ENTRY_POINT_BALLOON_BASKET_FRONT"/>
+					<EntryPointAnimInfo ref="ENTRY_POINT_ANIM_BALLOON_BASKET_FRONT"/>
+				</Item>
+				<Item>
+					<EntryPointInfo ref="ENTRY_POINT_BALLOON_BASKET_LEFT"/>
+					<EntryPointAnimInfo ref="ENTRY_POINT_ANIM_BALLOON_BASKET_LEFT"/>
+				</Item>
+				<Item>
+					<EntryPointInfo ref="ENTRY_POINT_BALLOON_BASKET_RIGHT"/>
+					<EntryPointAnimInfo ref="ENTRY_POINT_ANIM_BALLOON_BASKET_RIGHT"/>
+				</Item>
+				<Item>
+					<EntryPointInfo ref="ENTRY_POINT_BALLOON_WARP"/>
+					<EntryPointAnimInfo ref="ENTRY_POINT_ANIM_BALLOON_WARP"/>
+				</Item>
+			</EntryPoints>
+			<LayoutFlags>StreamAnims DisableJackingAndBusting</LayoutFlags>
+			<BicycleInfo ref="NULL"/>
+			<AnimRateSet ref="NULL"/>
+			<HandsUpClipSetId>busted_vehicle_std</HandsUpClipSetId>
+			<SteeringWheelOffset x="0.000000" y="0.350000" z="0.320000"/>
+			<MaxXAcceleration value="25"/>
+			<BodyLeanXApproachSpeed value="15"/>
+			<BodyLeanXSmallDelta value="0"/>
+			<LookBackApproachSpeedScale value="1"/>
+			<CellphoneClipsets>
+				<CellphoneClipsetDS>ANIM_GROUP_CELLPHONE_IN_CAR_DS</CellphoneClipsetDS>
+				<CellphoneClipsetPS>ANIM_GROUP_CELLPHONE_IN_CAR_PS</CellphoneClipsetPS>
+				<CellphoneClipsetDS_FPS>ANIM_GROUP_CELLPHONE_IN_CAR_DS_FPS</CellphoneClipsetDS_FPS>
+				<CellphoneClipsetPS_FPS>ANIM_GROUP_CELLPHONE_IN_CAR_DS_FPS</CellphoneClipsetPS_FPS>
+			</CellphoneClipsets>
+		</Item>
+	</VehicleLayoutInfos>
+</CVehicleMetadataMgr>

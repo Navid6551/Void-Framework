@@ -1,0 +1,6 @@
+{
+    "configId": "vrp-vehicles",
+    "data": {
+        "selfDrivingModels": ["teslapd"]
+    }
+}

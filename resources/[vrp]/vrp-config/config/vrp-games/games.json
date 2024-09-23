@@ -1,0 +1,236 @@
+{
+    "configId": "vrp-games:games",
+    "data": {
+        "games": [
+            {
+                "id": "vehicle-tag",
+                "name": "Vehicle Tag",
+                "type": "teams",
+                "resource": "vehicletag",
+                "needsTicket": false,
+                "needsTokens": true,
+                "supportsSpectating": true,
+                "disabled": false,
+                "gameData": {
+                    "maxPlayers": 12,
+                    "minimumToStart": 1,
+                    "teams": 2,
+                    "teamSize": 6,
+                    "canBeRestarted": true,
+                    "customData": [
+                        {
+                            "id": "time",
+                            "name": "Time in minutes",
+                            "type": "number"
+                        },
+                        {
+                            "id": "points",
+                            "name": "Points to win",
+                            "type": "number"
+                        },
+                        {
+                            "id": "vehicle_group",
+                            "name": "Vehicle group",
+                            "type": "select",
+                            "customOptions": {
+                                "func": "getVTagCarGroups"
+                            }
+                        },
+                        {
+                            "id": "map",
+                            "name": "Map",
+                            "type": "select",
+                            "customOptions": {
+                                "func": "getVTagMaps"
+                            }
+                        }
+                    ]
+                },
+                "zone": {
+                    "coords": {
+                        "x": -605.46,
+                        "y": 286.49,
+                        "z": 81.15
+                    },
+                    "length": 2.0,
+                    "width": 1.45,
+                    "minZ": 78.2,
+                    "maxZ": 82.2,
+                    "heading": 355
+                },
+                "despawnCoords": {
+                    "x": -605.0637,
+                    "y": 288.43957,
+                    "z": 81.15509
+                }
+            },
+            {
+                "id": "demolition",
+                "name": "Demolition Derby",
+                "type": "teams",
+                "resource": "vehicletag",
+                "needsTicket": false,
+                "needsTokens": false,
+                "supportsSpectating": false,
+                "disabled": false,
+                "gameData": {
+                    "maxPlayers": 12,
+                    "minimumToStart": 1,
+                    "teams": 2,
+                    "teamSize": 6,
+                    "canBeRestarted": true,
+                    "customData": [
+                        {
+                            "id": "time",
+                            "name": "Minutes (per round)",
+                            "type": "number"
+                        },
+                        {
+                            "id": "rounds",
+                            "name": "Rounds",
+                            "type": "number"
+                        },
+                        {
+                            "id": "vehicle_group",
+                            "name": "Vehicle group",
+                            "type": "select",
+                            "customOptions": {
+                                "func": "getDemolitionCarGroups"
+                            }
+                        },
+                        {
+                            "id": "map",
+                            "name": "Map",
+                            "type": "select",
+                            "customOptions": {
+                                "func": "getDemolitionMaps"
+                            }
+                        }
+                    ]
+                },
+                "zone": {
+                    "coords": {
+                        "x": -600.92,
+                        "y": 289.4,
+                        "z": 81.16
+                    },
+                    "length": 1.95,
+                    "width": 1.6,
+                    "minZ": 78.56,
+                    "maxZ": 82.56,
+                    "heading": 355
+                },
+                "despawnCoords": {
+                    "x": -601.2294,
+                    "y": 287.94738,
+                    "z": 81.155075
+                }
+            },
+            {
+                "id": "airsoft_tdm",
+                "name": "TDM",
+                "type": "teams",
+                "resource": "airsoft",
+                "needsTicket": false,
+                "needsTokens": false,
+                "supportsSpectating": false,
+                "disabled": true,
+                "gameData": {
+                    "maxPlayers": 10,
+                    "minimumToStart": 1,
+                    "teams": 2,
+                    "teamSize": 5,
+                    "canBeRestarted": true,
+                    "uniqueInventory": true,
+                    "removeAfterEnd": true,
+                    "customData": [
+                        {
+                            "id": "points",
+                            "name": "Points",
+                            "type": "number"
+                        },
+                        {
+                            "id": "map",
+                            "name": "Map",
+                            "type": "select",
+                            "customOptions": {
+                                "func": "getTDMMaps"
+                            }
+                        }
+                    ]
+                },
+                "zone": {
+                    "coords": {
+                        "x": -608.14,
+                        "y": 286.24,
+                        "z": 81.15
+                    },
+                    "length": 0.95,
+                    "width": 0.8,
+                    "minZ": 78.0,
+                    "maxZ": 82.0,
+                    "heading": 354
+                },
+                "despawnCoords": {
+                    "x": -608.0591,
+                    "y": 286.93063,
+                    "z": 81.15496
+                }
+            },
+            {
+                "id": "airsoft_snd",
+                "name": "SND",
+                "type": "teams",
+                "resource": "airsoft",
+                "needsTicket": false,
+                "needsTokens": false,
+                "supportsSpectating": false,
+                "disabled": true,
+                "gameData": {
+                    "maxPlayers": 12,
+                    "minimumToStart": 1,
+                    "teams": 2,
+                    "teamSize": 6,
+                    "canBeRestarted": true,
+                    "customData": [
+                        {
+                            "id": "time",
+                            "name": "Time in minutes",
+                            "type": "number"
+                        },
+                        {
+                            "id": "points",
+                            "name": "Points to win",
+                            "type": "number"
+                        },
+                        {
+                            "id": "map",
+                            "name": "Map",
+                            "type": "select",
+                            "customOptions": {
+                                "func": "getSNDMaps"
+                            }
+                        }
+                    ]
+                },
+                "zone": {
+                    "coords": {
+                        "x": -609.23,
+                        "y": 286.86,
+                        "z": 81.15
+                    },
+                    "length": 0.9,
+                    "width": 0.75,
+                    "minZ": 77.8,
+                    "maxZ": 82.0,
+                    "heading": 310
+                },
+                "despawnCoords": {
+                    "x": -608.6732,
+                    "y": 287.26324,
+                    "z": 81.154991
+                }
+            }
+        ]
+    }
+}

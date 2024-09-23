@@ -1,0 +1,18 @@
+{
+    "compilerOptions": {
+        "target": "ES2020",
+        "strict": true,
+        "esModuleInterop": true,
+        "allowSyntheticDefaultImports": true,
+        "module": "CommonJS",
+        "types": ["@citizenfx/client", "@citizenfx/server", "@types/node"],
+        "lib": ["ES2020"],
+        "baseUrl": "../",
+        "paths": {
+            "@shared/*": ["shared/*"],
+            "@vpx/*": ["shared/vpx/*"]
+        } 
+    },
+    "include": ["./**/*"],
+    "exclude": ["**/node_modules", "**/__tests__/*"]
+}

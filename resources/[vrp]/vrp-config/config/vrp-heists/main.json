@@ -1,0 +1,39 @@
+{
+    "configId": "vrp-heists",
+    "data": {
+        "minigames": {
+            "fleeca_front": {
+                "lockpicking": {
+                    "difficulty": 1000,
+                    "gapRange": [
+                        8,
+                        10
+                    ],
+                    "iterations": 1,
+                    "useReverse": true
+                },
+                "untangle": {
+                    "numPoints": 6,
+                    "gameTimeoutDuration": 5000
+                }
+            },
+            "fleeca": {
+                "thermite": {
+                    "gridSize": 5,
+                    "coloredSquares": 2,
+                    "gameTimeoutDuration": 10000
+                },
+                "laptop": {
+                    "gameDuration": 8000,
+                    "gameRoundsTotal": 2,
+                    "numberOfShapes": 4,
+                    "debugShowAnswer": true
+                },
+                "untangle": {
+                    "numPoints": 6,
+                    "gameTimeoutDuration": 9000
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,7 @@
+{
+    "configId": "vrp-voice",
+    "data": {
+        "updateInterval": 1000,
+        "useScopeSize": false
+    }
+}

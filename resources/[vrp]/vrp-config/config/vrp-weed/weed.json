@@ -1,0 +1,17 @@
+{
+    "configId": "vrp-weed:weed",
+    "data": {
+        "DryTime": 720,
+        "ValidDryingInvs": ["warehouse", "motel", "housing"],
+        "BudPerDried": 5,
+        "ListCost": 3000,
+        "TimeBetweenLrgDeliveries": 2700000,
+        "WeedsPerBrick": 10,
+        "BricksPerLargeRun": 10,
+        "BrickValue": 1425,
+        "QualityFactor": 1.5,
+        "AlertChance": 0.3,
+        "BrickPreparingTime": 150,
+        "MaxProgressionBonus": 1.5
+    }
+}

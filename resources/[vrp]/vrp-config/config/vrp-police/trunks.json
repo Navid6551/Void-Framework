@@ -1,0 +1,60 @@
+{
+    "configId": "vrp-police:trunks",
+    "data": {
+        "disabledTrunks": [
+            "penetrator",
+            "vacca",
+            "monroe",
+            "turismor",
+            "osiris",
+            "comet",
+            "ardent",
+            "jester",
+            "nero",
+            "nero2",
+            "vagner",
+            "infernus",
+            "zentorno",
+            "comet2",
+            "comet3",
+            "comet4",
+            "lp700r",
+            "r8ppi",
+            "911turbos",
+            "rx7rb",
+            "fnfrx7",
+            "delsoleg",
+            "s15rb",
+            "gtr",
+            "fnf4r34",
+            "ap2",
+            "bullet"
+        ],
+        "trunkOffsets": {
+            "taxi": {
+                "y": 0.0,
+                "z": -0.5
+            },
+            "buccaneer": {
+                "y": 0.5,
+                "z": 0.0
+            },
+            "peyote": {
+                "y": 0.35,
+                "z": -0.15
+            },
+            "regina": {
+                "y": 0.2,
+                "z": -0.35
+            },
+            "pigalle": {
+                "y": 0.2,
+                "z": -0.15
+            },
+            "glendale": {
+                "y": 0.0,
+                "z": -0.35
+            }
+        }
+    }
+}

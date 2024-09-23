@@ -1,0 +1,1978 @@
+{
+    "configId": "vrp-vehicles:pursuitModes",
+    "data": {
+        "presets": [
+            {
+                "id": "npolvette",
+                "modes": [
+                    {
+                        "name": "Off",
+                        "mods": null,
+                        "appearance": null,
+                        "handling": []
+                    },
+                    {
+                        "name": "A+",
+                        "appearance": {
+                            "colors": {
+                                "xenon": 0
+                            }
+                        },
+                        "mods": {
+                            "Turbo": true,
+                            "Engine": 4,
+                            "Brakes": 2,
+                            "Transmission": 2,
+                            "Suspension": 2,
+                            "Armor": 1
+                        },
+                        "handling": [
+                            { "field": "fInitialDragCoeff", "multiplier": 3.5 },
+                            { "field": "fPercentSubmerged", "multiplier": 85.0 },
+                            { "field": "fInitialDriveForce", "multiplier": 0.3575 },
+                            { "field": "fDriveInertia", "multiplier": 1.135 },
+                            { "field": "fClutchChangeRateScaleUpShift", "multiplier": 4.7 },
+                            { "field": "fClutchChangeRateScaleDownShift", "multiplier": 4.4 },
+                            { "field": "fInitialDriveMaxFlatVel", "multiplier": 150.0 },
+                            { "field": "fBrakeForce", "multiplier": 3.2 },
+                            { "field": "fSteeringLock", "multiplier": 38.0 },
+                            { "field": "fDownforceModifier", "multiplier": 3.0 },
+                            { "field": "fTractionCurveMax", "multiplier": 2.95 },
+                            { "field": "fTractionCurveMin", "multiplier": 2.75 },
+                            { "field": "fTractionBiasFront", "multiplier": 0.486 },
+                            { "field": "fTractionLossMult", "multiplier": 1.2 },
+                            { "field": "fSuspensionForce", "multiplier": 2.0 }
+                        ]
+                    },
+                    {
+                        "name": "S",
+                        "appearance": {
+                            "colors": {
+                                "xenon": 0
+                            }
+                        },
+                        "mods": {
+                            "Turbo": true,
+                            "Engine": 4,
+                            "Brakes": 2,
+                            "Transmission": 2,
+                            "Suspension": 2,
+                            "Armor": 1
+                        },
+                        "handling": [
+                            { "field": "fInitialDragCoeff", "multiplier": 3.5 },
+                            { "field": "fPercentSubmerged", "multiplier": 85.0 },
+                            { "field": "fInitialDriveForce", "multiplier": 0.3625 },
+                            { "field": "fDriveInertia", "multiplier": 1.25 },
+                            { "field": "fClutchChangeRateScaleUpShift", "multiplier": 4.7 },
+                            { "field": "fClutchChangeRateScaleDownShift", "multiplier": 4.5 },
+                            { "field": "fInitialDriveMaxFlatVel", "multiplier": 160.0 },
+                            { "field": "fBrakeForce", "multiplier": 3.2 },
+                            { "field": "fSteeringLock", "multiplier": 38.0 },
+                            { "field": "fDownforceModifier", "multiplier": 3.0 },
+                            { "field": "fTractionCurveMax", "multiplier": 2.95 },
+                            { "field": "fTractionCurveMin", "multiplier": 2.75 },
+                            { "field": "fTractionBiasFront", "multiplier": 0.486 },
+                            { "field": "fTractionLossMult", "multiplier": 1.3 },
+                            { "field": "fSuspensionForce", "multiplier": 2.0 }
+                        ]
+                    },
+                    {
+                        "name": "S+",
+                        "appearance": {
+                            "colors": {
+                                "xenon": 0
+                            }
+                        },
+                        "mods": {
+                            "Turbo": true,
+                            "Engine": 4,
+                            "Brakes": 2,
+                            "Transmission": 2,
+                            "Suspension": 2,
+                            "Armor": 1
+                        },
+                        "handling": [
+                            { "field": "fInitialDragCoeff", "multiplier": 3.5 },
+                            { "field": "fPercentSubmerged", "multiplier": 85.0 },
+                            { "field": "fInitialDriveForce", "multiplier": 0.3665 },
+                            { "field": "fDriveInertia", "multiplier": 1.28 },
+                            { "field": "fClutchChangeRateScaleUpShift", "multiplier": 4.8 },
+                            { "field": "fClutchChangeRateScaleDownShift", "multiplier": 4.6 },
+                            { "field": "fInitialDriveMaxFlatVel", "multiplier": 168.0 },
+                            { "field": "fBrakeForce", "multiplier": 3.2 },
+                            { "field": "fSteeringLock", "multiplier": 38.0 },
+                            { "field": "fDownforceModifier", "multiplier": 3.0 },
+                            { "field": "fTractionCurveMax", "multiplier": 2.95 },
+                            { "field": "fTractionCurveMin", "multiplier": 2.75 },
+                            { "field": "fTractionBiasFront", "multiplier": 0.486 },
+                            { "field": "fTractionLossMult", "multiplier": 1.4 },
+                            { "field": "fSuspensionForce", "multiplier": 2.0 }
+                        ]
+                    }
+                ]
+            },
+            {
+                "id": "polcoquette",
+                "modes": [
+                    {
+                        "name": "Off",
+                        "mods": null,
+                        "appearance": null,
+                        "handling": []
+                    },
+                    {
+                        "name": "A+",
+                        "appearance": {
+                            "colors": {
+                                "xenon": 0
+                            }
+                        },
+                        "mods": {
+                            "Turbo": true,
+                            "Engine": 4,
+                            "Brakes": 2,
+                            "Transmission": 2,
+                            "Suspension": 2,
+                            "Armor": 1
+                        },
+                        "handling": [
+                            { "field": "fInitialDragCoeff", "multiplier": 3.5 },
+                            { "field": "fPercentSubmerged", "multiplier": 85.0 },
+                            { "field": "fInitialDriveForce", "multiplier": 0.3475 },
+                            { "field": "fDriveInertia", "multiplier": 1.1 },
+                            { "field": "fClutchChangeRateScaleUpShift", "multiplier": 4.2 },
+                            { "field": "fClutchChangeRateScaleDownShift", "multiplier": 4.1 },
+                            { "field": "fInitialDriveMaxFlatVel", "multiplier": 165.0 },
+                            { "field": "fBrakeForce", "multiplier": 2.8 },
+                            { "field": "fSteeringLock", "multiplier": 40.0 },
+                            { "field": "fDownforceModifier", "multiplier": 3.0 },
+                            { "field": "fTractionCurveMax", "multiplier": 2.75 },
+                            { "field": "fTractionCurveMin", "multiplier": 2.55 },
+                            { "field": "fTractionBiasFront", "multiplier": 0.484 },
+                            { "field": "fTractionLossMult", "multiplier": 1.2 }
+                        ]
+                    },
+                    {
+                        "name": "S",
+                        "appearance": {
+                            "colors": {
+                                "xenon": 0
+                            }
+                        },
+                        "mods": {
+                            "Turbo": true,
+                            "Engine": 4,
+                            "Brakes": 2,
+                            "Transmission": 2,
+                            "Suspension": 2,
+                            "Armor": 1
+                        },
+                        "handling": [
+                            { "field": "fInitialDragCoeff", "multiplier": 3.5 },
+                            { "field": "fPercentSubmerged", "multiplier": 85.0 },
+                            { "field": "fInitialDriveForce", "multiplier": 0.355 },
+                            { "field": "fDriveInertia", "multiplier": 1.1 },
+                            { "field": "fClutchChangeRateScaleUpShift", "multiplier": 4.2 },
+                            { "field": "fClutchChangeRateScaleDownShift", "multiplier": 4.3 },
+                            { "field": "fInitialDriveMaxFlatVel", "multiplier": 175.0 },
+                            { "field": "fBrakeForce", "multiplier": 3.2 },
+                            { "field": "fSteeringLock", "multiplier": 36.0 },
+                            { "field": "fDownforceModifier", "multiplier": 3.0 },
+                            { "field": "fTractionCurveMax", "multiplier": 2.75 },
+                            { "field": "fTractionCurveMin", "multiplier": 2.55 },
+                            { "field": "fTractionBiasFront", "multiplier": 0.484 },
+                            { "field": "fTractionLossMult", "multiplier": 1.2 }
+                        ]
+                    },
+                    {
+                        "name": "S+",
+                        "appearance": {
+                            "colors": {
+                                "xenon": 0
+                            }
+                        },
+                        "mods": {
+                            "Turbo": true,
+                            "Engine": 4,
+                            "Brakes": 2,
+                            "Transmission": 2,
+                            "Suspension": 2,
+                            "Armor": 1
+                        },
+                        "handling": [
+                            { "field": "fInitialDragCoeff", "multiplier": 3.5 },
+                            { "field": "fPercentSubmerged", "multiplier": 85.0 },
+                            { "field": "fInitialDriveForce", "multiplier": 0.3655 },
+                            { "field": "fDriveInertia", "multiplier": 1.1 },
+                            { "field": "fClutchChangeRateScaleUpShift", "multiplier": 4.2 },
+                            { "field": "fClutchChangeRateScaleDownShift", "multiplier": 4.3 },
+                            { "field": "fInitialDriveMaxFlatVel", "multiplier": 183.0 },
+                            { "field": "fBrakeForce", "multiplier": 3.2 },
+                            { "field": "fSteeringLock", "multiplier": 36.0 },
+                            { "field": "fDownforceModifier", "multiplier": 3.0 },
+                            { "field": "fTractionCurveMax", "multiplier": 2.95 },
+                            { "field": "fTractionCurveMin", "multiplier": 2.85 },
+                            { "field": "fTractionBiasFront", "multiplier": 0.484 },
+                            { "field": "fTractionLossMult", "multiplier": 1.3 }
+                        ]
+                    }
+                ]
+            },
+            {
+                "id": "npolchal",
+                "modes": [
+                    {
+                        "name": "Off",
+                        "mods": null,
+                        "appearance": null,
+                        "handling": []
+                    },
+                    {
+                        "name": "A+",
+                        "appearance": {
+                            "colors": {
+                                "xenon": 0
+                            }
+                        },
+                        "mods": {
+                            "Turbo": true,
+                            "Engine": 4,
+                            "Brakes": 2,
+                            "Transmission": 2,
+                            "Suspension": 2,
+                            "Armor": 1
+                        },
+                        "handling": [
+                            { "field": "fInitialDragCoeff", "multiplier": 3.5 },
+                            { "field": "fPercentSubmerged", "multiplier": 85.0 },
+                            { "field": "fInitialDriveForce", "multiplier": 0.358 },
+                            { "field": "fDriveInertia", "multiplier": 1.1 },
+                            { "field": "fClutchChangeRateScaleUpShift", "multiplier": 4.0 },
+                            { "field": "fClutchChangeRateScaleDownShift", "multiplier": 4.0 },
+                            { "field": "fInitialDriveMaxFlatVel", "multiplier": 176.0 },
+                            { "field": "fBrakeForce", "multiplier": 3.0 },
+                            { "field": "fSteeringLock", "multiplier": 42.0 },
+                            { "field": "fDownforceModifier", "multiplier": 3.0 },
+                            { "field": "fTractionCurveMax", "multiplier": 2.6 },
+                            { "field": "fTractionCurveMin", "multiplier": 2.55 },
+                            { "field": "fTractionBiasFront", "multiplier": 0.482 },
+                            { "field": "fTractionLossMult", "multiplier": 1.1 }
+                        ]
+                    },
+                    {
+                        "name": "S",
+                        "appearance": {
+                            "colors": {
+                                "xenon": 0
+                            }
+                        },
+                        "mods": {
+                            "Turbo": true,
+                            "Engine": 4,
+                            "Brakes": 2,
+                            "Transmission": 2,
+                            "Suspension": 2,
+                            "Armor": 1
+                        },
+                        "handling": [
+                            { "field": "fInitialDragCoeff", "multiplier": 3.5 },
+                            { "field": "fPercentSubmerged", "multiplier": 85.0 },
+                            { "field": "fInitialDriveForce", "multiplier": 0.36 },
+                            { "field": "fDriveInertia", "multiplier": 1.17 },
+                            { "field": "fClutchChangeRateScaleUpShift", "multiplier": 4.1 },
+                            { "field": "fClutchChangeRateScaleDownShift", "multiplier": 4.1 },
+                            { "field": "fInitialDriveMaxFlatVel", "multiplier": 185.0 },
+                            { "field": "fBrakeForce", "multiplier": 3.0 },
+                            { "field": "fSteeringLock", "multiplier": 42.0 },
+                            { "field": "fDownforceModifier", "multiplier": 3.0 },
+                            { "field": "fTractionCurveMax", "multiplier": 2.65 },
+                            { "field": "fTractionCurveMin", "multiplier": 2.65 },
+                            { "field": "fTractionBiasFront", "multiplier": 0.482 },
+                            { "field": "fTractionLossMult", "multiplier": 1.1 }
+                        ]
+                    },
+                    {
+                        "name": "S+",
+                        "appearance": {
+                            "colors": {
+                                "xenon": 0
+                            }
+                        },
+                        "mods": {
+                            "Turbo": true,
+                            "Engine": 4,
+                            "Brakes": 2,
+                            "Transmission": 2,
+                            "Suspension": 2,
+                            "Armor": 1
+                        },
+                        "handling": [
+                            { "field": "fInitialDragCoeff", "multiplier": 3.5 },
+                            { "field": "fPercentSubmerged", "multiplier": 85.0 },
+                            { "field": "fInitialDriveForce", "multiplier": 0.365 },
+                            { "field": "fDriveInertia", "multiplier": 1.225 },
+                            { "field": "fClutchChangeRateScaleUpShift", "multiplier": 4.1 },
+                            { "field": "fClutchChangeRateScaleDownShift", "multiplier": 4.1 },
+                            { "field": "fInitialDriveMaxFlatVel", "multiplier": 194.0 },
+                            { "field": "fBrakeForce", "multiplier": 3.0 },
+                            { "field": "fSteeringLock", "multiplier": 38.0 },
+                            { "field": "fDownforceModifier", "multiplier": 3.0 },
+                            { "field": "fTractionCurveMax", "multiplier": 2.65 },
+                            { "field": "fTractionCurveMin", "multiplier": 2.70 },
+                            { "field": "fTractionBiasFront", "multiplier": 0.481 },
+                            { "field": "fTractionLossMult", "multiplier": 1.2 }
+                        ]
+                    }
+                ] 
+            },
+            {
+                "id": "npolstang",
+                "modes": [
+                    {
+                        "name": "Off",
+                        "mods": null,
+                        "appearance": null,
+                        "handling": []
+                    },
+                    {
+                        "name": "A+",
+                        "appearance": {
+                            "colors": {
+                                "xenon": 0
+                            }
+                        },
+                        "mods": {
+                            "Turbo": true,
+                            "Engine": 4,
+                            "Brakes": 2,
+                            "Transmission": 2,
+                            "Suspension": 2,
+                            "Armor": 1
+                        },
+                        "handling": [
+                            { "field": "fInitialDragCoeff", "multiplier": 3.5 },
+                            { "field": "fPercentSubmerged", "multiplier": 85.0 },
+                            { "field": "fInitialDriveForce", "multiplier": 0.37 },
+                            { "field": "fDriveInertia", "multiplier": 1.15 },
+                            { "field": "fClutchChangeRateScaleUpShift", "multiplier": 4.7 },
+                            { "field": "fClutchChangeRateScaleDownShift", "multiplier": 4.5 },
+                            { "field": "fInitialDriveMaxFlatVel", "multiplier": 175.0 },
+                            { "field": "fBrakeForce", "multiplier": 2.7 },
+                            { "field": "fSteeringLock", "multiplier": 38.0 },
+                            { "field": "fDownforceModifier", "multiplier": 3.0 },
+                            { "field": "fTractionCurveMax", "multiplier": 2.40 },
+                            { "field": "fTractionCurveMin", "multiplier": 2.45 },
+                            { "field": "fTractionBiasFront", "multiplier": 0.484 },
+                            { "field": "fTractionLossMult", "multiplier": 0.9 }
+                        ]
+                    },
+                    {
+                        "name": "S",
+                        "appearance": {
+                            "colors": {
+                                "xenon": 0
+                            }
+                        },
+                        "mods": {
+                            "Turbo": true,
+                            "Engine": 4,
+                            "Brakes": 2,
+                            "Transmission": 2,
+                            "Suspension": 2,
+                            "Armor": 1
+                        },
+                        "handling": [
+                            { "field": "fInitialDragCoeff", "multiplier": 3.5 },
+                            { "field": "fPercentSubmerged", "multiplier": 85.0 },
+                            { "field": "fInitialDriveForce", "multiplier": 0.377 },
+                            { "field": "fDriveInertia", "multiplier": 1.175 },
+                            { "field": "fClutchChangeRateScaleUpShift", "multiplier": 4.8 },
+                            { "field": "fClutchChangeRateScaleDownShift", "multiplier": 4.6 },
+                            { "field": "fInitialDriveMaxFlatVel", "multiplier": 183.0 },
+                            { "field": "fBrakeForce", "multiplier": 3.0 },
+                            { "field": "fSteeringLock", "multiplier": 38.0 },
+                            { "field": "fDownforceModifier", "multiplier": 3.0 },
+                            { "field": "fTractionCurveMax", "multiplier": 2.45 },
+                            { "field": "fTractionCurveMin", "multiplier": 2.55 },
+                            { "field": "fTractionBiasFront", "multiplier": 0.480 },
+                            { "field": "fTractionLossMult", "multiplier": 1.1 }
+                        ]
+                    },
+                    {
+                        "name": "S+",
+                        "appearance": {
+                            "colors": {
+                                "xenon": 0
+                            }
+                        },
+                        "mods": {
+                            "Turbo": true,
+                            "Engine": 4,
+                            "Brakes": 2,
+                            "Transmission": 2,
+                            "Suspension": 2,
+                            "Armor": 1
+                        },
+                        "handling": [
+                            { "field": "fInitialDragCoeff", "multiplier": 3.5 },
+                            { "field": "fPercentSubmerged", "multiplier": 85.0 },
+                            { "field": "fInitialDriveForce", "multiplier": 0.38 },
+                            { "field": "fDriveInertia", "multiplier": 1.2 },
+                            { "field": "fClutchChangeRateScaleUpShift", "multiplier": 4.8 },
+                            { "field": "fClutchChangeRateScaleDownShift", "multiplier": 4.6 },
+                            { "field": "fInitialDriveMaxFlatVel", "multiplier": 192.0 },
+                            { "field": "fBrakeForce", "multiplier": 3.0 },
+                            { "field": "fSteeringLock", "multiplier": 42.0 },
+                            { "field": "fDownforceModifier", "multiplier": 3.0 },
+                            { "field": "fTractionCurveMax", "multiplier": 2.45 },
+                            { "field": "fTractionCurveMin", "multiplier": 2.65 },
+                            { "field": "fTractionBiasFront", "multiplier": 0.485 },
+                            { "field": "fTractionLossMult", "multiplier": 1.3 }
+                            
+                        ]
+                    }
+                ] 
+            },
+            {
+                "id": "polpenumbra",
+                "modes": [
+                    {
+                        "name": "Off",
+                        "mods": null,
+                        "appearance": null,
+                        "handling": []
+                    },
+                    {
+                        "name": "A+",
+                        "appearance": {
+                            "colors": {
+                                "xenon": 0
+                            }
+                        },
+                        "mods": {
+                            "Turbo": true,
+                            "Engine": 4,
+                            "Brakes": 2,
+                            "Transmission": 2,
+                            "Suspension": 2,
+                            "Armor": 1
+                        },
+                        "handling": [
+                            { "field": "fInitialDragCoeff", "multiplier": 3.0 },
+                            { "field": "fPercentSubmerged", "multiplier": 85.0 },
+                            { "field": "fInitialDriveForce", "multiplier": 0.325 },
+                            { "field": "fDriveInertia", "multiplier": 1.1 },
+                            { "field": "fClutchChangeRateScaleUpShift", "multiplier": 4.1 },
+                            { "field": "fClutchChangeRateScaleDownShift", "multiplier": 4.1 },
+                            { "field": "fInitialDriveMaxFlatVel", "multiplier": 169.0 },
+                            { "field": "fBrakeForce", "multiplier": 3.8 },
+                            { "field": "fSteeringLock", "multiplier": 40.0 },
+                            { "field": "fDownforceModifier", "multiplier": 3.0 },
+                            { "field": "fTractionCurveMax", "multiplier": 2.55 },
+                            { "field": "fTractionCurveMin", "multiplier": 2.45 },
+                            { "field": "fTractionBiasFront", "multiplier": 0.490 },
+                            { "field": "fTractionLossMult", "multiplier": 1.0 }
+                        ]
+                    },
+                    {
+                        "name": "S",
+                        "appearance": {
+                            "colors": {
+                                "xenon": 0
+                            }
+                        },
+                        "mods": {
+                            "Turbo": true,
+                            "Engine": 4,
+                            "Brakes": 2,
+                            "Transmission": 2,
+                            "Suspension": 2,
+                            "Armor": 1
+                        },
+                        "handling": [
+                            { "field": "fInitialDragCoeff", "multiplier": 3.0 },
+                            { "field": "fPercentSubmerged", "multiplier": 85.0 },
+                            { "field": "fInitialDriveForce", "multiplier": 0.335 },
+                            { "field": "fDriveInertia", "multiplier": 1.1 },
+                            { "field": "fClutchChangeRateScaleUpShift", "multiplier": 4.2 },
+                            { "field": "fClutchChangeRateScaleDownShift", "multiplier": 4.4 },
+                            { "field": "fInitialDriveMaxFlatVel", "multiplier": 178.0 },
+                            { "field": "fBrakeForce", "multiplier": 3.8 },
+                            { "field": "fSteeringLock", "multiplier": 40.0 },
+                            { "field": "fDownforceModifier", "multiplier": 3.0 },
+                            { "field": "fTractionCurveMax", "multiplier": 2.65 },
+                            { "field": "fTractionCurveMin", "multiplier": 2.45 },
+                            { "field": "fTractionBiasFront", "multiplier": 0.490 },
+                            { "field": "fTractionLossMult", "multiplier": 1.0 }
+                        ]
+                    },
+                    {
+                        "name": "S+",
+                        "appearance": {
+                            "colors": {
+                                "xenon": 0
+                            }
+                        },
+                        "mods": {
+                            "Turbo": true,
+                            "Engine": 4,
+                            "Brakes": 2,
+                            "Transmission": 2,
+                            "Suspension": 2,
+                            "Armor": 1
+                        },
+                        "handling": [
+                            { "field": "fInitialDragCoeff", "multiplier": 3.0 },
+                            { "field": "fPercentSubmerged", "multiplier": 85.0 },
+                            { "field": "fInitialDriveForce", "multiplier": 0.35 },
+                            { "field": "fDriveInertia", "multiplier": 1.1 },
+                            { "field": "fClutchChangeRateScaleUpShift", "multiplier": 4.2 },
+                            { "field": "fClutchChangeRateScaleDownShift", "multiplier": 4.3 },
+                            { "field": "fInitialDriveMaxFlatVel", "multiplier": 187.0 },
+                            { "field": "fBrakeForce", "multiplier": 3.2 },
+                            { "field": "fSteeringLock", "multiplier": 40.0 },
+                            { "field": "fDownforceModifier", "multiplier": 3.0 },
+                            { "field": "fTractionCurveMax", "multiplier": 2.65 },
+                            { "field": "fTractionCurveMin", "multiplier": 2.45 },
+                            { "field": "fTractionBiasFront", "multiplier": 0.490 },
+                            { "field": "fTractionLossMult", "multiplier": 1.0 }
+                        ]
+                    }
+                ]
+            },
+            {
+                "id": "police3",
+                "modes": [
+                    {
+                        "name": "Off",
+                        "mods": null,
+                        "appearance": null,
+                        "handling": []
+                    },
+                    {
+                        "name": "A",
+                        "appearance": {
+                            "colors": {
+                                "xenon": 0
+                            }
+                        },
+                        "mods": {
+                            "Turbo": true,
+                            "Engine": 4,
+                            "Brakes": 2,
+                            "Transmission": 2,
+                            "Suspension": 1,
+                            "Armor": 1
+                        },
+                        "handling": [
+                            { "field": "fInitialDragCoeff", "multiplier": 3.0 },
+                            { "field": "fPercentSubmerged", "multiplier": 75.0 },
+                            { "field": "fInitialDriveForce", "multiplier": 0.330 },
+                            { "field": "fDriveInertia", "multiplier": 1.1 },
+                            { "field": "fClutchChangeRateScaleUpShift", "multiplier": 4.2 },
+                            { "field": "fClutchChangeRateScaleDownShift", "multiplier": 4.2 },
+                            { "field": "fInitialDriveMaxFlatVel", "multiplier": 165.0 },
+                            { "field": "fBrakeForce", "multiplier": 3.2 },
+                            { "field": "fSteeringLock", "multiplier": 34.0 },
+                            { "field": "fDownforceModifier", "multiplier": 3.0 },
+                            { "field": "fTractionCurveMax", "multiplier": 2.612 },
+                            { "field": "fTractionCurveMin", "multiplier": 2.412 },
+                            { "field": "fTractionBiasFront", "multiplier": 0.481 },
+                            { "field": "fTractionLossMult", "multiplier": 1.0 }
+                        ]
+                    },
+                    {
+                        "name": "A+",
+                        "appearance": {
+                            "colors": {
+                                "xenon": 0
+                            }
+                        },
+                        "mods": {
+                            "Turbo": true,
+                            "Engine": 4,
+                            "Brakes": 2,
+                            "Transmission": 2,
+                            "Suspension": 3,
+                            "Armor": 1
+                        },
+                        "handling": [
+                            { "field": "fInitialDragCoeff", "multiplier": 3.0 },
+                            { "field": "fPercentSubmerged", "multiplier": 75.0 },
+                            { "field": "fInitialDriveForce", "multiplier": 0.335 },
+                            { "field": "fDriveInertia", "multiplier": 1.1 },
+                            { "field": "fClutchChangeRateScaleUpShift", "multiplier": 4.2 },
+                            { "field": "fClutchChangeRateScaleDownShift", "multiplier": 4.2 },
+                            { "field": "fInitialDriveMaxFlatVel", "multiplier": 175.0 },
+                            { "field": "fBrakeForce", "multiplier": 2.8 },
+                            { "field": "fSteeringLock", "multiplier": 36.0 },
+                            { "field": "fDownforceModifier", "multiplier": 3.0 },
+                            { "field": "fTractionCurveMax", "multiplier": 2.612 },
+                            { "field": "fTractionCurveMin", "multiplier": 2.412 },
+                            { "field": "fTractionBiasFront", "multiplier": 0.481 },
+                            { "field": "fTractionLossMult", "multiplier": 1.0 }
+                        ]
+                    },
+                    {
+                        "name": "S",
+                        "appearance": {
+                            "colors": {
+                                "xenon": 0
+                            }
+                        },
+                        "mods": {
+                            "Turbo": true,
+                            "Engine": 4,
+                            "Brakes": 2,
+                            "Transmission": 2,
+                            "Suspension": 1,
+                            "Armor": 1
+                        },
+                        "handling": [
+                            { "field": "fInitialDragCoeff", "multiplier": 3.0 },
+                            { "field": "fPercentSubmerged", "multiplier": 75.0 },
+                            { "field": "fInitialDriveForce", "multiplier": 0.345 },
+                            { "field": "fDriveInertia", "multiplier": 1.1 },
+                            { "field": "fClutchChangeRateScaleUpShift", "multiplier": 4.3 },
+                            { "field": "fClutchChangeRateScaleDownShift", "multiplier": 4.3 },
+                            { "field": "fInitialDriveMaxFlatVel", "multiplier": 185.0 },
+                            { "field": "fBrakeForce", "multiplier": 2.8 },
+                            { "field": "fSteeringLock", "multiplier": 36.0 },
+                            { "field": "fDownforceModifier", "multiplier": 3.0 },
+                            { "field": "fTractionCurveMax", "multiplier": 2.612 },
+                            { "field": "fTractionCurveMin", "multiplier": 2.412 },
+                            { "field": "fTractionBiasFront", "multiplier": 0.481 },
+                            { "field": "fTractionLossMult", "multiplier": 1.0 }
+                        ]
+                    },
+                    {
+                        "name": "S+",
+                        "appearance": {
+                            "colors": {
+                                "xenon": 0
+                            }
+                        },
+                        "mods": {
+                            "Turbo": true,
+                            "Engine": 4,
+                            "Brakes": 2,
+                            "Transmission": 2,
+                            "Suspension": 3,
+                            "Armor": 1
+                        },
+                        "handling": [
+                            { "field": "fInitialDragCoeff", "multiplier": 3.0 },
+                            { "field": "fPercentSubmerged", "multiplier": 75.0 },
+                            { "field": "fInitialDriveForce", "multiplier": 0.355 },
+                            { "field": "fDriveInertia", "multiplier": 1.1 },
+                            { "field": "fClutchChangeRateScaleUpShift", "multiplier": 4.4 },
+                            { "field": "fClutchChangeRateScaleDownShift", "multiplier": 4.4 },
+                            { "field": "fInitialDriveMaxFlatVel", "multiplier": 195.0 },
+                            { "field": "fBrakeForce", "multiplier": 3.8 },
+                            { "field": "fSteeringLock", "multiplier": 36.0 },
+                            { "field": "fDownforceModifier", "multiplier": 3.0 },
+                            { "field": "fTractionCurveMax", "multiplier": 2.6 },
+                            { "field": "fTractionCurveMin", "multiplier": 2.45 },
+                            { "field": "fTractionBiasFront", "multiplier": 0.484 },
+                            { "field": "fTractionLossMult", "multiplier": 1.0 }
+                        ]
+                    }
+                ] 
+            },
+            {
+                "id": "npolchar",
+                "modes": [
+                    {
+                        "name": "Off",
+                        "mods": null,
+                        "appearance": null,
+                        "handling": []
+                    },
+                    {
+                        "name": "A",
+                        "appearance": {
+                            "colors": {
+                                "xenon": 0
+                            }
+                        },
+                        "mods": {
+                            "Turbo": true,
+                            "Engine": 4,
+                            "Brakes": 2,
+                            "Transmission": 2,
+                            "Suspension": 1,
+                            "Armor": 1
+                        },
+                        "handling": [
+                            { "field": "fInitialDragCoeff", "multiplier": 3.0 },
+                            { "field": "fPercentSubmerged", "multiplier": 75.0 },
+                            { "field": "fInitialDriveForce", "multiplier": 0.305 },
+                            { "field": "fDriveInertia", "multiplier": 1.05 },
+                            { "field": "fClutchChangeRateScaleUpShift", "multiplier": 4.6 },
+                            { "field": "fClutchChangeRateScaleDownShift", "multiplier": 4.4 },
+                            { "field": "fInitialDriveMaxFlatVel", "multiplier": 162.0 },
+                            { "field": "fBrakeForce", "multiplier": 1.5 },
+                            { "field": "fSteeringLock", "multiplier": 38.0 },
+                            { "field": "fDownforceModifier", "multiplier": 3.0 },
+                            { "field": "fTractionCurveMax", "multiplier": 2.55 },
+                            { "field": "fTractionCurveMin", "multiplier": 2.65 },
+                            { "field": "fTractionBiasFront", "multiplier": 0.486 },
+                            { "field": "fTractionLossMult", "multiplier": 1.0 }
+                        ]
+                    },
+                    {
+                        "name": "A+",
+                        "appearance": {
+                            "colors": {
+                                "xenon": 0
+                            }
+                        },
+                        "mods": {
+                            "Turbo": true,
+                            "Engine": 4,
+                            "Brakes": 2,
+                            "Transmission": 2,
+                            "Suspension": 3,
+                            "Armor": 1
+                        },
+                        "handling": [
+                            { "field": "fInitialDragCoeff", "multiplier": 3.0 },
+                            { "field": "fPercentSubmerged", "multiplier": 75.0 },
+                            { "field": "fInitialDriveForce", "multiplier": 0.312 },
+                            { "field": "fDriveInertia", "multiplier": 1.05 },
+                            { "field": "fClutchChangeRateScaleUpShift", "multiplier": 4.6 },
+                            { "field": "fClutchChangeRateScaleDownShift", "multiplier": 4.4 },
+                            { "field": "fInitialDriveMaxFlatVel", "multiplier": 169.0 },
+                            { "field": "fBrakeForce", "multiplier": 1.5 },
+                            { "field": "fSteeringLock", "multiplier": 38.0 },
+                            { "field": "fDownforceModifier", "multiplier": 3.0 },
+                            { "field": "fTractionCurveMax", "multiplier": 2.55 },
+                            { "field": "fTractionCurveMin", "multiplier": 2.65 },
+                            { "field": "fTractionBiasFront", "multiplier": 0.488 },
+                            { "field": "fTractionLossMult", "multiplier": 1.1 }
+                        ]
+                    },
+                    {
+                        "name": "S",
+                        "appearance": {
+                            "colors": {
+                                "xenon": 0
+                            }
+                        },
+                        "mods": {
+                            "Turbo": true,
+                            "Engine": 4,
+                            "Brakes": 2,
+                            "Transmission": 2,
+                            "Suspension": 1,
+                            "Armor": 1
+                        },
+                        "handling": [
+                            { "field": "fInitialDragCoeff", "multiplier": 3.0 },
+                            { "field": "fPercentSubmerged", "multiplier": 75.0 },
+                            { "field": "fInitialDriveForce", "multiplier": 0.316 },
+                            { "field": "fDriveInertia", "multiplier": 1.05 },
+                            { "field": "fClutchChangeRateScaleUpShift", "multiplier": 4.5 },
+                            { "field": "fClutchChangeRateScaleDownShift", "multiplier": 4.3 },
+                            { "field": "fInitialDriveMaxFlatVel", "multiplier": 171.0 },
+                            { "field": "fBrakeForce", "multiplier": 1.5 },
+                            { "field": "fSteeringLock", "multiplier": 38.0 },
+                            { "field": "fDownforceModifier", "multiplier": 3.0 },
+                            { "field": "fTractionCurveMax", "multiplier": 2.65 },
+                            { "field": "fTractionCurveMin", "multiplier": 2.50 },
+                            { "field": "fTractionBiasFront", "multiplier": 0.482 },
+                            { "field": "fTractionLossMult", "multiplier": 1.1 }
+                        ]
+                    },
+                    {
+                        "name": "S+",
+                        "appearance": {
+                            "colors": {
+                                "xenon": 0
+                            }
+                        },
+                        "mods": {
+                            "Turbo": true,
+                            "Engine": 4,
+                            "Brakes": 2,
+                            "Transmission": 2,
+                            "Suspension": 3,
+                            "Armor": 1
+                        },
+                        "handling": [
+                            { "field": "fInitialDragCoeff", "multiplier": 3.0 },
+                            { "field": "fPercentSubmerged", "multiplier": 75.0 },
+                            { "field": "fInitialDriveForce", "multiplier": 0.326 },
+                            { "field": "fDriveInertia", "multiplier": 1.05 },
+                            { "field": "fClutchChangeRateScaleUpShift", "multiplier": 4.6 },
+                            { "field": "fClutchChangeRateScaleDownShift", "multiplier": 4.4 },
+                            { "field": "fInitialDriveMaxFlatVel", "multiplier": 177.0 },
+                            { "field": "fBrakeForce", "multiplier": 4.8 },
+                            { "field": "fSteeringLock", "multiplier": 38.0 },
+                            { "field": "fDownforceModifier", "multiplier": 3.0 },
+                            { "field": "fTractionCurveMax", "multiplier": 2.65 },
+                            { "field": "fTractionCurveMin", "multiplier": 2.55 },
+                            { "field": "fTractionBiasFront", "multiplier": 0.485 },
+                            { "field": "fTractionLossMult", "multiplier": 1.1 }
+                        ]
+                    }
+                ] 
+            },
+            {
+                "id": "polbuffalo4",
+                "modes": [
+                    {
+                        "name": "Off",
+                        "mods": null,
+                        "appearance": null,
+                        "handling": []
+                    },
+                    {
+                        "name": "A",
+                        "appearance": {
+                            "colors": {
+                                "xenon": 0
+                            }
+                        },
+                        "mods": {
+                            "Turbo": true,
+                            "Engine": 4,
+                            "Brakes": 2,
+                            "Transmission": 2,
+                            "Suspension": 1,
+                            "Armor": 1
+                        },
+                        "handling": [
+                            { "field": "fInitialDragCoeff", "multiplier": 3.0 },
+                            { "field": "fPercentSubmerged", "multiplier": 85.0 },
+                            { "field": "fInitialDriveForce", "multiplier": 0.33 },
+                            { "field": "fDriveInertia", "multiplier": 1.1 },
+                            { "field": "fClutchChangeRateScaleUpShift", "multiplier": 4.1 },
+                            { "field": "fClutchChangeRateScaleDownShift", "multiplier": 4.1 },
+                            { "field": "fInitialDriveMaxFlatVel", "multiplier": 155.0 },
+                            { "field": "fBrakeForce", "multiplier": 2.9 },
+                            { "field": "fSteeringLock", "multiplier": 40.0 },
+                            { "field": "fDownforceModifier", "multiplier": 3.0 },
+                            { "field": "fTractionCurveMax", "multiplier": 2.58 },
+                            { "field": "fTractionCurveMin", "multiplier": 2.45 },
+                            { "field": "fTractionBiasFront", "multiplier": 0.485 },
+                            { "field": "fTractionLossMult", "multiplier": 1.1 }
+                        ]
+                    },
+                    {
+                        "name": "A+",
+                        "appearance": {
+                            "colors": {
+                                "xenon": 0
+                            }
+                        },
+                        "mods": {
+                            "Turbo": true,
+                            "Engine": 4,
+                            "Brakes": 2,
+                            "Transmission": 2,
+                            "Suspension": 3,
+                            "Armor": 1
+                        },
+                        "handling": [
+                            { "field": "fInitialDragCoeff", "multiplier": 3.0 },
+                            { "field": "fPercentSubmerged", "multiplier": 85.0 },
+                            { "field": "fInitialDriveForce", "multiplier": 0.342 },
+                            { "field": "fDriveInertia", "multiplier": 1.1 },
+                            { "field": "fClutchChangeRateScaleUpShift", "multiplier": 4.1 },
+                            { "field": "fClutchChangeRateScaleDownShift", "multiplier": 4.1 },
+                            { "field": "fInitialDriveMaxFlatVel", "multiplier": 162.0 },
+                            { "field": "fBrakeForce", "multiplier": 2.8 },
+                            { "field": "fSteeringLock", "multiplier": 40.0 },
+                            { "field": "fDownforceModifier", "multiplier": 3.0 },
+                            { "field": "fTractionCurveMax", "multiplier": 2.58 },
+                            { "field": "fTractionCurveMin", "multiplier": 2.48 },
+                            { "field": "fTractionBiasFront", "multiplier": 0.485 },
+                            { "field": "fTractionLossMult", "multiplier": 1.1 }
+                        ]
+                    },
+                    {
+                        "name": "S",
+                        "appearance": {
+                            "colors": {
+                                "xenon": 0
+                            }
+                        },
+                        "mods": {
+                            "Turbo": true,
+                            "Engine": 4,
+                            "Brakes": 2,
+                            "Transmission": 2,
+                            "Suspension": 1,
+                            "Armor": 1
+                        },
+                        "handling": [
+                            { "field": "fInitialDragCoeff", "multiplier": 3.0 },
+                            { "field": "fPercentSubmerged", "multiplier": 85.0 },
+                            { "field": "fInitialDriveForce", "multiplier": 0.350 },
+                            { "field": "fDriveInertia", "multiplier": 1.1 },
+                            { "field": "fClutchChangeRateScaleUpShift", "multiplier":4.2 },
+                            { "field": "fClutchChangeRateScaleDownShift", "multiplier":4.2 },
+                            { "field": "fInitialDriveMaxFlatVel", "multiplier": 170.0 },
+                            { "field": "fBrakeForce", "multiplier": 2.8 },
+                            { "field": "fSteeringLock", "multiplier": 40.0 },
+                            { "field": "fDownforceModifier", "multiplier": 3.0 },
+                            { "field": "fTractionCurveMax", "multiplier": 2.62 },
+                            { "field": "fTractionCurveMin", "multiplier": 2.52 },
+                            { "field": "fTractionBiasFront", "multiplier": 0.485 },
+                            { "field": "fTractionLossMult", "multiplier": 1.1 }
+                        ]
+                    },
+                    {
+                        "name": "S+",
+                        "appearance": {
+                            "colors": {
+                                "xenon": 0
+                            }
+                        },
+                        "mods": {
+                            "Turbo": true,
+                            "Engine": 4,
+                            "Brakes": 2,
+                            "Transmission": 2,
+                            "Suspension": 3,
+                            "Armor": 1
+                        },
+                        "handling": [
+                            { "field": "fInitialDragCoeff", "multiplier": 3.0 },
+                            { "field": "fPercentSubmerged", "multiplier": 85.0 },
+                            { "field": "fInitialDriveForce", "multiplier": 0.358 },
+                            { "field": "fDriveInertia", "multiplier": 1.1 },
+                            { "field": "fClutchChangeRateScaleUpShift", "multiplier":4.2 },
+                            { "field": "fClutchChangeRateScaleDownShift", "multiplier":4.2 },
+                            { "field": "fInitialDriveMaxFlatVel", "multiplier": 160.0 },
+                            { "field": "fBrakeForce", "multiplier": 2.8 },
+                            { "field": "fSteeringLock", "multiplier": 40.0 },
+                            { "field": "fDownforceModifier", "multiplier": 3.0 },
+                            { "field": "fTractionCurveMax", "multiplier": 2.65 },
+                            { "field": "fTractionCurveMin", "multiplier": 2.58 },
+                            { "field": "fTractionBiasFront", "multiplier": 0.490 },
+                            { "field": "fTractionLossMult", "multiplier": 1.1 }
+                        ]
+                    }
+                ] 
+            },
+            {
+                "id": "polscout2",
+                "modes": [
+                    {
+                        "name": "Off",
+                        "mods": null,
+                        "appearance": null,
+                        "handling": []
+                    },
+                    {
+                        "name": "B",
+                        "appearance": {
+                            "colors": {
+                                "xenon": 0
+                            }
+                        },
+                        "mods": {
+                            "Turbo": true,
+                            "Engine": 4,
+                            "Brakes": 2,
+                            "Transmission": 2,
+                            "Armor": 1
+                        },
+                        "handling": [
+                            { "field": "fInitialDragCoeff", "multiplier": 3.0 },
+                            { "field": "fPercentSubmerged", "multiplier": 85.0 },
+                            { "field": "fInitialDriveForce", "multiplier": 0.284 },
+                            { "field": "fDriveInertia", "multiplier": 1.0 },
+                            { "field": "fClutchChangeRateScaleUpShift", "multiplier": 3.7 },
+                            { "field": "fClutchChangeRateScaleDownShift", "multiplier": 3.6 },
+                            { "field": "fInitialDriveMaxFlatVel", "multiplier": 163.0 },
+                            { "field": "fBrakeForce", "multiplier": 3.4 },
+                            { "field": "fSteeringLock", "multiplier": 34.0 },
+                            { "field": "fDownforceModifier", "multiplier": 3.0 },
+                            { "field": "fTractionCurveMax", "multiplier": 2.475 },
+                            { "field": "fTractionCurveMin", "multiplier": 2.355 },
+                            { "field": "fTractionBiasFront", "multiplier": 0.476 },
+                            { "field": "fTractionLossMult", "multiplier": 1.0 }
+                        ]
+                    },
+                    {
+                        "name": "A",
+                        "appearance": {
+                            "colors": {
+                                "xenon": 0
+                            }
+                        },
+                        "mods": {
+                            "Turbo": true,
+                            "Engine": 4,
+                            "Brakes": 2,
+                            "Transmission": 2,
+                            "Armor": 1,
+                            "Suspension":3
+                        },
+                        "handling": [
+                            { "field": "fInitialDragCoeff", "multiplier": 3.0 },
+                            { "field": "fPercentSubmerged", "multiplier": 85.0 },
+                            { "field": "fInitialDriveForce", "multiplier": 0.294 },
+                            { "field": "fDriveInertia", "multiplier": 1.1 },
+                            { "field": "fClutchChangeRateScaleUpShift", "multiplier": 3.8 },
+                            { "field": "fClutchChangeRateScaleDownShift", "multiplier": 3.7 },
+                            { "field": "fInitialDriveMaxFlatVel", "multiplier": 169.0 },
+                            { "field": "fBrakeForce", "multiplier": 2.9 },
+                            { "field": "fSteeringLock", "multiplier": 34.0 },
+                            { "field": "fDownforceModifier", "multiplier": 3.0 },
+                            { "field": "fTractionCurveMax", "multiplier": 2.475 },
+                            { "field": "fTractionCurveMin", "multiplier": 2.355 },
+                            { "field": "fTractionBiasFront", "multiplier": 0.48 },
+                            { "field": "fTractionLossMult", "multiplier": 1.0 }
+                        ]
+                    },
+                    {
+                        "name": "A+",
+                        "appearance": {
+                            "colors": {
+                                "xenon": 0
+                            }
+                        },
+                        "mods": {
+                            "Turbo": true,
+                            "Engine": 4,
+                            "Brakes": 2,
+                            "Transmission": 2,
+                            "Armor": 1,
+                            "Suspension":3
+                        },
+                        "handling": [
+                            { "field": "fInitialDragCoeff", "multiplier": 3.0 },
+                            { "field": "fPercentSubmerged", "multiplier": 85.0 },
+                            { "field": "fInitialDriveForce", "multiplier": 0.302 },
+                            { "field": "fDriveInertia", "multiplier": 1.0 },
+                            { "field": "fClutchChangeRateScaleUpShift", "multiplier": 3.8 },
+                            { "field": "fClutchChangeRateScaleDownShift", "multiplier": 3.7 },
+                            { "field": "fInitialDriveMaxFlatVel", "multiplier": 171.0 },
+                            { "field": "fBrakeForce", "multiplier": 2.4 },
+                            { "field": "fSteeringLock", "multiplier": 36.0 },
+                            { "field": "fDownforceModifier", "multiplier": 3.0 },
+                            { "field": "fTractionCurveMax", "multiplier": 2.475 },
+                            { "field": "fTractionCurveMin", "multiplier": 2.455 },
+                            { "field": "fTractionBiasFront", "multiplier": 0.482 },
+                            { "field": "fTractionLossMult", "multiplier": 1.0 }
+                        ]
+                    },
+                    {
+                        "name": "Offroad",
+                        "appearance": {
+                            "colors": {
+                                "xenon": 0
+                            }
+                        },
+                        "mods": {
+                            "Turbo": true,
+                            "Engine": -1,
+                            "Brakes": -1,
+                            "Transmission": -1,
+                            "Armor": 1
+                        },
+                        "handling": [
+                            { "field": "fInitialDragCoeff", "multiplier": 4.0 },
+                            { "field": "fPercentSubmerged", "multiplier": 85.0 },
+                            { "field": "fInitialDriveForce", "multiplier": 0.25 },
+                            { "field": "fDriveInertia", "multiplier": 0.9 },
+                            { "field": "fClutchChangeRateScaleUpShift", "multiplier": 4.1 },
+                            { "field": "fClutchChangeRateScaleDownShift", "multiplier": 4.1 },
+                            { "field": "fInitialDriveMaxFlatVel", "multiplier": 120.0 },
+                            { "field": "fBrakeForce", "multiplier": 5.8 },
+                            { "field": "fSteeringLock", "multiplier": 32.0 },
+                            { "field": "fDownforceModifier", "multiplier": 3.0 }
+                        ]
+                    }
+                ] 
+            },
+            {
+                "id": "polexp",
+                "modes": [
+                    {
+                        "name": "Off",
+                        "mods": null,
+                        "appearance": null,
+                        "handling": []
+                    },
+                    {
+                        "name": "B",
+                        "appearance": {
+                            "colors": {
+                                "xenon": 0
+                            }
+                        },
+                        "mods": {
+                            "Turbo": true,
+                            "Engine": 4,
+                            "Brakes": 2,
+                            "Transmission": 2,
+                            "Armor": 1
+                        },
+                        "handling": [
+                            { "field": "fInitialDragCoeff", "multiplier": 3.0 },
+                            { "field": "fPercentSubmerged", "multiplier": 70.0 },
+                            { "field": "fInitialDriveForce", "multiplier": 0.280 },
+                            { "field": "fDriveInertia", "multiplier": 1.025 },
+                            { "field": "fClutchChangeRateScaleUpShift", "multiplier": 3.8 },
+                            { "field": "fClutchChangeRateScaleDownShift", "multiplier": 3.7 },
+                            { "field": "fInitialDriveMaxFlatVel", "multiplier": 142.0 },
+                            { "field": "fBrakeForce", "multiplier": 5.9 },
+                            { "field": "fSteeringLock", "multiplier": 34.0 },
+                            { "field": "fDownforceModifier", "multiplier": 3.0 },
+                            { "field": "fTractionCurveMax", "multiplier": 2.575 },
+                            { "field": "fTractionCurveMin", "multiplier": 2.225 },
+                            { "field": "fTractionBiasFront", "multiplier": 0.476 },
+                            { "field": "fTractionLossMult", "multiplier": 0.675 }
+                        ]
+                    },
+                    {
+                        "name": "A",
+                        "appearance": {
+                            "colors": {
+                                "xenon": 0
+                            }
+                        },
+                        "mods": {
+                            "Turbo": true,
+                            "Engine": 4,
+                            "Brakes": 2,
+                            "Transmission": 2,
+                            "Armor": 1,
+                            "Suspension":3
+                        },
+                        "handling": [
+                            { "field": "fInitialDragCoeff", "multiplier": 3.0 },
+                            { "field": "fPercentSubmerged", "multiplier": 70.0 },
+                            { "field": "fInitialDriveForce", "multiplier": 0.290 },
+                            { "field": "fDriveInertia", "multiplier": 1.07 },
+                            { "field": "fClutchChangeRateScaleUpShift", "multiplier": 4.0 },
+                            { "field": "fClutchChangeRateScaleDownShift", "multiplier": 3.8 },
+                            { "field": "fInitialDriveMaxFlatVel", "multiplier": 150.0 },
+                            { "field": "fBrakeForce", "multiplier": 5.9 },
+                            { "field": "fSteeringLock", "multiplier": 36.0 },
+                            { "field": "fDownforceModifier", "multiplier": 3.0 },
+                            { "field": "fTractionCurveMax", "multiplier": 2.575 },
+                            { "field": "fTractionCurveMin", "multiplier": 2.225 },
+                            { "field": "fTractionBiasFront", "multiplier": 0.476 },
+                            { "field": "fTractionLossMult", "multiplier": 0.675 }
+                        ]
+                    },
+                    {
+                        "name": "A+",
+                        "appearance": {
+                            "colors": {
+                                "xenon": 0
+                            }
+                        },
+                        "mods": {
+                            "Turbo": true,
+                            "Engine": 4,
+                            "Brakes": 2,
+                            "Transmission": 2,
+                            "Armor": 1,
+                            "Suspension":3
+                        },
+                        "handling": [
+                            { "field": "fInitialDragCoeff", "multiplier": 3.0 },
+                            { "field": "fPercentSubmerged", "multiplier": 70.0 },
+                            { "field": "fInitialDriveForce", "multiplier": 0.302 },
+                            { "field": "fDriveInertia", "multiplier": 1.11 },
+                            { "field": "fClutchChangeRateScaleUpShift", "multiplier": 4.1 },
+                            { "field": "fClutchChangeRateScaleDownShift", "multiplier": 4.0 },
+                            { "field": "fInitialDriveMaxFlatVel", "multiplier": 158.0 },
+                            { "field": "fBrakeForce", "multiplier": 5.9 },
+                            { "field": "fSteeringLock", "multiplier": 36.0 },
+                            { "field": "fDownforceModifier", "multiplier": 3.0 },
+                            { "field": "fTractionCurveMax", "multiplier": 2.575 },
+                            { "field": "fTractionCurveMin", "multiplier": 2.225 },
+                            { "field": "fTractionBiasFront", "multiplier": 0.472 },
+                            { "field": "fTractionLossMult", "multiplier": 0.5 }
+                        ]
+                    },
+                    {
+                        "name": "Offroad",
+                        "appearance": {
+                            "colors": {
+                                "xenon": 0
+                            }
+                        },
+                        "mods": {
+                            "Turbo": true,
+                            "Engine": -1,
+                            "Brakes": -1,
+                            "Transmission": -1,
+                            "Armor": 1
+                        },
+                        "handling": [
+                            { "field": "fInitialDragCoeff", "multiplier": 4.0 },
+                            { "field": "fPercentSubmerged", "multiplier": 70.0 },
+                            { "field": "fInitialDriveForce", "multiplier": 0.24 },
+                            { "field": "fDriveInertia", "multiplier": 0.9 },
+                            { "field": "fClutchChangeRateScaleUpShift", "multiplier": 4.1 },
+                            { "field": "fClutchChangeRateScaleDownShift", "multiplier": 4.1 },
+                            { "field": "fInitialDriveMaxFlatVel", "multiplier": 120.0 },
+                            { "field": "fBrakeForce", "multiplier": 5.8 },
+                            { "field": "fSteeringLock", "multiplier": 34.0 },
+                            { "field": "fDownforceModifier", "multiplier": 3.0 }
+                        ]
+                    }
+                ] 
+            },
+            {
+                "id": "clrgdurango18",
+                "modes": [
+                    {
+                        "name": "Off",
+                        "mods": null,
+                        "appearance": null,
+                        "handling": []
+                    },
+                    {
+                        "name": "B",
+                        "appearance": {
+                            "colors": {
+                                "xenon": 0
+                            }
+                        },
+                        "mods": {
+                            "Turbo": true,
+                            "Engine": 4,
+                            "Brakes": 2,
+                            "Transmission": 2,
+                            "Armor": 1
+                        },
+                        "handling": [
+                            { "field": "fInitialDragCoeff", "multiplier": 3.0 },
+                            { "field": "fPercentSubmerged", "multiplier": 70.0 },
+                            { "field": "fInitialDriveForce", "multiplier": 0.275 },
+                            { "field": "fDriveInertia", "multiplier": 1.10 },
+                            { "field": "fClutchChangeRateScaleUpShift", "multiplier": 3.9 },
+                            { "field": "fClutchChangeRateScaleDownShift", "multiplier": 3.8 },
+                            { "field": "fInitialDriveMaxFlatVel", "multiplier": 135.0 },
+                            { "field": "fBrakeForce", "multiplier": 5.9 },
+                            { "field": "fSteeringLock", "multiplier": 34.0 },
+                            { "field": "fDownforceModifier", "multiplier": 3.0 },
+                            { "field": "fTractionCurveMax", "multiplier": 2.575 },
+                            { "field": "fTractionCurveMin", "multiplier": 2.225 },
+                            { "field": "fTractionBiasFront", "multiplier": 0.482 },
+                            { "field": "fTractionLossMult", "multiplier": 0.68 }
+                        ]
+                    },
+                    {
+                        "name": "A",
+                        "appearance": {
+                            "colors": {
+                                "xenon": 0
+                            }
+                        },
+                        "mods": {
+                            "Turbo": true,
+                            "Engine": 4,
+                            "Brakes": 2,
+                            "Transmission": 2,
+                            "Armor": 1,
+                            "Suspension":3
+                        },
+                        "handling": [
+                            { "field": "fInitialDragCoeff", "multiplier": 3.0 },
+                            { "field": "fPercentSubmerged", "multiplier": 70.0 },
+                            { "field": "fInitialDriveForce", "multiplier": 0.285 },
+                            { "field": "fDriveInertia", "multiplier": 1.08 },
+                            { "field": "fClutchChangeRateScaleUpShift", "multiplier": 3.9 },
+                            { "field": "fClutchChangeRateScaleDownShift", "multiplier": 3.9 },
+                            { "field": "fInitialDriveMaxFlatVel", "multiplier": 145.0 },
+                            { "field": "fBrakeForce", "multiplier": 5.9 },
+                            { "field": "fSteeringLock", "multiplier": 34.0 },
+                            { "field": "fDownforceModifier", "multiplier": 3.0 },
+                            { "field": "fTractionCurveMax", "multiplier": 2.575 },
+                            { "field": "fTractionCurveMin", "multiplier": 2.225 },
+                            { "field": "fTractionBiasFront", "multiplier": 0.482 },
+                            { "field": "fTractionLossMult", "multiplier": 0.68 }
+                        ]
+                    },
+                    {
+                        "name": "A+",
+                        "appearance": {
+                            "colors": {
+                                "xenon": 0
+                            }
+                        },
+                        "mods": {
+                            "Turbo": true,
+                            "Engine": 4,
+                            "Brakes": 2,
+                            "Transmission": 2,
+                            "Armor": 1,
+                            "Suspension":3
+                        },
+                        "handling": [
+                            { "field": "fInitialDragCoeff", "multiplier": 3.0 },
+                            { "field": "fPercentSubmerged", "multiplier": 70.0 },
+                            { "field": "fInitialDriveForce", "multiplier": 0.324 },
+                            { "field": "fDriveInertia", "multiplier": 1.10 },
+                            { "field": "fClutchChangeRateScaleUpShift", "multiplier": 4.1 },
+                            { "field": "fClutchChangeRateScaleDownShift", "multiplier": 3.9 },
+                            { "field": "fInitialDriveMaxFlatVel", "multiplier": 150.0 },
+                            { "field": "fBrakeForce", "multiplier": 5.9 },
+                            { "field": "fSteeringLock", "multiplier": 36.0 },
+                            { "field": "fDownforceModifier", "multiplier": 3.0 },
+                            { "field": "fTractionCurveMax", "multiplier": 2.575 },
+                            { "field": "fTractionCurveMin", "multiplier": 2.225 },
+                            { "field": "fTractionBiasFront", "multiplier": 0.482 },
+                            { "field": "fTractionLossMult", "multiplier": 0.68 }
+                        ]
+                    },
+                    {
+                        "name": "Offroad",
+                        "appearance": {
+                            "colors": {
+                                "xenon": 0
+                            }
+                        },
+                        "mods": {
+                            "Turbo": true,
+                            "Engine": -1,
+                            "Brakes": -1,
+                            "Transmission": -1,
+                            "Armor": 1
+                        },
+                        "handling": [
+                            { "field": "fInitialDragCoeff", "multiplier": 4.0 },
+                            { "field": "fPercentSubmerged", "multiplier": 70.0 },
+                            { "field": "fInitialDriveForce", "multiplier": 0.24 },
+                            { "field": "fDriveInertia", "multiplier": 0.9 },
+                            { "field": "fClutchChangeRateScaleUpShift", "multiplier": 4.1 },
+                            { "field": "fClutchChangeRateScaleDownShift", "multiplier": 4.1 },
+                            { "field": "fInitialDriveMaxFlatVel", "multiplier": 120.0 },
+                            { "field": "fBrakeForce", "multiplier": 8.8 },
+                            { "field": "fSteeringLock", "multiplier": 34.0 },
+                            { "field": "fDownforceModifier", "multiplier": 3.0 }
+                        ]
+                    }
+                ] 
+            },                
+            {
+                "id": "polvic",
+                "modes": [
+                    {
+                        "name": "Off",
+                        "mods": null,
+                        "appearance": null,
+                        "handling": []
+                    },
+                    {
+                        "name": "B",
+                        "appearance": {
+                            "colors": {
+                                "xenon": 0
+                            }
+                        },
+                        "mods": {
+                            "Turbo": true,
+                            "Engine": 4,
+                            "Brakes": 2,
+                            "Transmission": 2,
+                            "Armor": 1
+                        },
+                        "handling": [
+                            { "field": "fInitialDragCoeff", "multiplier": 3.5 },
+                            { "field": "fPercentSubmerged", "multiplier": 70.0 },
+                            { "field": "fInitialDriveForce", "multiplier": 0.282 },
+                            { "field": "fDriveInertia", "multiplier": 1.05 },
+                            { "field": "fClutchChangeRateScaleUpShift", "multiplier": 4.2 },
+                            { "field": "fClutchChangeRateScaleDownShift", "multiplier": 4.1 },
+                            { "field": "fInitialDriveMaxFlatVel", "multiplier": 139.0 },
+                            { "field": "fBrakeForce", "multiplier": 2.8 },
+                            { "field": "fSteeringLock", "multiplier": 35.0 },
+                            { "field": "fDownforceModifier", "multiplier": 3.0 },
+                            { "field": "fTractionCurveMax", "multiplier": 2.41 },
+                            { "field": "fTractionCurveMin", "multiplier": 2.03 },
+                            { "field": "fTractionBiasFront", "multiplier": 0.465 },
+                            { "field": "fTractionLossMult", "multiplier": 0.78 }
+                        ]
+                    },
+                    {
+                        "name": "A",
+                        "appearance": {
+                            "colors": {
+                                "xenon": 0
+                            }
+                        },
+                        "mods": {
+                            "Turbo": true,
+                            "Engine": 4,
+                            "Brakes": 2,
+                            "Transmission": 2,
+                            "Armor": 1,
+                            "Suspension":3
+                        },
+                        "handling": [
+                            { "field": "fInitialDragCoeff", "multiplier": 3.5 },
+                            { "field": "fPercentSubmerged", "multiplier": 70.0 },
+                            { "field": "fInitialDriveForce", "multiplier": 0.288 },
+                            { "field": "fDriveInertia", "multiplier": 1.1 },
+                            { "field": "fClutchChangeRateScaleUpShift", "multiplier": 4.2 },
+                            { "field": "fClutchChangeRateScaleDownShift", "multiplier": 3.9 },
+                            { "field": "fInitialDriveMaxFlatVel", "multiplier": 155.0 },
+                            { "field": "fBrakeForce", "multiplier": 2.5 },
+                            { "field": "fSteeringLock", "multiplier": 36.0 },
+                            { "field": "fDownforceModifier", "multiplier": 3.0 },
+                            { "field": "fTractionCurveMax", "multiplier": 2.41 },
+                            { "field": "fTractionCurveMin", "multiplier": 2.03 },
+                            { "field": "fTractionBiasFront", "multiplier": 0.465 },
+                            { "field": "fTractionLossMult", "multiplier": 0.78 }
+                        ]
+                    },
+                    {
+                        "name": "A+",
+                        "appearance": {
+                            "colors": {
+                                "xenon": 0
+                            }
+                        },
+                        "mods": {
+                            "Turbo": true,
+                            "Engine": 4,
+                            "Brakes": 2,
+                            "Transmission": 2,
+                            "Armor": 1,
+                            "Suspension":3
+                        },
+                        "handling": [
+                            { "field": "fInitialDragCoeff", "multiplier": 3.5 },
+                            { "field": "fPercentSubmerged", "multiplier": 70.0 },
+                            { "field": "fInitialDriveForce", "multiplier": 0.305 },
+                            { "field": "fDriveInertia", "multiplier": 1.1 },
+                            { "field": "fClutchChangeRateScaleUpShift", "multiplier": 4.3 },
+                            { "field": "fClutchChangeRateScaleDownShift", "multiplier": 4.2 },
+                            { "field": "fInitialDriveMaxFlatVel", "multiplier": 160.0 },
+                            { "field": "fBrakeForce", "multiplier": 3.5 },
+                            { "field": "fSteeringLock", "multiplier": 36.0 },
+                            { "field": "fDownforceModifier", "multiplier": 3.0 },
+                            { "field": "fTractionCurveMax", "multiplier": 2.41 },
+                            { "field": "fTractionCurveMin", "multiplier": 2.03 },
+                            { "field": "fTractionBiasFront", "multiplier": 0.465 },
+                            { "field": "fTractionLossMult", "multiplier": 0.78 }
+                        ]
+                    }
+                ] 
+            },
+            {
+                "id": "police",
+                "modes": [
+                    {
+                        "name": "Off",
+                        "mods": null,
+                        "appearance": null,
+                        "handling": []
+                    },
+                    {
+                        "name": "B",
+                        "appearance": {
+                            "colors": {
+                                "xenon": 0
+                            }
+                        },
+                        "mods": {
+                            "Turbo": true,
+                            "Engine": 4,
+                            "Brakes": 2,
+                            "Transmission": 2,
+                            "Armor": 1
+                        },
+                        "handling": [
+                            { "field": "fInitialDragCoeff", "multiplier": 3.5 },
+                            { "field": "fPercentSubmerged", "multiplier": 70.0 },
+                            { "field": "fInitialDriveForce", "multiplier": 0.282 },
+                            { "field": "fDriveInertia", "multiplier": 1.0 },
+                            { "field": "fClutchChangeRateScaleUpShift", "multiplier": 3.8 },
+                            { "field": "fClutchChangeRateScaleDownShift", "multiplier": 3.8 },
+                            { "field": "fInitialDriveMaxFlatVel", "multiplier": 152.0 },
+                            { "field": "fBrakeForce", "multiplier": 2.8 },
+                            { "field": "fSteeringLock", "multiplier": 36.0 },
+                            { "field": "fDownforceModifier", "multiplier": 3.0 },
+                            { "field": "fTractionCurveMax", "multiplier": 2.45 },
+                            { "field": "fTractionCurveMin", "multiplier": 2.30 },
+                            { "field": "fTractionBiasFront", "multiplier": 0.480 },
+                            { "field": "fTractionLossMult", "multiplier": 0.9 }
+                        ]
+                    },
+                    {
+                        "name": "A",
+                        "appearance": {
+                            "colors": {
+                                "xenon": 0
+                            }
+                        },
+                        "mods": {
+                            "Turbo": true,
+                            "Engine": 4,
+                            "Brakes": 2,
+                            "Transmission": 2,
+                            "Armor": 1,
+                            "Suspension":3
+                        },
+                        "handling": [
+                            { "field": "fInitialDragCoeff", "multiplier": 3.5 },
+                            { "field": "fPercentSubmerged", "multiplier": 70.0 },
+                            { "field": "fInitialDriveForce", "multiplier": 0.29 },
+                            { "field": "fDriveInertia", "multiplier": 1.0 },
+                            { "field": "fClutchChangeRateScaleUpShift", "multiplier": 3.8 },
+                            { "field": "fClutchChangeRateScaleDownShift", "multiplier": 3.6 },
+                            { "field": "fInitialDriveMaxFlatVel", "multiplier": 162.0 },
+                            { "field": "fBrakeForce", "multiplier": 2.8 },
+                            { "field": "fSteeringLock", "multiplier": 36.0 },
+                            { "field": "fDownforceModifier", "multiplier": 3.0 },
+                            { "field": "fTractionCurveMax", "multiplier": 2.45 },
+                            { "field": "fTractionCurveMin", "multiplier": 2.30 },
+                            { "field": "fTractionBiasFront", "multiplier": 0.480 },
+                            { "field": "fTractionLossMult", "multiplier": 0.9 }
+                        ]
+                    },
+                    {
+                        "name": "A+",
+                        "appearance": {
+                            "colors": {
+                                "xenon": 0
+                            }
+                        },
+                        "mods": {
+                            "Turbo": true,
+                            "Engine": 4,
+                            "Brakes": 2,
+                            "Transmission": 2,
+                            "Armor": 1,
+                            "Suspension":3
+                        },
+                        "handling": [
+                            { "field": "fInitialDragCoeff", "multiplier": 3.5 },
+                            { "field": "fPercentSubmerged", "multiplier": 70.0 },
+                            { "field": "fInitialDriveForce", "multiplier": 0.302 },
+                            { "field": "fDriveInertia", "multiplier": 1.0 },
+                            { "field": "fClutchChangeRateScaleUpShift", "multiplier": 3.8 },
+                            { "field": "fClutchChangeRateScaleDownShift", "multiplier": 3.6 },
+                            { "field": "fInitialDriveMaxFlatVel", "multiplier": 170.0 },
+                            { "field": "fBrakeForce", "multiplier": 2.8 },
+                            { "field": "fSteeringLock", "multiplier": 36.0 },
+                            { "field": "fDownforceModifier", "multiplier": 3.0 },
+                            { "field": "fTractionCurveMax", "multiplier": 2.55 },
+                            { "field": "fTractionCurveMin", "multiplier": 2.35 },
+                            { "field": "fTractionBiasFront", "multiplier": 0.480 },
+                            { "field": "fTractionLossMult", "multiplier": 0.9 }
+                        ]
+                    }
+                ] 
+            },
+            {
+                "id": "polvstr",
+                "modes": [
+                    {
+                        "name": "Off",
+                        "mods": null,
+                        "appearance": null,
+                        "handling": []
+                    },
+                    {
+                        "name": "B",
+                        "appearance": {
+                            "colors": {
+                                "xenon": 0
+                            }
+                        },
+                        "mods": {
+                            "Turbo": true,
+                            "Engine": 4,
+                            "Brakes": 2,
+                            "Transmission": 2,
+                            "Armor": 1
+                        },
+                        "handling": [
+                            { "field": "fInitialDragCoeff", "multiplier": 2.5 },
+                            { "field": "fPercentSubmerged", "multiplier": 85.0 },
+                            { "field": "fInitialDriveForce", "multiplier": 0.284 },
+                            { "field": "fDriveInertia", "multiplier": 1.0 },
+                            { "field": "fClutchChangeRateScaleUpShift", "multiplier": 3.8 },
+                            { "field": "fClutchChangeRateScaleDownShift", "multiplier": 3.8 },
+                            { "field": "fInitialDriveMaxFlatVel", "multiplier": 158.0 },
+                            { "field": "fBrakeForce", "multiplier": 1.8 },
+                            { "field": "fSteeringLock", "multiplier": 38.0 },
+                            { "field": "fDownforceModifier", "multiplier": 3.0 },
+                            { "field": "fTractionCurveMax", "multiplier": 2.64 },
+                            { "field": "fTractionCurveMin", "multiplier": 2.475 },
+                            { "field": "fTractionBiasFront", "multiplier": 0.480 },
+                            { "field": "fTractionLossMult", "multiplier": 0.9 },
+                            {"field": "fLowSpeedTractionLossMult", "multiplier": 0.7 }
+                        ]
+                    },
+                    {
+                        "name": "A",
+                        "appearance": {
+                            "colors": {
+                                "xenon": 0
+                            }
+                        },
+                        "mods": {
+                            "Turbo": true,
+                            "Engine": 4,
+                            "Brakes": 2,
+                            "Transmission": 2,
+                            "Armor": 1,
+                            "Suspension":3
+                        },
+                        "handling": [
+                            { "field": "fInitialDragCoeff", "multiplier": 2.5 },
+                            { "field": "fPercentSubmerged", "multiplier": 85.0 },
+                            { "field": "fInitialDriveForce", "multiplier": 0.292 },
+                            { "field": "fDriveInertia", "multiplier": 1.0 },
+                            { "field": "fClutchChangeRateScaleUpShift", "multiplier": 3.8 },
+                            { "field": "fClutchChangeRateScaleDownShift", "multiplier": 3.7 },
+                            { "field": "fInitialDriveMaxFlatVel", "multiplier": 166.0 },
+                            { "field": "fBrakeForce", "multiplier": 1.8 },
+                            { "field": "fSteeringLock", "multiplier": 38.0 },
+                            { "field": "fDownforceModifier", "multiplier": 3.0 },
+                            { "field": "fTractionCurveMax", "multiplier": 2.72 },
+                            { "field": "fTractionCurveMin", "multiplier": 2.515 },
+                            { "field": "fTractionBiasFront", "multiplier": 0.480 },
+                            { "field": "fTractionLossMult", "multiplier": 1.2 },
+                            {"field": "fLowSpeedTractionLossMult", "multiplier": 0.7 }
+                        ]
+                    },
+                    {
+                        "name": "A+",
+                        "appearance": {
+                            "colors": {
+                                "xenon": 0
+                            }
+                        },
+                        "mods": {
+                            "Turbo": true,
+                            "Engine": 4,
+                            "Brakes": 2,
+                            "Transmission": 2,
+                            "Armor": 1,
+                            "Suspension":3
+                        },
+                        "handling": [
+                            { "field": "fInitialDragCoeff", "multiplier": 2.5 },
+                            { "field": "fPercentSubmerged", "multiplier": 85.0 },
+                            { "field": "fInitialDriveForce", "multiplier": 0.302 },
+                            { "field": "fDriveInertia", "multiplier": 1.0 },
+                            { "field": "fClutchChangeRateScaleUpShift", "multiplier": 3.7 },
+                            { "field": "fClutchChangeRateScaleDownShift", "multiplier": 3.6 },
+                            { "field": "fInitialDriveMaxFlatVel", "multiplier": 172.0 },
+                            { "field": "fBrakeForce", "multiplier": 1.8 },
+                            { "field": "fSteeringLock", "multiplier": 40.0 },
+                            { "field": "fDownforceModifier", "multiplier": 3.0 },
+                            { "field": "fTractionCurveMax", "multiplier": 2.7 },
+                            { "field": "fTractionCurveMin", "multiplier": 2.5 },
+                            { "field": "fTractionBiasFront", "multiplier": 0.480 },
+                            { "field": "fTractionLossMult", "multiplier": 1.2 },
+                            {"field": "fLowSpeedTractionLossMult", "multiplier": 0.7 }
+                        ]
+                    }
+                ] 
+            },
+            {
+                "id": "polcaracara",
+                "modes": [
+                    {
+                        "name": "Off",
+                        "mods": null,
+                        "appearance": null,
+                        "handling": []
+                    },
+                    {
+                        "name": "B",
+                        "appearance": {
+                            "colors": {
+                                "xenon": 0
+                            }
+                        },
+                        "mods": {
+                            "Turbo": true,
+                            "Engine": 4,
+                            "Brakes": 2,
+                            "Transmission": 2,
+                            "Armor": 1
+                        },
+                        "handling": [
+                            { "field": "fInitialDragCoeff", "multiplier": 4.0 },
+                            { "field": "fPercentSubmerged", "multiplier": 70.0 },
+                            { "field": "fInitialDriveForce", "multiplier": 0.29 },
+                            { "field": "fDriveInertia", "multiplier": 1.1 },
+                            { "field": "fClutchChangeRateScaleUpShift", "multiplier": 4.0 },
+                            { "field": "fClutchChangeRateScaleDownShift", "multiplier": 4.0 },
+                            { "field": "fInitialDriveMaxFlatVel", "multiplier": 155.0 },
+                            { "field": "fBrakeForce", "multiplier": 3.8 },
+                            { "field": "fSteeringLock", "multiplier": 44.0 },
+                            { "field": "fDownforceModifier", "multiplier": 3.0 }
+                        ]
+                    },
+                    {
+                        "name": "A",
+                        "appearance": {
+                            "colors": {
+                                "xenon": 0
+                            }
+                        },
+                        "mods": {
+                            "Turbo": true,
+                            "Engine": 4,
+                            "Brakes": 2,
+                            "Transmission": 2,
+                            "Armor": 1,
+                            "Suspension":3
+                        },
+                        "handling": [
+                            { "field": "fInitialDragCoeff", "multiplier": 3.0 },
+                            { "field": "fPercentSubmerged", "multiplier": 70.0 },
+                            { "field": "fInitialDriveForce", "multiplier": 0.30 },
+                            { "field": "fDriveInertia", "multiplier": 1.1 },
+                            { "field": "fClutchChangeRateScaleUpShift", "multiplier": 4.1 },
+                            { "field": "fClutchChangeRateScaleDownShift", "multiplier": 4.1 },
+                            { "field": "fInitialDriveMaxFlatVel", "multiplier": 165.0 },
+                            { "field": "fBrakeForce", "multiplier": 3.5 },
+                            { "field": "fSteeringLock", "multiplier": 44.0 },
+                            { "field": "fDownforceModifier", "multiplier": 3.0 }
+                        ]
+                    },
+                    {
+                        "name": "A+",
+                        "appearance": {
+                            "colors": {
+                                "xenon": 0
+                            }
+                        },
+                        "mods": {
+                            "Turbo": true,
+                            "Engine": 4,
+                            "Brakes": 2,
+                            "Transmission": 2,
+                            "Armor": 1,
+                            "Suspension":3
+                        },
+                        "handling": [
+                            { "field": "fInitialDragCoeff", "multiplier": 3.0 },
+                            { "field": "fPercentSubmerged", "multiplier": 70.0 },
+                            { "field": "fInitialDriveForce", "multiplier": 0.315 },
+                            { "field": "fDriveInertia", "multiplier": 1.1 },
+                            { "field": "fClutchChangeRateScaleUpShift", "multiplier": 4.1 },
+                            { "field": "fClutchChangeRateScaleDownShift", "multiplier": 4.1 },
+                            { "field": "fInitialDriveMaxFlatVel", "multiplier": 175.0 },
+                            { "field": "fBrakeForce", "multiplier": 2.5 },
+                            { "field": "fSteeringLock", "multiplier": 46.0 },
+                            { "field": "fDownforceModifier", "multiplier": 3.0 }
+                        ]
+                    },
+                    {
+                        "name": "Offroad",
+                        "appearance": {
+                            "colors": {
+                                "xenon": 0
+                            }
+                        },
+                        "mods": {
+                            "Turbo": true,
+                            "Engine": -1,
+                            "Brakes": -1,
+                            "Transmission": -1,
+                            "Armor": 1
+                        },
+                        "handling": [
+                            { "field": "fInitialDragCoeff", "multiplier": 4.0 },
+                            { "field": "fPercentSubmerged", "multiplier": 70.0 },
+                            { "field": "fInitialDriveForce", "multiplier": 0.24 },
+                            { "field": "fDriveInertia", "multiplier": 0.85 },
+                            { "field": "fClutchChangeRateScaleUpShift", "multiplier": 4.3 },
+                            { "field": "fClutchChangeRateScaleDownShift", "multiplier": 4.3 },
+                            { "field": "fInitialDriveMaxFlatVel", "multiplier": 120.0 },
+                            { "field": "fBrakeForce", "multiplier": 1.8 },
+                            { "field": "fSteeringLock", "multiplier": 44.0 },
+                            { "field": "fDownforceModifier", "multiplier": 3.0 }
+                        ]
+                    }
+                ] 
+            },
+            {
+                "id": "npoltau",
+                "modes": [
+                    {
+                        "name": "Off",
+                        "mods": null,
+                        "appearance": null,
+                        "handling": []
+                    },
+                    {
+                        "name": "B",
+                        "appearance": {
+                            "colors": {
+                                "xenon": 0
+                            }
+                        },
+                        "mods": {
+                            "Turbo": true,
+                            "Engine": 4,
+                            "Brakes": 2,
+                            "Transmission": 2,
+                            "Armor": 1
+                        },
+                        "handling": [
+                            { "field": "fInitialDragCoeff", "multiplier": 3.0 },
+                            { "field": "fPercentSubmerged", "multiplier": 85.0 },
+                            { "field": "fInitialDriveForce", "multiplier": 0.28 },
+                            { "field": "fDriveInertia", "multiplier": 1.07 },
+                            { "field": "fClutchChangeRateScaleUpShift", "multiplier": 4.6 },
+                            { "field": "fClutchChangeRateScaleDownShift", "multiplier": 4.6 },
+                            { "field": "fInitialDriveMaxFlatVel", "multiplier": 152.0 },
+                            { "field": "fBrakeForce", "multiplier": 4.9 },
+                            { "field": "fSteeringLock", "multiplier": 35.0 },
+                            { "field": "fDownforceModifier", "multiplier": 3.0 },
+                            { "field": "fTractionCurveMax", "multiplier": 2.6 },
+                            { "field": "fTractionCurveMin", "multiplier": 2.4 },
+                            { "field": "fTractionBiasFront", "multiplier": 0.488 },
+                            { "field": "fTractionLossMult", "multiplier": 0.9 }
+                        ]
+                    },
+                    {
+                        "name": "A",
+                        "appearance": {
+                            "colors": {
+                                "xenon": 0
+                            }
+                        },
+                        "mods": {
+                            "Turbo": true,
+                            "Engine": 4,
+                            "Brakes": 2,
+                            "Transmission": 2,
+                            "Armor": 1,
+                            "Suspension":3
+                        },
+                        "handling": [
+                            { "field": "fInitialDragCoeff", "multiplier": 3.5 },
+                            { "field": "fPercentSubmerged", "multiplier": 85.0 },
+                            { "field": "fInitialDriveForce", "multiplier": 0.29 },
+                            { "field": "fDriveInertia", "multiplier": 1.105 },
+                            { "field": "fClutchChangeRateScaleUpShift", "multiplier": 4.6 },
+                            { "field": "fClutchChangeRateScaleDownShift", "multiplier": 4.6 },
+                            { "field": "fInitialDriveMaxFlatVel", "multiplier": 160.0 },
+                            { "field": "fBrakeForce", "multiplier": 4.9 },
+                            { "field": "fSteeringLock", "multiplier": 35.0 },
+                            { "field": "fDownforceModifier", "multiplier": 3.0 },
+                            { "field": "fTractionCurveMax", "multiplier": 2.6 },
+                            { "field": "fTractionCurveMin", "multiplier": 2.4 },
+                            { "field": "fTractionBiasFront", "multiplier": 0.484 },
+                            { "field": "fTractionLossMult", "multiplier": 0.85 }
+                        ]
+                    },
+                    {
+                        "name": "A+",
+                        "appearance": {
+                            "colors": {
+                                "xenon": 0
+                            }
+                        },
+                        "mods": {
+                            "Turbo": true,
+                            "Engine": 4,
+                            "Brakes": 2,
+                            "Transmission": 2,
+                            "Armor": 1,
+                            "Suspension":3
+                        },
+                        "handling": [
+                            { "field": "fInitialDragCoeff", "multiplier": 3.0 },
+                            { "field": "fPercentSubmerged", "multiplier": 85.0 },
+                            { "field": "fInitialDriveForce", "multiplier": 0.302 },
+                            { "field": "fDriveInertia", "multiplier": 1.15 },
+                            { "field": "fClutchChangeRateScaleUpShift", "multiplier": 4.6 },
+                            { "field": "fClutchChangeRateScaleDownShift", "multiplier": 4.6 },
+                            { "field": "fInitialDriveMaxFlatVel", "multiplier": 169.0 },
+                            { "field": "fBrakeForce", "multiplier": 4.9 },
+                            { "field": "fSteeringLock", "multiplier": 35.0 },
+                            { "field": "fDownforceModifier", "multiplier": 3.0 },
+                            { "field": "fTractionCurveMax", "multiplier": 2.6 },
+                            { "field": "fTractionCurveMin", "multiplier": 2.4 },
+                            { "field": "fTractionBiasFront", "multiplier": 0.477 },
+                            { "field": "fTractionLossMult", "multiplier": 0.82 }
+                            
+                            
+                        ]
+                    }
+                ] 
+            }
+        ],
+        "vehicles": [
+            {
+                "model": "npolchar",
+                "preset": "npolchar"
+            },
+            {
+                "model": "police3",
+                "preset": "police3"
+            },
+            {
+                "model": "polbuffalo4",
+                "preset": "polbuffalo4"
+            },
+            {
+                "model": "npolstang",
+                "preset": "npolstang"
+            },            
+            {
+                "model": "npolchal",
+                "preset": "npolchal"
+            },
+            {
+                "model": "npolvette",
+                "preset": "npolvette"
+            },
+            {
+                "model": "polcoquette",
+                "preset": "polcoquette"
+            },
+            {
+                "model": "polpenumbra",
+                "preset": "polpenumbra"
+            },
+            {
+                "model": "npolexp",
+                "preset": "polexp"
+            },
+            {
+                "model": "polscout2",
+                "preset": "polscout2"
+            },
+            {
+                "model": "polcaracara",
+                "preset": "polcaracara"
+            },
+            {
+                "model": "npolvic",
+                "preset": "polvic"
+            },
+            {
+                "model": "police",
+                "preset": "police"
+            },
+            {
+                "model": "clrgdurango18",
+                "preset": "clrgdurango18"
+            },
+            {
+                "model": "npoltau",
+                "preset": "npoltau"
+            },
+            {
+                "model": "polvstr",
+                "preset": "polvstr"
+            }
+        ]
+    }
+}

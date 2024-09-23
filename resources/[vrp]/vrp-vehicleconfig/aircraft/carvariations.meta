@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CVehicleModelInfoVariation>
+  <variationData>
+  <Item>
+            <modelName>balloon</modelName>
+            <colors>
+                <Item>
+                    <!-- 1 burner -->
+                    <!-- 2 frame -->
+                    <!-- 3 pearl, unused -->
+                    <!-- 4 envelope -->
+                    <!-- 6 basket trim -->
+                    <!-- 7 unused -->
+                    <indices content="char_array">
+                        118
+                        118
+                        0
+                        30
+                        78
+                        0
+                    </indices>
+                    <liveries/>
+                </Item>
+                <Item>
+                    <indices content="char_array">
+                        118
+                        13
+                        0
+                        138
+                        114
+                        0
+                    </indices>
+                    <liveries/>
+                </Item>
+                <Item>
+                    <indices content="char_array">
+                        44
+                        118
+                        0
+                        54
+                        48
+                        0
+                    </indices>
+                    <liveries/>
+                </Item>
+                <Item>
+                    <indices content="char_array">
+                        54
+                        118
+                        0
+                        73
+                        110
+                        0
+                    </indices>
+                    <liveries/>
+                </Item>
+                <Item>
+                    <indices content="char_array">
+                        54
+                        118
+                        0
+                        145
+                        17
+                        0
+                    </indices>
+                    <liveries/>
+                </Item>
+                <Item>
+                    <indices content="char_array">
+                        38
+                        38
+                        0
+                        13
+                        21
+                        0
+                    </indices>
+                    <liveries/>
+                </Item>
+                <Item>
+                    <indices content="char_array">
+                        118
+                        88
+                        0
+                        32
+                        21
+                        0
+                    </indices>
+                    <liveries/>
+                </Item>
+            </colors>
+            <kits/>
+            <windowsWithExposedEdges/>
+            <plateProbabilities/>
+            <lightSettings value="0"/>
+            <sirenSettings value="0"/>
+        </Item>
+    <Item>
+      <modelName>f14d2</modelName>
+      <colors>
+        <Item>
+          <indices content="char_array">
+            21  
+            6 
+            6 
+            6
+            70
+            70 
+          </indices>
+          <liveries>
+            <Item value="false" />
+            <Item value="false" />
+            <Item value="false" />
+            <Item value="false" />
+            <Item value="false" />
+            <Item value="false" />
+            <Item value="false" />
+            <Item value="false" />
+          </liveries>
+        </Item>
+      </colors>
+      <kits>
+        <Item>887_f14d_modkit</Item>
+      </kits>
+      <windowsWithExposedEdges />
+      <plateProbabilities>
+        <Probabilities>
+          <Item>
+            <Name>police guv plate</Name>
+            <Value value="100" />
+          </Item>
+        </Probabilities>
+      </plateProbabilities>
+      <lightSettings value="18" />
+      <sirenSettings value="0" />
+    </Item>
+    <Item>
+      <modelName>f14d3</modelName>
+      <colors>
+        <Item>
+          <indices content="char_array">
+            21
+          </indices>
+          <liveries>
+            <Item value="true" />
+            <Item value="false" />
+            <Item value="false" />
+            <Item value="false" />
+            <Item value="false" />
+            <Item value="false" />
+            <Item value="false" />
+          </liveries>
+        </Item>
+      </colors>
+      <kits>
+        <Item>888_f14d3_modkit</Item>
+      </kits>
+      <windowsWithExposedEdges />
+      <plateProbabilities>
+        <Probabilities>
+          <Item>
+            <Name>police guv plate</Name>
+            <Value value="100" />
+          </Item>
+        </Probabilities>
+      </plateProbabilities>
+      <lightSettings value="18" />
+      <sirenSettings value="0" />
+    </Item>
+    <Item>
+      <modelName>mig29a</modelName>
+      <colors>
+        <Item>
+          <indices content="char_array">
+            132  
+            132  
+            6 
+            6
+            70
+            70 
+          </indices>
+          <liveries>
+            <Item value="false" />
+            <Item value="false" />
+            <Item value="false" />
+            <Item value="false" />
+            <Item value="false" />
+            <Item value="false" />
+            <Item value="false" />
+            <Item value="false" />
+          </liveries>
+        </Item>
+      </colors>
+      <kits>
+        <Item>925_mig29a_modkit</Item>
+      </kits>
+      <windowsWithExposedEdges />
+      <plateProbabilities>
+        <Probabilities>
+          <Item>
+            <Name>police guv plate</Name>
+            <Value value="100" />
+          </Item>
+        </Probabilities>
+      </plateProbabilities>
+      <lightSettings value="18" />
+      <sirenSettings value="0" />
+    </Item>
+  </variationData>
+</CVehicleModelInfoVariation>

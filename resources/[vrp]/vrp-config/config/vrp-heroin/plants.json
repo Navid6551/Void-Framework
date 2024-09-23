@@ -1,0 +1,14 @@
+{
+    "configId": "vrp-heroin:plants",
+    "data": {
+        "models": [
+            ""
+        ],
+        "times": { "waterAt": 0 },
+        "waterTime": 0,
+        "harvestTime": 0,
+        "destroyTime": 0,
+        "plantTime": 0,
+        "acidTime": 0
+    }
+}

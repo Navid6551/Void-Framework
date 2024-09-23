@@ -1,0 +1,10 @@
+{
+    "configId": "vrp-density",
+    "data": {
+        "populationDensity": 0.0,
+        "antiGhostDebug": false,
+        "antiGhostYeetVehicles": true,
+        "antiGhostScaleX": 10.0,
+        "antiGhostScaleY": 5.0
+    }
+}

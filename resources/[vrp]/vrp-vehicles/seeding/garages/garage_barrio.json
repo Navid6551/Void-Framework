@@ -1,0 +1,159 @@
+{
+    "garage_id": "garage_barrio",
+    "name": "Garage Barrio",
+    "type": "public",
+    "parking_limit": 10,
+    "location": {
+        "vectors": {
+            "x": 319.08,
+            "y": -2033.48,
+            "z": 20.51
+        },
+        "length": 36.4,
+        "width": 5,
+        "options": {
+            "heading": 230.0,
+            "minZ": 27.13,
+            "maxZ": 31.13,
+            "debugPoly": false
+        },
+        "hidden": true
+    },
+    "vehicle_types": [
+        "land"
+    ],
+    "parking_spots": [
+        {
+            "type": "land",
+            "size": 2,
+            "distance": 1.2,
+            "heading": 320.05807,
+            "coords": {
+                "x": 331.769,
+                "y": -2044.558,
+                "z": 19.8
+            }
+        },
+        {
+            "type": "land",
+            "size": 2,
+            "distance": 1.2,
+            "heading": 320.05807,
+            "coords": {
+                "x": 329.451,
+                "y": -2042.594,
+                "z": 19.8
+            }
+        },
+        {
+            "type": "land",
+            "size": 2,
+            "distance": 1.2,
+            "heading": 320.05807,
+            "coords": {
+                "x": 327.133,
+                "y": -2040.629,
+                "z": 19.8
+            }
+        },
+        {
+            "type": "land",
+            "size": 2,
+            "distance": 1.2,
+            "heading": 320.05807,
+            "coords": {
+                "x": 324.814,
+                "y": -2038.665,
+                "z": 19.8
+            }
+        },
+        {
+            "type": "land",
+            "size": 2,
+            "distance": 1.2,
+            "heading": 320.05807,
+            "coords": {
+                "x": 322.496,
+                "y": -2036.701,
+                "z": 19.8
+            }
+        },
+        {
+            "type": "land",
+            "size": 2,
+            "distance": 1.2,
+            "heading": 320.05807,
+            "coords": {
+                "x": 320.178,
+                "y": -2034.737,
+                "z": 19.8
+            }
+        },
+        {
+            "type": "land",
+            "size": 2,
+            "distance": 1.2,
+            "heading": 320.05807,
+            "coords": {
+                "x": 317.859,
+                "y": -2032.773,
+                "z": 19.8
+            }
+        },
+        {
+            "type": "land",
+            "size": 2,
+            "distance": 1.2,
+            "heading": 320.05807,
+            "coords": {
+                "x": 315.541,
+                "y": -2030.809,
+                "z": 19.8
+            }
+        },
+        {
+            "type": "land",
+            "size": 2,
+            "distance": 1.2,
+            "heading": 320.05807,
+            "coords": {
+                "x": 313.223,
+                "y": -2028.845,
+                "z": 19.8
+            }
+        },
+        {
+            "type": "land",
+            "size": 2,
+            "distance": 1.2,
+            "heading": 320.05807,
+            "coords": {
+                "x": 310.904,
+                "y": -2026.881,
+                "z": 19.8
+            }
+        },
+        {
+            "type": "land",
+            "size": 2,
+            "distance": 1.2,
+            "heading": 320.05807,
+            "coords": {
+                "x": 308.586,
+                "y": -2024.917,
+                "z": 19.8
+            }
+        },
+        {
+            "type": "land",
+            "size": 2,
+            "distance": 1.2,
+            "heading": 320.05807,
+            "coords": {
+                "x": 306.268,
+                "y": -2022.952,
+                "z": 19.8
+            }
+        }
+    ]
+}

@@ -1,0 +1,49 @@
+{
+    "configId": "vrp-roulette:tables",
+    "data": {
+        "tables": [
+            {
+                "id": 0,
+                "dealerPos": [994.60162, 73.915977, 69.660514, 15.539108],
+                "pos": [994.6788940429688, 73.87106323242188, 68.66043090820313],
+                "rot": [0, 0, 11.66609859466552],
+                "quat": [0, 0, 0.10163014382123, 0.99482226371765],
+                "model": "vw_prop_casino_roulette_01b",
+                "bets": null,
+                "entitySet": "casino_rm_betting_roulette"
+            },
+            {
+                "id": 1,
+                "dealerPos": [997.85705, 77.149162, 69.660514, 104.53361],
+                "pos": [997.9702758789063, 77.14888000488281, 68.66043090820313],
+                "rot": [0, 0, 99.99999237060547],
+                "quat": [0, 0, 0.76604443788528, 0.64278757572174],
+                "model": "vw_prop_casino_roulette_01b",
+                "bets": null,
+                "entitySet": "casino_rm_betting_roulette"
+            },
+            {
+                "id": 2,
+                "dealerPos": [990.72753, 75.661514, 69.660499, 281.87203],
+                "pos": [990.6077880859375, 75.64651489257813, 68.66043090820313],
+                "rot": [0, 0, -77],
+                "quat": [0, 0, -0.62251472473144, 0.7826080918312],
+                "model": "vw_prop_casino_roulette_01b",
+                "bets": null,
+                "entitySet": "casino_rm_betting_roulette"
+            },
+            {
+                "id": 3,
+                "dealerPos": [993.57421, 78.674049, 69.660499, 192.13249],
+                "pos": [993.6978149414063, 78.82876586914063, 68.66043090820313],
+                "rot": [0, 0, -166],
+                "quat": [0, 0, 0.99254614114761, -0.12186932563781],
+                "model": "vw_prop_casino_roulette_01b",
+                "bets": null,
+                "entitySet": "casino_rm_betting_roulette"
+            }
+        ],
+        "dealerOffset": [994.71896, 76.62602125, 69.66043],
+        "rouletteEntitySet": "casino_rm_betting_roulette"
+    }
+}

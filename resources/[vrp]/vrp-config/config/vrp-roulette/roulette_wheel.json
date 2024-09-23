@@ -1,0 +1,49 @@
+{
+    "configId": "vrp-roulette:wheel",
+    "data": {
+        "ballModel": "vw_prop_roulette_ball",
+        "ballOffset": [0.0, -0.958, 1.063],
+        "wheelReference": {
+            "00": { "colour": "green", "anim": "1" },
+            "0": { "colour": "green", "anim": "20" },
+
+            "1": { "colour": "red", "anim": "38", "blockX": 0, "blockY": 2 },
+            "2": { "colour": "black", "anim": "19", "blockX": 0, "blockY": 1 },
+            "3": { "colour": "red", "anim": "34", "blockX": 0, "blockY": 0 },
+            "4": { "colour": "black", "anim": "15", "blockX": 1, "blockY": 2 },
+            "5": { "colour": "red", "anim": "30", "blockX": 1, "blockY": 1 },
+            "6": { "colour": "black", "anim": "11", "blockX": 1, "blockY": 0 },
+            "7": { "colour": "red", "anim": "26", "blockX": 2, "blockY": 2 },
+            "8": { "colour": "black", "anim": "7", "blockX": 2, "blockY": 1 },
+            "9": { "colour": "red", "anim": "22", "blockX": 2, "blockY": 0 },
+            "10": { "colour": "black", "anim": "3", "blockX": 3, "blockY": 2 },
+            "11": { "colour": "black", "anim": "25", "blockX": 3, "blockY": 1 },
+            "12": { "colour": "red", "anim": "6", "blockX": 3, "blockY": 0 },
+            "13": { "colour": "black", "anim": "37", "blockX": 4, "blockY": 2 },
+            "14": { "colour": "red", "anim": "18", "blockX": 4, "blockY": 1 },
+            "15": { "colour": "black", "anim": "33", "blockX": 4, "blockY": 0 },
+            "16": { "colour": "red", "anim": "14", "blockX": 5, "blockY": 2 },
+            "17": { "colour": "black", "anim": "29", "blockX": 5, "blockY": 1 },
+            "18": { "colour": "red", "anim": "10", "blockX": 5, "blockY": 0 },
+            "19": { "colour": "red", "anim": "8", "blockX": 6, "blockY": 2 },
+            "20": { "colour": "black", "anim": "27", "blockX": 6, "blockY": 1 },
+            "21": { "colour": "red", "anim": "12", "blockX": 6, "blockY": 0 },
+            "22": { "colour": "black", "anim": "31", "blockX": 7, "blockY": 2 },
+            "23": { "colour": "red", "anim": "16", "blockX": 7, "blockY": 1 },
+            "24": { "colour": "black", "anim": "35", "blockX": 7, "blockY": 0 },
+            "25": { "colour": "red", "anim": "4", "blockX": 8, "blockY": 2 },
+            "26": { "colour": "black", "anim": "23", "blockX": 8, "blockY": 1 },
+            "27": { "colour": "red", "anim": "2", "blockX": 8, "blockY": 0 },
+            "28": { "colour": "black", "anim": "21", "blockX": 9, "blockY": 2 },
+            "29": { "colour": "black", "anim": "5", "blockX": 9, "blockY": 1 },
+
+            "30": { "colour": "red", "anim": "17", "blockX": 10, "blockY": 2 },
+            "31": { "colour": "black", "anim": "32", "blockX": 10, "blockY": 1 },
+            "32": { "colour": "red", "anim": "13", "blockX": 10, "blockY": 0 },
+            "33": { "colour": "black", "anim": "36", "blockX": 11, "blockY": 2 },
+            "34": { "colour": "red", "anim": "1", "blockX": 11, "blockY": 1 },
+            "35": { "colour": "black", "anim": "20", "blockX": 11, "blockY": 0 },
+            "36": { "colour": "red", "anim": "38", "blockX": 12, "blockY": 2 }
+        }
+    }
+}

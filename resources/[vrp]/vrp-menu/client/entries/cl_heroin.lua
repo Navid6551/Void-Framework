@@ -1,0 +1,62 @@
+-- local GeneralEntries, SubMenu = MenuEntries['meth'], {}
+
+-- local MethActions = {
+--     {
+--         data = {
+--             id = 'heroin:enterDoor',
+--             title = _L('menu-meth-enterdoor', 'Enter Door'),
+--             icon = '#heroin-enter-door',
+--             event = 'vrp-heroin:house:enter',
+--             parameters = {}
+--         },
+--         isEnabled = function ()
+--             return (exports['vrp-inventory']:hasEnoughOfItem('heroinhousekey', 1, false) or exports['vrp-heroin']:isInsideUnlockedDoorZone()) and not exports['vrp-heroin']:isInsideHouse()
+--         end
+--     },
+--     {
+--         data = {
+--             id = 'heroin:destroyProperty',
+--             title = _L('menu-meth-destroyproperty', 'Destroy Property'),
+--             icon = '#heroin-destroy-property',
+--             event = 'vrp-heroin:house:seize',
+--             parameters = {}
+--         },
+--         isEnabled = function ()
+--             return isPolice
+--         end
+--     },
+--     {
+--         data = {
+--             id = 'heroin:lockDoor',
+--             title = "Lock door",
+--             icon = '#heroin-lock-door',
+--             event = 'vrp-heroin:house:lock',
+--             parameters = {}
+--         },
+--         isEnabled = function ()
+--             return exports['vrp-inventory']:hasEnoughOfItem('heroinhousekey', 1, false) and exports['vrp-heroin']:isInsideHouse()
+--         end
+--     },
+-- }
+
+-- Citizen.CreateThread(function()
+--     for index, data in ipairs(MethActions) do
+--         SubMenu[index] = data.data.id
+--         MenuItems[data.data.id] = data
+--     end
+--     GeneralEntries[#GeneralEntries+1] = {
+--         data = {
+--             id = 'heroin',
+--             icon = '#heroin-actions',
+--             title = _L('menu-context-methactions', 'Door Actions'),
+--         },
+--         subMenus = SubMenu,
+--         isEnabled = function()
+--             local isInsideHouse = exports['vrp-heroin']:isInsideHouse()
+--             local inside = exports['vrp-heroin']:isInsideDoorZone()
+--             local hasKey = exports['vrp-inventory']:hasEnoughOfItem('heroinhousekey', 1, false)
+--             local insideUnlocked = exports['vrp-heroin']:isInsideUnlockedDoorZone()
+--             return not isDead and ((inside and (hasKey or insideUnlocked)) or isInsideHouse)
+--         end,
+--     }
+-- end)

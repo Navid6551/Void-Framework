@@ -1,0 +1,11 @@
+{
+    "configId": "vrp-heroin:job",
+    "data": {
+        "lootTime": 0,
+        "dropoffTime": 0,
+        "threadLength": 0,
+        "alertTimeout": 0,
+        "minAlertPause": 0,
+        "maxAlertPause": 0
+    }
+}

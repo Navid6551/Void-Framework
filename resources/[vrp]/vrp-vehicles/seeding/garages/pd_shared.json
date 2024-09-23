@@ -1,0 +1,92 @@
+{
+    "garage_id": "pd_shared",
+    "name": "PD Shared Vehicle Garage",
+    "type": "state",
+    "shared": true,
+    "parking_limit": 10,
+    "location": {
+        "vectors": {
+            "x": 441.93,
+            "y": -995.35,
+            "z": 25.71
+        },
+        "length": 10.8,
+        "width": 14.0,
+        "options": {
+            "heading": 0,
+            "minZ": 24.51,
+            "maxZ": 28.71,
+            "debugPoly": false
+        },
+        "hidden": true
+    },
+    "vehicle_types": ["land"],
+    "parking_spots": [
+        {
+            "type": "land",
+            "size": 2,
+            "distance": 2.0,
+            "heading": 89.0,
+            "coords": {
+                "x": 446.05,
+                "y": -991.85,
+                "z": 25.52
+            }
+        },
+        {
+            "type": "land",
+            "size": 2,
+            "distance": 2.0,
+            "heading": 89.0,
+            "coords": {
+                "x": 445.85,
+                "y": -995.28,
+                "z": 25.52
+            }
+        },
+        {
+            "type": "land",
+            "size": 2,
+            "distance": 2.0,
+            "heading": 89.0,
+            "coords": {
+                "x": 445.91,
+                "y": -998.55,
+                "z": 25.52
+            }
+        },
+        {
+            "type": "land",
+            "size": 2,
+            "distance": 2.0,
+            "heading": 89.0,
+            "coords": {
+                "x": 438.06,
+                "y": -991.91,
+                "z": 25.52
+            }
+        },
+        {
+            "type": "land",
+            "size": 2,
+            "distance": 2.0,
+            "heading": 89.0,
+            "coords": {
+                "x": 438.03,
+                "y": -995.14,
+                "z": 25.52
+            }
+        },
+        {
+            "type": "land",
+            "size": 2,
+            "distance": 2.0,
+            "heading": 268.0,
+            "coords": {
+                "x": 437.94,
+                "y": -998.8,
+                "z": 25.52
+            }
+        }
+    ]
+}

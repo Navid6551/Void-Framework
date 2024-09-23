@@ -1,0 +1,143 @@
+{
+    "garage_id": "garage_alta",
+    "name": "Alta Street Garage",
+    "type": "public",
+    "parking_limit": 10,
+    "location": {
+        "vectors": {
+            "x": -315.79,
+            "y": -982.05,
+            "z": 35.11
+        },
+        "length": 9.0,
+        "width": 43.6,
+        "options": {
+            "heading": 338,
+            "debugPoly": false
+        }
+    },
+    "vehicle_types": ["land"],
+    "parking_spots": [
+        {
+            "type": "land",
+            "size": 2,
+            "distance": 1.2,
+            "heading": 160.0,
+            "coords": {
+                "x": -297.812,
+                "y": -990.57,
+                "z": 30.081
+            }
+        },
+        {
+            "type": "land",
+            "size": 2,
+            "distance": 1.2,
+            "heading": 160.0,
+            "coords": {
+                "x": -301.286,
+                "y": -989.269,
+                "z": 30.081
+            }
+        },
+        {
+            "type": "land",
+            "size": 2,
+            "distance": 1.2,
+            "heading": 160.0,
+            "coords": {
+                "x": -304.761,
+                "y": -987.968,
+                "z": 30.081
+            }
+        },
+        {
+            "type": "land",
+            "size": 2,
+            "distance": 1.2,
+            "heading": 160.0,
+            "coords": {
+                "x": -308.235,
+                "y": -986.667,
+                "z": 30.081
+            }
+        },
+        {
+            "type": "land",
+            "size": 2,
+            "distance": 1.2,
+            "heading": 160.0,
+            "coords": {
+                "x": -311.709,
+                "y": -985.366,
+                "z": 30.081
+            }
+        },
+        {
+            "type": "land",
+            "size": 2,
+            "distance": 1.2,
+            "heading": 160.0,
+            "coords": {
+                "x": -315.184,
+                "y": -984.065,
+                "z": 30.081
+            }
+        },
+        {
+            "type": "land",
+            "size": 2,
+            "distance": 1.2,
+            "heading": 160.0,
+            "coords": {
+                "x": -318.658,
+                "y": -982.763,
+                "z": 30.081
+            }
+        },
+        {
+            "type": "land",
+            "size": 2,
+            "distance": 1.2,
+            "heading": 160.0,
+            "coords": {
+                "x": -322.132,
+                "y": -981.462,
+                "z": 30.081
+            }
+        },
+        {
+            "type": "land",
+            "size": 2,
+            "distance": 1.2,
+            "heading": 160.0,
+            "coords": {
+                "x": -325.607,
+                "y": -980.161,
+                "z": 30.081
+            }
+        },
+        {
+            "type": "land",
+            "size": 2,
+            "distance": 1.2,
+            "heading": 160.0,
+            "coords": {
+                "x": -329.081,
+                "y": -978.86,
+                "z": 30.081
+            }
+        },
+        {
+            "type": "land",
+            "size": 2,
+            "distance": 1.2,
+            "heading": 160.0,
+            "coords": {
+                "x": -332.555,
+                "y": -977.559,
+                "z": 30.081
+            }
+        }
+    ]
+}

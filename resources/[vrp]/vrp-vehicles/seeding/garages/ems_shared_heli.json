@@ -1,0 +1,48 @@
+{
+    "garage_id": "ems_shared_heli",
+    "name": "EMS Shared Helicopter Garage",
+    "type": "state",
+    "shared": true,
+    "parking_limit": 10,
+    "location": {
+        "vectors": {
+            "x": 306.73,
+            "y":-1459.39,
+            "z": 46.51
+        },
+        "length": 11.0,
+        "width": 29.6,
+        "options": {
+            "heading": 321,
+            "minZ": 45.51,
+            "maxZ": 48.91,
+            "debugPoly": false
+        },
+        "hidden": true
+    },
+    "vehicle_types": ["air"],
+    "parking_spots": [
+        {
+            "type": "air",
+            "size": 4,
+            "distance": 1.2,
+            "heading": 320.649,
+            "coords": {
+                "x": 313.03,
+                "y": -1465.11,
+                "z": 46.51
+            }
+        },
+        {
+            "type": "air",
+            "size": 4,
+            "distance": 1.2,
+            "heading": 320.83673,
+            "coords": {
+                "x": 299.51,
+                "y": -1453.46,
+                "z": 46.51
+            }
+        }
+    ]
+ }

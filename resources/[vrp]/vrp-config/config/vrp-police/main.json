@@ -1,0 +1,46 @@
+{
+    "configId": "vrp-police",
+    "data": {
+        "cops.tackling.disabled": false,
+        "stunDuration": 5000,
+        "policeVehicles": [
+            "npolvic",
+            "npolexp",
+            "npolchar",
+            "npolvette",
+            "npolstang",
+            "npolchal",
+            "npolmm"
+        ],
+        "megaphoneRanges": [
+            {
+                "mode": 0,
+                "range": 0,
+                "priority": 0
+            }
+        ],
+        "megaphoneRangesHeli": [
+            {
+                "mode": 0,
+                "range": 0,
+                "priority": 0
+            }
+        ],
+        "dragCooldownMili": 10000,
+        "maxCuffAttempts": 4,
+        "cuffAttemptMapping": [
+            [2000, 21],
+            [1500, 17],
+            [1000, 13],
+            [500, 12],
+            [250, 11]
+        ],
+        "cuffRagdollImmunity": 0,
+        "softCuffOnly": false,
+        "panicButtonCooldown": 10,
+        "panicButtonPrepTime": 0,
+        "panicButtonDelay": 30,
+        "panicButtonAutomated": false,
+        "distressSignalDelayed": false
+    }
+}

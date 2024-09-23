@@ -1,0 +1,12 @@
+{
+    "configId": "main",
+    "data": {
+        "payoutFactor": 1,
+        "characters.limited": true,
+        "characterLimit": 3,
+        "progression": {},
+        "restartLength": 10,
+        "tier": "standard"
+        
+    }
+}

@@ -1,0 +1,30 @@
+{
+    "configId": "misc",
+    "data": {
+        "buffs.enabled": true,
+        "spawn.apartments.only": false,
+        "business.stashes.public": false,
+        "business.counters.public": false,
+        "business.registers.public": false,
+        "casino.membership.bypass": false,
+        "police.masterkeys": true,
+        "farmers.market.enabled": false,
+        "gallery.anyone.sell.gems": false,
+        "hospital.revives.auto": true,
+        "heists.prac.whitelist": false,
+        "housing.crafting.public": false,
+        "progression.guns": true,
+        "housing.benches": false,
+        "jobs.receipts.public": false,
+        "casino.wheel.cash.pickup.cid": false,
+        "crafting.spawn.public": false,
+        "jobs.ems.enabled": true,
+        "characters.lifers.disabled": false,
+        "characters.hardcore.disabled": false,
+        "characters.limited": false,
+        "hud.watermark": true,
+        "showrooms.catalog.purchase": false,
+        "mdw.profiles.skip": false,
+        "afk.kick.auto": false
+    }
+}

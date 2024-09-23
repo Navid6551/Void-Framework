@@ -1,0 +1,167 @@
+{
+    "garage_id": "garage_casino",
+    "name": "Casino Garage",
+    "type": "public",
+    "parking_limit": 10,
+    "location": {
+        "vectors": {
+            "x": 906.21,
+            "y": -12.85,
+            "z": 78.76
+        },
+        "length": 7.0,
+        "width": 82.750000000001,
+        "options": {
+            "heading": 327,
+            "minZ": 77.71,
+            "maxZ": 81.71,
+            "debugPoly": false
+        }
+    },
+    "vehicle_types": ["land"],
+    "parking_spots": [
+        {
+            "type": "land",
+            "size": 2,
+            "distance": 1.2,
+            "heading": 149.60566,
+            "coords": {
+                "x": 872.54,
+                "y": 8.999,
+                "z": 77.764
+            }
+        },
+        {
+            "type": "land",
+            "size": 2,
+            "distance": 1.2,
+            "heading": 149.60566,
+            "coords": {
+                "x": 875.402,
+                "y": 7.277,
+                "z": 77.764
+            }
+        },
+        {
+            "type": "land",
+            "size": 2,
+            "distance": 1.2,
+            "heading": 149.60566,
+            "coords": {
+                "x": 878.264,
+                "y": 5.554,
+                "z": 77.764
+            }
+        },
+        {
+            "type": "land",
+            "size": 2,
+            "distance": 1.2,
+            "heading": 149.60566,
+            "coords": {
+                "x": 895.377,
+                "y": -5.161,
+                "z": 77.764
+            }
+        },
+        {
+            "type": "land",
+            "size": 2,
+            "distance": 1.2,
+            "heading": 149.60566,
+            "coords": {
+                "x": 898.681,
+                "y": -7.179,
+                "z": 77.764
+            }
+        },
+        {
+            "type": "land",
+            "size": 2,
+            "distance": 1.2,
+            "heading": 149.60566,
+            "coords": {
+                "x": 901.984,
+                "y": -9.197,
+                "z": 77.764
+            }
+        },
+        {
+            "type": "land",
+            "size": 2,
+            "distance": 1.2,
+            "heading": 149.60566,
+            "coords": {
+                "x": 905.288,
+                "y": -11.214,
+                "z": 77.764
+            }
+        },
+        {
+            "type": "land",
+            "size": 2,
+            "distance": 1.2,
+            "heading": 149.60566,
+            "coords": {
+                "x": 908.591,
+                "y": -13.232,
+                "z": 77.764
+            }
+        },
+        {
+            "type": "land",
+            "size": 2,
+            "distance": 1.2,
+            "heading": 149.60566,
+            "coords": {
+                "x": 911.895,
+                "y": -15.249,
+                "z": 77.764
+            }
+        },
+        {
+            "type": "land",
+            "size": 2,
+            "distance": 1.2,
+            "heading": 149.60566,
+            "coords": {
+                "x": 931.837,
+                "y": -27.474,
+                "z": 77.781
+            }
+        },
+        {
+            "type": "land",
+            "size": 2,
+            "distance": 1.2,
+            "heading": 149.60566,
+            "coords": {
+                "x": 934.809,
+                "y": -29.205,
+                "z": 77.815
+            }
+        },
+        {
+            "type": "land",
+            "size": 2,
+            "distance": 1.2,
+            "heading": 149.60566,
+            "coords": {
+                "x": 937.78,
+                "y": -30.937,
+                "z": 77.85
+            }
+        },
+        {
+            "type": "land",
+            "size": 2,
+            "distance": 1.2,
+            "heading": 149.60566,
+            "coords": {
+                "x": 940.752,
+                "y": -32.669,
+                "z": 77.884
+            }
+        }
+    ]
+}

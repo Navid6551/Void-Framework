@@ -1,0 +1,39 @@
+{
+    "configId": "vrp-boosting",
+    "data": {
+        "upgradeMap": [
+            {
+                "class": "D",
+                "expRequired": 0
+            },
+            {
+                "class": "C",
+                "expRequired": 300
+            },
+            {
+                "class": "B",
+                "expRequired": 600
+            },
+            {
+                "class": "A",
+                "expRequired": 900
+            },
+            {
+                "class": "AUpgraded",
+                "expRequired": 1200
+            },
+            {
+                "class": "S",
+                "expRequired": 1500
+            },
+            {
+                "class": "SUpgraded",
+                "expRequired": 1800
+            },
+            {
+                "class": "SUpgraded2",
+                "expRequired": 2400
+            }
+        ]        
+    }
+}

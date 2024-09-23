@@ -1,0 +1,45 @@
+{
+    "configId": "vrp-drifting",
+    "data": {
+        "handling": {
+            "fInitialDriveForce": {
+                "type": "multiplier",
+                "value": {
+                    "awd": 3,
+                    "rwd": 3
+                }
+            },
+            "fTractionCurveMin": {
+                "type": "fixed",
+                "value": {
+                    "awd": 1.3,
+                    "rwd": 1.4
+                }
+            },
+            "fTractionCurveMax": {
+                "type": "fixed",
+                "value": {
+                    "awd": 1.35,
+                    "rwd": 1.45
+                }
+            }
+        },
+        "driveForceIntervals": {
+            "0": 0.2,
+            "30": 0.5,
+            "60": 0.8,
+            "90": 1,
+            "120": 1
+        },
+        "threadTractionIntervals": {
+            "0": 0.2,
+            "30": 0.5,
+            "60": 0.8,
+            "90": 1,
+            "120": 1
+        },
+        "maxSpeed": 160,
+        "maxDriftingMiles": 200,
+        "mileageDivider": 0.05
+    }
+}

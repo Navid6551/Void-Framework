@@ -1,0 +1,185 @@
+{
+    "configId": "vrp-vehicles:lockpicking",
+    "data": {
+        "classes": {
+            "0": {
+                "difficulties": {
+                    "lockpick": 0,
+                    "advlockpick": 0,
+                    "hackingdevice": 0
+                }
+            },
+            "1": {
+                "difficulties": {
+                    "lockpick": 0,
+                    "advlockpick": 0,
+                    "hackingdevice": 0
+                }
+            },
+            "2": {
+                "difficulties": {
+                    "lockpick": 0,
+                    "advlockpick": 0,
+                    "hackingdevice": 0
+                }
+            },
+            "3": {
+                "difficulties": {
+                    "lockpick": 0,
+                    "advlockpick": 0,
+                    "hackingdevice": 0
+                }
+            },
+            "4": {
+                "difficulties": {
+                    "lockpick": 0,
+                    "advlockpick": 0,
+                    "hackingdevice": 0
+                }
+            },
+            "5": {
+                "difficulties": {
+                    "lockpick": 0,
+                    "advlockpick": 0,
+                    "hackingdevice": 0
+                }
+            },
+            "6": {
+                "difficulties": {
+                    "lockpick": 0,
+                    "advlockpick": 0,
+                    "hackingdevice": 0
+                }
+            },
+            "7": {
+                "difficulties": {
+                    "lockpick": 0,
+                    "advlockpick": 0,
+                    "hackingdevice": 0
+                }
+            },
+            "8": {
+                "difficulties": {
+                    "lockpick": 0,
+                    "advlockpick": 0,
+                    "hackingdevice": 0
+                }
+            },
+            "9": {
+                "difficulties": {
+                    "lockpick": 0,
+                    "advlockpick": 0,
+                    "hackingdevice": 0
+                }
+            },
+            "10": {
+                "difficulties": {
+                    "lockpick": 0,
+                    "advlockpick": 0,
+                    "hackingdevice": 0
+                }
+            },
+            "11": {
+                "difficulties": {
+                    "lockpick": 0,
+                    "advlockpick": 0,
+                    "hackingdevice": 0
+                }
+            },
+            "12": {
+                "difficulties": {
+                    "lockpick": 0,
+                    "advlockpick": 0,
+                    "hackingdevice": 0
+                }
+            },
+            "13": {
+                "difficulties": {
+                    "lockpick": 0,
+                    "advlockpick": 0,
+                    "hackingdevice": 0
+                }
+            },
+            "14": {
+                "difficulties": {
+                    "lockpick": 0,
+                    "advlockpick": 0,
+                    "hackingdevice": 0
+                }
+            },
+            "15": {
+                "difficulties": {
+                    "lockpick": 0,
+                    "advlockpick": 0,
+                    "hackingdevice": 0
+                }
+            },
+            "16": {
+                "difficulties": {
+                    "lockpick": 0,
+                    "advlockpick": 0,
+                    "hackingdevice": 0
+                }
+            },
+            "17": {
+                "difficulties": {
+                    "lockpick": 0,
+                    "advlockpick": 0,
+                    "hackingdevice": 0
+                }
+            },
+            "18": {
+                "difficulties": {
+                    "lockpick": 0,
+                    "advlockpick": 0,
+                    "hackingdevice": 0
+                }
+            },
+            "19": {
+                "difficulties": {
+                    "lockpick": 0,
+                    "advlockpick": 0,
+                    "hackingdevice": 0
+                }
+            },
+            "20": {
+                "difficulties": {
+                    "lockpick": 0,
+                    "advlockpick": 0,
+                    "hackingdevice": 0
+                }
+            },
+            "21": {
+                "difficulties": {
+                    "lockpick": 0,
+                    "advlockpick": 0,
+                    "hackingdevice": 0
+                }
+            },
+            "22": {
+                "difficulties": {
+                    "lockpick": 0,
+                    "advlockpick": 0,
+                    "hackingdevice": 0
+                }
+            }
+        },
+        "dividers": {
+            "lockpick": {
+                "minimum": 0,
+                "deduct": 0,
+                "divider": 0
+            },
+            "advlockpick": {
+                "minimum": 0,
+                "deduct": 0,
+                "divider": 0
+            },
+            "hackingdevice": {
+                "minimum": 0,
+                "deduct": 0,
+                "divider": 0
+            }
+        }
+    }
+}
