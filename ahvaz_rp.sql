@@ -68,15 +68,16 @@ CREATE TABLE IF NOT EXISTS `inventory` (
   `creationDate` bigint(20) NOT NULL DEFAULT 0,
   `quality` int(11) DEFAULT 100,
   PRIMARY KEY (`id`) USING BTREE
-) ENGINE=InnoDB AUTO_INCREMENT=1986 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=1988 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
--- Dumping data for table ahvaz_rp.inventory: ~3 rows (approximately)
+-- Dumping data for table ahvaz_rp.inventory: ~5 rows (approximately)
 DELETE FROM `inventory`;
 INSERT INTO `inventory` (`id`, `item_id`, `name`, `information`, `slot`, `dropped`, `creationDate`, `quality`) VALUES
-	(1980, 'mobilephone', 'ply-1', '{}', 1, 0, 1726913425560, 100),
-	(1981, 'racingusb2', 'ply-1', '{"characterId":1,"Alias":"Kir"}', 2, 0, 1726913881496, 100),
-	(1983, 'racingusb0', 'ply-1', '{"characterId":1}', 3, 0, 1726914851947, 100),
-	(1985, 'pixellaptop', 'ply-1', '{}', 4, 0, 1727035979668, 100);
+	(1980, 'mobilephone', 'ply-1', '{}', 36, 0, 1726913425560, 100),
+	(1981, 'racingusb2', 'ply-1', '{"characterId":1,"Alias":"Kir"}', 38, 0, 1726913881496, 100),
+	(1983, 'racingusb0', 'ply-1', '{"characterId":1}', 37, 0, 1726914851947, 100),
+	(1985, 'pixellaptop', 'ply-1', '{}', 1, 0, 1727035979668, 100),
+	(1987, 'summonablepet', 'container-protected:1-Protected-protected', '{"Name":"Shit","Owner":1,"_hideKeys":["_image_url","type","key","id","k9","cVariation","components"],"_image_url":"https://i.imgur.com/Ej9Ze76.png","cVariation":-1,"id":"1675218","k9":false,"key":"deer","type":"deer"}', 1, 0, 1727182700244, 100);
 
 -- Dumping structure for table ahvaz_rp.jobs_whitelist
 CREATE TABLE IF NOT EXISTS `jobs_whitelist` (
@@ -124,12 +125,12 @@ CREATE TABLE IF NOT EXISTS `players` (
   KEY `id` (`id`),
   KEY `last_updated` (`last_updated`),
   KEY `license` (`license`)
-) ENGINE=InnoDB AUTO_INCREMENT=22 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=46 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 -- Dumping data for table ahvaz_rp.players: ~1 rows (approximately)
 DELETE FROM `players`;
 INSERT INTO `players` (`id`, `citizenid`, `license`, `name`, `money`, `charinfo`, `job`, `gang`, `position`, `metadata`, `last_updated`) VALUES
-	(1, '1', 'steam:1100001465d721f', 'Chipmunk', '{"casino":0,"cash":500,"bank":5000}', '{"lastname":"Sag Ahwazi","gender":0,"firstname":"Rotabu","birthdate":"2000-01-01","phone":"3974407171","nationality":"USA","account":"1125895435030"}', '{"grade":{"level":0,"name":"Freelancer"},"label":"Civilian","isboss":false,"payment":10,"type":"none","onduty":false,"name":"unemployed"}', '{"grade":{"level":0,"name":"none"},"isboss":false,"label":"No Gang Affiliation","name":"none"}', '{"x":294.949462890625,"y":-340.1670227050781,"z":44.91650390625}', '{"rep":{"boosting":0},"thirst":100,"armor":0,"bloodtype":"O-","ammo":[],"stress":0,"fingerprint":"LN728Q71WSa6875","callsign":"NO CALLSIGN","licences":{"driver":true,"weapon":false,"business":false},"hunger":100,"injail":0}', '2024-09-23 16:09:52');
+	(1, '1', 'steam:1100001465d721f', 'Chipmunk', '{"cash":500,"bank":5000,"casino":0}', '{"nationality":"USA","lastname":"Sag Ahwazi","gender":0,"firstname":"Rotabu","birthdate":"2000-01-01","account":"1125895435030","phone":"3974407171"}', '{"label":"Law Enforcement","grade":{"isboss":false,"level":0,"payment":50,"name":"Recruit"},"type":"leo","isboss":false,"onduty":true,"name":"police"}', '{"grade":{"level":0,"name":"none"},"isboss":false,"label":"No Gang Affiliation","name":"none"}', '{"x":-903.4549560546875,"y":20.69011116027832,"z":46.230712890625}', '{"stress":0,"callsign":"NO CALLSIGN","rep":{"boosting":0},"fingerprint":"LN728Q71WSa6875","bloodtype":"O-","injail":0,"thirst":100,"ammo":[],"hunger":100,"licences":{"business":false,"weapon":false,"driver":true},"armor":0}', '2024-09-24 16:08:08');
 
 -- Dumping structure for table ahvaz_rp.player_clothes
 CREATE TABLE IF NOT EXISTS `player_clothes` (
@@ -149,7 +150,22 @@ CREATE TABLE IF NOT EXISTS `player_clothes` (
 -- Dumping data for table ahvaz_rp.player_clothes: ~0 rows (approximately)
 DELETE FROM `player_clothes`;
 INSERT INTO `player_clothes` (`id`, `citizenid`, `model`, `drawables`, `props`, `hairColor`, `fadeLayer`, `fade`, `customHeadModel`, `tattoos`) VALUES
-	(1, 1, '1885233650', '{"Face":[0,0],"Mask":[0,0],"Hair":[0,0],"Torso":[0,0],"Leg":[0,0],"Parachute":[0,0],"Shoes":[1,2],"Accessory":[0,0],"Undershirt":[0,1],"Kevlar":[0,0],"Badge":[0,0],"Jacket":[0,1]}', '{"Hat":[-1,-1],"Glasses":[-1,-1],"Ears":[-1,-1],"Watch":[-1,-1],"Bracelet":[-1,-1]}', '[1,1]', NULL, NULL, '0', NULL);
+	(1, 1, '1885233650', '{"Face":[0,0],"Mask":[0,0],"Hair":[1,0],"Torso":[0,0],"Leg":[187,0],"Parachute":[0,0],"Shoes":[1,2],"Accessory":[0,0],"Undershirt":[0,0],"Kevlar":[0,0],"Badge":[0,0],"Jacket":[491,0]}', '{"Hat":[4,0],"Glasses":[-1,-1],"Ears":[-1,-1],"Watch":[-1,-1],"Bracelet":[-1,-1]}', '[1,1]', NULL, NULL, NULL, NULL);
+
+-- Dumping structure for table ahvaz_rp.player_emails
+CREATE TABLE IF NOT EXISTS `player_emails` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `citizenid` longtext DEFAULT NULL,
+  `domain` longtext DEFAULT NULL,
+  `contacts` longtext DEFAULT '[]',
+  `emails` longtext DEFAULT '[]',
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+-- Dumping data for table ahvaz_rp.player_emails: ~1 rows (approximately)
+DELETE FROM `player_emails`;
+INSERT INTO `player_emails` (`id`, `citizenid`, `domain`, `contacts`, `emails`) VALUES
+	(1, '1', 'sdfdsfsd@lifeinvader.com', '[{"id":1,"name":"sdfsdfs","email":"dsfsdfsd"},{"id":2,"name":"sdfsfsdf","email":"sdfsdfd"},{"id":3,"name":"sdfdsfdsfsdf","email":"sdsdfdsfdsfsd"},{"id":4,"name":"sdfsdfdsfsdfsdf","email":"sdsdfsdfdsfdsfs"},{"id":5,"name":"sfdsfdsfsdfsfs","email":"fsdfsdfsdfsdsd"},{"id":6,"name":"fsdfdsfdsfsddssdf","email":"dsfsdfsdfsdfsdsds"},{"id":7,"name":"dfsdfsfdsfsdfsdfdsf","email":"dfsdfdsfdsfdsfsdf"},{"id":9,"name":"sdfdsfsdf","email":"dsfdsfdsfsdf"},{"email":"sdfdss","name":"fdsfsdf","id":9},{"email":"sdfdsf","name":"sdfdsf","id":10},{"email":"dfssdf","name":"sdfdsf","id":11}]', '[]');
 
 -- Dumping structure for table ahvaz_rp.player_face
 CREATE TABLE IF NOT EXISTS `player_face` (
@@ -302,6 +318,140 @@ INSERT INTO `_garage` (`id`, `garage_id`, `name`, `type`, `business_id`, `shared
 	(21, 'ems_shared_heli', 'EMS Shared Helicopter Garage', 'state', NULL, 1, 10, '{"vectors":{"x":306.73,"y":-1459.39,"z":46.51},"length":11,"width":29.6,"options":{"heading":321,"minZ":45.51,"maxZ":48.91,"debugPoly":false},"hidden":true}', '["air"]', '[{"type":"air","size":4,"distance":1.2,"heading":320.649,"coords":{"x":313.03,"y":-1465.11,"z":46.51}},{"type":"air","size":4,"distance":1.2,"heading":320.83673,"coords":{"x":299.51,"y":-1453.46,"z":46.51}}]'),
 	(22, 'pd_shared_heli', 'PD Shared Helicopter Garage', 'state', NULL, 1, 10, '{"vectors":{"x":476.02,"y":-1003.016,"z":45.92},"length":12.8,"width":13.4,"options":{"heading":0,"minZ":44.92,"maxZ":48.72,"debugPoly":false},"hidden":false}', '["air"]', '[{"type":"air","size":4,"distance":1.2,"heading":92,"coords":{"x":476.05,"y":-1003.3,"z":46.28}}]');
 
+-- Dumping structure for table ahvaz_rp._mdt_charge
+CREATE TABLE IF NOT EXISTS `_mdt_charge` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `charge_category_id` int(11) NOT NULL DEFAULT 0,
+  `name` longtext NOT NULL DEFAULT '"Calling it the MDT"',
+  `description` longtext NOT NULL DEFAULT '"Calling it the MDT"',
+  `time` int(11) NOT NULL DEFAULT 0,
+  `fine` int(11) NOT NULL DEFAULT 0,
+  `points` int(11) NOT NULL DEFAULT 0,
+  `felony` int(11) NOT NULL DEFAULT 0,
+  `held_until_trial` int(11) NOT NULL DEFAULT 0,
+  `deny_parole` int(11) NOT NULL DEFAULT 0,
+  `accessorized` int(11) NOT NULL DEFAULT 0,
+  `accessory_description` longtext NOT NULL DEFAULT 'Calling it the MDT"',
+  `accessory_time` int(11) NOT NULL DEFAULT 0,
+  `accessory_fine` int(11) NOT NULL DEFAULT 0,
+  `accessory_points` int(11) NOT NULL DEFAULT 0,
+  `accessory_felony` int(11) NOT NULL DEFAULT 0,
+  `accessory_held_until_trial` int(11) NOT NULL DEFAULT 0,
+  `accessory_deny_parole` int(11) NOT NULL DEFAULT 0,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+-- Dumping data for table ahvaz_rp._mdt_charge: ~0 rows (approximately)
+DELETE FROM `_mdt_charge`;
+INSERT INTO `_mdt_charge` (`id`, `charge_category_id`, `name`, `description`, `time`, `fine`, `points`, `felony`, `held_until_trial`, `deny_parole`, `accessorized`, `accessory_description`, `accessory_time`, `accessory_fine`, `accessory_points`, `accessory_felony`, `accessory_held_until_trial`, `accessory_deny_parole`) VALUES
+	(2, 1, 'Ya allah', 'sdfosdfkospdokfopsdkff', 0, 0, 0, 0, 0, 0, 0, '', 0, 0, 0, 0, 0, 0);
+
+-- Dumping structure for table ahvaz_rp._mdt_charge_category
+CREATE TABLE IF NOT EXISTS `_mdt_charge_category` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `name` longtext NOT NULL DEFAULT 'Hello',
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+-- Dumping data for table ahvaz_rp._mdt_charge_category: ~1 rows (approximately)
+DELETE FROM `_mdt_charge_category`;
+INSERT INTO `_mdt_charge_category` (`id`, `name`) VALUES
+	(1, 'Hello');
+
+-- Dumping structure for table ahvaz_rp._mdt_department
+CREATE TABLE IF NOT EXISTS `_mdt_department` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `name` longtext NOT NULL DEFAULT 'LSPD',
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+-- Dumping data for table ahvaz_rp._mdt_department: ~1 rows (approximately)
+DELETE FROM `_mdt_department`;
+INSERT INTO `_mdt_department` (`id`, `name`) VALUES
+	(1, 'LSPD');
+
+-- Dumping structure for table ahvaz_rp._mdt_profile_officer
+CREATE TABLE IF NOT EXISTS `_mdt_profile_officer` (
+  `character_id` int(11) DEFAULT 1,
+  `alias` longtext DEFAULT 'Whatever',
+  `callsign` longtext DEFAULT 'WGAT',
+  `department_id` int(11) DEFAULT 1,
+  `rank_id` int(11) DEFAULT 1,
+  `profile_image_url` longtext DEFAULT 'https://voidrp.storage.c2.liara.space/images/mdt/ttNVaPp.png'
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+-- Dumping data for table ahvaz_rp._mdt_profile_officer: ~1 rows (approximately)
+DELETE FROM `_mdt_profile_officer`;
+INSERT INTO `_mdt_profile_officer` (`character_id`, `alias`, `callsign`, `department_id`, `rank_id`, `profile_image_url`) VALUES
+	(1, 'Shit', 'WGAT', 1, 1, 'https://voidrp.storage.c2.liara.space/images/mdt/ttNVaPp.png');
+
+-- Dumping structure for table ahvaz_rp._mdt_profile_officer_role
+CREATE TABLE IF NOT EXISTS `_mdt_profile_officer_role` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `name` longtext NOT NULL DEFAULT 'JFT',
+  `icon` longtext NOT NULL DEFAULT 'anonymous',
+  `color` longtext NOT NULL DEFAULT 'white',
+  `color_text` longtext NOT NULL DEFAULT 'black',
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+-- Dumping data for table ahvaz_rp._mdt_profile_officer_role: ~1 rows (approximately)
+DELETE FROM `_mdt_profile_officer_role`;
+INSERT INTO `_mdt_profile_officer_role` (`id`, `name`, `icon`, `color`, `color_text`) VALUES
+	(1, 'JFT', 'anonymous', 'white', 'black');
+
+-- Dumping structure for table ahvaz_rp._mdt_rank
+CREATE TABLE IF NOT EXISTS `_mdt_rank` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `name` longtext NOT NULL DEFAULT 'Cadet',
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+-- Dumping data for table ahvaz_rp._mdt_rank: ~1 rows (approximately)
+DELETE FROM `_mdt_rank`;
+INSERT INTO `_mdt_rank` (`id`, `name`) VALUES
+	(1, 'Cadet');
+
+-- Dumping structure for table ahvaz_rp._mdt_report_category
+CREATE TABLE IF NOT EXISTS `_mdt_report_category` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `name` longtext NOT NULL DEFAULT 'Hello',
+  `description` longtext NOT NULL DEFAULT 'moto',
+  `template` longtext NOT NULL DEFAULT '#some shit',
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+-- Dumping data for table ahvaz_rp._mdt_report_category: ~0 rows (approximately)
+DELETE FROM `_mdt_report_category`;
+
+-- Dumping structure for table ahvaz_rp._mdt_role_access
+CREATE TABLE IF NOT EXISTS `_mdt_role_access` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `profile_id` int(11) NOT NULL DEFAULT 0,
+  `role_id` int(11) NOT NULL DEFAULT 0,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+-- Dumping data for table ahvaz_rp._mdt_role_access: ~1 rows (approximately)
+DELETE FROM `_mdt_role_access`;
+INSERT INTO `_mdt_role_access` (`id`, `profile_id`, `role_id`) VALUES
+	(1, 1, 1);
+
+-- Dumping structure for table ahvaz_rp._mdt_tag_category
+CREATE TABLE IF NOT EXISTS `_mdt_tag_category` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `name` longtext NOT NULL DEFAULT 'other',
+  `color` longtext NOT NULL DEFAULT 'white',
+  `color_text` longtext NOT NULL DEFAULT 'black',
+  `icon` longtext NOT NULL DEFAULT 'microscope',
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+-- Dumping data for table ahvaz_rp._mdt_tag_category: ~1 rows (approximately)
+DELETE FROM `_mdt_tag_category`;
+INSERT INTO `_mdt_tag_category` (`id`, `name`, `color`, `color_text`, `icon`) VALUES
+	(1, 'yooo', 'red', 'black', 'burger');
+
 -- Dumping structure for table ahvaz_rp._parking_log
 CREATE TABLE IF NOT EXISTS `_parking_log` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
@@ -314,7 +464,7 @@ CREATE TABLE IF NOT EXISTS `_parking_log` (
   `timestamp` longtext DEFAULT NULL,
   `garage` varchar(255) NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=11 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=12 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 -- Dumping data for table ahvaz_rp._parking_log: ~9 rows (approximately)
 DELETE FROM `_parking_log`;
@@ -328,7 +478,8 @@ INSERT INTO `_parking_log` (`id`, `vin`, `cid`, `action`, `engine`, `body`, `fue
 	(7, '3PMSP28BS24913486', 1, 'out', '1000', '1000', 71, '1727105445773', 'garage_tuner'),
 	(8, '3PMSP28BS24913486', 1, 'stored', '1000', '1000', 71, '1727105449092', 'garage_tuner'),
 	(9, '3PMSP28BS24913486', 1, 'out', '1000', '1000', 71, '1727105452046', 'garage_tuner'),
-	(10, '3PMSP28BS24913486', 1, 'stored', '994', '995.75', 60, '1727107688027', 'garage_q');
+	(10, '3PMSP28BS24913486', 1, 'stored', '994', '995.75', 60, '1727107688027', 'garage_q'),
+	(11, '3PMSP28BS24913486', 1, 'out', '1000', '1000', 60, '1727120851770', 'garage_q');
 
 -- Dumping structure for table ahvaz_rp._race_leaderboard
 CREATE TABLE IF NOT EXISTS `_race_leaderboard` (
@@ -409,10 +560,10 @@ CREATE TABLE IF NOT EXISTS `_vehicle` (
   PRIMARY KEY (`id`) USING BTREE
 ) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
--- Dumping data for table ahvaz_rp._vehicle: ~1 rows (approximately)
+-- Dumping data for table ahvaz_rp._vehicle: ~0 rows (approximately)
 DELETE FROM `_vehicle`;
 INSERT INTO `_vehicle` (`id`, `cid`, `vin`, `model`, `state`, `garage`, `plate`, `name`, `type`, `size`, `degradation`, `metadata`, `damage`, `mods`, `appearance`, `records`, `location`, `picture`, `information`) VALUES
-	(1, 1, '3PMSP28BS24913486', 'sultan', 'stored', 'garage_q', 'IYB9642Z', NULL, 'land', 0, '{"axle":99.7,"body":99.44,"brakes":99.72,"clutch":99.48,"electronics":99.78,"engine":99.84,"injector":99.82,"radiator":99.72,"transmission":99.61,"tyres":99.8}', '{"afterMarkets":{},"carPolish":0,"fakePlate":false,"fuel":60,"handling":{},"harness":0,"mileage":3.504026544120701,"neonDisabled":false,"nitro":0,"wheelFitment":{"fl":-0.78,"fr":0.78,"rl":-0.86,"rr":0.86,"width":1}}', '{"body":995.75,"engine":994,"dirt":6.65,"windows":[{"index":0,"broken":false},{"index":1,"broken":false},{"index":2,"broken":false},{"index":3,"broken":false},{"index":4,"broken":true},{"index":5,"broken":true},{"index":6,"broken":false},{"index":7,"broken":true}],"doors":[{"index":0,"broken":false},{"index":1,"broken":false},{"index":2,"broken":false},{"index":3,"broken":false},{"index":4,"broken":false},{"index":5,"broken":false}],"wheels":[{"index":0,"health":999.34},{"index":1,"health":998.05},{"index":2,"health":997.41},{"index":3,"health":997.78}]}', '{"Spoilers":2,"FrontBumper":-1,"RearBumper":-1,"SideSkirt":-1,"Exhaust":-1,"Frame":-1,"Grille":-1,"Hood":-1,"Fender":-1,"RightFender":-1,"Roof":-1,"Engine":-1,"Brakes":-1,"Transmission":-1,"Horns":-1,"Suspension":-1,"Armor":-1,"UNK17":0,"Turbo":0,"UNK19":0,"TireSmoke":0,"UNK21":0,"XenonHeadlights":0,"FrontWheels":-1,"BackWheels":-1,"PlateHolder":-1,"VanityPlates":-1,"InteriorTrim":-1,"Ornaments":-1,"Dashboard":-1,"Dials":-1,"DoorSpeakers":-1,"Seats":-1,"SteeringWheel":-1,"ShiftLeavers":-1,"Plaques":-1,"Speakers":-1,"Trunk":-1,"Hydraulics":-1,"EngineBlock":-1,"AirFilter":-1,"Struts":-1,"ArchCover":-1,"Aerials":-1,"ExteriorTrim":-1,"Tank":-1,"Windows":-1,"UNK47":-1,"Livery":-1}', '{"colors":{"primary":111,"secondary":111,"pearlescent":111,"wheels":156,"tyre":{"r":255,"g":255,"b":255},"neon":{"r":255,"g":0,"b":255},"xenon":255,"dashboard":0,"interior":0},"tint":-1,"neon":{"left":false,"right":false,"front":false,"back":false},"extras":[10],"wheelType":0,"oldLivery":-1,"plateIndex":0}', '', NULL, NULL, NULL);
+	(1, 1, '3PMSP28BS24913486', 'sultan', 'stored', 'garage_q', 'IYB9642Z', NULL, 'land', 0, '{"axle":99.55,"body":99.23,"brakes":99.39,"clutch":99.34,"electronics":99.56,"engine":99.64,"injector":99.53,"radiator":99.47,"transmission":99.42,"tyres":99.56}', '{"afterMarkets":{},"carPolish":0,"fakePlate":false,"fuel":51,"handling":{},"harness":0,"mileage":5.508905684844216,"neonDisabled":false,"nitro":0,"wheelFitment":{"fl":-0.78,"fr":0.78,"rl":-0.86,"rr":0.86,"width":1}}', '{"body":995.75,"engine":994,"dirt":6.65,"windows":[{"index":0,"broken":false},{"index":1,"broken":false},{"index":2,"broken":false},{"index":3,"broken":false},{"index":4,"broken":true},{"index":5,"broken":true},{"index":6,"broken":false},{"index":7,"broken":true}],"doors":[{"index":0,"broken":false},{"index":1,"broken":false},{"index":2,"broken":false},{"index":3,"broken":false},{"index":4,"broken":false},{"index":5,"broken":false}],"wheels":[{"index":0,"health":999.34},{"index":1,"health":998.05},{"index":2,"health":997.41},{"index":3,"health":997.78}]}', '{"Spoilers":2,"FrontBumper":-1,"RearBumper":-1,"SideSkirt":-1,"Exhaust":-1,"Frame":-1,"Grille":-1,"Hood":-1,"Fender":-1,"RightFender":-1,"Roof":-1,"Engine":-1,"Brakes":-1,"Transmission":-1,"Horns":-1,"Suspension":-1,"Armor":-1,"UNK17":0,"Turbo":0,"UNK19":0,"TireSmoke":0,"UNK21":0,"XenonHeadlights":0,"FrontWheels":-1,"BackWheels":-1,"PlateHolder":-1,"VanityPlates":-1,"InteriorTrim":-1,"Ornaments":-1,"Dashboard":-1,"Dials":-1,"DoorSpeakers":-1,"Seats":-1,"SteeringWheel":-1,"ShiftLeavers":-1,"Plaques":-1,"Speakers":-1,"Trunk":-1,"Hydraulics":-1,"EngineBlock":-1,"AirFilter":-1,"Struts":-1,"ArchCover":-1,"Aerials":-1,"ExteriorTrim":-1,"Tank":-1,"Windows":-1,"UNK47":-1,"Livery":-1}', '{"colors":{"primary":111,"secondary":111,"pearlescent":111,"wheels":156,"tyre":{"r":255,"g":255,"b":255},"neon":{"r":255,"g":0,"b":255},"xenon":255,"dashboard":0,"interior":0},"tint":-1,"neon":{"left":false,"right":false,"front":false,"back":false},"extras":[10],"wheelType":0,"oldLivery":-1,"plateIndex":0}', '', NULL, NULL, NULL);
 
 -- Dumping structure for table ahvaz_rp._vehicle_clothing
 CREATE TABLE IF NOT EXISTS `_vehicle_clothing` (
