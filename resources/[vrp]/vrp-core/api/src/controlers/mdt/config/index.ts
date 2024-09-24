@@ -1,7 +1,6 @@
 import { Router } from 'express';
 import db from "../../../db"
 import { Logger } from "../../../tools/logger"
-import { GetChargeCatById } from '../charges/getCharges';
 
 export const ConfigRoute = Router();
 
@@ -22,11 +21,6 @@ ConfigRoute.post('/mdt/insertConfigOption', async(req, res) => {
     Logger.debug('[Mdt API] insertConfigOption', req.body.data)
 
     const valuesData = req.body.data.data
-    if (req.body.data.table === '_mdt_charge') {
-        const catname = await GetChargeCatById(valuesData.charge_category_id)
-        console.log('catname', catname)
-        valuesData.category_title = catname
-    }
     const columns = Object.keys(valuesData).join(', ');
     const values = Object.values(valuesData);
     const placeholders = values.map(() => `?`).join(', ');

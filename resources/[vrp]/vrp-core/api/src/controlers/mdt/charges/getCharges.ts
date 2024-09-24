@@ -16,6 +16,13 @@ export const GetChargeCatById = async(pId: any) => {
 
 getCharges.post('/mdt/getCharges', async(req, res) => {
     Logger.debug('[Mdt API] getCharges')
-    const [result] = await db.query('SELECT * FROM _mdt_charge')
-    res.json({data: result, meta: {ok: true, message: ''}})
+    const [result]: any = await db.query('SELECT * FROM _mdt_charge')
+    const data = await Promise.all(result.map(async (pItem: any) => {
+        const catname = await GetChargeCatById(pItem.charge_category_id);
+        return {
+            category_title: catname,
+            ...pItem
+        };
+    }));
+    res.json({data: data, meta: {ok: true, message: ''}})
 })

@@ -1,6 +1,8 @@
 {
     "configId": "main",
     "data": {
+        "serverCode": "wl",
+        "serverType": "whitelisted",
         "payoutFactor": 1,
         "characters.limited": true,
         "characterLimit": 3,

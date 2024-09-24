@@ -274,42 +274,42 @@ AddEventHandler('vrp-jobmanager:playerBecameJob', function(pSource, pJob)
     TriggerEventForUnits('vrp-dispatch:updateUnitCoords', units)
 end)
 
--- RegisterCommand('AddDispatchPing', function(pSource, pArgs)
---     local ped = GetPlayerPed(pSource)
---     local data  = {
---         callSign = nil,
---         ctxId = 1,
---         dispatchCode = '10-30A',
---         dispatchMessage = pArgs[1],
---         firstColor = nil,
---         flagged_at = nil,
---         flagged_by = nil,
---         flagged_reason = nil,
---         extraData = nil,
---         heading = nil,
---         id = 1,
---         location = nil,
---         model = nil,
---         origin = GetEntityCoords(ped),
---         plate = nil,
---         secondColor = nil,
---         senderId = nil,
---         senderName = nil,
---         senderNumber = nil,
---         text = nil,
---         timestamp = os.time(),
---         title = nil,
---         priotiy = 1,
---         getStreetCord = true,
---         recipientList = {
---             ['police'] = true
---         }
---     }
---     table.insert(pings, data)
---     TriggerEventForUnits('dispatch:clNotify', data)
---     TriggerEventForUnits('vrp-dispatch:updateDispatch', 'addPing', data)
--- end)
--- RegisterNetEvent('dispatch:svNotify')
+RegisterCommand('AddDispatchPing', function(pSource, pArgs)
+    local ped = GetPlayerPed(pSource)
+    local data  = {
+        callSign = nil,
+        ctxId = 1,
+        dispatchCode = '10-30A',
+        dispatchMessage = pArgs[1],
+        firstColor = nil,
+        flagged_at = nil,
+        flagged_by = nil,
+        flagged_reason = nil,
+        extraData = nil,
+        heading = nil,
+        id = 1,
+        location = nil,
+        model = nil,
+        origin = GetEntityCoords(ped),
+        plate = nil,
+        secondColor = nil,
+        senderId = nil,
+        senderName = nil,
+        senderNumber = nil,
+        text = nil,
+        timestamp = os.time(),
+        title = nil,
+        priotiy = 1,
+        getStreetCord = true,
+        recipientList = {
+            ['police'] = true
+        }
+    }
+    table.insert(pings, data)
+    TriggerEventForUnits('dispatch:clNotify', data)
+    TriggerEventForUnits('vrp-dispatch:updateDispatch', 'addPing', data)
+end)
+
 RegisterNetEvent('dispatch:svNotify', function(pData)
     local pushData = pData
     pushData.id = #pings + 1

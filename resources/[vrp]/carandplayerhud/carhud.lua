@@ -2567,7 +2567,7 @@ RegisterCommand("togglefattyres", function()
 end)
 
 AddEventHandler("vrp-spawn:characterSpawned", function()
-  local serverCode = 'wl'--exports["vrp-config"]:GetServerCode()
+  local serverCode = exports["vrp-config"]:GetServerCode()
   if serverCode ~= "wl" then return end
   local cid = exports["isPed"]:isPed("cid")
   playerCid = cid

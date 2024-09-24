@@ -2,6 +2,7 @@ import express from 'express';
 import cors from 'cors';
 import { MdtApi } from './controlers/mdt/main';
 import { FinancialsApi } from './controlers/financials';
+import { PhoneApi } from './controlers/phone';
 export const app = express();
 const port = 80;
 
@@ -24,6 +25,7 @@ app.use(cors());
 app.use(express.json());
 app.use(MdtApi)
 app.use(FinancialsApi)
+app.use(PhoneApi)
 
 app.listen(port, () => {
   console.log(`Server is running on http://localhost:${port}`);

@@ -35,3 +35,11 @@ export function GetMiscConfig(key: string) {
     return config[key] ?? null;
 }
 global.exports("GetMiscConfig", GetMiscConfig);
+
+global.exports('GetServerCode', () => {
+    return GetModuleConfig('main')?.serverCode
+})
+
+global.exports('GetServerType', () => {
+    return GetModuleConfig('main')?.serverType
+})

@@ -28,7 +28,9 @@ RegisterUICallback("vrp-ui:getDocumentContent", function(data, cb)
 end)
 
 RegisterUICallback("vrp-ui:getDocumentTypes", function(data, cb)
+  print('getting thi shit')
   local success, message = RPC.execute("phone:getDocumentTypes")
+  
   cb({ data = message, meta = { ok = success, message = (not success and message or 'done') } })
 end)
 

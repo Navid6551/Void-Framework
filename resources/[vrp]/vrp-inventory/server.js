@@ -900,6 +900,10 @@ onNet("server-inventory-give", async (cid, itemId, slotId, amount, generateInfor
         itemInfo = JSON.stringify(itemData);
     }
 
+    if (itemId == 'summonablepet') {
+        itemInfo = JSON.stringify(itemData);
+    }
+
     if (itemId == 'pdbadge') {
         itemInfo = JSON.stringify(itemData);
     }

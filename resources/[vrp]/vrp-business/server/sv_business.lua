@@ -380,12 +380,3 @@ RPC.register('RemoveBusinessEmployee', function(pSource, pData)
 
     return true, ''
 end)
-
-RPC.register('IsEmployedAtBusiness', function(pSource, pData)
-    print('IsEmployedAtBusiness', pSource, pData, json.encode(pData))
-    -- local bizData = GetPlayerBusinessesById(pData.character.id, pData.business.id)
-    -- if not bizData then
-    --     return false
-    -- end
-    return true
-end)

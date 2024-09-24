@@ -92,7 +92,6 @@ end)
 
 RegisterNetEvent('dispatch:clNotify')
 AddEventHandler('dispatch:clNotify', function(pNotificationData)
-  print('dispatch:clNotify', json.encode(pNotificationData))
     if pNotificationData == nil then return end
     if pNotificationData.recipientList then
         for key, value in pairs(pNotificationData.recipientList) do

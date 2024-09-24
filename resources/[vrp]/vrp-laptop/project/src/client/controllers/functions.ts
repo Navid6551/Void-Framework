@@ -32,6 +32,8 @@ const OpenLaptopUI = (apps: any, features: any, settings: any) => {
     global.exports['vrp-ui'].SetUIFocus(true, true);
 }
 
+globalThis.exports('OpenLaptop', OpenLaptopUI)
+
 export class Functions {
     static OpenLaptopUI = OpenLaptopUI
     static LaptopAnimation = LaptopAnimation

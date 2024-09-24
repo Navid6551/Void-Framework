@@ -732,7 +732,7 @@ TAKEOUT_ZONES = {
 }
 
 Citizen.CreateThread(function()
-  SERVER_CODE = 'wl'--exports["vrp-config"]:GetServerCode()
+  SERVER_CODE = exports["vrp-config"]:GetServerCode()
   -- manage food menus
   for _, zone in ipairs(MENU_ZONES) do
     exports["vrp-polytarget"]:AddBoxZone("restaurant_manage_food_menu", table.unpack(zone))

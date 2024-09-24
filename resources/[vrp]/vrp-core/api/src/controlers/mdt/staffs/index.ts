@@ -83,27 +83,25 @@ const perms = [
 StaffRoute.post('/mdt/getOfficerProfiles', async(req, res) => {
     Logger.debug('[Mdt API] getOfficerProfiles')
     const [result]: any = await db.query('SELECT * FROM _mdt_profile_officer')
-    const ofiicers = []
-    for (const [k, pItem] of Object.entries(result) as any) {
-        const player = await Promise.all([
-            GetPlayerRoles(pItem.id),
-            GetPlayerById(pItem.character_id),
-            GetDepartmentById(pItem.department_id),
-            GetRankById(pItem.rank_id)
-        ])
-        ofiicers.push({
+
+    const officers = await Promise.all([result.map(async(pItem: any) => {
+        const roles = await GetPlayerRoles(pItem.id)
+        const player = await GetPlayerById(pItem.character_id)
+        const department = await GetDepartmentById(pItem.department_id)
+        const rank = await GetRankById(pItem.rank_id)
+        return {
             ...pItem,
-            name: `${player[1].charinfo.firstname} ${player[1].charinfo.lastname}`,
-            department: player[2].name,
-            rank: player[3].name,
-            roles: player[0],
+            name: `${player.charinfo.firstname} ${player.charinfo.lastname}`,
+            department: department.name,
+            rank: rank.name,
+            roles: roles,
             permissions: [],
             certs: [],
             strikes: []
-        })
-    }
+        }
+    })])
 
-    res.json({data: ofiicers, meta: {ok: true, message: ''}})
+    res.json({data: officers, meta: {ok: true, message: ''}})
 })
 
 StaffRoute.post('/mdt/getRolePermissions', async(req, res) => {
