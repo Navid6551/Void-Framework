@@ -39,6 +39,9 @@ end)
 
 RPC.register('vrp-gopros:playerSpawnedSendCams', function(pSource)
     local Player = QBCore.Functions.GetPlayer(pSource)
+    if not Player then
+        return {}
+    end
     return getCamsByCid(Player.PlayerData.citizenid)
 end)
 
