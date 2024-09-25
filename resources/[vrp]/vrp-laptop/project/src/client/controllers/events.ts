@@ -7,13 +7,13 @@ export async function InitEvents(): Promise<void> {
             'bennysApp',
             'towApp',
             'dodoApp',
-            'hoimportsApp'
+            'hoimportsApp',
+            'herbsApp'
         ];
         const appEvents = [];
         const RacingData = global.exports['vrp-racing'].getHasRaceUsbAndAlias();
         const hasRacingData = RacingData.has_usb_racing && RacingData.racingAlias;
-        // const isGang = await global.exports['vrp-gangsystem'].GetCurrentGang()
-        const isGang = true
+        const isGang = await global.exports['vrp-gangsystem'].GetCurrentGang()
         if (hasRacingData) {
             LaptopApps.push('boostingApp');
             appEvents.push('bennysApp:showConsumables');
@@ -27,15 +27,15 @@ export async function InitEvents(): Promise<void> {
         if (hasSeedAnalyzer) {
             LaptopApps.push('seedAnalyzerApp');
         }
-        const cid = global.exports.isPed.isPed('cid');
-        const hasTunerAccess = false//await Functions.isEmployed('tuner', cid);
+
+        const hasTunerAccess = Functions.isEmployed('tuner');
         if (hasTunerAccess) {
             appEvents.push('tunershop:showBrowserTab');
         }
-        // const dodoAccess = await Functions.isEmployed('dodologistics', 'hire', cid);
-        // if (dodoAccess) {
-        //     appEvents.push('dodoApp:showManagement');
-        // }
+        const dodoAccess = Functions.isEmployed('dodologistics', 'hire');
+        if (dodoAccess) {
+            appEvents.push('dodoApp:showManagement');
+        }
         const hasMethLab = global.exports['vrp-inventory'].hasEnoughOfItem('methlabusb', 1, false, true);
         if (hasMethLab && (hasAdvancedVpn || hasVpn)) {
             LaptopApps.push('methApp');
@@ -43,9 +43,8 @@ export async function InitEvents(): Promise<void> {
 
         if (hasAdvancedVpn || hasVpn) {
             if (isGang) {
-                // LaptopApps.push('herbsApp');
                 LaptopApps.push('streetApp');
-                // appEvents.push('bozoweb:showBrowserTab');
+                appEvents.push('bozoweb:showBrowserTab');
             }
         }
         const LaptopType = {

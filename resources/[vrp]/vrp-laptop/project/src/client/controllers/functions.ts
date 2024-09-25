@@ -6,15 +6,17 @@ const LaptopAnimation = async() => {
     TriggerEvent('attachItemPhone', 'tablet01');
 }
 
-const isEmployed = async(business: any, characterId: any) => {
-    const Character = { id: characterId };
-    const Business = { id: business };
-    const businessData = {
-        character: Character,
-        business: Business
-    };
-    const [hasPerm] = await RPC.execute('IsEmployedAtBusiness', businessData);
-    return hasPerm;
+const isEmployed = (business: any, pPerm = undefined) => {
+    const isEmployed = globalThis.exports['vrp-business'].IsEmployedAt(business)
+    if (!isEmployed) {
+        return false
+    }
+    
+    if (pPerm && !globalThis.exports['vrp-business'].HasPermission(business, pPerm)) {
+        return false
+    }
+
+    return true
 }
 
 const OpenLaptopUI = (apps: any, features: any, settings: any) => {
