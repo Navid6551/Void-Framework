@@ -646,3 +646,10 @@ function IDK()
         scenario = "WORLD_HUMAN_CLIPBOARD"
     }
 end
+
+RegisterCommand('turnJson', function(s, args)
+    local shit = {
+        gangId = 'vagos'
+    }
+    print('[vrp-base] Turn Table To JSON Stringify', json.encode(shit))
+end)

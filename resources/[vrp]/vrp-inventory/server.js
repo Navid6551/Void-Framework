@@ -5,7 +5,7 @@ let QBCore = exports['vrp-core'].GetCoreObject()
 let hasBrought = [];
 let CheckedDeginv = [];
 
-function makeId(length) {
+const makeId = (length) => {
     var result = '';
     var characters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghikjlmnopqrstuvwxyz'; //abcdef
     var charactersLength = characters.length;
@@ -17,7 +17,7 @@ function makeId(length) {
     return result;
 }
 
-function GenerateInformation(cid, itemId, itemData, returnData = '{}') {
+const GenerateInformation = (cid, itemId, itemData, returnData = '{}') => {
     let rData = Object.assign({}, itemData);
     let returnInfo = returnData;
     let randomId = Math.floor(Math.random() * 9999999) + 100000;
@@ -117,46 +117,6 @@ function GenerateInformation(cid, itemId, itemData, returnData = '{}') {
                         return resolve(returnInfo);
                     }
                     break;
-                case 'huntingcarcass1':
-                case 'huntingcarcass2':
-                case 'huntingcarcass3':
-                case 'huntingcarcass4':
-                    returnInfo = JSON.stringify({
-                        Identifier: itemData.identifier
-                    });
-
-                    timeOut = 1;
-                    clearTimeout(timeOut);
-                    return resolve(returnInfo);
-
-                case "casing":
-                    returnInfo = JSON.stringify({
-                        Identifier: itemData.identifier,
-                        Type: itemData.eType,
-                        Other: itemData.other
-                    })
-
-                    timeOut = 1
-                    clearTimeout(timeOut);
-                    return resolve(returnInfo);
-
-                // case "np_evidence_marker_yellow":
-                // case "np_evidence_marker_red":
-                // case "np_evidence_marker_white":
-                // case "np_marker_evidence_marker_orange":
-                // case "np_marker_evidence_marker_light_blue":
-                // case "np_marker_evidence_marker_light_purple":
-                // case "evidence":
-                //     returnInfo = JSON.stringify({
-                //         Identifier: itemData.identifier,
-                //         Type: itemData.eType,
-                //         Other: itemData.other
-                //     })
-
-                //     timeOut = 1;
-                //     clearTimeout(timeOut);
-                //     return resolve(returnInfo);
-
                 case "rentalpapers":
                     returnInfo = JSON.stringify({
                         _hideKeys: ["_netid"],
@@ -219,18 +179,6 @@ function GenerateInformation(cid, itemId, itemData, returnData = '{}') {
                         charges: 0,
                         id: randomId,
                         _hideKeys: ["charges", "id"],
-                    });
-
-                    timeOut = 1;
-                    clearTimeout(timeOut);
-                    return resolve(returnInfo);
-                case "heistlaptop1":
-                case "heistlaptop2":
-                case "heistlaptop3":
-                case "heistlaptop4":
-                    returnInfo = JSON.stringify({
-                        id: randomId,
-                        _hideKeys: ["id"],
                     });
 
                     timeOut = 1;
@@ -366,6 +314,41 @@ const FriskPlayer = async(pCid) => {
     }
 
     return false
+}
+
+const findItemById = async(pId) => {
+    const result = await SQL.execute(`SELECT * FROM inventory WHERE id = @id`, {
+        id: pId,
+    });
+
+    if (!result[0]) {
+        return false
+    }
+
+    return result[0]
+}
+
+const removeItemById = async(pSource, itemId) => {
+    const Player = QBCore.Functions.GetPlayer(pSource)
+    const cid = Player.PlayerData.citizenid
+    const item = await findItemById(itemId)
+
+    if (!item) {
+        return false
+    }
+
+    const update = await SQL.execute(`DELETE FROM inventory WHERE id = @id`, {
+        id: itemId,
+    });
+
+    if (!update) {
+        return false
+    }
+
+    emit("server-request-update-src", cid, pSource)
+    emitNet('hud-display-item', pSource, item.item_id, 'Removed', 1);
+
+    return true
 }
 
 RegisterServerEvent("server-request-update")
@@ -837,6 +820,7 @@ onNet("server-inventory-remove-slot", async (itemId, amount, slotId) => {
     })
 })
 
+
 RegisterServerEvent("server-inventory-give")
 onNet("server-inventory-give", async (cid, itemId, slotId, amount, generateInformation, itemData, openedInv, returnData) => {
     let src = source
@@ -848,98 +832,12 @@ onNet("server-inventory-give", async (cid, itemId, slotId, amount, generateInfor
 
     let itemInfo = "{}"
 
-    if (itemId == "idcard") {
+    if (ItemToGenerateData.includes(itemId)) {
         itemInfo = await GenerateInformation(cid, itemId, itemData)
     }
 
-    if (itemId == "evidence" || itemId == "np_evidence_marker_yellow" || itemId == "np_evidence_marker_red" || itemId == "np_evidence_marker_white" || itemId == "np_marker_evidence_marker_orange" || itemId == "np_marker_evidence_marker_light_blue" || itemId == "np_marker_evidence_marker_light_purple") {
+    if (ItemsToReturnData.includes(itemId)) {
         itemInfo = JSON.stringify(itemData);
-    }
-
-    if (itemId == "rentalpapers") {
-        itemInfo = await GenerateInformation(cid, itemId, itemData)
-    }
-
-    if (itemId == "customtoyitem") {
-        itemInfo = await GenerateInformation(cid, itemId, itemData)
-    }
-
-    if (itemId == "smallbud") {
-        itemInfo = await GenerateInformation(cid, itemId, itemData)
-    }
-    if (itemId == 'weedpackage' || itemId == "weedbaggie") {
-        itemInfo = await GenerateInformation(cid, itemId, itemData)
-    }
-    if (itemId == 'wetbud') {
-        itemInfo = returnData;
-    }
-    if (itemId == 'mask') {
-        itemInfo = returnData;
-    }
-    if (itemId == 'heiststarttoken') {
-        itemInfo = returnData;
-    }
-
-    if (itemId == 'spraycan') {
-        itemInfo = returnData;
-    }
-
-    if (itemId == 'notepadnote') {
-        itemInfo = returnData;
-    }
-
-    if (itemId == 'femaleseed') {
-        itemInfo = returnData;
-    }
-
-    if (itemId == 'racingusb2') {
-        itemInfo = JSON.stringify(itemData);
-    }
-
-    if (itemId == 'racingusb0') {
-        itemInfo = JSON.stringify(itemData);
-    }
-
-    if (itemId == 'summonablepet') {
-        itemInfo = JSON.stringify(itemData);
-    }
-
-    if (itemId == 'pdbadge') {
-        itemInfo = JSON.stringify(itemData);
-    }
-
-    if (itemId == "bowlingreceipt") {
-        itemInfo = await GenerateInformation(cid, itemId, itemData)
-    }
-
-    if (itemId == "craterepairkit") {
-        itemInfo = await GenerateInformation(cid, itemId, itemData)
-    }
-
-    if (itemId == "drone_lspd" || itemId == "drone_civ" || itemId == "rc_car_civ") {
-        itemInfo = await GenerateInformation(cid, itemId, itemData)
-    }
-
-    if (itemId == "-2084633992" || itemId == "1593441988" || itemId == "-1716589765") {
-        itemInfo = await GenerateInformation(cid, itemId, itemData)
-    }
-
-    if (itemId == "resfooditem" || itemId == "ressideitem" || itemId == "resdessertitem" || itemId == "resdrinkitem") {
-        itemInfo = await GenerateInformation(cid, itemId, itemData)
-    }
-
-    if (itemId == "tcgpromobooster") {
-        itemInfo = await GenerateInformation(cid, itemId, itemData)
-    }
-
-    if (itemId == "heistlaptop1" || itemId == "heistlaptop2" || itemId == "heistlaptop3" || itemId == "heistlaptop4" || itemId == "burgerReceipt") {
-        itemInfo = returnData;
-    }
-
-    if (itemId == "burgershotbag" || itemId == "murdermeal" || itemId == "wrappedgift" || itemId == "casinobag"
-        || itemId == "bentobox" || itemId == "pizzabox" || itemId == "roostertakeout" || itemId == "cockbox"
-        || itemId == "heistduffelbag" || itemId == "lostcut2" || itemId == "vineyardwinebox" || itemId == "custombagitem" || itemId == "casinomember") {
-        itemInfo = returnData;
     }
 
     let values = `('${playerInventory}','${itemId}','${itemInfo}','${insertInfo.toSlot}','${creationDate}')`
@@ -1005,3 +903,4 @@ onNet('onResourceStart', (resource) => {
 })
 
 globalThis.exports('FriskPlayer', FriskPlayer)
+globalThis.exports('RemoveItemById', removeItemById)

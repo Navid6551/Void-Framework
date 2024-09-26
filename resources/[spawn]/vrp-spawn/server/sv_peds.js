@@ -2,7 +2,7 @@ const QBCore = exports['vrp-core'].GetCoreObject()
 
 RPC.register('vrp-character:fetchCharacterData', async(pSource) => {
     const PlayerChats = []
-    const license = QBCore.Functions.GetIdentifier(pSource, 'steam')
+    const license = QBCore.Functions.GetIdentifier(pSource, 'license')
     const result = await SQL.execute('SELECT * FROM players WHERE license = @license', {
         ["license"]: license
     })

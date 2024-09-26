@@ -1,18 +1,28 @@
 import { RankValue } from "@shared/classes/enums";
-import { Base, Events, Procedures } from "@vpx/server";
-import { getVehicles } from "server/config/vehicles";
-import { GetClientCommands, GetServerCommands, clientCommandArray, serverCommandArray } from "server/server";
+import { Events } from "@vpx/server";
+import { GetClientCommands, GetServerCommands, QBCore, clientCommandArray, serverCommandArray } from "server/server";
 import { Repository } from "./database/repository";
 //import { Log } from "./logs";
 //import { clientCommands, serverCommands } from "server/util/commands";
 
 export async function InitEvents(): Promise<void> { };
 
-RPC.register("vrp:admin:getCommandUI", (pSource: number) => {
-    const user = {
-        rank: 'owner'
-    }//QBCore.Functions.GetPlayer(pSource);
-    if (!user) return;
+const getPlayerPermission = async(pSource: number) => {
+    const license = QBCore.Functions.GetIdentifier(pSource, 'license')
+    const data = await SQL.execute("SELECT * FROM user_permissions WHERE license = @license", {
+        license: license
+    });
+
+    if (data[0]) {
+        return String(data[0].group)
+    }
+
+    return 'user'
+}
+
+RPC.register("vrp:admin:getCommandUI", async(pSource: number) => {
+    const rank = await getPlayerPermission(pSource)
+    if (!rank) return;
 
     if (clientCommandArray.length == 0) {
         const clientCommands = GetClientCommands();
@@ -29,7 +39,7 @@ RPC.register("vrp:admin:getCommandUI", (pSource: number) => {
         ...serverCommandArray
     ];
 
-    const value = RankValue[user.rank];
+    const value = RankValue[rank];
 
     return commands.filter((command: CommandData) => {
         return value >= command.value;
@@ -49,13 +59,10 @@ RPC.register("vrp:admin:getCommandUI", (pSource: number) => {
     });
 });
 
-export function isAdmin(pSource: number) {
-    const user = {
-       rank: 'owner'
-    }
-    if (!user) return;
+export async function isAdmin(pSource: number) {
+    const rank = await getPlayerPermission(pSource)
+    if (!rank) return;
 
-    const rank = user.rank;
     if (RankValue[rank] >= RankValue.helper) {
         const isDev = rank === 'dev' || rank === 'owner' ? true : false;
         const isDevServer = GetConvar("sv_environment", "prod") === "debug";
@@ -63,19 +70,15 @@ export function isAdmin(pSource: number) {
     } else {
         return [false, false];
     }
-}
+} 
+global.exports('isAdmin', isAdmin)
 
-RPC.register("vrp:admin:isAdmin", (pSource: number) => {
-    return isAdmin(pSource);
-});
+RPC.register("vrp:admin:isAdmin", isAdmin);
 
-RPC.register("vrp:admin:requestAdminPermission", (pSource: number) => {
-    const user = {
-        rank: 'owner'
-    }
-    if (!user) return;
+RPC.register("vrp:admin:requestAdminPermission", async(pSource: number) => {
+    const rank = await getPlayerPermission(pSource)
+    if (!rank) return;
 
-    const rank = user.rank;
     if (RankValue[rank] >= RankValue.user) {
         const isDev = rank === 'dev' || rank === 'owner' ? true : false;
         const isDevServer = GetConvar("sv_environment", "prod") === "debug";

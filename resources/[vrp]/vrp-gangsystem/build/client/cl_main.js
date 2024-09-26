@@ -1527,7 +1527,7 @@
   ;
   async function _0x4ac7f0() {
     await _0x218706();
-    await RPC.execute("vrp-datagrid:subscribe", "gang-flags");
+    // await RPC.execute("vrp-datagrid:subscribe", "gang-flags");
     _0x1409af();
     await _0x2209d7();
     await _0x13968a();

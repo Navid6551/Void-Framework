@@ -19,7 +19,7 @@ const isEmployed = (business: any, pPerm = undefined) => {
     return true
 }
 
-const OpenLaptopUI = (apps: any, features: any, settings: any) => {
+const OpenLaptopUI = (apps: any, features: any, settings: any, moreData?: any) => {
     LaptopAnimation();
 
     const data = {
@@ -28,16 +28,17 @@ const OpenLaptopUI = (apps: any, features: any, settings: any) => {
         overwriteSettings: settings
     }
 
-    console.log(JSON.stringify(apps))
-
-    global.exports['vrp-ui'].openApplication('laptop', data);
+    global.exports['vrp-ui'].openApplication('laptop',  Object.assign(data, moreData));
     global.exports['vrp-ui'].SetUIFocus(true, true);
 }
 
-globalThis.exports('OpenLaptop', OpenLaptopUI)
+const getBennysCatalog = () => {
+    return []
+}
 
 export class Functions {
     static OpenLaptopUI = OpenLaptopUI
     static LaptopAnimation = LaptopAnimation
     static isEmployed = isEmployed
+    static getBennysCatalog = getBennysCatalog
 }

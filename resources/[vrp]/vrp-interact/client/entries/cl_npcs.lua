@@ -703,7 +703,7 @@ Entries[#Entries + 1] = {
 			id = "hoimports_pickup_sticks_deposit_stick",
 			label = _L("interact-hoi-open-storage", "Open Storage"),
 			icon = "box-open",
-			NPXEvent = "vrp-hoimports:client:OpenDepositInventory",
+			VPXEvent = "vrp-hoimports:client:OpenDepositInventory",
 			parameters = {
 				id = "hoimports_pickup_sticks_deposit_stick"
 			}
@@ -712,7 +712,7 @@ Entries[#Entries + 1] = {
 			id = "hoimports_pickup_sticks_confirm_delivery",
 			label = _L("interact-hoi-deliver-sticks", "Deliver Sticks"),
 			icon = "check",
-			NPXEvent = "vrp-hoimports:client:DepositSticks",
+			VPXEvent = "vrp-hoimports:client:DepositSticks",
 			parameters = {
 				id = "hoimports_pickup_sticks_confirm_delivery"
 			}
@@ -721,7 +721,7 @@ Entries[#Entries + 1] = {
 			id = "hoimports_pickup_sticks_claim_tax",
 			label = _L("interact-hoi-claim-profits", "Claim Profits"),
 			icon = "horse-head",
-			NPXEvent = "vrp-hoimports:client:ClaimTax",
+			VPXEvent = "vrp-hoimports:client:ClaimTax",
 			parameters = {
 				id = "hoimports_pickup_sticks_claim_tax"
 			}
@@ -746,7 +746,7 @@ Entries[#Entries + 1] = {
 			id = "hoimports_pickup_sticks_pickup_goods",
 			label = _L("interact-fleeca-pickup-goods-vendor", "Pickup Goods"),
 			icon = "hand-spock",
-			NPXEvent = "vrp-hoimports:client:PickupOrder",
+			VPXEvent = "vrp-hoimports:client:PickupOrder",
 			parameters = {
 				id = "hoimports_pickup_sticks_pickup_goods"
 			}
@@ -1570,14 +1570,14 @@ Entries[#Entries + 1] = {
       id = "cayo_manager_toggleFlights",
       label = "Toggle flights from LSIA -> Cayo",
       icon = "plane",
-      NPXEvent = "vrp-lsia:client:toggleFlight",
+      VPXEvent = "vrp-lsia:client:toggleFlight",
       parameters = { flight = 'lsia_to_cayo_perico' }
     },
     {
       id = "cayo_manager_toggleWeather",
       label = "Toggle Weather",
       icon = "cloud",
-      NPXEvent = "vrp-island:client:toggleWeather",
+      VPXEvent = "vrp-island:client:toggleWeather",
       parameters = {}
     }
   },
@@ -1596,7 +1596,7 @@ Entries[#Entries + 1] = {
           id = "cayo_start_hunting",
           label = "Start Hunting",
           icon = "comment",
-          NPXEvent = "vrp-hunting:client:startHuntingCayo",
+          VPXEvent = "vrp-hunting:client:startHuntingCayo",
       },
       {
         id = "cayo_open_shop",
@@ -1609,7 +1609,7 @@ Entries[#Entries + 1] = {
         id = "cayo_claim_gear",
         label = "Retrieve Firearms",
         icon = "hand-holding",
-        NPXEvent = "vrp-hunting:client:reclaimGear",
+        VPXEvent = "vrp-hunting:client:reclaimGear",
       },
     
   },
@@ -1894,7 +1894,7 @@ Entries[#Entries + 1] = {
             id = "purchase_gang_spray",
             label = _L("interact-purchase-spray", "Purchase Gang Spray"),
             icon = "spray-can",
-            NPXEvent = "vrp-gangsystem:purchaseGangSpray",
+            VPXEvent = "vrp-gangsystem:purchaseGangSpray",
             parameters = {}
         },
         {
@@ -1908,7 +1908,7 @@ Entries[#Entries + 1] = {
             id = "pruchase_scrubbing_cloth",
             label = _L("interact-purchase-cloth", "Purchase Scrubbing Cloth"),
             icon = "broom",
-            NPXEvent = "vrp-gangsystem:purchaseScrubbingCloth",
+            VPXEvent = "vrp-gangsystem:purchaseScrubbingCloth",
             parameters = {}
         },
     },
@@ -1926,14 +1926,14 @@ Entries[#Entries + 1] = {
             id = "hno_collect_rental",
             label = _L("interact-hno-rental-collect", "Collect Rental Vehicle"),
             icon = "car",
-            NPXEvent = "vrp-hoimports:collectRental",
+            VPXEvent = "vrp-hoimports:collectRental",
             parameters = {}
         },
         {
             id = "hno_return_rental",
             label = _L("interact-hno-rental-return", "Return Rental Vehicle"),
             icon = "car",
-            NPXEvent = "vrp-hoimports:returnRental",
+            VPXEvent = "vrp-hoimports:returnRental",
             parameters = {}
         },
     },
@@ -1951,7 +1951,7 @@ Entries[#Entries + 1] = {
             id = "gun_dealer_talk",
             label = _L("interact-hardcore-generic-talk", "Talk"),
             icon = "comment",
-            NPXEvent = "vrp-weapons:talkToDealer",
+            VPXEvent = "vrp-weapons:talkToDealer",
             parameters = {}
         },
     },
@@ -1969,7 +1969,7 @@ Entries[#Entries + 1] = {
           id = "airport_captain_talk",
           label = _L("interact-captain-talk", "View Flights"),
           icon = "plane-departure",
-          NPXEvent = "vrp-lsia:client:viewFlights",
+          VPXEvent = "vrp-lsia:client:viewFlights",
           parameters = {}
       },
   },

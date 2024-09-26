@@ -107,7 +107,7 @@ function hasSecuredAccess(pId, pType)
 
     accessCheckCacheTimer[pType][pId] = GetGameTimer()
 
-    local job = exports["vrp-base"]:getModule("LocalPlayer"):getVar("job")
+    local job = exports["isPed"]:isPed("myjob")
 
     local policeHasKeys = exports["vrp-config"]:GetMiscConfig("police.masterkeys")
 

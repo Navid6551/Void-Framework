@@ -1,25 +1,35 @@
-import { Base, DB } from "@vpx/server";
+import { QBCore } from "server/server";
 
 export abstract class Repository {
     static async getUserData(pServerId: number): Promise<SUserData> {
-        const user: User = Base.getModule<PlayerModule>("Player").GetUser(pServerId);
+        const user = QBCore.Functions.GetPlayer(pServerId);
         if (!user) return null;
 
-        const character = await DB.execute<[Character]>("SELECT owner FROM characters WHERE id = ?", [user.character.id]);
-        if (!character[0]) return null;
-    
-        const owner = await DB.execute<[{ name: string, steam_id: string }]>("SELECT * FROM users WHERE hex_id = ?", [character[0].owner]);
-        if (!owner[0]) return null;
-
         return {
-            name: owner[0].name,
-            steamid: owner[0].steam_id,
-            character: user.character
+            name: GetPlayerName(pServerId),
+            steamid: QBCore.Functions.GetIdentifier(pServerId, 'steam'),
+            character: {
+                id: Number(user.PlayerData.citizenid),
+                owner: GetPlayerName(pServerId),
+                first_name: user.PlayerData.charinfo.firstname,
+                last_name: user.PlayerData.charinfo.lastname,
+                date_created: user.PlayerData.charinfo.birthday,
+                dob: user.PlayerData.charinfo.birthday,
+                cash: user.PlayerData.money.cash,
+                bank: user.PlayerData.money.bank,
+                phone_number: user.PlayerData.charinfo.phone,
+                story: '',
+                new: false,
+                deleted: false,
+                gender: user.PlayerData.charinfo.gender,
+                jail_time: user.PlayerData.metadata.jail,
+                stress_level: user.PlayerData.metadata.stress
+            }
         };
     }
 
     static async getVehicleInfo(pVin: string): Promise<SVehicleInfo> {
-        const data = await DB.execute<[SVehicleInfo]>("SELECT * FROM _vehicle WHERE vin = @vin", {
+        const data = await SQL.execute<[SVehicleInfo]>("SELECT * FROM _vehicle WHERE vin = @vin", {
             vin: pVin
         });
         if (!data) return null;

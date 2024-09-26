@@ -5,9 +5,9 @@ games {"gta5"}
 description "NoPixel Peek Interactions"
 
 
-client_script "@npx/client/lib.js"
-server_script "@npx/server/lib.js"
-shared_script "@npx/shared/lib.lua"
+client_script "@vpx/client/lib.js"
+server_script "@vpx/server/lib.js"
+shared_script "@vpx/shared/lib.lua"
 
 shared_scripts {
 	"shared/sh_*.lua",

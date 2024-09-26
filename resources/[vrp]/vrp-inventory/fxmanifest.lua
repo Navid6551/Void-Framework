@@ -47,6 +47,7 @@ client_scripts {
 
 server_scripts {
   '@vrp-lib/server/sv_sql.js',
+  '@vrp-lib/server/sv_sql.lua',
   "@vrp-lib/server/sv_npx.js",
   "@vrp-lib/server/sv_rpc.js",
   "sv_config.js",

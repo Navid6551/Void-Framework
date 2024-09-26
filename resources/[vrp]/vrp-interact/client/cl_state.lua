@@ -282,7 +282,7 @@ end)
 function getVehicleOwner(pEntity)
   if VehicleOwnerShipCache[pEntity] ~= nil then return VehicleOwnerShipCache[pEntity] end
   local vin = exports['vrp-vehicles']:GetVehicleIdentifier(pEntity)
-  local vehicleOwner = NPX.Procedures.execute("vrp-ottosauto:getVehicleOwner", vin)
+  local vehicleOwner = VPX.Procedures.execute("vrp-ottosauto:getVehicleOwner", vin)
   VehicleOwnerShipCache[pEntity] = vehicleOwner
   return vehicleOwner
 end

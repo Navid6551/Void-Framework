@@ -1,0 +1,120 @@
+{
+    "configId": "vrp-graffiti:sprays",
+    "data": {
+        "cg": {
+            "name": "Cg",
+            "model": "np_sprays_cg",
+            "image": "https://voidrp.storage.c2.liara.space/images/sprays/bng68KR.png",
+            "isGang": true,
+            "servers": ["wl"]
+        },
+        "ballas": {
+            "name": "Ballas",
+            "model": "np_sprays_ballas",
+            "image": "https://voidrp.storage.c2.liara.space/images/sprays/kZBWTxt.png",
+            "isGang": true,
+            "servers": ["wl"]
+        },
+        "gsf": {
+            "name": "Gsf",
+            "model": "np_sprays_gsf",
+            "image": "https://voidrp.storage.c2.liara.space/images/sprays/1ntr5Qf.png",
+            "isGang": true,
+            "servers": ["wl"]
+        },
+        "kingz": {
+            "name": "Kingz",
+            "model": "np_sprays_kingz",
+            "image": "https://voidrp.storage.c2.liara.space/images/sprays/tDKhSib.png",
+            "isGang": true,
+            "servers": ["wl"]
+        },
+        "mandem": {
+            "name": "Mandem",
+            "model": "np_sprays_mandem",
+            "image": "https://voidrp.storage.c2.liara.space/images/sprays/puUouqd.png",
+            "isGang": true,
+            "servers": ["wl"]
+        },
+        "vagos": {
+            "name": "Vagos",
+            "model": "np_sprays_vagos",
+            "image": "https://voidrp.storage.c2.liara.space/images/sprays/efGwiE9.png",
+            "isGang": true,
+            "servers": ["wl"],
+            "color": 5
+        },
+        "bbmc": {
+            "name": "Bbmc",
+            "model": "np_sprays_bbmc",
+            "isGang": true,
+            "servers": ["wl"]
+        },
+        "bsk": {
+            "name": "Bsk",
+            "model": "np_sprays_bsk",
+            "isGang": true,
+            "servers": ["wl"]
+        },
+        "hoa": {
+            "name": "Hoa",
+            "model": "np_sprays_hoa",
+            "isGang": true,
+            "servers": ["wl"]
+        },
+        "nbc": {
+            "name": "Nbc",
+            "model": "np_sprays_nbc",
+            "isGang": true,
+            "servers": ["wl"]
+        },
+        "seaside": {
+            "name": "Seaside",
+            "model": "np_sprays_seaside",
+            "isGang": true,
+            "servers": ["wl"]
+        },
+        "angels": {
+            "name": "Angels",
+            "model": "np_sprays_angels",
+            "servers": ["wl"]
+        },
+        "lostmc": {
+            "name": "Lostmc",
+            "model": "np_sprays_lost",
+            "isGang": true,
+            "servers": ["wl"]
+        },
+        "hydra": {
+            "name": "Hydra",
+            "model": "np_sprays_hydra",
+            "image": "https://voidrp.storage.c2.liara.space/images/sprays/Gfrrw1B.png",
+            "isGang": true,
+            "servers": ["wl"]
+        },
+        "st": {
+            "name": "Steet Team",
+            "model": "np_sprays_st",
+            "isGang": true,
+            "servers": ["wl"]
+        },
+        "guild": {
+            "name": "Guild",
+            "model": "np_sprays_guild",
+            "image": "https://voidrp.storage.c2.liara.space/images/sprays/AGqR9z6.png",
+            "servers": ["wl"]
+        },
+        "ron": {
+            "name": "Ron",
+            "model": "np_sprays_ron",
+            "image": "https://voidrp.storage.c2.liara.space/images/sprays/m4lDqsh.png",
+            "servers": ["wl"]
+        },
+        "ramee": {
+            "name": "Ramee",
+            "model": "np_sprays_ramee",
+            "image": "https://voidrp.storage.c2.liara.space/images/sprays/AWvjmbs.png",
+            "servers": ["wl"]
+        }
+    }
+}

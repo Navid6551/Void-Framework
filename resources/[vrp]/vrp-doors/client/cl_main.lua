@@ -152,7 +152,7 @@ end)
 
 local lastDoorData = {}
 local drawnEntity = nil
-AddEventHandler("np:target:changed", function(pEntity, pEntityType, pEntityCoords)
+AddEventHandler("vrp:target:changed", function(pEntity, pEntityType, pEntityCoords)
     SetEntityDrawOutline(drawnEntity, false)
     if pEntityType == nil or pEntityType ~= 3 then
         listening, currentDoorCoords, currentDoorId, currentDoorLockState = nil

@@ -9,7 +9,7 @@ local resourceName = GetCurrentResourceName()
 function QBCore.Player.Login(source, citizenid, newData)
     if source and source ~= '' then
         if citizenid then
-            local license = QBCore.Functions.GetIdentifier(source, 'steam')
+            local license = QBCore.Functions.GetIdentifier(source, 'license')
             local PlayerData = MySQL.prepare.await('SELECT * FROM players where citizenid = ?', { citizenid })
             if PlayerData and license == PlayerData.license then
                 local info = json.decode(PlayerData.charinfo)
@@ -98,7 +98,7 @@ function QBCore.Player.CheckPlayerData(source, PlayerData)
 
     if source then
         PlayerData.source = source
-        PlayerData.license = PlayerData.license or QBCore.Functions.GetIdentifier(source, 'steam')
+        PlayerData.license = PlayerData.license or QBCore.Functions.GetIdentifier(source, 'license')
         PlayerData.name = GetPlayerName(source)
     end
 
@@ -485,7 +485,7 @@ local playertables = { -- Add tables as needed
 }
 
 function QBCore.Player.DeleteCharacter(source, citizenid)
-    local license = QBCore.Functions.GetIdentifier(source, 'steam')
+    local license = QBCore.Functions.GetIdentifier(source, 'license')
     local result = MySQL.scalar.await('SELECT license FROM players where citizenid = ?', { citizenid })
     if license == result then
         local query = 'DELETE FROM %s WHERE citizenid = ?'

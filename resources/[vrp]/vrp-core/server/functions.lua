@@ -269,7 +269,7 @@ end
 ---@return boolean
 function QBCore.Functions.SetPlayerBucket(source, bucket)
     if source and bucket then
-        local plicense = QBCore.Functions.GetIdentifier(source, 'steam')
+        local plicense = QBCore.Functions.GetIdentifier(source, 'license')
         Player(source).state:set('instance', bucket, true)
         SetPlayerRoutingBucket(source, bucket)
         QBCore.Player_Buckets[plicense] = { id = source, bucket = bucket }
@@ -591,7 +591,7 @@ end
 ---@param source any
 ---@return boolean
 function QBCore.Functions.IsOptin(source)
-    local license = QBCore.Functions.GetIdentifier(source, 'steam')
+    local license = QBCore.Functions.GetIdentifier(source, 'license')
     if not license or not QBCore.Functions.HasPermission(source, 'admin') then return false end
     local Player = QBCore.Functions.GetPlayer(source)
     return Player.PlayerData.optin
@@ -600,7 +600,7 @@ end
 ---Toggle opt-in to admin messages
 ---@param source any
 function QBCore.Functions.ToggleOptin(source)
-    local license = QBCore.Functions.GetIdentifier(source, 'steam')
+    local license = QBCore.Functions.GetIdentifier(source, 'license')
     if not license or not QBCore.Functions.HasPermission(source, 'admin') then return end
     local Player = QBCore.Functions.GetPlayer(source)
     Player.PlayerData.optin = not Player.PlayerData.optin
@@ -611,7 +611,7 @@ end
 ---@param source any
 ---@return boolean, string?
 function QBCore.Functions.IsPlayerBanned(source)
-    local plicense = QBCore.Functions.GetIdentifier(source, 'steam')
+    local plicense = QBCore.Functions.GetIdentifier(source, 'license')
     local result = MySQL.single.await('SELECT id, reason, expire FROM bans WHERE license = ?', { plicense })
     if not result then return false end
     if os.time() < result.expire then
@@ -629,7 +629,7 @@ end
 function QBCore.Functions.IsLicenseInUse(license)
     local players = GetPlayers()
     for _, player in pairs(players) do
-        local playerLicense = QBCore.Functions.GetIdentifier(player, 'steam')
+        local playerLicense = QBCore.Functions.GetIdentifier(player, 'license')
         if playerLicense == license then return true end
     end
     return false

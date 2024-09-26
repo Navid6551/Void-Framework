@@ -38,7 +38,7 @@ local function onPlayerConnecting(name, _, deferrals)
 
     Wait(0)
     deferrals.update(string.format('Hello %s. Your license is being checked', name))
-    local license = QBCore.Functions.GetIdentifier(src, 'steam')
+    local license = QBCore.Functions.GetIdentifier(src, 'license')
 
     if not license then
         return deferrals.done(Lang:t('error.no_valid_license'))

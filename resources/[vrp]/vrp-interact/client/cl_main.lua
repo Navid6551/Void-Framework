@@ -523,12 +523,12 @@ RegisterUICallback("vrp-ui:targetSelectOption", function(data, cb)
     local context = data.context or {}
 
     local event = option.event
-    local NPXEvent = option.NPXEvent
+    local VPXEvent = option.VPXEvent
     local target = data.entity or 0
     local parameters = option.parameters or {}
     
-    if event == nil and NPXEvent ~= nil then
-        return NPX.Events.emit(NPXEvent, parameters, target, context)
+    if event == nil and VPXEvent ~= nil then
+        return VPX.Events.emit(VPXEvent, parameters, target, context)
     end
 
     TriggerEvent(event, parameters, target, context)
