@@ -1,13 +1,49 @@
-PlayersCoords = {}
+local PlayersCoords = {}
+
+function GetNerbyPlayers(pCoords, pRange)
+    local players = {}
+    for k, v in pairs(PlayersCoords) do
+        local tempCoords = vector3(v.x, v.y, v.z)
+        if #(tempCoords - pCoords) <= pRange then
+            table.insert(players, tonumber(k))
+        end
+    end
+
+    return players
+end
+
+function CurrentPlayers()
+    return PlayersCoords
+end
+
+function GetPlayerCoords(serverID)
+    local playerID = serverID
+
+    if playerID ~= -1 then
+        return GetEntityCoords(GetPlayerPed(playerID))
+    else
+        return PlayersCoords[tonumber(serverID)] or vector3(0.0, 0.0, 0.0)
+    end
+end
 
 RegisterServerEvent("vrp:infinity:player:ready")
 AddEventHandler("vrp:infinity:player:ready", function()
     local src = source
-
     local ped = GetPlayerPed(src)
     local coords = GetEntityCoords(ped)
 
-    -- PlayersCoords[src] = coords
+    PlayersCoords[tonumber(src)] = coords
+    exports["vrp-infinity"]:setWorld(src, "default") 
+    return 
+end)
+
+RegisterServerEvent("vrp:infinity:player:coords")
+AddEventHandler("vrp:infinity:player:coords", function()
+    local src = source
+    local ped = GetPlayerPed(src)
+    local coords = GetEntityCoords(ped)
+
+    PlayersCoords[tonumber(src)] = coords
     -- TriggerClientEvent("vrp:infinity:player:coords", src, PlayersCoords)
 end)
 
@@ -23,75 +59,29 @@ end)
 
 RegisterServerEvent("vrp:infinity:player:remove")
 AddEventHandler("vrp:infinity:player:remove", function(src)
-    PlayersCoords[src] = nil
+    PlayersCoords[tonumber(src)] = nil
 end)
+
+exports("GetNerbyPlayers", GetNerbyPlayers)
+exports("CurrentPlayers", CurrentPlayers)
+exports("GetPlayerCoords", GetPlayerCoords)
 
 Citizen.CreateThread(function()
     while true do
         Citizen.Wait(750)
+
         local players = GetPlayers()
         for idx, player in ipairs(players) do
             local ped = GetPlayerPed(player)
             local coords = GetEntityCoords(ped)
             PlayersCoords[tonumber(player)] = coords
-            TriggerEvent('vrp:infinity:player:coords', tonumber(player), coords)
         end
+        Citizen.Wait(1000)
         TriggerClientEvent("vrp:infinity:player:coords", -1, PlayersCoords)
     end
 end)
 
--- RegisterServerEvent('vrp:infinity:player:ready')
--- AddEventHandler('vrp:infinity:player:ready', function()
---     local src = source
---     local ped = GetPlayerPed(src)
---     local playerCoords = GetEntityCoords(ped)
---     PlayersCoords[src] = playerCoords    
---     TriggerClientEvent('vrp:infinity:player:coords', src, PlayersCoords)
--- end)
-
--- Citizen.CreateThread(function()
---     while true do
---         if #PlayersCoords > 0 then
---             for k,v in pairs(PlayersCoords) do
---                 if v ~= nil then
---                     local ped = GetPlayerPed(k)
---                     local playerCoords = GetEntityCoords(ped)
---                     PlayersCoords[k] = playerCoords
---                 end
---             end
---         end
---         TriggerClientEvent('vrp:infinity:player:coords', -1, PlayersCoords)
-
---         Citizen.Wait(500)
---     end
--- end)
-
 AddEventHandler("playerDropped", function()
     local src = source
-    if #PlayersCoords > 0 then
-        PlayersCoords[src] = nil
-    end
+    PlayersCoords[tonumber(src)] = nil
 end)
-
-function GetPlayerCoords(serverid)
-    if PlayersCoords[serverid] then
-        return PlayersCoords[serverid]
-    else
-        return false
-    end
-end
-
-exports("GetPlayerCoords", GetPlayerCoords)
-
-function GetNearbyPlayers(pCoords, pDistance)
-    local pData = PlayersCoords
-    local returndata = {}
-    for pPlayer,COORD in pairs(pData) do
-        if #(vector3(pCoords.x,pCoords.y,pCoords.z) - vector3(COORD.x,COORD.y,COORD.z)) < pDistance then
-            table.insert( returndata, pPlayer )
-        end
-    end
-    return returndata
-end
-
-exports("GetNearbyPlayers", GetNearbyPlayers)
