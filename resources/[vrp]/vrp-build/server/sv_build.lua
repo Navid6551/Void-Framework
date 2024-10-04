@@ -30,7 +30,6 @@ RegisterNetEvent('build:event:inside', function(isInside, pData)
     if not isInside then
         local id = saveIds[src]
         local player = findPlayer(id, src)
-        QBCore.Functions.SetPlayerBucket(src, 0)
         playersInside[id][player] = nil
         saveIds[src] = nil
         TriggerClientEvent('8-weathersync:client:EnableSync', src)
@@ -46,6 +45,6 @@ RegisterNetEvent('build:event:inside', function(isInside, pData)
     else
         table.insert(playersInside[id], src)
     end
-    QBCore.Functions.SetPlayerBucket(src, pData.posGen)
+
     TriggerClientEvent('8-weathersync:client:DisableSync', src, 22)
 end)
