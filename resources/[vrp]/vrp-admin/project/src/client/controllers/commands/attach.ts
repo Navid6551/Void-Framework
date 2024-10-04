@@ -16,11 +16,11 @@ export async function attachClient(pCoords: number[], pTargetData: TargetData) {
         SetPlayerInvincible(playerPed, true);
         SetEntityVisible(playerPed, false, false);
         const _0x4bd1c1 = GetGameTimer();
-        let targetPlayer = GetPlayerFromServerId(pTargetData.TargetUser.source);
+        let targetPlayer = GetPlayerFromServerId(pTargetData.Target.source);
         let index = 0;
         while (targetPlayer == -1 && index < 200) {
             index++;
-            targetPlayer = GetPlayerFromServerId(pTargetData.TargetUser.source);
+            targetPlayer = GetPlayerFromServerId(pTargetData.Target.source);
             await Delay(10);
         }
         if (index == 200) {
@@ -45,7 +45,7 @@ export async function attachClient(pCoords: number[], pTargetData: TargetData) {
             NetworkSetInSpectatorMode(true, playerPed);
         }
     } else {
-        const targetPlayer = GetPlayerFromServerId(pTargetData.TargetUser.source);
+        const targetPlayer = GetPlayerFromServerId(pTargetData.Target.source);
         const playerPed = GetPlayerPed(targetPlayer);
         NetworkSetInSpectatorMode(false, playerPed);
         isAttached = false;

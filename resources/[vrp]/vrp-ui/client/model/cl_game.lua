@@ -105,7 +105,7 @@ function sendCharacterData()
         SendUIMessage({ source = "vrp-nui", app = "character", data = character });
 
         local endpointData = {
-            endpoint = 'https://void.8rp.gg/',
+            endpoint = 'https://mdtapi.8rp.gg/',
             token = ''
         }--exports["vrp-fiber"]:GetGameDetails()
         SendUIMessage({ source = "vrp-nui", app = "game", data = endpointData });

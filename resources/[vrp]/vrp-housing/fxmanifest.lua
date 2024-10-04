@@ -15,10 +15,10 @@ shared_script {
 }
 
 server_scripts {
-    '@vrp-lib/server/sv_rpc.lua',
-    '@vrp-lib/server/sv_sql.lua',
-    '@vrp-lib/server/sv_asyncExports.lua',
-    'server/sv_*.lua',
+  '@vrp-lib/server/sv_rpc.lua',
+  '@vrp-lib/server/sv_sql.lua',
+  '@vrp-lib/server/sv_asyncExports.lua',
+  'server/sv_*.lua',
 }
 
 client_script "@vpx/client/lib.js"

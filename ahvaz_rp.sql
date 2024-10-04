@@ -65,17 +65,16 @@ CREATE TABLE IF NOT EXISTS `inventory` (
   `creationDate` bigint(20) NOT NULL DEFAULT 0,
   `quality` int(11) DEFAULT 100,
   PRIMARY KEY (`id`) USING BTREE
-) ENGINE=InnoDB AUTO_INCREMENT=37 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=94 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
--- Dumping data for table ahvaz_rp.inventory: ~17 rows (approximately)
+-- Dumping data for table ahvaz_rp.inventory: ~35 rows (approximately)
 DELETE FROM `inventory`;
 INSERT INTO `inventory` (`id`, `item_id`, `name`, `information`, `slot`, `dropped`, `creationDate`, `quality`) VALUES
 	(1, 'pixellaptop', 'ply-1', '{}', 1, 0, 1727277307881, 100),
 	(2, 'vpnxja', 'ply-1', '{}', 36, 0, 1727277315413, 100),
-	(6, 'wateringcan', 'ply-1', '{}', 8, 0, 1726894287625, 100),
+	(6, 'wateringcan', 'ply-1', '{}', 7, 0, 1726794287625, 100),
 	(8, 'fertilizer', 'ply-1', '{}', 6, 0, 1727294292759, 100),
 	(9, 'fertilizer', 'ply-1', '{}', 6, 0, 1727294723834, 100),
-	(24, 'spraycan', 'ply-1', '{"_hideKeys":["sprayId","model","gangId","_image_url"],"_image_url":"https://voidrp.storage.c2.liara.space/images/sprays/efGwiE9.png","gangId":"vagos","model":"np_sprays_vagos","sprayId":"vagos"}', 2, 0, 1727346707615, 100),
 	(26, 'femaleseed', 'ply-1', '{"_hideKeys":["strain"],"grower":"1","name":"Elephant-Metal-Bud","strain":{"k":19,"n":15,"p":41}}', 3, 0, 1727355088066, 100),
 	(27, 'femaleseed', 'ply-1', '{"_hideKeys":["strain"],"grower":"1","name":"Elephant-Metal-Bud","strain":{"k":19,"n":15,"p":41}}', 3, 0, 1727355088066, 100),
 	(28, 'femaleseed', 'ply-1', '{"_hideKeys":["strain"],"grower":"1","name":"Elephant-Metal-Bud","strain":{"k":19,"n":15,"p":41}}', 3, 0, 1727355088066, 100),
@@ -84,9 +83,28 @@ INSERT INTO `inventory` (`id`, `item_id`, `name`, `information`, `slot`, `droppe
 	(31, 'maleseed', 'ply-1', '{}', 4, 0, 1727355088067, 100),
 	(32, 'maleseed', 'ply-1', '{}', 4, 0, 1727355088067, 100),
 	(33, 'fertilizer', 'ply-1', '{}', 5, 0, 1727355109189, 100),
-	(34, 'wetbud', 'ply-1', '{"_hideKeys":["quality","grower","id","drying","dryingTime"],"grower":"1","id":4,"quality":75,"strain":"Skydog-Flint-Bush"}', 12, 0, 1727355124272, 100),
-	(35, 'wetbud', 'ply-1', '{"_hideKeys":["quality","grower","id","drying","dryingTime"],"grower":"1","id":2,"quality":93,"strain":"Skydog-Flint-Bush"}', 13, 0, 1727355140101, 100),
-	(36, 'wetbud', 'ply-1', '{"_hideKeys":["quality","grower","id","drying","dryingTime"],"grower":"1","id":3,"quality":39,"strain":"Skydog-Flint-Bush"}', 11, 0, 1727355153601, 100);
+	(37, 'mobilephone', 'ply-1', '{}', 11, 0, 1727359926621, 100),
+	(44, '-1074790547', 'ply-110394', '{}', 1, 0, 1726061457965, 100),
+	(52, 'rifleammo', 'ply-110394', '{}', 4, 0, 1727361620439, 100),
+	(53, 'rifleammo', 'ply-110394', '{}', 4, 0, 1727361620594, 100),
+	(56, 'bandage', 'ply-110394', '{}', 6, 0, 1727361771349, 100),
+	(57, 'bandage', 'ply-110394', '{}', 8, 0, 1727361771503, 100),
+	(66, 'IFAK', 'ply-110394', '{}', 3, 0, 1727361822597, 100),
+	(67, 'IFAK', 'ply-110394', '{}', 3, 0, 1727361822597, 100),
+	(68, 'IFAK', 'ply-110394', '{}', 3, 0, 1727361822597, 100),
+	(69, 'IFAK', 'ply-110394', '{}', 10, 0, 1727361822597, 100),
+	(70, 'IFAK', 'ply-110394', '{}', 10, 0, 1727361822597, 100),
+	(71, 'IFAK', 'ply-110394', '{}', 10, 0, 1727361822597, 100),
+	(74, 'mobilephone', 'ply-110394', '{}', 5, 0, 1727362090165, 100),
+	(77, 'pixellaptop', 'ply-110394', '{}', 2, 0, 1727362181732, 100),
+	(78, 'vpnxja', 'ply-110394', '{}', 11, 0, 1727362186522, 100),
+	(79, 'vpnxj', 'ply-110394', '{}', 12, 0, 1727362215358, 100),
+	(80, 'vpapers', 'ply-110394', '{}', 13, 0, 1727362218353, 100),
+	(83, 'spraycan', 'ply-110394', '{"_hideKeys":["sprayId","model","gangId","_image_url"],"_image_url":"https://voidrp.storage.c2.liara.space/images/sprays/efGwiE9.png","gangId":"vagos","model":"np_sprays_vagos","sprayId":"vagos"}', 15, 0, 1727362473448, 100),
+	(84, 'spraycan', 'ply-110394', '{"_hideKeys":["sprayId","model","gangId","_image_url"],"_image_url":"https://voidrp.storage.c2.liara.space/images/sprays/efGwiE9.png","gangId":"vagos","model":"np_sprays_vagos","sprayId":"vagos"}', 16, 0, 1727362475850, 100),
+	(85, 'spraycan', 'ply-110394', '{"_hideKeys":["sprayId","model","gangId","_image_url"],"_image_url":"https://voidrp.storage.c2.liara.space/images/sprays/efGwiE9.png","gangId":"vagos","model":"np_sprays_vagos","sprayId":"vagos"}', 17, 0, 1727362477655, 100),
+	(86, 'safecrackingkit', 'ply-110394', '{}', 7, 0, 1727363854690, 100),
+	(93, '28811031', 'ply-1', '{}', 2, 0, 1727458880804, 100);
 
 -- Dumping structure for table ahvaz_rp.jobs_whitelist
 CREATE TABLE IF NOT EXISTS `jobs_whitelist` (
@@ -132,12 +150,16 @@ CREATE TABLE IF NOT EXISTS `players` (
   KEY `id` (`id`),
   KEY `last_updated` (`last_updated`),
   KEY `license` (`license`)
-) ENGINE=InnoDB AUTO_INCREMENT=17 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=53 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
--- Dumping data for table ahvaz_rp.players: ~1 rows (approximately)
+-- Dumping data for table ahvaz_rp.players: ~5 rows (approximately)
 DELETE FROM `players`;
 INSERT INTO `players` (`id`, `citizenid`, `license`, `name`, `money`, `charinfo`, `job`, `gang`, `position`, `metadata`, `last_updated`) VALUES
-	(1, '1', 'license:44aa598da65fcad33b040613630f1b496bdc4ef3', '9U9UY9', '{"cash":500,"casino":0,"bank":5000}', '{"phone":"3974407171","gender":0,"lastname":"Sag Ahwazi","nationality":"USA","account":"1125895435030","birthdate":"2000-01-01","firstname":"Rotabu"}', '{"onduty":true,"type":"leo","label":"Law Enforcement","payment":10,"isboss":false,"name":"police","grade":{"payment":50,"isboss":false,"level":0,"name":"Recruit"}}', '{"name":"none","isboss":false,"grade":{"level":0,"name":"none"},"label":"No Gang Affiliation"}', '{"x":-84.81758117675781,"y":840.7648315429688,"z":235.7069091796875}', '{"fingerprint":"LN728Q71WSa6875","armor":0,"bloodtype":"O-","licences":{"business":false,"weapon":false,"driver":true},"rep":{"boosting":0},"ammo":[],"injail":0,"stress":0,"hunger":100,"thirst":100,"callsign":"NO CALLSIGN"}', '2024-09-26 12:58:07');
+	(1, '1', 'license:44aa598da65fcad33b040613630f1b496bdc4ef3', 'Chipmunk', '{"bank":5000,"cash":500,"casino":0}', '{"account":"1125895435030","phone":"3974407171","birthdate":"2000-01-01","lastname":"Sag Ahwazi","gender":0,"nationality":"USA","firstname":"Rotabu"}', '{"name":"police","label":"Law Enforcement","grade":{"level":0,"name":"Recruit","isboss":false,"payment":50},"payment":10,"onduty":true,"type":"leo","isboss":false}', '{"isboss":false,"name":"none","label":"No Gang Affiliation","grade":{"level":0,"name":"none"}}', '{"x":-1634.1494140625,"y":-563.8153686523438,"z":33.4923095703125}', '{"armor":0,"callsign":"NO CALLSIGN","hunger":100,"rep":{"boosting":0},"bloodtype":"O-","ammo":[],"thirst":100,"fingerprint":"LN728Q71WSa6875","injail":0,"stress":0,"licences":{"business":false,"driver":true,"weapon":false}}', '2024-09-27 18:42:26'),
+	(18, '110394', 'license:23ab6ef9336d9113a1f9fdd5b94dff57b1b12176', 'kalem', '{"bank":5000,"casino":0,"cash":500}', '{"phone":"7981677076","birthdate":"2000-01-01","account":"1997688633314","gender":0,"lastname":"asd","nationality":"USA","firstname":"asd"}', '{"onduty":false,"name":"unemployed","type":"none","grade":{"name":"Freelancer","level":0},"label":"Civilian","isboss":false,"payment":10}', '{"isboss":false,"name":"none","grade":{"name":"none","level":0},"label":"No Gang Affiliation"}', '{"x":-35.63076782226562,"y":-1870.5230712890626,"z":24.983154296875}', '{"stress":0,"armor":0,"hunger":100,"injail":0,"rep":{"boosting":0},"bloodtype":"B-","callsign":"NO CALLSIGN","thirst":100,"fingerprint":"mB120d42xha6247","ammo":{"1285032059":{"ammo":0,"type":1285032059},"218444191":{"ammo":60,"type":218444191}},"licences":{"driver":true,"weapon":false,"business":false}}', '2024-09-26 15:30:01'),
+	(30, '64193', 'license:7b3e1c9a929e0a8a1644d87b21e6c04da4bcb7b1', 'User', '{"bank":5000,"casino":0,"cash":500}', '{"phone":"6488446991","birthdate":"2000-01-01","account":"6973215301220","lastname":"aa","nationality":"USA","gender":0,"firstname":"aa"}', '{"onduty":false,"name":"unemployed","type":"none","grade":{"level":0,"name":"Freelancer"},"label":"Civilian","isboss":false,"payment":10}', '{"isboss":false,"name":"none","grade":{"level":0,"name":"none"},"label":"No Gang Affiliation"}', '{"x":89.70989227294922,"y":-703.8197631835938,"z":43.5516357421875}', '{"stress":0,"armor":0,"hunger":100,"injail":0,"rep":{"boosting":0},"bloodtype":"B+","licences":{"driver":true,"weapon":false,"business":false},"thirst":100,"fingerprint":"Oa850I68IAl7399","ammo":[],"callsign":"NO CALLSIGN"}', '2024-09-26 15:11:55'),
+	(25, '7710107', 'license:4d1bfc5918ae7d9e11a7e76edcfa185f6d4ba7c0', 'Sepi', '{"bank":5000,"casino":0,"cash":500}', '{"phone":"9466203652","birthdate":"2000-12-12","account":"2923870054668","lastname":"aaaa","nationality":"USA","gender":0,"firstname":"aaaaa"}', '{"onduty":false,"name":"unemployed","type":"none","grade":{"level":0,"name":"Freelancer"},"label":"Civilian","isboss":false,"payment":10}', '{"isboss":false,"name":"none","grade":{"level":0,"name":"none"},"label":"No Gang Affiliation"}', '{"x":-47.35384368896484,"y":-914.6109619140625,"z":29.3978271484375}', '{"stress":0,"armor":0,"hunger":100,"injail":0,"rep":{"boosting":0},"bloodtype":"B+","licences":{"driver":true,"weapon":false,"business":false},"thirst":100,"fingerprint":"lX966e95HbJ0351","ammo":[],"callsign":"NO CALLSIGN"}', '2024-09-26 15:09:35'),
+	(22, '88656', 'license:1d92e995d20c0fb9dd053f3e757cbae12623962a', 'GG', '{"bank":5000,"casino":0,"cash":500}', '{"phone":"4279545246","birthdate":"2000-03-13","account":"4835049629272","gender":0,"lastname":"1","nationality":"USA","firstname":"1"}', '{"onduty":false,"name":"unemployed","type":"none","grade":{"name":"Freelancer","level":0},"label":"Civilian","isboss":false,"payment":10}', '{"isboss":false,"name":"none","grade":{"name":"none","level":0},"label":"No Gang Affiliation"}', '{"x":9.34945106506347,"y":-779.7890014648438,"z":44.19189453125}', '{"stress":0,"armor":0,"hunger":100,"injail":0,"rep":{"boosting":0},"bloodtype":"A+","callsign":"NO CALLSIGN","thirst":100,"fingerprint":"XQ637s84okK8547","ammo":[],"licences":{"driver":true,"weapon":false,"business":false}}', '2024-09-26 15:09:39');
 
 -- Dumping structure for table ahvaz_rp.player_clothes
 CREATE TABLE IF NOT EXISTS `player_clothes` (
@@ -152,12 +174,16 @@ CREATE TABLE IF NOT EXISTS `player_clothes` (
   `customHeadModel` longtext DEFAULT NULL,
   `tattoos` longtext DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8 COLLATE=utf8_general_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=utf8 COLLATE=utf8_general_ci;
 
--- Dumping data for table ahvaz_rp.player_clothes: ~0 rows (approximately)
+-- Dumping data for table ahvaz_rp.player_clothes: ~5 rows (approximately)
 DELETE FROM `player_clothes`;
 INSERT INTO `player_clothes` (`id`, `citizenid`, `model`, `drawables`, `props`, `hairColor`, `fadeLayer`, `fade`, `customHeadModel`, `tattoos`) VALUES
-	(1, 1, '1885233650', '{"Face":[0,0],"Mask":[0,0],"Hair":[0,0],"Torso":[0,0],"Leg":[0,0],"Parachute":[0,0],"Shoes":[1,2],"Accessory":[0,0],"Undershirt":[0,1],"Kevlar":[0,0],"Badge":[0,0],"Jacket":[0,1]}', '{"Hat":[-1,-1],"Glasses":[-1,-1],"Ears":[-1,-1],"Watch":[-1,-1],"Bracelet":[-1,-1]}', '[1,1]', NULL, NULL, '0', NULL);
+	(1, 1, '1885233650', '{"Face":[0,0],"Mask":[0,0],"Hair":[0,0],"Torso":[0,0],"Leg":[0,0],"Parachute":[0,0],"Shoes":[1,2],"Accessory":[0,0],"Undershirt":[0,1],"Kevlar":[0,0],"Badge":[0,0],"Jacket":[0,1]}', '{"Hat":[-1,-1],"Glasses":[-1,-1],"Ears":[-1,-1],"Watch":[-1,-1],"Bracelet":[-1,-1]}', '[1,1]', NULL, NULL, '0', NULL),
+	(2, 110394, '1885233650', '{"Face":[0,0],"Mask":[0,0],"Hair":[0,0],"Torso":[0,0],"Leg":[0,0],"Parachute":[0,0],"Shoes":[1,2],"Accessory":[0,0],"Undershirt":[0,1],"Kevlar":[0,0],"Badge":[0,0],"Jacket":[0,1]}', '{"Hat":[-1,-1],"Glasses":[-1,-1],"Ears":[-1,-1],"Watch":[-1,-1],"Bracelet":[-1,-1]}', '[1,1]', NULL, NULL, '0', NULL),
+	(3, 88656, '1885233650', '{"Face":[0,0],"Mask":[0,0],"Hair":[0,0],"Torso":[0,0],"Leg":[0,0],"Parachute":[0,0],"Shoes":[1,2],"Accessory":[0,0],"Undershirt":[0,1],"Kevlar":[0,0],"Badge":[0,0],"Jacket":[0,1]}', '{"Hat":[-1,-1],"Glasses":[-1,-1],"Ears":[-1,-1],"Watch":[-1,-1],"Bracelet":[-1,-1]}', '[1,1]', NULL, NULL, '0', NULL),
+	(4, 7710107, '1885233650', '{"Face":[0,0],"Mask":[0,0],"Hair":[3,0],"Torso":[4,0],"Leg":[2,0],"Parachute":[0,0],"Shoes":[3,0],"Accessory":[0,0],"Undershirt":[3,0],"Kevlar":[0,0],"Badge":[0,0],"Jacket":[4,0]}', '{"Hat":[2,0],"Glasses":[-1,-1],"Ears":[-1,-1],"Watch":[-1,-1],"Bracelet":[-1,-1]}', '[1,1]', NULL, NULL, '0', NULL),
+	(5, 64193, '1885233650', '{"Face":[0,0],"Mask":[0,0],"Hair":[1,0],"Torso":[0,0],"Leg":[0,0],"Parachute":[0,0],"Shoes":[1,2],"Accessory":[0,0],"Undershirt":[0,1],"Kevlar":[0,0],"Badge":[0,0],"Jacket":[0,1]}', '{"Hat":[-1,-1],"Glasses":[-1,-1],"Ears":[-1,-1],"Watch":[-1,-1],"Bracelet":[-1,-1]}', '[1,1]', NULL, NULL, '0', NULL);
 
 -- Dumping structure for table ahvaz_rp.player_emails
 CREATE TABLE IF NOT EXISTS `player_emails` (
@@ -182,12 +208,16 @@ CREATE TABLE IF NOT EXISTS `player_face` (
   `overlays` longtext DEFAULT NULL,
   `eyeColor` bigint(20) DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8 COLLATE=utf8_general_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=utf8 COLLATE=utf8_general_ci;
 
--- Dumping data for table ahvaz_rp.player_face: ~0 rows (approximately)
+-- Dumping data for table ahvaz_rp.player_face: ~5 rows (approximately)
 DELETE FROM `player_face`;
 INSERT INTO `player_face` (`id`, `citizenid`, `model`, `headblend`, `features`, `overlays`, `eyeColor`) VALUES
-	(1, 1, '1885233650', '{"ShapeFirst":0,"ShapeSecond":0,"ShapeThird":0,"SkinFirst":15,"SkinSecond":0,"SkinThird":0,"ShapeMix":0,"SkinMix":1,"ThirdMix":0}', '{"nose_width":0,"nose_peak":0,"nose_length":0,"nose_bone_curveness":0,"nose_tip":0,"nose_bone_twist":0,"eyebrow_up_down":0,"eyebrow_in_out":0,"cheek_bones":0,"cheek_sideways_bone_size":0,"cheek_bones_width":0,"eye_opening":0,"lip_thickness":0,"jaw_bone_width":0,"jaw_bone_shape":0,"chin_bone":0,"chin_bone_length":0,"chin_bone_shape":0,"chin_hole":0,"neck_thickness":0}', '{"Blemishes":{"value":255,"colorType":0,"firstColor":0,"secondColor":0,"opacity":1},"FacialHair":{"value":255,"colorType":1,"firstColor":0,"secondColor":0,"opacity":0},"Eyebrows":{"value":255,"colorType":1,"firstColor":0,"secondColor":0,"opacity":1},"Ageing":{"value":255,"colorType":0,"firstColor":0,"secondColor":0,"opacity":1},"Makeup":{"value":255,"colorType":2,"firstColor":0,"secondColor":0,"opacity":1},"Blush":{"value":255,"colorType":2,"firstColor":0,"secondColor":0,"opacity":1},"Complexion":{"value":255,"colorType":0,"firstColor":0,"secondColor":0,"opacity":1},"SunDamage":{"value":255,"colorType":0,"firstColor":0,"secondColor":0,"opacity":1},"Lipstick":{"value":255,"colorType":2,"firstColor":0,"secondColor":0,"opacity":1},"MolesFreckles":{"value":255,"colorType":0,"firstColor":0,"secondColor":0,"opacity":1},"ChestHair":{"value":255,"colorType":1,"firstColor":0,"secondColor":0,"opacity":1},"BodyBlemishes":{"value":255,"colorType":0,"firstColor":0,"secondColor":0,"opacity":1},"AddBodyBlemishes":{"value":255,"colorType":0,"firstColor":0,"secondColor":0,"opacity":1}}', 65535);
+	(1, 1, '1885233650', '{"ShapeFirst":0,"ShapeSecond":0,"ShapeThird":0,"SkinFirst":15,"SkinSecond":0,"SkinThird":0,"ShapeMix":0,"SkinMix":1,"ThirdMix":0}', '{"nose_width":0,"nose_peak":0,"nose_length":0,"nose_bone_curveness":0,"nose_tip":0,"nose_bone_twist":0,"eyebrow_up_down":0,"eyebrow_in_out":0,"cheek_bones":0,"cheek_sideways_bone_size":0,"cheek_bones_width":0,"eye_opening":0,"lip_thickness":0,"jaw_bone_width":0,"jaw_bone_shape":0,"chin_bone":0,"chin_bone_length":0,"chin_bone_shape":0,"chin_hole":0,"neck_thickness":0}', '{"Blemishes":{"value":255,"colorType":0,"firstColor":0,"secondColor":0,"opacity":1},"FacialHair":{"value":255,"colorType":1,"firstColor":0,"secondColor":0,"opacity":0},"Eyebrows":{"value":255,"colorType":1,"firstColor":0,"secondColor":0,"opacity":1},"Ageing":{"value":255,"colorType":0,"firstColor":0,"secondColor":0,"opacity":1},"Makeup":{"value":255,"colorType":2,"firstColor":0,"secondColor":0,"opacity":1},"Blush":{"value":255,"colorType":2,"firstColor":0,"secondColor":0,"opacity":1},"Complexion":{"value":255,"colorType":0,"firstColor":0,"secondColor":0,"opacity":1},"SunDamage":{"value":255,"colorType":0,"firstColor":0,"secondColor":0,"opacity":1},"Lipstick":{"value":255,"colorType":2,"firstColor":0,"secondColor":0,"opacity":1},"MolesFreckles":{"value":255,"colorType":0,"firstColor":0,"secondColor":0,"opacity":1},"ChestHair":{"value":255,"colorType":1,"firstColor":0,"secondColor":0,"opacity":1},"BodyBlemishes":{"value":255,"colorType":0,"firstColor":0,"secondColor":0,"opacity":1},"AddBodyBlemishes":{"value":255,"colorType":0,"firstColor":0,"secondColor":0,"opacity":1}}', 65535),
+	(2, 110394, '1885233650', '{"ShapeFirst":0,"ShapeSecond":0,"ShapeThird":0,"SkinFirst":15,"SkinSecond":0,"SkinThird":0,"ShapeMix":0,"SkinMix":1,"ThirdMix":0}', '{"nose_width":0,"nose_peak":0,"nose_length":0,"nose_bone_curveness":0,"nose_tip":0,"nose_bone_twist":0,"eyebrow_up_down":0,"eyebrow_in_out":0,"cheek_bones":0,"cheek_sideways_bone_size":0,"cheek_bones_width":0,"eye_opening":0,"lip_thickness":0,"jaw_bone_width":0,"jaw_bone_shape":0,"chin_bone":0,"chin_bone_length":0,"chin_bone_shape":0,"chin_hole":0,"neck_thickness":0}', '{"Blemishes":{"value":255,"colorType":0,"firstColor":0,"secondColor":0,"opacity":1},"FacialHair":{"value":255,"colorType":1,"firstColor":0,"secondColor":0,"opacity":0},"Eyebrows":{"value":255,"colorType":1,"firstColor":0,"secondColor":0,"opacity":1},"Ageing":{"value":255,"colorType":0,"firstColor":0,"secondColor":0,"opacity":1},"Makeup":{"value":255,"colorType":2,"firstColor":0,"secondColor":0,"opacity":1},"Blush":{"value":255,"colorType":2,"firstColor":0,"secondColor":0,"opacity":1},"Complexion":{"value":255,"colorType":0,"firstColor":0,"secondColor":0,"opacity":1},"SunDamage":{"value":255,"colorType":0,"firstColor":0,"secondColor":0,"opacity":1},"Lipstick":{"value":255,"colorType":2,"firstColor":0,"secondColor":0,"opacity":1},"MolesFreckles":{"value":255,"colorType":0,"firstColor":0,"secondColor":0,"opacity":1},"ChestHair":{"value":255,"colorType":1,"firstColor":0,"secondColor":0,"opacity":1},"BodyBlemishes":{"value":255,"colorType":0,"firstColor":0,"secondColor":0,"opacity":1},"AddBodyBlemishes":{"value":255,"colorType":0,"firstColor":0,"secondColor":0,"opacity":1}}', 65535),
+	(3, 88656, '1885233650', '{"ShapeFirst":0,"ShapeSecond":0,"ShapeThird":0,"SkinFirst":15,"SkinSecond":0,"SkinThird":0,"ShapeMix":0,"SkinMix":1,"ThirdMix":0}', '{"nose_width":0,"nose_peak":0,"nose_length":0,"nose_bone_curveness":0,"nose_tip":0,"nose_bone_twist":0,"eyebrow_up_down":0,"eyebrow_in_out":0,"cheek_bones":0,"cheek_sideways_bone_size":0,"cheek_bones_width":0,"eye_opening":0,"lip_thickness":0,"jaw_bone_width":0,"jaw_bone_shape":0,"chin_bone":0,"chin_bone_length":0,"chin_bone_shape":0,"chin_hole":0,"neck_thickness":0}', '{"Blemishes":{"value":255,"colorType":0,"firstColor":0,"secondColor":0,"opacity":1},"FacialHair":{"value":255,"colorType":1,"firstColor":0,"secondColor":0,"opacity":0},"Eyebrows":{"value":255,"colorType":1,"firstColor":0,"secondColor":0,"opacity":1},"Ageing":{"value":255,"colorType":0,"firstColor":0,"secondColor":0,"opacity":1},"Makeup":{"value":255,"colorType":2,"firstColor":0,"secondColor":0,"opacity":1},"Blush":{"value":255,"colorType":2,"firstColor":0,"secondColor":0,"opacity":1},"Complexion":{"value":255,"colorType":0,"firstColor":0,"secondColor":0,"opacity":1},"SunDamage":{"value":255,"colorType":0,"firstColor":0,"secondColor":0,"opacity":1},"Lipstick":{"value":255,"colorType":2,"firstColor":0,"secondColor":0,"opacity":1},"MolesFreckles":{"value":255,"colorType":0,"firstColor":0,"secondColor":0,"opacity":1},"ChestHair":{"value":255,"colorType":1,"firstColor":0,"secondColor":0,"opacity":1},"BodyBlemishes":{"value":255,"colorType":0,"firstColor":0,"secondColor":0,"opacity":1},"AddBodyBlemishes":{"value":255,"colorType":0,"firstColor":0,"secondColor":0,"opacity":1}}', 65535),
+	(4, 7710107, '1885233650', '{"ShapeFirst":0,"ShapeSecond":0,"ShapeThird":0,"SkinFirst":15,"SkinSecond":0,"SkinThird":0,"ShapeMix":0,"SkinMix":1,"ThirdMix":0}', '{"nose_width":0,"nose_peak":0,"nose_length":0,"nose_bone_curveness":0,"nose_tip":0,"nose_bone_twist":0,"eyebrow_up_down":0,"eyebrow_in_out":0,"cheek_bones":0,"cheek_sideways_bone_size":0,"cheek_bones_width":0,"eye_opening":0,"lip_thickness":0,"jaw_bone_width":0,"jaw_bone_shape":0,"chin_bone":0,"chin_bone_length":0,"chin_bone_shape":0,"chin_hole":0,"neck_thickness":0}', '{"Blemishes":{"value":255,"colorType":0,"firstColor":0,"secondColor":0,"opacity":1},"FacialHair":{"value":255,"colorType":1,"firstColor":0,"secondColor":0,"opacity":0},"Eyebrows":{"value":255,"colorType":1,"firstColor":0,"secondColor":0,"opacity":1},"Ageing":{"value":255,"colorType":0,"firstColor":0,"secondColor":0,"opacity":1},"Makeup":{"value":255,"colorType":2,"firstColor":0,"secondColor":0,"opacity":1},"Blush":{"value":255,"colorType":2,"firstColor":0,"secondColor":0,"opacity":1},"Complexion":{"value":255,"colorType":0,"firstColor":0,"secondColor":0,"opacity":1},"SunDamage":{"value":255,"colorType":0,"firstColor":0,"secondColor":0,"opacity":1},"Lipstick":{"value":255,"colorType":2,"firstColor":0,"secondColor":0,"opacity":1},"MolesFreckles":{"value":255,"colorType":0,"firstColor":0,"secondColor":0,"opacity":1},"ChestHair":{"value":255,"colorType":1,"firstColor":0,"secondColor":0,"opacity":1},"BodyBlemishes":{"value":255,"colorType":0,"firstColor":0,"secondColor":0,"opacity":1},"AddBodyBlemishes":{"value":255,"colorType":0,"firstColor":0,"secondColor":0,"opacity":1}}', 65535),
+	(5, 64193, '1885233650', '{"ShapeFirst":0,"ShapeSecond":0,"ShapeThird":0,"SkinFirst":15,"SkinSecond":0,"SkinThird":0,"ShapeMix":0,"SkinMix":1,"ThirdMix":0}', '{"nose_width":0,"nose_peak":0,"nose_length":0,"nose_bone_curveness":0,"nose_tip":0,"nose_bone_twist":0,"eyebrow_up_down":0,"eyebrow_in_out":0,"cheek_bones":0,"cheek_sideways_bone_size":0,"cheek_bones_width":0,"eye_opening":0,"lip_thickness":0,"jaw_bone_width":0,"jaw_bone_shape":0,"chin_bone":0,"chin_bone_length":0,"chin_bone_shape":0,"chin_hole":0,"neck_thickness":0}', '{"Blemishes":{"value":255,"colorType":0,"firstColor":0,"secondColor":0,"opacity":1},"FacialHair":{"value":255,"colorType":1,"firstColor":0,"secondColor":0,"opacity":0},"Eyebrows":{"value":255,"colorType":1,"firstColor":0,"secondColor":0,"opacity":1},"Ageing":{"value":255,"colorType":0,"firstColor":0,"secondColor":0,"opacity":1},"Makeup":{"value":255,"colorType":2,"firstColor":0,"secondColor":0,"opacity":1},"Blush":{"value":255,"colorType":2,"firstColor":0,"secondColor":0,"opacity":1},"Complexion":{"value":255,"colorType":0,"firstColor":0,"secondColor":0,"opacity":1},"SunDamage":{"value":255,"colorType":0,"firstColor":0,"secondColor":0,"opacity":1},"Lipstick":{"value":255,"colorType":2,"firstColor":0,"secondColor":0,"opacity":1},"MolesFreckles":{"value":255,"colorType":0,"firstColor":0,"secondColor":0,"opacity":1},"ChestHair":{"value":255,"colorType":1,"firstColor":0,"secondColor":0,"opacity":1},"BodyBlemishes":{"value":255,"colorType":0,"firstColor":0,"secondColor":0,"opacity":1},"AddBodyBlemishes":{"value":255,"colorType":0,"firstColor":0,"secondColor":0,"opacity":1}}', 65535);
 
 -- Dumping structure for table ahvaz_rp.player_motel
 CREATE TABLE IF NOT EXISTS `player_motel` (
@@ -195,12 +225,16 @@ CREATE TABLE IF NOT EXISTS `player_motel` (
   `citizenid` longtext DEFAULT NULL,
   `building_type` int(11) DEFAULT 1,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
--- Dumping data for table ahvaz_rp.player_motel: ~0 rows (approximately)
+-- Dumping data for table ahvaz_rp.player_motel: ~5 rows (approximately)
 DELETE FROM `player_motel`;
 INSERT INTO `player_motel` (`id`, `citizenid`, `building_type`) VALUES
-	(1, '1', 3);
+	(1, '1', 3),
+	(2, '110394', 3),
+	(3, '88656', 3),
+	(4, '7710107', 3),
+	(5, '64193', 3);
 
 -- Dumping structure for table ahvaz_rp.player_outfits
 CREATE TABLE IF NOT EXISTS `player_outfits` (
@@ -228,12 +262,13 @@ CREATE TABLE IF NOT EXISTS `user_permissions` (
   `license` longtext DEFAULT NULL,
   `group` longtext DEFAULT 'user',
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
--- Dumping data for table ahvaz_rp.user_permissions: ~0 rows (approximately)
+-- Dumping data for table ahvaz_rp.user_permissions: ~2 rows (approximately)
 DELETE FROM `user_permissions`;
 INSERT INTO `user_permissions` (`id`, `license`, `group`) VALUES
-	(1, 'license:44aa598da65fcad33b040613630f1b496bdc4ef3', 'owner');
+	(1, 'license:44aa598da65fcad33b040613630f1b496bdc4ef3', 'owner'),
+	(2, 'license:23ab6ef9336d9113a1f9fdd5b94dff57b1b12176', 'owner');
 
 -- Dumping structure for table ahvaz_rp._admin_ban
 CREATE TABLE IF NOT EXISTS `_admin_ban` (
@@ -310,7 +345,7 @@ CREATE TABLE IF NOT EXISTS `_garage` (
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=23 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
--- Dumping data for table ahvaz_rp._garage: ~20 rows (approximately)
+-- Dumping data for table ahvaz_rp._garage: ~22 rows (approximately)
 DELETE FROM `_garage`;
 INSERT INTO `_garage` (`id`, `garage_id`, `name`, `type`, `business_id`, `shared`, `parking_limit`, `location`, `vehicle_types`, `parking_spots`) VALUES
 	(1, 'garage_alta', 'Alta Street Garage', 'public', NULL, 0, 10, '{"vectors":{"x":-315.79,"y":-982.05,"z":35.11},"length":9,"width":43.6,"options":{"heading":338,"debugPoly":false}}', '["land"]', '[{"type":["land"],"size":2,"distance":1.2,"heading":160,"coords":{"x":-297.812,"y":-990.57,"z":30.081}},{"type":["land"],"size":2,"distance":1.2,"heading":160,"coords":{"x":-301.286,"y":-989.269,"z":30.081}},{"type":["land"],"size":2,"distance":1.2,"heading":160,"coords":{"x":-304.761,"y":-987.968,"z":30.081}},{"type":["land"],"size":2,"distance":1.2,"heading":160,"coords":{"x":-308.235,"y":-986.667,"z":30.081}},{"type":["land"],"size":2,"distance":1.2,"heading":160,"coords":{"x":-311.709,"y":-985.366,"z":30.081}},{"type":["land"],"size":2,"distance":1.2,"heading":160,"coords":{"x":-315.184,"y":-984.065,"z":30.081}},{"type":["land"],"size":2,"distance":1.2,"heading":160,"coords":{"x":-318.658,"y":-982.763,"z":30.081}},{"type":["land"],"size":2,"distance":1.2,"heading":160,"coords":{"x":-322.132,"y":-981.462,"z":30.081}},{"type":["land"],"size":2,"distance":1.2,"heading":160,"coords":{"x":-325.607,"y":-980.161,"z":30.081}},{"type":["land"],"size":2,"distance":1.2,"heading":160,"coords":{"x":-329.081,"y":-978.86,"z":30.081}},{"type":["land"],"size":2,"distance":1.2,"heading":160,"coords":{"x":-332.555,"y":-977.559,"z":30.081}}]'),
@@ -336,24 +371,21 @@ INSERT INTO `_garage` (`id`, `garage_id`, `name`, `type`, `business_id`, `shared
 	(21, 'ems_shared_heli', 'EMS Shared Helicopter Garage', 'state', NULL, 1, 10, '{"vectors":{"x":306.73,"y":-1459.39,"z":46.51},"length":11,"width":29.6,"options":{"heading":321,"minZ":45.51,"maxZ":48.91,"debugPoly":false},"hidden":true}', '["air"]', '[{"type":"air","size":4,"distance":1.2,"heading":320.649,"coords":{"x":313.03,"y":-1465.11,"z":46.51}},{"type":"air","size":4,"distance":1.2,"heading":320.83673,"coords":{"x":299.51,"y":-1453.46,"z":46.51}}]'),
 	(22, 'pd_shared_heli', 'PD Shared Helicopter Garage', 'state', NULL, 1, 10, '{"vectors":{"x":476.02,"y":-1003.016,"z":45.92},"length":12.8,"width":13.4,"options":{"heading":0,"minZ":44.92,"maxZ":48.72,"debugPoly":false},"hidden":false}', '["air"]', '[{"type":"air","size":4,"distance":1.2,"heading":92,"coords":{"x":476.05,"y":-1003.3,"z":46.28}}]');
 
--- Dumping structure for table ahvaz_rp._job
-CREATE TABLE IF NOT EXISTS `_job` (
+-- Dumping structure for table ahvaz_rp._houses
+CREATE TABLE IF NOT EXISTS `_houses` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
-  `name` varchar(255) DEFAULT NULL,
-  `label` varchar(255) DEFAULT NULL,
-  `checkInName` varchar(255) DEFAULT NULL,
-  `icon` varchar(255) DEFAULT NULL,
-  `headquarters` longtext DEFAULT NULL,
-  `npc` longtext DEFAULT NULL,
-  `acceptPendingTimeout` int(1) DEFAULT NULL,
-  `vpn` tinyint(1) NOT NULL,
-  `capacity` int(11) NOT NULL,
-  `enabled` tinyint(1) DEFAULT NULL,
+  `hid` int(11) DEFAULT 0,
+  `owner` longtext DEFAULT NULL,
+  `keys` longtext DEFAULT '[]',
+  `information` longtext DEFAULT '{}',
+  `objects` longtext DEFAULT '[]',
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=33 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
--- Dumping data for table ahvaz_rp._job: ~0 rows (approximately)
-DELETE FROM `_job`;
+-- Dumping data for table ahvaz_rp._houses: ~1 rows (approximately)
+DELETE FROM `_houses`;
+INSERT INTO `_houses` (`id`, `hid`, `owner`, `keys`, `information`, `objects`) VALUES
+	(1, 3, '{"last_name":"Sag Ahwazi","first_name":"Rotabu","cid":1}', '[]', NULL, '[]');
 
 -- Dumping structure for table ahvaz_rp._mdt_charge
 CREATE TABLE IF NOT EXISTS `_mdt_charge` (
@@ -378,7 +410,7 @@ CREATE TABLE IF NOT EXISTS `_mdt_charge` (
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
--- Dumping data for table ahvaz_rp._mdt_charge: ~0 rows (approximately)
+-- Dumping data for table ahvaz_rp._mdt_charge: ~1 rows (approximately)
 DELETE FROM `_mdt_charge`;
 INSERT INTO `_mdt_charge` (`id`, `charge_category_id`, `name`, `description`, `time`, `fine`, `points`, `felony`, `held_until_trial`, `deny_parole`, `accessorized`, `accessory_description`, `accessory_time`, `accessory_fine`, `accessory_points`, `accessory_felony`, `accessory_held_until_trial`, `accessory_deny_parole`) VALUES
 	(2, 1, 'Ya allah', 'sdfosdfkospdokfopsdkff', 0, 0, 0, 0, 0, 0, 0, '', 0, 0, 0, 0, 0, 0);
@@ -390,7 +422,7 @@ CREATE TABLE IF NOT EXISTS `_mdt_charge_category` (
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
--- Dumping data for table ahvaz_rp._mdt_charge_category: ~0 rows (approximately)
+-- Dumping data for table ahvaz_rp._mdt_charge_category: ~1 rows (approximately)
 DELETE FROM `_mdt_charge_category`;
 INSERT INTO `_mdt_charge_category` (`id`, `name`) VALUES
 	(1, 'Hello');
@@ -402,7 +434,7 @@ CREATE TABLE IF NOT EXISTS `_mdt_department` (
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
--- Dumping data for table ahvaz_rp._mdt_department: ~0 rows (approximately)
+-- Dumping data for table ahvaz_rp._mdt_department: ~1 rows (approximately)
 DELETE FROM `_mdt_department`;
 INSERT INTO `_mdt_department` (`id`, `name`) VALUES
 	(1, 'LSPD');
@@ -417,7 +449,7 @@ CREATE TABLE IF NOT EXISTS `_mdt_profile_officer` (
   `profile_image_url` longtext DEFAULT 'https://voidrp.storage.c2.liara.space/images/mdt/ttNVaPp.png'
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
--- Dumping data for table ahvaz_rp._mdt_profile_officer: ~0 rows (approximately)
+-- Dumping data for table ahvaz_rp._mdt_profile_officer: ~1 rows (approximately)
 DELETE FROM `_mdt_profile_officer`;
 INSERT INTO `_mdt_profile_officer` (`character_id`, `alias`, `callsign`, `department_id`, `rank_id`, `profile_image_url`) VALUES
 	(1, 'Shit', 'WGAT', 1, 1, 'https://voidrp.storage.c2.liara.space/images/mdt/ttNVaPp.png');
@@ -432,7 +464,7 @@ CREATE TABLE IF NOT EXISTS `_mdt_profile_officer_role` (
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
--- Dumping data for table ahvaz_rp._mdt_profile_officer_role: ~0 rows (approximately)
+-- Dumping data for table ahvaz_rp._mdt_profile_officer_role: ~1 rows (approximately)
 DELETE FROM `_mdt_profile_officer_role`;
 INSERT INTO `_mdt_profile_officer_role` (`id`, `name`, `icon`, `color`, `color_text`) VALUES
 	(1, 'JFT', 'anonymous', 'white', 'black');
@@ -444,7 +476,7 @@ CREATE TABLE IF NOT EXISTS `_mdt_rank` (
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
--- Dumping data for table ahvaz_rp._mdt_rank: ~0 rows (approximately)
+-- Dumping data for table ahvaz_rp._mdt_rank: ~1 rows (approximately)
 DELETE FROM `_mdt_rank`;
 INSERT INTO `_mdt_rank` (`id`, `name`) VALUES
 	(1, 'Cadet');
@@ -469,7 +501,7 @@ CREATE TABLE IF NOT EXISTS `_mdt_role_access` (
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
--- Dumping data for table ahvaz_rp._mdt_role_access: ~0 rows (approximately)
+-- Dumping data for table ahvaz_rp._mdt_role_access: ~1 rows (approximately)
 DELETE FROM `_mdt_role_access`;
 INSERT INTO `_mdt_role_access` (`id`, `profile_id`, `role_id`) VALUES
 	(1, 1, 1);
@@ -484,7 +516,7 @@ CREATE TABLE IF NOT EXISTS `_mdt_tag_category` (
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
--- Dumping data for table ahvaz_rp._mdt_tag_category: ~0 rows (approximately)
+-- Dumping data for table ahvaz_rp._mdt_tag_category: ~1 rows (approximately)
 DELETE FROM `_mdt_tag_category`;
 INSERT INTO `_mdt_tag_category` (`id`, `name`, `color`, `color_text`, `icon`) VALUES
 	(1, 'yooo', 'red', 'black', 'burger');
@@ -496,9 +528,9 @@ CREATE TABLE IF NOT EXISTS `_objects` (
   `coords` longtext DEFAULT NULL,
   `data` longtext DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=10 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=13 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
--- Dumping data for table ahvaz_rp._objects: ~6 rows (approximately)
+-- Dumping data for table ahvaz_rp._objects: ~9 rows (approximately)
 DELETE FROM `_objects`;
 INSERT INTO `_objects` (`id`, `ns`, `coords`, `data`) VALUES
 	(1, 'gang-flags', '{"x":358.091796875,"y":-2039.6326904296875,"z":23.381839752197266}', '{"builder":1,"model":1946486510,"rotation":{"x":33.20119094848633,"y":-1.972176194190979,"z":-36.4119873046875},"metadata":{"gangId":"vagos"}}'),
@@ -506,7 +538,10 @@ INSERT INTO `_objects` (`id`, `ns`, `coords`, `data`) VALUES
 	(6, 'graffiti', '{"x":271.96026611328125,"y":-1924.2869873046875,"z":26.28492546081543}', '{"builder":1,"model":"np_sprays_vagos","rotation":{"x":0,"y":0,"z":-38.99520492553711},"metadata":{"gangId":"vagos","gangsDiscovered":["vagos"],"color":5}}'),
 	(7, 'graffiti', '{"x":199.43540954589844,"y":-1845.1148681640625,"z":29.30154800415039}', '{"builder":1,"model":"np_sprays_vagos","rotation":{"x":0,"y":0,"z":-39.96194839477539},"metadata":{"gangId":"vagos","gangsDiscovered":["vagos"],"color":5}}'),
 	(8, 'graffiti', '{"x":345.9461975097656,"y":-2075.136962890625,"z":21.478395462036133}', '{"builder":1,"model":"np_sprays_vagos","rotation":{"x":0,"y":0,"z":50.00080871582031},"metadata":{"gangId":"vagos","gangsDiscovered":["vagos"],"color":5}}'),
-	(9, 'graffiti', '{"x":126.13067626953125,"y":-1772.4771728515625,"z":30.544307708740234}', '{"builder":1,"model":"np_sprays_vagos","rotation":{"x":0,"y":0,"z":-129.99807739257812},"metadata":{"gangId":"vagos","gangsDiscovered":["vagos"],"color":5}}');
+	(9, 'graffiti', '{"x":126.13067626953125,"y":-1772.4771728515625,"z":30.544307708740234}', '{"builder":1,"model":"np_sprays_vagos","rotation":{"x":0,"y":0,"z":-129.99807739257812},"metadata":{"gangId":"vagos","gangsDiscovered":["vagos"],"color":5}}'),
+	(10, 'graffiti', '{"x":195.17689514160156,"y":-1991.99462890625,"z":19.74308204650879}', '{"builder":3,"model":"np_sprays_vagos","rotation":{"x":0,"y":0,"z":-130.00592041015625},"metadata":{"gangId":"vagos","gangsDiscovered":["vagos"],"color":5}}'),
+	(11, 'graffiti', '{"x":123.9488754272461,"y":-1919.2537841796875,"z":21.970518112182617}', '{"builder":1,"model":"np_sprays_vagos","rotation":{"x":0,"y":0,"z":54.751277923583984},"metadata":{"gangId":"vagos","gangsDiscovered":["vagos"],"color":5}}'),
+	(12, 'graffiti', '{"x":21.746150970458984,"y":-1904.3524169921875,"z":23.234628677368164}', '{"builder":3,"model":"np_sprays_vagos","rotation":{"x":0,"y":0,"z":50.20040512084961},"metadata":{"gangId":"vagos","gangsDiscovered":["vagos"],"color":5}}');
 
 -- Dumping structure for table ahvaz_rp._parking_log
 CREATE TABLE IF NOT EXISTS `_parking_log` (
@@ -537,10 +572,10 @@ CREATE TABLE IF NOT EXISTS `_player_gangs` (
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
--- Dumping data for table ahvaz_rp._player_gangs: ~0 rows (approximately)
+-- Dumping data for table ahvaz_rp._player_gangs: ~1 rows (approximately)
 DELETE FROM `_player_gangs`;
 INSERT INTO `_player_gangs` (`id`, `leader`, `code`, `gangName`, `members`, `maxMembers`, `logs`) VALUES
-	(1, 1, 'vagos', 'Vagos', '[{"cid":1,"name":"Rotabu Sag Ahwazi"}]', 5, '[{"log":"Rotabu Sag Ahwazi Sprayed at {\\"x\\":126.13067626953125,\\"y\\":-1772.4771728515625,\\"z\\":30.544307708740234}","date":1727353538035}]');
+	(1, 1, 'vagos', 'Vagos', '[{"cid":1,"name":"Rotabu Sag Ahwazi"}]', 5, '[{"log":"Rotabu Sag Ahwazi Sprayed at {\\"x\\":126.13067626953125,\\"y\\":-1772.4771728515625,\\"z\\":30.544307708740234}","date":1727353538035},{"log":"Rotabu Sag Ahwazi Invited asd asd To Group","date":1727362157998},{"log":"asd asd Joined Group, Invite From: Rotabu Sag Ahwazi","date":1727362160591},{"log":"asd asd Purchased a gang spray, Cost: 5000 ","date":1727362439132},{"log":"asd asd Purchased a gang spray, Cost: 5000 ","date":1727362471141},{"log":"asd asd Purchased a gang spray, Cost: 5000 ","date":1727362473346},{"log":"asd asd Purchased a gang spray, Cost: 5000 ","date":1727362475749},{"log":"asd asd Purchased a gang spray, Cost: 5000 ","date":1727362477502},{"log":"asd asd Sprayed at {\\"x\\":195.17689514160156,\\"y\\":-1991.99462890625,\\"z\\":19.74308204650879}","date":1727362739307},{"log":"Rotabu Sag Ahwazi Sprayed at {\\"x\\":123.9488754272461,\\"y\\":-1919.2537841796875,\\"z\\":21.970518112182617}","date":1727362831035},{"log":"asd asd Sprayed at {\\"x\\":21.746150970458984,\\"y\\":-1904.3524169921875,\\"z\\":23.234628677368164}","date":1727363536627}]');
 
 -- Dumping structure for table ahvaz_rp._player_strains
 CREATE TABLE IF NOT EXISTS `_player_strains` (
@@ -552,7 +587,7 @@ CREATE TABLE IF NOT EXISTS `_player_strains` (
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
--- Dumping data for table ahvaz_rp._player_strains: ~0 rows (approximately)
+-- Dumping data for table ahvaz_rp._player_strains: ~1 rows (approximately)
 DELETE FROM `_player_strains`;
 INSERT INTO `_player_strains` (`id`, `creator`, `name`, `strain`, `rep`) VALUES
 	(1, '1', 'Elephant-Metal-Bud', '15-41-19', 0);
@@ -588,7 +623,7 @@ CREATE TABLE IF NOT EXISTS `_race_track` (
   UNIQUE KEY `id` (`_id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=9 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
--- Dumping data for table ahvaz_rp._race_track: ~3 rows (approximately)
+-- Dumping data for table ahvaz_rp._race_track: ~4 rows (approximately)
 DELETE FROM `_race_track`;
 INSERT INTO `_race_track` (`_id`, `id`, `name`, `author`, `length`, `type`, `minLaps`, `thumbnail`, `checkpoints`, `category`) VALUES
 	(1, '44c86ae7-43e1-514e-bac4-bcace32f1dcd', 'Director\'s Cut', 'varaxium', 9675, 'Lap', 1, 'https', '[{"rad":6.6,"hdg":128.648,"pos":{"x":-1205.424,"z":26.73,"y":-574.434}},{"rad":7.9,"hdg":129.548,"pos":{"x":-1400.063,"z":23.718,"y":-721.545}},{"rad":14.8,"hdg":47.286,"pos":{"x":-1634.027,"z":33.015,"y":-594.859}},{"rad":7.9,"hdg":63.017,"pos":{"x":-1755.571,"z":36.556,"y":-554.272}},{"rad":16.5,"hdg":64.665,"pos":{"x":-2096.269,"z":12.156,"y":-372.635}},{"rad":14.2,"hdg":60.732,"pos":{"x":-2543.359,"z":19.45,"y":-179.473}},{"rad":14.2,"hdg":42.091,"pos":{"x":-2999.263,"z":14.368,"y":131.276}},{"rad":8.7,"hdg":79.911,"pos":{"x":-3057.275,"z":15.61,"y":228.804}},{"rad":7.9,"hdg":23.033,"pos":{"x":-3031.11,"z":7.373,"y":604.721}},{"rad":7.9,"hdg":313.502,"pos":{"x":-3085.946,"z":20.422,"y":745.537}},{"rad":7.9,"hdg":93.707,"pos":{"x":-3175.622,"z":14.041,"y":911.425}},{"rad":9.3,"hdg":336.111,"pos":{"x":-3195.909,"z":9.335,"y":1139.813}},{"rad":9.9,"hdg":261.32,"pos":{"x":-3108.207,"z":19.726,"y":1319.751}},{"rad":9.3,"hdg":275.973,"pos":{"x":-3082.273,"z":20.308,"y":1186.965}},{"rad":8.4,"hdg":207.98,"pos":{"x":-2906.256,"z":49.106,"y":1313.067}},{"rad":8.4,"hdg":236.488,"pos":{"x":-2646.976,"z":119.76,"y":1494.189}},{"rad":8.4,"hdg":260.149,"pos":{"x":-2468.089,"z":191.467,"y":1043.171}},{"rad":8.4,"hdg":307.506,"pos":{"x":-2265.558,"z":197.971,"y":1072.415}},{"rad":7.5,"hdg":256.55,"pos":{"x":-2082.349,"z":184.303,"y":947.542}},{"rad":7.5,"hdg":310.227,"pos":{"x":-1863.878,"z":139.735,"y":788.176}},{"rad":7.5,"hdg":221.366,"pos":{"x":-1760.799,"z":140.952,"y":821.027}},{"rad":11.3,"hdg":194.434,"pos":{"x":-1981.736,"z":101.306,"y":455.526}},{"rad":16.0,"hdg":226.686,"pos":{"x":-1862.04,"z":79.576,"y":145.415}},{"rad":7.8,"hdg":327.099,"pos":{"x":-1813.285,"z":74.618,"y":176.344}},{"rad":10.4,"hdg":253.911,"pos":{"x":-1530.112,"z":61.098,"y":239.955}},{"rad":8.8,"hdg":278.08,"pos":{"x":-1318.924,"z":69.146,"y":394.954}},{"rad":10.7,"hdg":174.862,"pos":{"x":-1078.445,"z":66.594,"y":338.632}},{"rad":14.6,"hdg":209.131,"pos":{"x":-893.294,"z":37.347,"y":-92.304}},{"rad":16.0,"hdg":245.149,"pos":{"x":-782.948,"z":36.408,"y":-321.045}},{"rad":16.0,"hdg":256.645,"pos":{"x":-319.96,"z":29.953,"y":-395.042}},{"rad":16.0,"hdg":163.271,"pos":{"x":-247.445,"z":33.102,"y":-635.873}},{"rad":12.2,"hdg":162.936,"pos":{"x":-241.432,"z":32.977,"y":-724.321}},{"rad":17.3,"hdg":77.768,"pos":{"x":-324.879,"z":31.18,"y":-848.593}},{"rad":15.9,"hdg":359.215,"pos":{"x":-638.298,"z":24.83,"y":-791.023}},{"rad":17.5,"hdg":87.636,"pos":{"x":-744.655,"z":29.858,"y":-658.478}},{"rad":14.2,"hdg":30.262,"pos":{"x":-953.819,"z":37.312,"y":-447.522}},{"rad":9.9,"hdg":119.8,"pos":{"x":-1073.569,"z":36.117,"y":-487.813}}]', 'underground'),
@@ -606,6 +641,22 @@ CREATE TABLE IF NOT EXISTS `_racing_alias` (
 
 -- Dumping data for table ahvaz_rp._racing_alias: ~0 rows (approximately)
 DELETE FROM `_racing_alias`;
+
+-- Dumping structure for table ahvaz_rp._storage
+CREATE TABLE IF NOT EXISTS `_storage` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `size` varchar(50) NOT NULL,
+  `coordinates` varchar(1020) NOT NULL,
+  `placed_by` int(11) NOT NULL,
+  `placed_at` int(11) NOT NULL,
+  `despawn_at` varchar(250) DEFAULT NULL,
+  `is_locked` int(11) DEFAULT NULL,
+  `key_code` varchar(50) DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=78 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+-- Dumping data for table ahvaz_rp._storage: ~0 rows (approximately)
+DELETE FROM `_storage`;
 
 -- Dumping structure for table ahvaz_rp._vehicle
 CREATE TABLE IF NOT EXISTS `_vehicle` (
@@ -661,9 +712,9 @@ CREATE TABLE IF NOT EXISTS `_weed` (
 DELETE FROM `_weed`;
 INSERT INTO `_weed` (`id`, `model`, `coords`, `public`, `createdAt`) VALUES
 	(2, 'bkr_prop_weed_lrg_01b', '{"x":-71.77322387695313,"y":807.3721923828125,"z":225.74984741210938,"h":{"x":0,"y":0,"z":96.58866119384766}}', '{"water":100,"gender":0,"lastHarvest":0,"grower":"1","k":0.6,"id":2,"n":0.6,"p":0.6,"createdAt":1727294392}', 1727294392),
-	(3, 'bkr_prop_weed_lrg_01b', '{"h":{"z":99.78053283691406,"y":0,"x":0},"z":225.74984741210938,"y":807.5491333007813,"x":-70.11798858642578}', '{"water":40,"gender":0,"lastHarvest":0,"grower":"1","k":0.6,"p":0.6,"n":0.6,"createdAt":1727294740}', 1727294740),
+	(3, 'bkr_prop_weed_lrg_01b', '{"h":{"z":99.78053283691406,"y":0,"x":0},"z":225.74984741210938,"y":807.5491333007813,"x":-70.11798858642578}', '{"water":100,"id":3,"p":0.6,"gender":0,"grower":"1","k":0.6,"createdAt":1727294740,"lastHarvest":0,"n":0.6}', 1727294740),
 	(4, 'bkr_prop_weed_lrg_01b', '{"x":-73.68279266357422,"y":808.8150634765625,"z":225.74984741210938,"h":{"x":0,"y":0,"z":82.57197570800781}}', '{"gender":0,"k":0.6,"p":0.6,"n":0.6,"grower":"1","createdAt":1727295307,"water":100,"id":4,"lastHarvest":0}', 1727295307),
-	(5, 'bkr_prop_weed_01_small_01b', '{"x":-57.70275497436523,"h":{"x":0,"z":101.99999237060547,"y":0},"z":225.74984741210938,"y":814.159912109375}', '{"p":41,"water":100,"grower":"1","k":19,"n":15,"id":5,"gender":1,"createdAt":1727355199,"lastHarvest":0}', 1727355199);
+	(5, 'bkr_prop_weed_lrg_01b', '{"x":-57.70275497436523,"h":{"x":0,"z":101.99999237060547,"y":0},"z":225.74984741210938,"y":814.159912109375}', '{"p":41,"water":100,"grower":"1","k":19,"n":15,"id":5,"gender":1,"createdAt":1727355199,"lastHarvest":0}', 1727355199);
 
 /*!40103 SET TIME_ZONE=IFNULL(@OLD_TIME_ZONE, 'system') */;
 /*!40101 SET SQL_MODE=IFNULL(@OLD_SQL_MODE, '') */;

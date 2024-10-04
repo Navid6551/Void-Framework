@@ -402,7 +402,7 @@ function buildFurnitureData(propertyID)
         },
     }
 
-    TriggerServerEvent("CheckFurniture",data,propertyID)
+    TriggerServerEvent("CheckFurniture", data, propertyID)
 end
 
 RegisterNetEvent('housing:crafting')
@@ -444,9 +444,9 @@ AddEventHandler('housing:toggleClosestLock', function()
     local isComplete, propertyID, dist, zone = Housing.func.findClosestProperty()
 
     local jobAccess = hasRealtorAccess()
-
     if isComplete and dist <= 3.0 then
         if not jobAccess and Housing.currentOwned[propertyID] == nil and Housing.currentHousingLocks[propertyID] == nil then
+            print('yo wat da fook')
             return
         end
 

@@ -461,6 +461,6 @@ function isCurrentPropertyLockdown()
 end
 
 function taxCheck(propertyId)
-    local taxCheck = RPC.execute("housing:isOverdueOnTaxes", propertyId)
+    local taxCheck = false--RPC.execute("housing:isOverdueOnTaxes", propertyId)
     return taxCheck
 end

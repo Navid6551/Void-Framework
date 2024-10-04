@@ -69,7 +69,7 @@ end
 -- removing from this list will not remove them from the game
 -- disable them on the DB if they need to be removed
 Housing.newStatic = {
-    --{vector4(60.41, -1579.4, 29.6, 214.56), vector4(0, 0, 0, 0.0),  ['model'] = 'v_int_36', ['Street'] = 'Testing Street', ["enabled"] = true},
+    {vector4(60.41, -1579.4, 29.6, 214.56), vector4(0, 0, 0, 0.0),  ['model'] = 'v_int_36', ['Street'] = 'Testing Street', ["enabled"] = true},
     { vector4(-1027.67,-409.52,33.42, 0.0), vector4(0, 0, 0, 0.0),  ['model'] = 'ghost_stash_houses_01', ['Street'] = 'Marathon Avenue 1', ['enabled'] = true },
     { vector4(-1033.98,-394.77,33.42, 0.0), vector4(0, 0, 0, 0.0),  ['model'] = 'ghost_stash_houses_01', ['Street'] = 'Marathon Avenue 2', ['enabled'] = true },
 

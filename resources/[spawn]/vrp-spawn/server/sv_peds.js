@@ -77,10 +77,14 @@ onNet('character:loadspawns', async() => {
     const src = source
     const pChar = QBCore.Functions.GetPlayer(src).PlayerData
     const pCid = pChar.citizenid
+    const houses = await globalThis.exports['vrp-housing'].GetCurrentOwned(src)
+    const keys = await globalThis.exports['vrp-housing'].GetCurrentKeys(src, false)
     let spawnData = {}
+
     const hasMotel = await SQL.execute('SELECT * FROM player_motel WHERE citizenid = @citizenid', {
         ["citizenid"]: pCid
     })
+
     if (!hasMotel[0]) {
         await SQL.execute('INSERT INTO player_motel (citizenid, building_type) VALUES (@citizenid, @building_type)', {
             citizenid: pCid,
@@ -95,8 +99,8 @@ onNet('character:loadspawns', async() => {
             motelRoom: {
                 roomType: 3,
             },
-            houses: [],
-            keys: []
+            houses: houses,
+            keys: keys
         }
 
     } else {
@@ -108,12 +112,13 @@ onNet('character:loadspawns', async() => {
             motelRoom: {
                 roomType: 3,
             },
-            houses: [],
-            keys: [],
+            houses: houses,
+            keys: keys,
             crash: {
                 position: pChar.position
             }
         }
     }
+
     emitNet('spawn:clientSpawnData', src, spawnData)
 })

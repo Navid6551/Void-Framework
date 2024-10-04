@@ -10,6 +10,7 @@ export const noclip: CommandData = {
     name: 'noclip',
     value: RankValue.junior,
     executedFunction: async function cmdDefault(pUser: UserData, pArgs: NoclipArgs) {
+        console.log('ya allah', pArgs)
         let toggle = false;
         if (pArgs.toggle != null) {
             toggle = pArgs.toggle;

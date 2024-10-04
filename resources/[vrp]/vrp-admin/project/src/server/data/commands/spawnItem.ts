@@ -33,10 +33,9 @@ export const spawnItem: CommandData = {
             return 'Invalid item';
         }
 
-        // let target = pArgs?.Target !== "" && pArgs?.Target !== undefined ? pArgs.Target.source : pUser.source;
+        let target = pArgs?.Target !== "" && pArgs?.Target !== undefined ? pArgs.Target.source : pUser.source;
 
-        // console.log('ya allah lets spawn some item', pUser, pArgs)
-        emitNet('player:receiveItem', pUser.source, pArgs.Item, pArgs.Amount);
+        emitNet('player:receiveItem', target, pArgs.Item, pArgs.Amount);
 
         return '' + pArgs.Item + ')';
     },

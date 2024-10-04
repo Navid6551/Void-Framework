@@ -26,34 +26,34 @@ Citizen.CreateThread(function()
   })
   
 
-  exports["vrp-polyzone"]:AddBoxZone("mrpd_clothing_lockers", vector3(478.58, -1013.18, 30.69), 4.2, 3.4, {
+  exports["vrp-polyzone"]:AddBoxZone("mrpd_clothing_lockers", vector3(461.81, -997.79, 30.69), 4.4, 4.8, {
     heading=0,
-    minZ=29.69,
-    maxZ=33.69
+    minZ=29.64,
+    maxZ=32.84
   })
 
-  exports["vrp-polyzone"]:AddBoxZone("mrpd_armory", vector3(460.69, -998.96, 30.69), 2.45, 1, {
-    heading=0,
+  exports["vrp-polyzone"]:AddBoxZone("mrpd_armory", vector3(481.59, -995.35, 30.69), 3.2, 0.8, {
+    heading=90,
     minZ=29.69,
-    maxZ=33.69
+    maxZ=32.49
   })
 
-  exports["vrp-polyzone"]:AddBoxZone("mrpd_evidence", vector3(477.93, -988.35, 30.69), 2.6, 1, {
-    heading=0,
-    minZ=29.69,
-    maxZ=33.69
+  exports["vrp-polyzone"]:AddBoxZone("mrpd_evidence", vector3(474.84, -996.26, 26.27), 1.2, 3.0, {
+    heading=90,
+    minZ=25.27,
+    maxZ=27.87
   })
 
-  exports["vrp-polyzone"]:AddBoxZone("mrpd_trash", vector3(465.67, -998.68, 30.69), 2.0, 0.8, {
-    heading=0,
-    minZ=29.69,
-    maxZ=33.69
+  exports["vrp-polyzone"]:AddBoxZone("mrpd_trash", vector3(472.88, -996.28, 26.27), 1.2, 3.0, {
+    heading=90,
+    minZ=25.27,
+    maxZ=27.87
   })
 
-  exports["vrp-polyzone"]:AddBoxZone("mrpd_character_switcher", vector3(486.68, -1013.47, 30.69), 2.6, 3.4, {
+  exports["vrp-polyzone"]:AddBoxZone("mrpd_character_switcher", vector3(478.88, -983.49, 30.69), 1.35, 1.3, {
     heading=0,
-    minZ=29.69,
-    maxZ=33.69
+    minZ=29.74,
+    maxZ=32.74
   })
 
   -- Davis PD

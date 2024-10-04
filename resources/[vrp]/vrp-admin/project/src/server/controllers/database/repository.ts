@@ -57,30 +57,26 @@ export abstract class Repository {
     }
 
     static async getObjectSyncedData(pId: string): Promise<any> {
-        const results = await SQL.execute<any[]>("SELECT * FROM _world_object WHERE id = ?", [pId]);
-        if (!results || !results[0]) return null;
+        const results = global.exports['vrp-objects'].GetObject(pId);
+        if (!results) return null;
 
         return {
-            id: results[0].id,
-            model: results[0].model,
-            ns: results[0].ns,
+            id: results.id,
+            model: results.data.model,
+            ns: results.ns,
             coords: {
-                x: results[0].x,
-                y: results[0].y,
-                z: results[0].z
+                x: results.x,
+                y: results.y,
+                z: results.z
             },
-            rotation: {
-                x: results[0].rotX,
-                y: results[0].rotY,
-                z: results[0].rotZ
-            },
-            persistent: results[0].persistent,
-            public: JSON.parse(results[0].public || '{}'),
-            private: JSON.parse(results[0].private || '{}'),
-            world: results[0].world,
-            createdAt: results[0].createdAt,
-            updatedAt: results[0].updatedAt,
-            expiresAt: results[0].expiresAt ?? null
+            rotation: results.data.rotation,
+            persistent: results.data.builde,
+            public: {},
+            private: {},
+            world: 'default',
+            createdAt: Date.now(),
+            updatedAt: Date.now(),
+            expiresAt: Date.now() + 600000
         };
     }
 }

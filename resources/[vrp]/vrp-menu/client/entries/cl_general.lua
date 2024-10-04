@@ -147,29 +147,29 @@ GeneralEntries[#GeneralEntries+1] = {
   end
 }
 
--- GeneralEntries[#GeneralEntries+1] = {
---   data = {
---     id = "property-enter",
---     title = _L("menu-general-enterproperty", "Enter Property"),
---     icon = "#property-enter",
---     event = "housing:interactionTriggered"
---   },
---   isEnabled = function(pEntity, pContext)
---     return not isDead and exports["vrp-housing"]:isNearProperty()
---   end
--- }
+GeneralEntries[#GeneralEntries+1] = {
+  data = {
+    id = "property-enter",
+    title = _L("menu-general-enterproperty", "Enter Property"),
+    icon = "#property-enter",
+    event = "housing:interactionTriggered"
+  },
+  isEnabled = function(pEntity, pContext)
+    return not isDead and exports["vrp-housing"]:isNearProperty()
+  end
+}
 
--- GeneralEntries[#GeneralEntries+1] = {
---   data = {
---     id = "property-lock",
---     title = _L("menu-general-togglepropertylock", "Unlock/Lock Property"),
---     icon = "#property-lock",
---     event = "housing:toggleClosestLock"
---   },
---   isEnabled = function(pEntity, pContext)
---     return not isDead and exports["vrp-housing"]:isNearProperty(true)
---   end
--- }
+GeneralEntries[#GeneralEntries+1] = {
+  data = {
+    id = "property-lock",
+    title = _L("menu-general-togglepropertylock", "Unlock/Lock Property"),
+    icon = "#property-lock",
+    event = "housing:toggleClosestLock"
+  },
+  isEnabled = function(pEntity, pContext)
+    return not isDead and exports["vrp-housing"]:isNearProperty(true)
+  end
+}
 
 GeneralEntries[#GeneralEntries+1] = {
   data = {

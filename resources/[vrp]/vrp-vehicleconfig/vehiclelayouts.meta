@@ -163,44 +163,6 @@
   </VehicleCoverBoundOffsetInfos>
 
   <VehicleSeatInfos>
-    <!-- NC1 NSX -->
-    <Item type="CVehicleSeatInfo">
-      <Name>SEAT_NC1_FRONT_LEFT</Name>
-      <SeatBoneName>seat_dside_f</SeatBoneName>
-      <ShuffleLink>SEAT_LOW_FRONT_RIGHT</ShuffleLink>
-      <RearSeatLink>SEAT_LOW_REAR_LEFT</RearSeatLink>
-      <DefaultCarTask>TASK_DRIVE_WANDER</DefaultCarTask>
-      <SeatFlags>IsFrontSeat</SeatFlags>
-      <HairScale value="-0.2750000" />
-    </Item>
-    <Item type="CVehicleSeatInfo">
-      <Name>SEAT_NC1_FRONT_RIGHT</Name>
-      <SeatBoneName>seat_pside_f</SeatBoneName>
-      <ShuffleLink>SEAT_LOW_FRONT_LEFT</ShuffleLink>
-      <RearSeatLink>SEAT_LOW_REAR_RIGHT</RearSeatLink>
-      <DefaultCarTask>TASK_DRIVE_WANDER</DefaultCarTask>
-      <SeatFlags>IsFrontSeat</SeatFlags>
-      <HairScale value="-0.2750000" />
-    </Item>
-    <!-- S14 Boss -->
-    <Item type="CVehicleSeatInfo">
-      <Name>SEAT_NSX_FRONT_LEFT</Name>
-      <SeatBoneName>seat_dside_f</SeatBoneName>
-      <ShuffleLink>SEAT_LOW_FRONT_RIGHT</ShuffleLink>
-      <RearSeatLink>SEAT_LOW_REAR_LEFT</RearSeatLink>
-      <DefaultCarTask>TASK_DRIVE_WANDER</DefaultCarTask>
-      <SeatFlags>IsFrontSeat</SeatFlags>
-      <HairScale value="-0.2750000" />
-    </Item>
-    <Item type="CVehicleSeatInfo">
-      <Name>SEAT_NSX_FRONT_RIGHT</Name>
-      <SeatBoneName>seat_pside_f</SeatBoneName>
-      <ShuffleLink>SEAT_LOW_FRONT_LEFT</ShuffleLink>
-      <RearSeatLink>SEAT_LOW_REAR_RIGHT</RearSeatLink>
-      <DefaultCarTask>TASK_DRIVE_WANDER</DefaultCarTask>
-      <SeatFlags>IsFrontSeat</SeatFlags>
-      <HairScale value="-0.2750000" />
-    </Item>
     <!-- Bearcat -->
     <Item type="CVehicleSeatInfo">
       <Name>SEAT_VAN_BCAT_REAR_LEFT</Name>
@@ -352,80 +314,13 @@
   </VehicleSeatInfos>
 
   <VehicleSeatAnimInfos>
-    <!-- NC1 NSX -->
-    <Item type="CVehicleSeatAnimInfo">
-      <Name>SEAT_ANIM_NC1_FRONT_LEFT</Name>
-      <DriveByInfo ref="DRIVEBY_LOW_FRONT_RIGHT" />
-      <InsideClipSetMap ref="INSIDE_CLIPSET_MAP_LOW_FRONT_LEFT" />
-      <PanicClipSet>clipset@veh@low@ds@idle_panic</PanicClipSet>
-      <AgitatedClipSet>clipset@veh@low@ds@idle_agitated</AgitatedClipSet>
-      <DuckedClipSet>clipset@veh@low@ds@idle_duck</DuckedClipSet>
-      <LowLODIdleAnim>LOW_CAR_FRONT_DS_IDLE</LowLODIdleAnim>
-      <SeatAmbientContext>IN_CAR_LOW</SeatAmbientContext>
-      <InVehicleMoveNetwork>VEHICLE_DEFAULT</InVehicleMoveNetwork>
-      <SeatAnimFlags>UseStandardInVehicleAnims UseCloseDoorBlendAnims</SeatAnimFlags>
-      <SteeringSmoothing value="0.040000" />
-      <ExitToAimInfoName>LOW</ExitToAimInfoName>
-      <MaleGestureClipSetId>ANIM_GROUP_GESTURE_M_CAR_LOW_DS</MaleGestureClipSetId>
-      <FemaleGestureClipSetId>ANIM_GROUP_GESTURE_F_CAR_LOW_DS</FemaleGestureClipSetId>
-    </Item>
-    <Item type="CVehicleSeatAnimInfo">
-      <Name>SEAT_ANIM_NC1_FRONT_RIGHT</Name>
-      <DriveByInfo ref="DRIVEBY_LOW_FRONT_LEFT" />
-      <InsideClipSetMap ref="INSIDE_CLIPSET_MAP_LOW_FRONT_RIGHT" />
-      <PanicClipSet>clipset@veh@low@ps@idle_panic</PanicClipSet>
-      <AgitatedClipSet />
-      <DuckedClipSet>clipset@veh@low@ps@idle_duck</DuckedClipSet>
-      <LowLODIdleAnim>LOW_CAR_FRONT_PS_IDLE</LowLODIdleAnim>
-      <SeatAmbientContext>IN_CAR_LOW</SeatAmbientContext>
-      <InVehicleMoveNetwork>VEHICLE_DEFAULT</InVehicleMoveNetwork>
-      <SeatAnimFlags>UseStandardInVehicleAnims HasPanicAnims UseCloseDoorBlendAnims PreventShuffleJack</SeatAnimFlags>
-      <SteeringSmoothing value="0.100000" />
-      <ExitToAimInfoName>LOW</ExitToAimInfoName>
-      <MaleGestureClipSetId>ANIM_GROUP_GESTURE_M_CAR_LOW_PS</MaleGestureClipSetId>
-      <FemaleGestureClipSetId>ANIM_GROUP_GESTURE_F_CAR_LOW_PS</FemaleGestureClipSetId>
-    </Item>
-    <!-- S14 Boss -->
-    <Item type="CVehicleSeatAnimInfo">
-      <Name>SEAT_ANIM_NSX_FRONT_LEFT</Name>
-      <DriveByInfo ref="DRIVEBY_LOW_FRONT_RIGHT" />
-      <InsideClipSetMap ref="INSIDE_CLIPSET_MAP_LOW_FRONT_LEFT" />
-      <PanicClipSet>clipset@veh@low@ds@idle_panic</PanicClipSet>
-      <AgitatedClipSet>clipset@veh@low@ds@idle_agitated</AgitatedClipSet>
-      <DuckedClipSet>clipset@veh@low@ds@idle_duck</DuckedClipSet>
-      <LowLODIdleAnim>LOW_CAR_FRONT_DS_IDLE</LowLODIdleAnim>
-      <SeatAmbientContext>IN_CAR_LOW</SeatAmbientContext>
-      <InVehicleMoveNetwork>VEHICLE_DEFAULT</InVehicleMoveNetwork>
-      <SeatAnimFlags>UseStandardInVehicleAnims UseCloseDoorBlendAnims</SeatAnimFlags>
-      <SteeringSmoothing value="0.040000" />
-      <ExitToAimInfoName>LOW</ExitToAimInfoName>
-      <MaleGestureClipSetId>ANIM_GROUP_GESTURE_M_CAR_LOW_DS</MaleGestureClipSetId>
-      <FemaleGestureClipSetId>ANIM_GROUP_GESTURE_F_CAR_LOW_DS</FemaleGestureClipSetId>
-    </Item>
-    <Item type="CVehicleSeatAnimInfo">
-      <Name>SEAT_ANIM_NSX_FRONT_RIGHT</Name>
-      <DriveByInfo ref="DRIVEBY_LOW_FRONT_LEFT" />
-      <InsideClipSetMap ref="INSIDE_CLIPSET_MAP_LOW_FRONT_RIGHT" />
-      <PanicClipSet>clipset@veh@low@ps@idle_panic</PanicClipSet>
-      <AgitatedClipSet />
-      <DuckedClipSet>clipset@veh@low@ps@idle_duck</DuckedClipSet>
-      <LowLODIdleAnim>LOW_CAR_FRONT_PS_IDLE</LowLODIdleAnim>
-      <SeatAmbientContext>IN_CAR_LOW</SeatAmbientContext>
-      <InVehicleMoveNetwork>VEHICLE_DEFAULT</InVehicleMoveNetwork>
-      <SeatAnimFlags>UseStandardInVehicleAnims HasPanicAnims UseCloseDoorBlendAnims PreventShuffleJack</SeatAnimFlags>
-      <SteeringSmoothing value="0.100000" />
-      <ExitToAimInfoName>LOW</ExitToAimInfoName>
-      <MaleGestureClipSetId>ANIM_GROUP_GESTURE_M_CAR_LOW_PS</MaleGestureClipSetId>
-      <FemaleGestureClipSetId>ANIM_GROUP_GESTURE_F_CAR_LOW_PS</FemaleGestureClipSetId>
-    </Item>
-    <!-- News Van -->
     <Item type="CVehicleSeatAnimInfo">
       <Name>SEAT_ANIM_VAN_REAR_LEFT_NEWSVAN</Name>
       <DriveByInfo ref="NULL" />
       <InsideClipSetMap ref="INSIDE_CLIPSET_MAP_VAN_REAR_LEFT" />
       <PanicClipSet>clipset@veh@van@rds_rear@idle_panic</PanicClipSet>
       <AgitatedClipSet>clipset@veh@van@rds_rear@idle_agitated</AgitatedClipSet>
-      <DuckedClipSet />
+	  <DuckedClipSet />
       <FemaleClipSet />
       <LowLODIdleAnim>VAN_REAR_DS_IDLE</LowLODIdleAnim>
       <SeatAmbientContext />
@@ -442,7 +337,7 @@
       <InsideClipSetMap ref="INSIDE_CLIPSET_MAP_VAN_REAR_RIGHT" />
       <PanicClipSet>clipset@veh@van@rps_rear@idle_panic</PanicClipSet>
       <AgitatedClipSet>clipset@veh@van@rps_rear@idle_agitated</AgitatedClipSet>
-      <DuckedClipSet />
+	  <DuckedClipSet />
       <FemaleClipSet />
       <LowLODIdleAnim>VAN_REAR_PS_IDLE</LowLODIdleAnim>
       <SeatAmbientContext />
@@ -626,72 +521,6 @@
     </Item>
   </VehicleSeatAnimInfos>
   <VehicleEntryPointInfos>
-    <!-- NC1 NSX -->
-    <Item type="CVehicleEntryPointInfo">
-      <Name>ENTRY_POINT_NC1_FRONT_LEFT</Name>
-      <DoorBoneName>door_pside_f</DoorBoneName>
-      <SecondDoorBoneName />
-      <DoorHandleBoneName>handle_pside_f</DoorHandleBoneName>
-      <WindowId>FRONT_RIGHT</WindowId>
-      <VehicleSide>SIDE_LEFT</VehicleSide>
-      <AccessableSeats>
-        <Item ref="SEAT_LOW_FRONT_LEFT" />
-      </AccessableSeats>
-      <VehicleExtraPointsInfo ref="EXTRA_VEHICLE_POINTS_STD_LEFT" />
-      <Flags>BlockJackReactionUntilJackerIsReady</Flags>
-      <BlockJackReactionSides>
-        <Item>SIDE_RIGHT</Item>
-      </BlockJackReactionSides>
-    </Item>
-    <Item type="CVehicleEntryPointInfo">
-      <Name>ENTRY_POINT_NC1_FRONT_RIGHT</Name>
-      <DoorBoneName>door_dside_f</DoorBoneName>
-      <SecondDoorBoneName />
-      <DoorHandleBoneName>handle_dside_f</DoorHandleBoneName>
-      <WindowId>FRONT_LEFT</WindowId>
-      <VehicleSide>SIDE_RIGHT</VehicleSide>
-      <AccessableSeats>
-        <Item ref="SEAT_LOW_FRONT_RIGHT" />
-      </AccessableSeats>
-      <VehicleExtraPointsInfo ref="EXTRA_VEHICLE_POINTS_STD_RIGHT" />
-      <Flags>BlockJackReactionUntilJackerIsReady</Flags>
-      <BlockJackReactionSides>
-        <Item>SIDE_LEFT</Item>
-      </BlockJackReactionSides>
-    </Item>
-    <!-- S14 Boss -->
-    <Item type="CVehicleEntryPointInfo">
-      <Name>ENTRY_POINT_NSX_FRONT_LEFT</Name>
-      <DoorBoneName>door_pside_f</DoorBoneName>
-      <SecondDoorBoneName />
-      <DoorHandleBoneName>handle_pside_f</DoorHandleBoneName>
-      <WindowId>FRONT_RIGHT</WindowId>
-      <VehicleSide>SIDE_LEFT</VehicleSide>
-      <AccessableSeats>
-        <Item ref="SEAT_LOW_FRONT_LEFT" />
-      </AccessableSeats>
-      <VehicleExtraPointsInfo ref="EXTRA_VEHICLE_POINTS_STD_LEFT" />
-      <Flags>BlockJackReactionUntilJackerIsReady</Flags>
-      <BlockJackReactionSides>
-        <Item>SIDE_RIGHT</Item>
-      </BlockJackReactionSides>
-    </Item>
-    <Item type="CVehicleEntryPointInfo">
-      <Name>ENTRY_POINT_NSX_FRONT_RIGHT</Name>
-      <DoorBoneName>door_dside_f</DoorBoneName>
-      <SecondDoorBoneName />
-      <DoorHandleBoneName>handle_dside_f</DoorHandleBoneName>
-      <WindowId>FRONT_LEFT</WindowId>
-      <VehicleSide>SIDE_RIGHT</VehicleSide>
-      <AccessableSeats>
-        <Item ref="SEAT_LOW_FRONT_RIGHT" />
-      </AccessableSeats>
-      <VehicleExtraPointsInfo ref="EXTRA_VEHICLE_POINTS_STD_RIGHT" />
-      <Flags>BlockJackReactionUntilJackerIsReady</Flags>
-      <BlockJackReactionSides>
-        <Item>SIDE_LEFT</Item>
-      </BlockJackReactionSides>
-    </Item>
     <!-- Bearcat -->
     <Item type="CVehicleEntryPointInfo">
       <Name>ENTRY_POINT_VAN_BCAT_REAR_LEFT</Name>
@@ -983,91 +812,6 @@
     </Item>
   </VehicleExtraPointsInfos>
   <VehicleEntryPointAnimInfos>
-    <!-- NC1 NSX -->
-    <Item type="CVehicleEntryPointAnimInfo">
-      <Name>ENTRY_POINT_ANIM_LOW_NC1_FRONT_LEFT</Name>
-      <CommonClipSetMap ref="COMMON_CLIPSET_MAP_AUTOMOBILE_LEFT" />
-      <EntryClipSetMap ref="ENTRY_CLIPSET_MAP_LOW_FRONT_LEFT" />
-      <ExitClipSetMap ref="EXIT_CLIPSET_MAP_LOW_FRONT_LEFT" />
-      <AlternateTryLockedDoorClipId>LOW_Locked_DS</AlternateTryLockedDoorClipId>
-      <AlternateForcedEntryClipId>LOW_Force_Entry_DS</AlternateForcedEntryClipId>
-      <AlternateJackFromOutSideClipId>low_perp_ds_a</AlternateJackFromOutSideClipId>
-      <AlternateBeJackedFromOutSideClipId>low_victim_ds_a</AlternateBeJackedFromOutSideClipId>
-      <AlternateEntryPointClipSetId>clipset@veh@low@ds@female@enter_exit</AlternateEntryPointClipSetId>
-      <EnterVehicleMoveNetwork>ENTER_VEHICLE_STD</EnterVehicleMoveNetwork>
-      <EntryTranslation x="-0.980600" y="-0.753300" z="0.610300" />
-      <OpenDoorTranslation x="0.000000" y="0.000000" />
-      <OpenDoorHeadingChange value="1.570000" />
-      <EntryHeadingChange value="-1.570000" />
-      <ExtraZForWaterEntry value="0.000000" />
-      <EntryPointFlags>JackIncludesGetIn UsesNoDoorTransitionForExit UseOpenDoorBlendAnims FixUpMoverToEntryPointOnExit
-        UseGetUpAfterJack JackVariationsIncludeGetIn HasCombatEntry</EntryPointFlags>
-      <EntryAnimVariations ref="ENTRY_ANIM_VARIATIONS_LOW_FRONT_LEFT" />
-      <NMJumpFromVehicleTuningSet>LOWCAR</NMJumpFromVehicleTuningSet>
-    </Item>
-    <Item type="CVehicleEntryPointAnimInfo">
-      <Name>ENTRY_POINT_ANIM_LOW_NC1_FRONT_RIGHT</Name>
-      <CommonClipSetMap ref="COMMON_CLIPSET_MAP_AUTOMOBILE_RIGHT" />
-      <EntryClipSetMap ref="ENTRY_CLIPSET_MAP_LOW_FRONT_RIGHT" />
-      <ExitClipSetMap ref="EXIT_CLIPSET_MAP_LOW_FRONT_RIGHT" />
-      <AlternateTryLockedDoorClipId>LOW_Locked_PS</AlternateTryLockedDoorClipId>
-      <AlternateForcedEntryClipId>LOW_Force_Entry_PS</AlternateForcedEntryClipId>
-      <AlternateJackFromOutSideClipId>low_perp_ps_a</AlternateJackFromOutSideClipId>
-      <AlternateBeJackedFromOutSideClipId>low_victim_ps_a</AlternateBeJackedFromOutSideClipId>
-      <AlternateEntryPointClipSetId>clipset@veh@low@ps@female@enter_exit</AlternateEntryPointClipSetId>
-      <EnterVehicleMoveNetwork>ENTER_VEHICLE_STD</EnterVehicleMoveNetwork>
-      <EntryTranslation x="0.875000" y="-0.740000" z="0.610000" />
-      <OpenDoorTranslation x="0.000000" y="0.000000" />
-      <OpenDoorHeadingChange value="-1.570000" />
-      <EntryHeadingChange value="1.570000" />
-      <ExtraZForWaterEntry value="0.000000" />
-      <EntryPointFlags>JackIncludesGetIn UsesNoDoorTransitionForExit UseOpenDoorBlendAnims FixUpMoverToEntryPointOnExit
-        UseGetUpAfterJack JackVariationsIncludeGetIn HasCombatEntry</EntryPointFlags>
-      <EntryAnimVariations ref="ENTRY_ANIM_VARIATIONS_LOW_FRONT_RIGHT" />
-    </Item>
-    <!-- S14 Boss -->
-    <Item type="CVehicleEntryPointAnimInfo">
-      <Name>ENTRY_POINT_ANIM_LOW_NSX_FRONT_LEFT</Name>
-      <CommonClipSetMap ref="COMMON_CLIPSET_MAP_AUTOMOBILE_LEFT" />
-      <EntryClipSetMap ref="ENTRY_CLIPSET_MAP_LOW_FRONT_LEFT" />
-      <ExitClipSetMap ref="EXIT_CLIPSET_MAP_LOW_FRONT_LEFT" />
-      <AlternateTryLockedDoorClipId>LOW_Locked_DS</AlternateTryLockedDoorClipId>
-      <AlternateForcedEntryClipId>LOW_Force_Entry_DS</AlternateForcedEntryClipId>
-      <AlternateJackFromOutSideClipId>low_perp_ds_a</AlternateJackFromOutSideClipId>
-      <AlternateBeJackedFromOutSideClipId>low_victim_ds_a</AlternateBeJackedFromOutSideClipId>
-      <AlternateEntryPointClipSetId>clipset@veh@low@ds@female@enter_exit</AlternateEntryPointClipSetId>
-      <EnterVehicleMoveNetwork>ENTER_VEHICLE_STD</EnterVehicleMoveNetwork>
-      <EntryTranslation x="-0.980600" y="-0.753300" z="0.610300" />
-      <OpenDoorTranslation x="0.000000" y="0.000000" />
-      <OpenDoorHeadingChange value="1.570000" />
-      <EntryHeadingChange value="-1.570000" />
-      <ExtraZForWaterEntry value="0.000000" />
-      <EntryPointFlags>JackIncludesGetIn UsesNoDoorTransitionForExit UseOpenDoorBlendAnims FixUpMoverToEntryPointOnExit
-        UseGetUpAfterJack JackVariationsIncludeGetIn HasCombatEntry</EntryPointFlags>
-      <EntryAnimVariations ref="ENTRY_ANIM_VARIATIONS_LOW_FRONT_LEFT" />
-      <NMJumpFromVehicleTuningSet>LOWCAR</NMJumpFromVehicleTuningSet>
-    </Item>
-    <Item type="CVehicleEntryPointAnimInfo">
-      <Name>ENTRY_POINT_ANIM_LOW_NSX_FRONT_RIGHT</Name>
-      <CommonClipSetMap ref="COMMON_CLIPSET_MAP_AUTOMOBILE_RIGHT" />
-      <EntryClipSetMap ref="ENTRY_CLIPSET_MAP_LOW_FRONT_RIGHT" />
-      <ExitClipSetMap ref="EXIT_CLIPSET_MAP_LOW_FRONT_RIGHT" />
-      <AlternateTryLockedDoorClipId>LOW_Locked_PS</AlternateTryLockedDoorClipId>
-      <AlternateForcedEntryClipId>LOW_Force_Entry_PS</AlternateForcedEntryClipId>
-      <AlternateJackFromOutSideClipId>low_perp_ps_a</AlternateJackFromOutSideClipId>
-      <AlternateBeJackedFromOutSideClipId>low_victim_ps_a</AlternateBeJackedFromOutSideClipId>
-      <AlternateEntryPointClipSetId>clipset@veh@low@ps@female@enter_exit</AlternateEntryPointClipSetId>
-      <EnterVehicleMoveNetwork>ENTER_VEHICLE_STD</EnterVehicleMoveNetwork>
-      <EntryTranslation x="0.875000" y="-0.740000" z="0.610000" />
-      <OpenDoorTranslation x="0.000000" y="0.000000" />
-      <OpenDoorHeadingChange value="-1.570000" />
-      <EntryHeadingChange value="1.570000" />
-      <ExtraZForWaterEntry value="0.000000" />
-      <EntryPointFlags>JackIncludesGetIn UsesNoDoorTransitionForExit UseOpenDoorBlendAnims FixUpMoverToEntryPointOnExit
-        UseGetUpAfterJack JackVariationsIncludeGetIn HasCombatEntry</EntryPointFlags>
-      <EntryAnimVariations ref="ENTRY_ANIM_VARIATIONS_LOW_FRONT_RIGHT" />
-    </Item>
-    <!-- 675lt -->
     <Item type="CVehicleEntryPointAnimInfo">
       <Name>ENTRY_POINT_ANIM_LOW_675LTSP_FRONT_LEFT</Name>
       <CommonClipSetMap ref="COMMON_CLIPSET_MAP_AUTOMOBILE_LEFT" />
@@ -1084,8 +828,7 @@
       <OpenDoorHeadingChange value="1.570000" />
       <EntryHeadingChange value="-1.570000" />
       <ExtraZForMPPlaneWarp value="-2.000000" />
-      <EntryPointFlags>JackIncludesGetIn UsesNoDoorTransitionForExit UseOpenDoorBlendAnims UseGetUpAfterJack
-        DeadJackIncludesGetIn</EntryPointFlags>
+      <EntryPointFlags>JackIncludesGetIn UsesNoDoorTransitionForExit UseOpenDoorBlendAnims UseGetUpAfterJack DeadJackIncludesGetIn</EntryPointFlags>
       <EntryAnimVariations ref="NULL" />
       <NMJumpFromVehicleTuningSet />
     </Item>
@@ -1105,8 +848,7 @@
       <OpenDoorHeadingChange value="-1.570000" />
       <EntryHeadingChange value="1.570000" />
       <ExtraZForMPPlaneWarp value="-2.000000" />
-      <EntryPointFlags>JackIncludesGetIn UsesNoDoorTransitionForExit UseOpenDoorBlendAnims UseGetUpAfterJack
-        DeadJackIncludesGetIn</EntryPointFlags>
+      <EntryPointFlags>JackIncludesGetIn UsesNoDoorTransitionForExit UseOpenDoorBlendAnims UseGetUpAfterJack DeadJackIncludesGetIn</EntryPointFlags>
       <EntryAnimVariations ref="NULL" />
       <NMJumpFromVehicleTuningSet />
     </Item>
@@ -1336,175 +1078,8 @@
       <EntryAnimVariations ref="ENTRY_ANIM_VARIATIONS_HELICOPTER_REAR_RIGHT" />
     </Item>
   </VehicleEntryPointAnimInfos>
+
   <VehicleLayoutInfos>
-    <Item type="CVehicleLayoutInfo">
-      <Name>LAYOUT_VAN_BOXVILLE_1_SEAT</Name>
-      <Seats>
-        <Item>
-          <SeatInfo ref="SEAT_VAN_FRONT_LEFT" />
-          <SeatAnimInfo ref="SEAT_ANIM_RIOT_VAN_FRONT_LEFT" />
-        </Item>
-      </Seats>
-      <EntryPoints>
-        <Item>
-          <EntryPointInfo ref="ENTRY_POINT_VAN_FRONT_LEFT" />
-          <EntryPointAnimInfo ref="ENTRY_POINT_ANIM_VAN_FRONT_LEFT" />
-        </Item>
-      </EntryPoints>
-      <LayoutFlags>StreamAnims UseVanOpenDoorBlendParams UseDoorOscillation UseLeanSteerAnims</LayoutFlags>
-      <BicycleInfo ref="NULL" />
-      <HandsUpClipSetId>busted_vehicle_van</HandsUpClipSetId>
-      <SteeringWheelOffset x="0.000000" y="0.350000" z="0.320000" />
-      <MaxXAcceleration value="4.00000" />
-      <BodyLeanXApproachSpeed value="5.00000" />
-      <BodyLeanXSmallDelta value="0.30000" />
-      <FirstPersonAdditiveIdleClipSets>
-        <Item>clipset@veh@van@ds@idle_a</Item>
-        <Item>clipset@veh@van@ds@idle_b</Item>
-        <Item>clipset@veh@van@ds@idle_c</Item>
-        <Item>clipset@veh@van@ds@idle_d</Item>
-        <Item>clipset@veh@van@ds@idle_e</Item>
-      </FirstPersonAdditiveIdleClipSets>
-      <FirstPersonRoadRageClipSets>
-        <Item>clipset@veh@van@ds@hit_wheel@idle_a</Item>
-        <Item>clipset@veh@van@ds@hit_wheel@idle_b</Item>
-        <Item>clipset@veh@van@ds@hit_wheel@idle_c</Item>
-      </FirstPersonRoadRageClipSets>
-    </Item>
-    <Item type="CVehicleLayoutInfo">
-      <Name>LAYOUT_LOW_NC1</Name>
-      <Seats>
-        <Item>
-          <SeatInfo ref="SEAT_LOW_FRONT_LEFT" />
-          <SeatAnimInfo ref="SEAT_ANIM_NC1_FRONT_LEFT" />
-        </Item>
-        <Item>
-          <SeatInfo ref="SEAT_LOW_FRONT_RIGHT" />
-          <SeatAnimInfo ref="SEAT_ANIM_NC1_FRONT_RIGHT" />
-        </Item>
-      </Seats>
-      <EntryPoints>
-        <Item>
-          <EntryPointInfo ref="ENTRY_POINT_NC1_FRONT_LEFT" />
-          <EntryPointAnimInfo ref="ENTRY_POINT_ANIM_LOW_NC1_FRONT_RIGHT" />
-        </Item>
-        <Item>
-          <EntryPointInfo ref="ENTRY_POINT_NC1_FRONT_RIGHT" />
-          <EntryPointAnimInfo ref="ENTRY_POINT_ANIM_LOW_NC1_FRONT_LEFT" />
-        </Item>
-      </EntryPoints>
-      <LayoutFlags>StreamAnims UseDoorOscillation UseLeanSteerAnims UseSteeringWheelIk</LayoutFlags>
-      <BicycleInfo ref="NULL" />
-      <AnimRateSet ref="STD_LOW_ANIM_RATE_SET" />
-      <HandsUpClipSetId>busted_vehicle_low</HandsUpClipSetId>
-      <SteeringWheelOffset x="0.000000" y="0.350000" z="0.320000" />
-      <MaxXAcceleration value="4.00000" />
-      <BodyLeanXApproachSpeed value="5.00000" />
-      <BodyLeanXSmallDelta value="0.30000" />
-      <LookBackApproachSpeedScale value="1.00000" />
-      <FirstPersonAdditiveIdleClipSets>
-        <Item>clipset@veh@low@ds@idle_a</Item>
-        <Item>clipset@veh@low@ds@idle_b</Item>
-        <Item>clipset@veh@low@ds@idle_c</Item>
-        <Item>clipset@veh@low@ds@idle_d</Item>
-        <Item>clipset@veh@low@ds@idle_e</Item>
-      </FirstPersonAdditiveIdleClipSets>
-      <FirstPersonRoadRageClipSets>
-        <Item>clipset@veh@low@ds@hit_wheel@idle_a</Item>
-        <Item>clipset@veh@low@ds@hit_wheel@idle_b</Item>
-        <Item>clipset@veh@low@ds@hit_wheel@idle_c</Item>
-      </FirstPersonRoadRageClipSets>
-    </Item>
-    <Item type="CVehicleLayoutInfo">
-      <Name>LAYOUT_LOW_VULCAN</Name>
-      <Seats>
-        <Item>
-          <SeatInfo ref="SEAT_STANDARD_FRONT_LEFT" />
-          <SeatAnimInfo ref="SEAT_ANIM_LOW_RESTRICTED_FRONT_LEFT" />
-        </Item>
-        <Item>
-          <SeatInfo ref="SEAT_STANDARD_FRONT_RIGHT" />
-          <SeatAnimInfo ref="SEAT_ANIM_LOW_RESTRICTED_FRONT_RIGHT" />
-        </Item>
-      </Seats>
-      <EntryPoints>
-        <Item>
-          <EntryPointInfo ref="ENTRY_POINT_STANDARD_FRONT_LEFT" />
-          <EntryPointAnimInfo ref="ENTRY_POINT_ANIM_LOW_INFERNUS_FRONT_LEFT" />
-        </Item>
-        <Item>
-          <EntryPointInfo ref="ENTRY_POINT_STANDARD_FRONT_RIGHT" />
-          <EntryPointAnimInfo ref="ENTRY_POINT_ANIM_LOW_INFERNUS_FRONT_RIGHT" />
-        </Item>
-      </EntryPoints>
-      <LayoutFlags>StreamAnims UseLeanSteerAnims UseSteeringWheelIk AutomaticCloseDoor</LayoutFlags>
-      <BicycleInfo ref="NULL" />
-      <AnimRateSet ref="STD_LOW_ANIM_RATE_SET" />
-      <HandsUpClipSetId>busted_vehicle_low</HandsUpClipSetId>
-      <SteeringWheelOffset x="0.000000" y="0.350000" z="0.320000" />
-      <MaxXAcceleration value="15.00000" />
-      <BodyLeanXApproachSpeed value="10.00000" />
-      <BodyLeanXSmallDelta value="0.40000" />
-      <FirstPersonAdditiveIdleClipSets>
-        <Item>clipset@veh@low@ds@idle_a</Item>
-        <Item>clipset@veh@low@ds@idle_b</Item>
-        <Item>clipset@veh@low@ds@idle_c</Item>
-        <Item>clipset@veh@low@ds@idle_d</Item>
-        <Item>clipset@veh@low@ds@idle_e</Item>
-      </FirstPersonAdditiveIdleClipSets>
-      <FirstPersonRoadRageClipSets>
-        <Item>clipset@veh@low@ds@hit_wheel@idle_a</Item>
-        <Item>clipset@veh@low@ds@hit_wheel@idle_b</Item>
-        <Item>clipset@veh@low@ds@hit_wheel@idle_c</Item>
-      </FirstPersonRoadRageClipSets>
-      <CellphoneClipsets>
-        <CellphoneClipsetDS_FPS>ANIM_GROUP_CELLPHONE_IN_CAR_LOW_FPS</CellphoneClipsetDS_FPS>
-      </CellphoneClipsets>
-    </Item>
-    <Item type="CVehicleLayoutInfo">
-      <Name>LAYOUT_LOW_NSX</Name>
-      <Seats>
-        <Item>
-          <SeatInfo ref="SEAT_LOW_FRONT_LEFT" />
-          <SeatAnimInfo ref="SEAT_ANIM_NSX_FRONT_LEFT" />
-        </Item>
-        <Item>
-          <SeatInfo ref="SEAT_LOW_FRONT_RIGHT" />
-          <SeatAnimInfo ref="SEAT_ANIM_NSX_FRONT_RIGHT" />
-        </Item>
-      </Seats>
-      <EntryPoints>
-        <Item>
-          <EntryPointInfo ref="ENTRY_POINT_NSX_FRONT_LEFT" />
-          <EntryPointAnimInfo ref="ENTRY_POINT_ANIM_LOW_NSX_FRONT_RIGHT" />
-        </Item>
-        <Item>
-          <EntryPointInfo ref="ENTRY_POINT_NSX_FRONT_RIGHT" />
-          <EntryPointAnimInfo ref="ENTRY_POINT_ANIM_LOW_NSX_FRONT_LEFT" />
-        </Item>
-      </EntryPoints>
-      <LayoutFlags>StreamAnims UseDoorOscillation UseLeanSteerAnims UseSteeringWheelIk</LayoutFlags>
-      <BicycleInfo ref="NULL" />
-      <AnimRateSet ref="STD_LOW_ANIM_RATE_SET" />
-      <HandsUpClipSetId>busted_vehicle_low</HandsUpClipSetId>
-      <SteeringWheelOffset x="0.000000" y="0.350000" z="0.320000" />
-      <MaxXAcceleration value="4.00000" />
-      <BodyLeanXApproachSpeed value="5.00000" />
-      <BodyLeanXSmallDelta value="0.30000" />
-      <LookBackApproachSpeedScale value="1.00000" />
-      <FirstPersonAdditiveIdleClipSets>
-        <Item>clipset@veh@low@ds@idle_a</Item>
-        <Item>clipset@veh@low@ds@idle_b</Item>
-        <Item>clipset@veh@low@ds@idle_c</Item>
-        <Item>clipset@veh@low@ds@idle_d</Item>
-        <Item>clipset@veh@low@ds@idle_e</Item>
-      </FirstPersonAdditiveIdleClipSets>
-      <FirstPersonRoadRageClipSets>
-        <Item>clipset@veh@low@ds@hit_wheel@idle_a</Item>
-        <Item>clipset@veh@low@ds@hit_wheel@idle_b</Item>
-        <Item>clipset@veh@low@ds@hit_wheel@idle_c</Item>
-      </FirstPersonRoadRageClipSets>
-    </Item>
     <Item type="CVehicleLayoutInfo">
       <Name>LAYOUT_LOW_675LTSP</Name>
       <Seats>
@@ -1527,8 +1102,7 @@
           <EntryPointAnimInfo ref="ENTRY_POINT_ANIM_LOW_675LTSP_FRONT_RIGHT" />
         </Item>
       </EntryPoints>
-      <LayoutFlags>StreamAnims UseLeanSteerAnims UseSteeringWheelIk DisableJackingAndBusting UseFinerAlignTolerance
-      </LayoutFlags>
+      <LayoutFlags>StreamAnims UseLeanSteerAnims UseSteeringWheelIk DisableJackingAndBusting UseFinerAlignTolerance</LayoutFlags>
       <BicycleInfo ref="NULL" />
       <AnimRateSet ref="STD_LOW_ANIM_RATE_SET" />
       <HandsUpClipSetId>busted_vehicle_low</HandsUpClipSetId>
@@ -1537,22 +1111,22 @@
       <BodyLeanXApproachSpeed value="10.000000" />
       <BodyLeanXSmallDelta value="0.400000" />
       <LookBackApproachSpeedScale value="1.000000" />
-      <FirstPersonAdditiveIdleClipSets>
+	  <FirstPersonAdditiveIdleClipSets>
         <Item>clipset@veh@low@ds@idle_a</Item>
-        <Item>clipset@veh@low@ds@idle_b</Item>
-        <Item>clipset@veh@low@ds@idle_c</Item>
-        <Item>clipset@veh@low@ds@idle_d</Item>
-        <Item>clipset@veh@low@ds@idle_e</Item>
-      </FirstPersonAdditiveIdleClipSets>
-      <FirstPersonRoadRageClipSets>
+		<Item>clipset@veh@low@ds@idle_b</Item>
+		<Item>clipset@veh@low@ds@idle_c</Item>
+		<Item>clipset@veh@low@ds@idle_d</Item>
+		<Item>clipset@veh@low@ds@idle_e</Item>
+	  </FirstPersonAdditiveIdleClipSets>
+	  <FirstPersonRoadRageClipSets>
         <Item>clipset@veh@low@ds@hit_wheel@idle_a</Item>
-        <Item>clipset@veh@low@ds@hit_wheel@idle_b</Item>
-        <Item>clipset@veh@low@ds@hit_wheel@idle_c</Item>
-      </FirstPersonRoadRageClipSets>
+		<Item>clipset@veh@low@ds@hit_wheel@idle_b</Item>
+		<Item>clipset@veh@low@ds@hit_wheel@idle_c</Item>
+	  </FirstPersonRoadRageClipSets>
       <CellphoneClipsets>
         <CellphoneClipsetDS>ANIM_GROUP_CELLPHONE_IN_CAR_DS</CellphoneClipsetDS>
         <CellphoneClipsetPS>ANIM_GROUP_CELLPHONE_IN_CAR_PS</CellphoneClipsetPS>
-        <CellphoneClipsetDS_FPS>ANIM_GROUP_CELLPHONE_IN_CAR_LOW_FPS</CellphoneClipsetDS_FPS>
+		<CellphoneClipsetDS_FPS>ANIM_GROUP_CELLPHONE_IN_CAR_LOW_FPS</CellphoneClipsetDS_FPS>
         <CellphoneClipsetPS_FPS>ANIM_GROUP_CELLPHONE_IN_CAR_DS_FPS</CellphoneClipsetPS_FPS>
       </CellphoneClipsets>
     </Item>
@@ -1586,8 +1160,7 @@
           <EntryPointAnimInfo ref="ENTRY_POINT_ANIM_BIKE_FREEWAY_REAR_RIGHT" />
         </Item>
       </EntryPoints>
-      <LayoutFlags>StreamAnims BikeLeansUnlessMoving UsePickUpPullUp UseStillToSitTransition
-        DisableFastPoseWhenDrivebying</LayoutFlags>
+      <LayoutFlags>StreamAnims BikeLeansUnlessMoving UsePickUpPullUp UseStillToSitTransition DisableFastPoseWhenDrivebying</LayoutFlags>
       <BicycleInfo ref="BMX_BICYCLE_INFO" />
       <HandsUpClipSetId>busted_vehicle_std</HandsUpClipSetId>
       <SteeringWheelOffset x="0.000000" y="0.350000" z="0.320000" />
@@ -1630,26 +1203,25 @@
           <EntryPointAnimInfo ref="ENTRY_POINT_ANIM_VAN_REAR_RIGHT" />
         </Item>
       </EntryPoints>
-      <LayoutFlags>StreamAnims UseVanOpenDoorBlendParams UseDoorOscillation UseLeanSteerAnims UseLowerDoorBlockTest
-      </LayoutFlags>
+      <LayoutFlags>StreamAnims UseVanOpenDoorBlendParams UseDoorOscillation UseLeanSteerAnims UseLowerDoorBlockTest</LayoutFlags>
       <BicycleInfo ref="NULL" />
       <HandsUpClipSetId>busted_vehicle_van</HandsUpClipSetId>
       <SteeringWheelOffset x="0.006700" y="0.330000" z="0.270000" />
-      <MaxXAcceleration value="4.00000" />
-      <BodyLeanXApproachSpeed value="5.00000" />
-      <BodyLeanXSmallDelta value="0.30000" />
-      <FirstPersonAdditiveIdleClipSets>
+	  <MaxXAcceleration value="4.00000" />
+	  <BodyLeanXApproachSpeed value="5.00000" />
+	  <BodyLeanXSmallDelta value="0.30000" />
+	  <FirstPersonAdditiveIdleClipSets>
         <Item>clipset@veh@van@ds@idle_a</Item>
-        <Item>clipset@veh@van@ds@idle_b</Item>
-        <Item>clipset@veh@van@ds@idle_c</Item>
-        <Item>clipset@veh@van@ds@idle_d</Item>
-        <Item>clipset@veh@van@ds@idle_e</Item>
-      </FirstPersonAdditiveIdleClipSets>
-      <FirstPersonRoadRageClipSets>
+		<Item>clipset@veh@van@ds@idle_b</Item>
+		<Item>clipset@veh@van@ds@idle_c</Item>
+		<Item>clipset@veh@van@ds@idle_d</Item>
+		<Item>clipset@veh@van@ds@idle_e</Item>
+	  </FirstPersonAdditiveIdleClipSets>
+	  <FirstPersonRoadRageClipSets>
         <Item>clipset@veh@van@ds@hit_wheel@idle_a</Item>
-        <Item>clipset@veh@van@ds@hit_wheel@idle_b</Item>
-        <Item>clipset@veh@van@ds@hit_wheel@idle_c</Item>
-      </FirstPersonRoadRageClipSets>
+		<Item>clipset@veh@van@ds@hit_wheel@idle_b</Item>
+		<Item>clipset@veh@van@ds@hit_wheel@idle_c</Item>
+	  </FirstPersonRoadRageClipSets>
     </Item>
     <Item type="CVehicleLayoutInfo">
       <Name>LAYOUT_NEWSVAN2</Name>
@@ -1689,26 +1261,25 @@
           <EntryPointAnimInfo ref="ENTRY_POINT_ANIM_VAN_REAR_RIGHT" />
         </Item>
       </EntryPoints>
-      <LayoutFlags>StreamAnims UseVanOpenDoorBlendParams UseDoorOscillation UseLeanSteerAnims UseLowerDoorBlockTest
-      </LayoutFlags>
+      <LayoutFlags>StreamAnims UseVanOpenDoorBlendParams UseDoorOscillation UseLeanSteerAnims UseLowerDoorBlockTest</LayoutFlags>
       <BicycleInfo ref="NULL" />
       <HandsUpClipSetId>busted_vehicle_van</HandsUpClipSetId>
       <SteeringWheelOffset x="0.006700" y="0.330000" z="0.270000" />
-      <MaxXAcceleration value="4.00000" />
-      <BodyLeanXApproachSpeed value="5.00000" />
-      <BodyLeanXSmallDelta value="0.30000" />
-      <FirstPersonAdditiveIdleClipSets>
+	  <MaxXAcceleration value="4.00000" />
+	  <BodyLeanXApproachSpeed value="5.00000" />
+	  <BodyLeanXSmallDelta value="0.30000" />
+	  <FirstPersonAdditiveIdleClipSets>
         <Item>clipset@veh@van@ds@idle_a</Item>
-        <Item>clipset@veh@van@ds@idle_b</Item>
-        <Item>clipset@veh@van@ds@idle_c</Item>
-        <Item>clipset@veh@van@ds@idle_d</Item>
-        <Item>clipset@veh@van@ds@idle_e</Item>
-      </FirstPersonAdditiveIdleClipSets>
-      <FirstPersonRoadRageClipSets>
+		<Item>clipset@veh@van@ds@idle_b</Item>
+		<Item>clipset@veh@van@ds@idle_c</Item>
+		<Item>clipset@veh@van@ds@idle_d</Item>
+		<Item>clipset@veh@van@ds@idle_e</Item>
+	  </FirstPersonAdditiveIdleClipSets>
+	  <FirstPersonRoadRageClipSets>
         <Item>clipset@veh@van@ds@hit_wheel@idle_a</Item>
-        <Item>clipset@veh@van@ds@hit_wheel@idle_b</Item>
-        <Item>clipset@veh@van@ds@hit_wheel@idle_c</Item>
-      </FirstPersonRoadRageClipSets>
+		<Item>clipset@veh@van@ds@hit_wheel@idle_b</Item>
+		<Item>clipset@veh@van@ds@hit_wheel@idle_c</Item>
+	  </FirstPersonRoadRageClipSets>
     </Item>
     <Item type="CVehicleLayoutInfo">
       <Name>LAYOUT_VAN_EMS</Name>
@@ -1839,8 +1410,7 @@
           <EntryPointAnimInfo ref="ENTRY_POINT_ANIM_STD_STRETCH_MP_WARP_RIGHT" />
         </Item>
       </EntryPoints>
-      <LayoutFlags>StreamAnims UseVanOpenDoorBlendParams UseDoorOscillation UseLeanSteerAnims UseLowerDoorBlockTest
-      </LayoutFlags>
+      <LayoutFlags>StreamAnims UseVanOpenDoorBlendParams UseDoorOscillation UseLeanSteerAnims UseLowerDoorBlockTest</LayoutFlags>
       <BicycleInfo ref="NULL" />
       <AnimRateSet ref="NULL" />
       <HandsUpClipSetId>busted_vehicle_std</HandsUpClipSetId>
@@ -1867,241 +1437,6 @@
         <CellphoneClipsetDS_FPS>ANIM_GROUP_CELLPHONE_IN_CAR_DS_FPS</CellphoneClipsetDS_FPS>
         <CellphoneClipsetPS_FPS>ANIM_GROUP_CELLPHONE_IN_CAR_DS_FPS</CellphoneClipsetPS_FPS>
       </CellphoneClipsets>
-    </Item>
-    <Item type="CVehicleLayoutInfo">
-      <Name>LAYOUT_STD_MDLS</Name>
-      <Seats>
-        <Item>
-          <SeatInfo ref="SEAT_STANDARD_FRONT_LEFT" />
-          <SeatAnimInfo ref="SEAT_ANIM_STANDARD_FRONT_LEFT" />
-        </Item>
-        <Item>
-          <SeatInfo ref="SEAT_STANDARD_FRONT_RIGHT" />
-          <SeatAnimInfo ref="SEAT_ANIM_STANDARD_FRONT_RIGHT" />
-        </Item>
-        <Item>
-          <SeatInfo ref="SEAT_STANDARD_REAR_LEFT" />
-          <SeatAnimInfo ref="SEAT_ANIM_STANDARD_REAR_LEFT" />
-        </Item>
-        <Item>
-          <SeatInfo ref="SEAT_STANDARD_REAR_RIGHT" />
-          <SeatAnimInfo ref="SEAT_ANIM_STANDARD_REAR_RIGHT" />
-        </Item>
-        <Item>
-          <SeatInfo ref="SEAT_EXTRA_LEFT_2" />
-          <SeatAnimInfo ref="SEAT_ANIM_RANGER_REBLA_REAR_LEFT" />
-        </Item>
-        <Item>
-          <SeatInfo ref="SEAT_EXTRA_LEFT_3" />
-          <SeatAnimInfo ref="SEAT_ANIM_RANGER_REBLA_REAR_RIGHT" />
-        </Item>
-      </Seats>
-      <EntryPoints>
-        <Item>
-          <EntryPointInfo ref="ENTRY_POINT_STANDARD_FRONT_LEFT" />
-          <EntryPointAnimInfo ref="ENTRY_POINT_ANIM_STD_EXITFIXUP_FRONT_LEFT" />
-        </Item>
-        <Item>
-          <EntryPointInfo ref="ENTRY_POINT_STANDARD_FRONT_RIGHT" />
-          <EntryPointAnimInfo ref="ENTRY_POINT_ANIM_STD_EXITFIXUP_FRONT_RIGHT" />
-        </Item>
-        <Item>
-          <EntryPointInfo ref="ENTRY_POINT_STANDARD_REAR_LEFT" />
-          <EntryPointAnimInfo ref="ENTRY_POINT_ANIM_STD_NEON_REAR_LEFT" />
-        </Item>
-        <Item>
-          <EntryPointInfo ref="ENTRY_POINT_STANDARD_REAR_RIGHT" />
-          <EntryPointAnimInfo ref="ENTRY_POINT_ANIM_STD_NEON_REAR_RIGHT" />
-        </Item>
-        <Item>
-          <EntryPointInfo ref="ENTRY_POINT_STANDARD_REAR_LEFT" />
-          <EntryPointAnimInfo ref="ENTRY_POINT_ANIM_STANDARD_REAR_LEFT" />
-        </Item>
-      </EntryPoints>
-      <LayoutFlags>StreamAnims UseLeanSteerAnims UseSteeringWheelIk UseFinerAlignTolerance</LayoutFlags>
-      <BicycleInfo ref="NULL" />
-      <AnimRateSet ref="STD_LOW_ANIM_RATE_SET" />
-      <HandsUpClipSetId>busted_vehicle_std</HandsUpClipSetId>
-      <SteeringWheelOffset x="0.000000" y="0.350000" z="0.320000" />
-      <MaxXAcceleration value="4.000000" />
-      <BodyLeanXApproachSpeed value="5.000000" />
-      <BodyLeanXSmallDelta value="0.300000" />
-      <LookBackApproachSpeedScale value="1.000000" />
-      <FirstPersonAdditiveIdleClipSets>
-        <Item>clipset@veh@std@ds@idle_a</Item>
-        <Item>clipset@veh@std@ds@idle_b</Item>
-        <Item>clipset@veh@std@ds@idle_c</Item>
-        <Item>clipset@veh@std@ds@idle_d</Item>
-        <Item>clipset@veh@std@ds@idle_e</Item>
-      </FirstPersonAdditiveIdleClipSets>
-      <FirstPersonRoadRageClipSets>
-        <Item>clipset@veh@std@ds@hit_wheel@idle_a</Item>
-        <Item>clipset@veh@std@ds@hit_wheel@idle_b</Item>
-        <Item>clipset@veh@std@ds@hit_wheel@idle_c</Item>
-      </FirstPersonRoadRageClipSets>
-      <CellphoneClipsets>
-        <CellphoneClipsetDS>ANIM_GROUP_CELLPHONE_IN_CAR_DS</CellphoneClipsetDS>
-        <CellphoneClipsetPS>ANIM_GROUP_CELLPHONE_IN_CAR_PS</CellphoneClipsetPS>
-        <CellphoneClipsetDS_FPS>ANIM_GROUP_CELLPHONE_IN_CAR_DS_FPS</CellphoneClipsetDS_FPS>
-        <CellphoneClipsetPS_FPS>ANIM_GROUP_CELLPHONE_IN_CAR_DS_FPS</CellphoneClipsetPS_FPS>
-      </CellphoneClipsets>
-    </Item>
-    <Item type="CVehicleLayoutInfo">
-      <Name>LAYOUT_STD_BFS</Name>
-      <Seats>
-        <Item>
-          <SeatInfo ref="SEAT_STANDARD_FRONT_LEFT" />
-          <SeatAnimInfo ref="SEAT_ANIM_STANDARD_FRONT_LEFT" />
-        </Item>
-        <Item>
-          <SeatInfo ref="SEAT_STANDARD_FRONT_RIGHT" />
-          <SeatAnimInfo ref="SEAT_ANIM_STANDARD_FRONT_RIGHT" />
-        </Item>
-        <Item>
-          <SeatInfo ref="SEAT_STANDARD_REAR_LEFT" />
-          <SeatAnimInfo ref="SEAT_ANIM_STANDARD_REAR_LEFT" />
-        </Item>
-        <Item>
-          <SeatInfo ref="SEAT_STANDARD_REAR_RIGHT" />
-          <SeatAnimInfo ref="SEAT_ANIM_STANDARD_REAR_RIGHT" />
-        </Item>
-        <Item>
-          <SeatInfo ref="SEAT_EXTRA_LEFT_2" />
-          <SeatAnimInfo ref="SEAT_ANIM_STD_STRETCH_EXTRA_LEFT" />
-        </Item>
-      </Seats>
-      <EntryPoints>
-        <Item>
-          <EntryPointInfo ref="ENTRY_POINT_STANDARD_FRONT_LEFT" />
-          <EntryPointAnimInfo ref="ENTRY_POINT_ANIM_STD_HABANERO_FRONT_LEFT" />
-        </Item>
-        <Item>
-          <EntryPointInfo ref="ENTRY_POINT_STANDARD_FRONT_RIGHT" />
-          <EntryPointAnimInfo ref="ENTRY_POINT_ANIM_STD_HABANERO_FRONT_RIGHT" />
-        </Item>
-        <Item>
-          <EntryPointInfo ref="ENTRY_POINT_STANDARD_REAR_LEFT" />
-          <EntryPointAnimInfo ref="ENTRY_POINT_ANIM_STANDARD_REAR_LEFT" />
-        </Item>
-        <Item>
-          <EntryPointInfo ref="ENTRY_POINT_STANDARD_REAR_RIGHT" />
-          <EntryPointAnimInfo ref="ENTRY_POINT_ANIM_STANDARD_REAR_RIGHT" />
-        </Item>
-        <Item>
-          <EntryPointInfo ref="ENTRY_POINT_STANDARD_REAR_LEFT" />
-          <EntryPointAnimInfo ref="ENTRY_POINT_ANIM_STANDARD_REAR_LEFT" />
-        </Item>
-      </EntryPoints>
-      <LayoutFlags>StreamAnims UseDoorOscillation UseLeanSteerAnims UseSteeringWheelIk UseFinerAlignTolerance
-      </LayoutFlags>
-      <BicycleInfo ref="NULL" />
-      <AnimRateSet ref="STD_LOW_ANIM_RATE_SET" />
-      <HandsUpClipSetId>busted_vehicle_std</HandsUpClipSetId>
-      <SteeringWheelOffset x="0.000000" y="0.350000" z="0.320000" />
-      <MaxXAcceleration value="4.00000" />
-      <BodyLeanXApproachSpeed value="5.00000" />
-      <BodyLeanXSmallDelta value="0.30000" />
-      <FirstPersonAdditiveIdleClipSets>
-        <Item>clipset@veh@std@ds@idle_a</Item>
-        <Item>clipset@veh@std@ds@idle_b</Item>
-        <Item>clipset@veh@std@ds@idle_c</Item>
-        <Item>clipset@veh@std@ds@idle_d</Item>
-        <Item>clipset@veh@std@ds@idle_e</Item>
-      </FirstPersonAdditiveIdleClipSets>
-      <FirstPersonRoadRageClipSets>
-        <Item>clipset@veh@std@ds@hit_wheel@idle_a</Item>
-        <Item>clipset@veh@std@ds@hit_wheel@idle_b</Item>
-        <Item>clipset@veh@std@ds@hit_wheel@idle_c</Item>
-      </FirstPersonRoadRageClipSets>
-    </Item>
-    <Item type="CVehicleLayoutInfo">
-      <Name>LAYOUT_LOW_6SEAT</Name>
-      <Seats>
-        <Item>
-          <SeatInfo ref="SEAT_LOW_FRONT_LEFT" />
-          <SeatAnimInfo ref="SEAT_ANIM_LOW_FRONT_LEFT" />
-        </Item>
-        <Item>
-          <SeatInfo ref="SEAT_LOW_FRONT_RIGHT" />
-          <SeatAnimInfo ref="SEAT_ANIM_LOW_FRONT_RIGHT" />
-        </Item>
-        <Item>
-          <SeatInfo ref="SEAT_STANDARD_REAR_LEFT" />
-          <SeatAnimInfo ref="SEAT_ANIM_STANDARD_REAR_LEFT" />
-        </Item>
-        <Item>
-          <SeatInfo ref="SEAT_STANDARD_REAR_RIGHT" />
-          <SeatAnimInfo ref="SEAT_ANIM_STANDARD_REAR_RIGHT" />
-        </Item>
-        <Item>
-          <SeatInfo ref="SEAT_EXTRA_LEFT_2" />
-          <SeatAnimInfo ref="SEAT_ANIM_STD_STRETCH_EXTRA_LEFT" />
-        </Item>
-        <Item>
-          <SeatInfo ref="SEAT_EXTRA_LEFT_3" />
-          <SeatAnimInfo ref="SEAT_ANIM_STD_STRETCH_EXTRA_RIGHT" />
-        </Item>
-      </Seats>
-      <EntryPoints>
-        <Item>
-          <EntryPointInfo ref="ENTRY_POINT_LOW_FRONT_LEFT" />
-          <EntryPointAnimInfo ref="ENTRY_POINT_ANIM_LOW_FRONT_LEFT" />
-        </Item>
-        <Item>
-          <EntryPointInfo ref="ENTRY_POINT_LOW_FRONT_RIGHT" />
-          <EntryPointAnimInfo ref="ENTRY_POINT_ANIM_LOW_FRONT_RIGHT" />
-        </Item>
-        <Item>
-          <EntryPointInfo ref="ENTRY_POINT_STANDARD_FRONT_LEFT" />
-          <EntryPointAnimInfo ref="ENTRY_POINT_ANIM_STANDARD_FRONT_LEFT" />
-        </Item>
-        <Item>
-          <EntryPointInfo ref="ENTRY_POINT_STANDARD_FRONT_RIGHT" />
-          <EntryPointAnimInfo ref="ENTRY_POINT_ANIM_STANDARD_FRONT_RIGHT" />
-        </Item>
-        <Item>
-          <EntryPointInfo ref="ENTRY_POINT_STANDARD_REAR_LEFT" />
-          <EntryPointAnimInfo ref="ENTRY_POINT_ANIM_STANDARD_REAR_LEFT" />
-        </Item>
-        <Item>
-          <EntryPointInfo ref="ENTRY_POINT_STANDARD_REAR_RIGHT" />
-          <EntryPointAnimInfo ref="ENTRY_POINT_ANIM_STANDARD_REAR_RIGHT" />
-        </Item>
-        <Item>
-          <EntryPointInfo ref="ENTRY_POINT_STD_STRETCH_MP_WARP_LEFT" />
-          <EntryPointAnimInfo ref="ENTRY_POINT_ANIM_STD_STRETCH_MP_WARP_LEFT" />
-        </Item>
-        <Item>
-          <EntryPointInfo ref="ENTRY_POINT_STD_STRETCH_MP_WARP_RIGHT" />
-          <EntryPointAnimInfo ref="ENTRY_POINT_ANIM_STD_STRETCH_MP_WARP_RIGHT" />
-        </Item>
-      </EntryPoints>
-      <LayoutFlags>StreamAnims UseDoorOscillation UseLeanSteerAnims UseSteeringWheelIk</LayoutFlags>
-      <BicycleInfo ref="NULL" />
-      <AnimRateSet ref="STD_LOW_ANIM_RATE_SET" />
-      <HandsUpClipSetId>busted_vehicle_low</HandsUpClipSetId>
-      <SteeringWheelOffset x="0.000000" y="0.350000" z="0.320000" />
-      <MaxXAcceleration value="15.00000" />
-      <BodyLeanXApproachSpeed value="10.00000" />
-      <BodyLeanXSmallDelta value="0.40000" />
-      <LookBackApproachSpeedScale value="0.5" />
-      <FirstPersonAdditiveIdleClipSets>
-        <Item>clipset@veh@low@ds@idle_a</Item>
-        <Item>clipset@veh@low@ds@idle_b</Item>
-        <Item>clipset@veh@low@ds@idle_c</Item>
-        <Item>clipset@veh@low@ds@idle_d</Item>
-        <Item>clipset@veh@low@ds@idle_e</Item>
-        <Item>clipset@veh@std@ds@idle_a</Item>
-        <Item>clipset@veh@std@ds@idle_b</Item>
-        <Item>clipset@veh@std@ds@idle_c</Item>
-        <Item>clipset@veh@std@ds@idle_d</Item>
-        <Item>clipset@veh@std@ds@idle_e</Item>
-      </FirstPersonAdditiveIdleClipSets>
-      <FirstPersonRoadRageClipSets>
-        <Item>clipset@veh@low@ds@hit_wheel@idle_a</Item>
-        <Item>clipset@veh@low@ds@hit_wheel@idle_b</Item>
-        <Item>clipset@veh@low@ds@hit_wheel@idle_c</Item>
-      </FirstPersonRoadRageClipSets>
     </Item>
     <Item type="CVehicleLayoutInfo">
       <Name>LAYOUT_6SEAT</Name>
@@ -2165,8 +1500,7 @@
           <EntryPointAnimInfo ref="ENTRY_POINT_ANIM_STD_STRETCH_MP_WARP_RIGHT" />
         </Item>
       </EntryPoints>
-      <LayoutFlags>StreamAnims UseVanOpenDoorBlendParams UseDoorOscillation UseLeanSteerAnims UseLowerDoorBlockTest
-      </LayoutFlags>
+      <LayoutFlags>StreamAnims UseVanOpenDoorBlendParams UseDoorOscillation UseLeanSteerAnims UseLowerDoorBlockTest</LayoutFlags>
       <BicycleInfo ref="NULL" />
       <AnimRateSet ref="NULL" />
       <HandsUpClipSetId>busted_vehicle_std</HandsUpClipSetId>
@@ -2186,105 +1520,6 @@
         <Item>clipset@veh@van@ds@hit_wheel@idle_a</Item>
         <Item>clipset@veh@van@ds@hit_wheel@idle_b</Item>
         <Item>clipset@veh@van@ds@hit_wheel@idle_c</Item>
-      </FirstPersonRoadRageClipSets>
-      <CellphoneClipsets>
-        <CellphoneClipsetDS>ANIM_GROUP_CELLPHONE_IN_CAR_DS</CellphoneClipsetDS>
-        <CellphoneClipsetPS>ANIM_GROUP_CELLPHONE_IN_CAR_PS</CellphoneClipsetPS>
-        <CellphoneClipsetDS_FPS>ANIM_GROUP_CELLPHONE_IN_CAR_DS_FPS</CellphoneClipsetDS_FPS>
-        <CellphoneClipsetPS_FPS>ANIM_GROUP_CELLPHONE_IN_CAR_DS_FPS</CellphoneClipsetPS_FPS>
-      </CellphoneClipsets>
-    </Item>
-    <Item type="CVehicleLayoutInfo">
-      <Name>LAYOUT_SIDEDOOR_8SEAT</Name>
-      <Seats>
-        <Item>
-          <SeatInfo ref="SEAT_STANDARD_FRONT_LEFT" />
-          <SeatAnimInfo ref="SEAT_ANIM_STD_LOWRIDER2_FRONT_LEFT" />
-        </Item>
-        <Item>
-          <SeatInfo ref="SEAT_STANDARD_FRONT_RIGHT" />
-          <SeatAnimInfo ref="SEAT_ANIM_STD_LOWRIDER2_SIDEDOOR_FRONT_RIGHT" />
-        </Item>
-        <Item>
-          <SeatInfo ref="SEAT_STANDARD_REAR_LEFT" />
-          <SeatAnimInfo ref="SEAT_ANIM_STD_LOWRIDER2_SIDEDOOR_REAR_LEFT" />
-        </Item>
-        <Item>
-          <SeatInfo ref="SEAT_STANDARD_REAR_RIGHT" />
-          <SeatAnimInfo ref="SEAT_ANIM_STD_LOWRIDER2_SIDEDOOR_REAR_RIGHT" />
-        </Item>
-        <Item>
-          <SeatInfo ref="SEAT_EXTRA_LEFT_2" />
-          <SeatAnimInfo ref="SEAT_ANIM_RANGER_REBLA_REAR_LEFT" />
-        </Item>
-        <Item>
-          <SeatInfo ref="SEAT_EXTRA_LEFT_3" />
-          <SeatAnimInfo ref="SEAT_ANIM_RANGER_REBLA_REAR_LEFT" />
-        </Item>
-        <Item>
-          <SeatInfo ref="SEAT_EXTRA_LEFT_4" />
-          <SeatAnimInfo ref="SEAT_ANIM_RANGER_REBLA_REAR_RIGHT" />
-        </Item>
-        <Item>
-          <SeatInfo ref="SEAT_EXTRA_RIGHT_1" />
-          <SeatAnimInfo ref="SEAT_ANIM_RANGER_REBLA_REAR_RIGHT" />
-        </Item>
-      </Seats>
-      <EntryPoints>
-        <Item>
-          <EntryPointInfo ref="ENTRY_POINT_STANDARD_FRONT_LEFT" />
-          <EntryPointAnimInfo ref="ENTRY_POINT_ANIM_STD_HABANERO_FRONT_LEFT" />
-        </Item>
-        <Item>
-          <EntryPointInfo ref="ENTRY_POINT_STANDARD_FRONT_RIGHT" />
-          <EntryPointAnimInfo ref="ENTRY_POINT_ANIM_STD_HABANERO_FRONT_RIGHT" />
-        </Item>
-        <Item>
-          <EntryPointInfo ref="ENTRY_POINT_STANDARD_REAR_LEFT" />
-          <EntryPointAnimInfo ref="ENTRY_POINT_ANIM_STD_LOWRIDER2_SIDEDOOR_REAR_LEFT" />
-        </Item>
-        <Item>
-          <EntryPointInfo ref="ENTRY_POINT_STANDARD_REAR_RIGHT" />
-          <EntryPointAnimInfo ref="ENTRY_POINT_ANIM_STD_LOWRIDER2_SIDEDOOR_REAR_RIGHT" />
-        </Item>
-        <Item>
-          <EntryPointInfo ref="ENTRY_POINT_STD_STRETCH_MP_WARP_LEFT" />
-          <EntryPointAnimInfo ref="ENTRY_POINT_ANIM_STD_STRETCH_MP_WARP_LEFT" />
-        </Item>
-        <Item>
-          <EntryPointInfo ref="ENTRY_POINT_STD_STRETCH_MP_WARP_LEFT" />
-          <EntryPointAnimInfo ref="ENTRY_POINT_ANIM_STD_STRETCH_MP_WARP_LEFT" />
-        </Item>
-        <Item>
-          <EntryPointInfo ref="ENTRY_POINT_STD_STRETCH_MP_WARP_RIGHT" />
-          <EntryPointAnimInfo ref="ENTRY_POINT_ANIM_STD_STRETCH_MP_WARP_RIGHT" />
-        </Item>
-        <Item>
-          <EntryPointInfo ref="ENTRY_POINT_STD_STRETCH_MP_WARP_RIGHT" />
-          <EntryPointAnimInfo ref="ENTRY_POINT_ANIM_STD_STRETCH_MP_WARP_RIGHT" />
-        </Item>
-      </EntryPoints>
-      <LayoutFlags>StreamAnims UseDoorOscillation UseLeanSteerAnims UseSteeringWheelIk UseFinerAlignTolerance
-        DisableTargetRearDoorOpenRatio</LayoutFlags>
-      <BicycleInfo ref="NULL" />
-      <AnimRateSet ref="STD_LOW_ANIM_RATE_SET" />
-      <HandsUpClipSetId>busted_vehicle_std</HandsUpClipSetId>
-      <SteeringWheelOffset x="0.000000" y="0.350000" z="0.320000" />
-      <MaxXAcceleration value="4.000000" />
-      <BodyLeanXApproachSpeed value="5.000000" />
-      <BodyLeanXSmallDelta value="0.300000" />
-      <LookBackApproachSpeedScale value="1.000000" />
-      <FirstPersonAdditiveIdleClipSets>
-        <Item>clipset@veh@std@ds@idle_a</Item>
-        <Item>clipset@veh@std@ds@idle_b</Item>
-        <Item>clipset@veh@std@ds@idle_c</Item>
-        <Item>clipset@veh@std@ds@idle_d</Item>
-        <Item>clipset@veh@std@ds@idle_e</Item>
-      </FirstPersonAdditiveIdleClipSets>
-      <FirstPersonRoadRageClipSets>
-        <Item>clipset@veh@std@ds@hit_wheel@idle_a</Item>
-        <Item>clipset@veh@std@ds@hit_wheel@idle_b</Item>
-        <Item>clipset@veh@std@ds@hit_wheel@idle_c</Item>
       </FirstPersonRoadRageClipSets>
       <CellphoneClipsets>
         <CellphoneClipsetDS>ANIM_GROUP_CELLPHONE_IN_CAR_DS</CellphoneClipsetDS>
@@ -2357,24 +1592,24 @@
       </EntryPoints>
       <LayoutFlags>StreamAnims UseDoorOscillation UseLeanSteerAnims UseSteeringWheelIk</LayoutFlags>
       <BicycleInfo ref="NULL" />
-      <AnimRateSet ref="STD_LOW_ANIM_RATE_SET" />
+	  <AnimRateSet ref="STD_LOW_ANIM_RATE_SET" />
       <HandsUpClipSetId>busted_vehicle_std</HandsUpClipSetId>
       <SteeringWheelOffset x="0.000000" y="0.350000" z="0.320000" />
-      <MaxXAcceleration value="4.00000" />
-      <BodyLeanXApproachSpeed value="5.00000" />
-      <BodyLeanXSmallDelta value="0.30000" />
-      <FirstPersonAdditiveIdleClipSets>
+	  <MaxXAcceleration value="4.00000" />
+	  <BodyLeanXApproachSpeed value="5.00000" />
+	  <BodyLeanXSmallDelta value="0.30000" />
+	  <FirstPersonAdditiveIdleClipSets>
         <Item>clipset@veh@std@ds@idle_a</Item>
-        <Item>clipset@veh@std@ds@idle_b</Item>
-        <Item>clipset@veh@std@ds@idle_c</Item>
-        <Item>clipset@veh@std@ds@idle_d</Item>
-        <Item>clipset@veh@std@ds@idle_e</Item>
-      </FirstPersonAdditiveIdleClipSets>
-      <FirstPersonRoadRageClipSets>
+		<Item>clipset@veh@std@ds@idle_b</Item>
+		<Item>clipset@veh@std@ds@idle_c</Item>
+		<Item>clipset@veh@std@ds@idle_d</Item>
+		<Item>clipset@veh@std@ds@idle_e</Item>
+	  </FirstPersonAdditiveIdleClipSets>
+	  <FirstPersonRoadRageClipSets>
         <Item>clipset@veh@std@ds@hit_wheel@idle_a</Item>
-        <Item>clipset@veh@std@ds@hit_wheel@idle_b</Item>
-        <Item>clipset@veh@std@ds@hit_wheel@idle_c</Item>
-      </FirstPersonRoadRageClipSets>
+		<Item>clipset@veh@std@ds@hit_wheel@idle_b</Item>
+		<Item>clipset@veh@std@ds@hit_wheel@idle_c</Item>
+	   </FirstPersonRoadRageClipSets>
     </Item>
     <Item type="CVehicleLayoutInfo">
       <Name>LAYOUT_VAN_BCAT</Name>
@@ -2509,14 +1744,6 @@
           <SeatInfo ref="SEAT_STANDARD_REAR_RIGHT" />
           <SeatAnimInfo ref="SEAT_ANIM_STANDARD_REAR_RIGHT" />
         </Item>
-        <Item>
-          <SeatInfo ref="SEAT_EXTRA_LEFT_2" />
-          <SeatAnimInfo ref="SEAT_ANIM_STD_STRETCH_EXTRA_LEFT" />
-        </Item>
-        <Item>
-          <SeatInfo ref="SEAT_EXTRA_LEFT_3" />
-          <SeatAnimInfo ref="SEAT_ANIM_STD_STRETCH_EXTRA_RIGHT" />
-        </Item>
       </Seats>
       <EntryPoints>
         <Item>
@@ -2534,14 +1761,6 @@
         <Item>
           <EntryPointInfo ref="ENTRY_POINT_STANDARD_REAR_RIGHT" />
           <EntryPointAnimInfo ref="ENTRY_POINT_ANIM_STANDARD_REAR_RIGHT" />
-        </Item>
-        <Item>
-          <EntryPointInfo ref="ENTRY_POINT_STD_STRETCH_MP_WARP_LEFT" />
-          <EntryPointAnimInfo ref="ENTRY_POINT_ANIM_STD_STRETCH_MP_WARP_LEFT" />
-        </Item>
-        <Item>
-          <EntryPointInfo ref="ENTRY_POINT_STD_STRETCH_MP_WARP_RIGHT" />
-          <EntryPointAnimInfo ref="ENTRY_POINT_ANIM_STD_STRETCH_MP_WARP_RIGHT" />
         </Item>
       </EntryPoints>
       <LayoutFlags>StreamAnims UseDoorOscillation UseLeanSteerAnims UseSteeringWheelIk</LayoutFlags>

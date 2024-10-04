@@ -4,14 +4,14 @@ export const revive: CommandData = {
     name: 'revive',
     value: RankValue.junior,
     executedFunction: async function cmdDefault(pUser: UserData, pArgs: TargetData) {
-        const target = pArgs?.TargetUser ? pArgs.TargetUser.source : pUser.source;
+        const target = pArgs?.Target ? pArgs.Target.source : pUser.source;
 
         emit("vrp-death:reviveSV", Number(target));
         emit("reviveGranted", Number(target));
         emit("ems:healplayer", Number(target));
         emit("vrp-admin:sendLog", "reviveTarget", false, target);
 
-        return '' + pArgs?.TargetUser ? pArgs.TargetUser.source.toString() : pUser.source.toString() + ')';
+        return '' + pArgs?.Target ? pArgs.Target.source.toString() : pUser.source.toString() + ')';
     },
     log: 'Revived (',
     target: false,

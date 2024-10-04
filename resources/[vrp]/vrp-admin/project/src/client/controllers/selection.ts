@@ -544,8 +544,8 @@ export const getDataForSelection = async pData => {
             if (NetworkGetEntityIsNetworked(handle)) {
                 const netId = NetworkGetNetworkIdFromEntity(handle);
                 const serverId = GetPlayerServerId(NetworkGetEntityOwner(handle));
-                const entitySpawnData = await getEntitySpawnData(netId);
-                if (entitySpawnData) {
+                // const entitySpawnData = await getEntitySpawnData(netId);
+                // if (entitySpawnData) {
                     // const vector = entitySpawnData.vector;
                     // headingData.model = entitySpawnData.model;
                     // headingData.ownerSource = entitySpawnData.originSource;
@@ -553,7 +553,7 @@ export const getDataForSelection = async pData => {
                     // headingData.steamid = entitySpawnData.originSteamId;
                     headingData.currentOwner = serverId;
                     //headingData.spawnVector = vector[0].toFixed(2) + ', ' + vector[1].toFixed(2) + ', ' + vector[2].toFixed(2);
-                }
+                // }
             }
             if (doorId) headingData.doorId = doorId;
             return [commandUI, headingData];

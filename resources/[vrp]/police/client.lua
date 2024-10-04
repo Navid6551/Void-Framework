@@ -317,7 +317,7 @@ end)
 RegisterNetEvent('police:checkLicensePlate')
 AddEventHandler('police:checkLicensePlate', function(plate)
 	if isCop then
-		TriggerServerEvent('vrp:vehicles:plateCheck', plate)
+		TriggerServerEvent('np:vehicles:plateCheck', plate)
 	else
 		TriggerEvent("DoLongHudText", "Please take your service first!",2)
 	end
@@ -434,7 +434,7 @@ AddEventHandler('revive', function(t)
 	if(t and (distance ~= -1 and distance < 10)) then
 		TriggerServerEvent("reviveGranted", GetPlayerServerId(t))
 		KneelMedic()
-		NPX.Procedures.execute("police:handleRevive",  GetPlayerServerId(t))
+		RPC.execute("police:handleRevive",  GetPlayerServerId(t))
 	else
 		TriggerEvent("DoLongHudText", "No player near you (maybe get closer)!",2)
 	end
@@ -1036,7 +1036,7 @@ AddEventHandler('clientcheckLicensePlate', function(pDummy, pEntity)
     if licensePlate == nil then
       TriggerEvent("DoLongHudText", 'Can not target vehicle', 2)
     else
-      TriggerServerEvent('vrp:vehicles:plateCheck', licensePlate, vehicleClass)
+      TriggerServerEvent('np:vehicles:plateCheck', licensePlate, vehicleClass)
     end
   end
 end)

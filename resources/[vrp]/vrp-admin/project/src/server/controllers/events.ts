@@ -111,8 +111,19 @@ RPC.register("vrp:admin:runCommandFromClient", async (pSource: number, pName: st
         return command.name === pName;
     });
 
-    if (!command) return console.log("Command not found");
+    if (pArgs.Target && pArgs.Target !== '') {
+        pArgs.Target = {
+            source: Number(pArgs.Target),
+            name: GetPlayerName(pArgs.Target)
+        }
+    } else if (pArgs.TargetNot && pArgs.TargetNot !== '') {
+        pArgs.Target = {
+            source: Number(pArgs.TargetNot),
+            name: GetPlayerName(pArgs.TargetNot)
+        }
+    }
 
+    if (!command) return console.log("Command not found");
     if (command.isClientCommand) {
         emitNet("vrp-admin:runClientCommand", pSource, pName, {
             source: pSource,

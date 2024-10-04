@@ -236,7 +236,7 @@ function generateZoneList()
     end
     local shouldSend = RPC.execute("housingShouldSetZoneLocations")
     if shouldSend then
-      RPC.execute("setZoneLocations",Housing.zone)
+      RPC.execute("setZoneLocations", Housing.zone)
     end
 end
 

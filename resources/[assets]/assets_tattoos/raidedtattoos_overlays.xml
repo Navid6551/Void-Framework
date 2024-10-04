@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PedDecorationCollection>
+    <bRequiredForSync value="true" />
+    <presets>
+        <Item>
+            <uvPos x="0.250000" y="0.545000" />
+            <scale x="0.3" y="0.3" />
+            <rotation value="0.000000" />
+            <nameHash>raidedtattoos_tat_000_M</nameHash>
+            <txdHash>raided_tat_back_wolf</txdHash>
+            <txtHash>raided_tat_back_wolf</txtHash>
+            <zone>ZONE_TORSO</zone>
+            <type>TYPE_TATTOO</type>
+            <faction>FM</faction>
+            <garment>All</garment>
+            <gender>GENDER_MALE</gender>
+            <award />
+            <awardLevel />
+        </Item>
+        <Item>
+            <uvPos x="0.1" y="0.65" />
+            <scale x="0.17" y="0.17" />
+            <rotation value="0.000000" />
+            <nameHash>raidedtattoos_tat_001_M</nameHash>
+            <txdHash>raided_tat_arm_cat</txdHash>
+            <txtHash>raided_tat_arm_cat</txtHash>
+            <zone>ZONE_LEFT_ARM</zone>
+            <type>TYPE_TATTOO</type>
+            <faction>FM</faction>
+            <garment>All</garment>
+            <gender>GENDER_MALE</gender>
+            <award />
+            <awardLevel />
+        </Item>
+        <Item>
+            <uvPos x="0.5" y="0.5" />
+            <scale x="0.21" y="0.2" />
+            <rotation value="0.000000" />
+            <nameHash>raidedtattoos_tat_002_M</nameHash>
+            <txdHash>raided_tat_arm_joker</txdHash>
+            <txtHash>raided_tat_arm_joker</txtHash>
+            <zone>ZONE_LEFT_ARM</zone>
+            <type>TYPE_TATTOO</type>
+            <faction>FM</faction>
+            <garment>All</garment>
+            <gender>GENDER_MALE</gender>
+            <award />
+            <awardLevel />
+        </Item>
+        <Item>
+            <uvPos x="0.58" y="0.77" />
+            <scale x="0.14" y="0.14" />
+            <rotation value="0.000000" />
+            <nameHash>raidedtattoos_tat_003_M</nameHash>
+            <txdHash>raided_tat_arm_wolf2</txdHash>
+            <txtHash>raided_tat_arm_wolf2</txtHash>
+            <zone>ZONE_LEFT_ARM</zone>
+            <type>TYPE_TATTOO</type>
+            <faction>FM</faction>
+            <garment>All</garment>
+            <gender>GENDER_MALE</gender>
+            <award />
+            <awardLevel />
+        </Item>
+    </presets>
+    <nameHash>raidedtattoos_overlays</nameHash>
+    <medalLocations content="vector2_array">
+    0.140000	0.070000	
+    0.370000	0.070000	
+    0.600000	0.070000	
+    0.835000	0.070000	
+    0.140000	0.150000	
+    0.370000	0.150000	
+    0.600000	0.150000	
+    0.835000	0.150000	
+    0.140000	0.230000	
+    0.370000	0.230000	
+    0.600000	0.230000	
+    0.835000	0.230000	
+    0.100000	0.700000	
+    0.300000	0.700000	
+    0.500000	0.700000	
+    0.700000	0.700000
+    </medalLocations>
+    <medalScale x="0.240000" y="0.100000" />
+</PedDecorationCollection>

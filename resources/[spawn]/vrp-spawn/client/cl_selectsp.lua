@@ -73,7 +73,7 @@ AddEventHandler('spawn:clientSpawnData', function(spawnData)
 	})
 
 	if Spawn.housingCoords == nil then
-		-- Spawn.housingCoords = exports["vrp-housing"]:retriveHousingTable();
+		Spawn.housingCoords = exports["vrp-housing"]:retriveHousingTable();
 	end
 
 	local cid = exports["isPed"]:isPed("cid")

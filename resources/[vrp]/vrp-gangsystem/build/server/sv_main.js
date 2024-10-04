@@ -42,22 +42,6 @@ const GetGangByCode = (pCode) => {
     return [false, 0]
 }
 
-const RefreshOnlineMembers = async(pGang) => {
-    const [gang, index] = GetGangByCode(pGang)
-    if (!gang) {
-        return [false, 0]
-    }
-    const allMembers = await Promise.all(gang.members.map((pItem) => {
-        const Player =  QBCore.Functions.GetPlayerByCitizenId(String(pItem.cid))
-        return {
-            isOnline: Player ? true : false,
-            ...pItem
-        }
-    }))
-
-    return [true, allMembers.filter((pItem) => pItem.isOnline).length]
-}
-
 const UpdateGangById = async(pId, pType, pValue) => {
     const update = await SQL.execute(`UPDATE _player_gangs SET ${pType} = @newValue  WHERE id = @id`, {
         newValue: pValue,
@@ -136,17 +120,6 @@ RPC.register('vrp-gangsystem:getCurrentGang', async(pSource) => {
 
 RPC.register('vrp-gangsystem:getGanginfo', async(pSource) => {
     return GetCurrentGang(pSource)
-})
-
-RPC.register('vrp-gangsystem:hasEnoughMembersAround', async(pSource, pGang, pMembers) => {
-    const [gang] = GetGangByCode(pGang)
-    if (!gang) {
-        return false
-    }
-
-    const [, members] = await RefreshOnlineMembers(pGang)
-
-    return Number(members) >= pMembers
 })
 
 on('onResourceStart', async(pResource) => {

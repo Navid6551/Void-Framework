@@ -1100,12 +1100,12 @@
     });
     await _0x3167de("GANG", "READ EMAIL APP", "exclamation-triangle");
   });
-  _0x2605ef.onNet("vrp-gangsystem:incomingInvite", async (_0x4dbc02, _0xd1fe40, _0x5200e7) => {
-    const _0x52d653 = await _0x3167de("Gang invitation", _0x5200e7 + " is inviting you to join their group.", "user-ninja");
+  _0x2605ef.onNet("vrp-gangsystem:incomingInvite", async (pGang, pFrom, pName) => {
+    const _0x52d653 = await _0x3167de("Gang invitation", pName + " is inviting you to join their group.", "user-ninja");
     if (!_0x52d653) {
       return;
     }
-    const [_0x517e9c, _0x16ca33] = await RPC.execute("vrp-gangsystem:acceptGangInvite", _0x4dbc02, _0xd1fe40);
+    const [_0x517e9c, _0x16ca33] = await RPC.execute("vrp-gangsystem:acceptGangInvite", pGang, pFrom);
     emit("DoLongHudText", _0x16ca33, _0x517e9c ? 1 : 2);
   });
   _0x2605ef.on("vrp-gangsystem:discoverGraffiti", (_0x3eac9a, _0x5d9db4, _0x445970) => {
@@ -1162,8 +1162,8 @@
     _0x58ff8e(_0x16a93a);
   });
   RegisterUICallback("vrp-gangsystem:ui:addMember", async (_0x357e72, _0x21a5b5) => {
-    const _0x2f51f1 = await _0x5f2ae8();
-    const [_0x2875ca, _0x5de93c] = await RPC.execute("vrp-gangsystem:addGangMember", _0x2f51f1, Number(_0x357e72.stateId));
+    const pGang = await _0x5f2ae8();
+    const [_0x2875ca, _0x5de93c] = await RPC.execute("vrp-gangsystem:addGangMember", pGang, Number(_0x357e72.stateId));
     const _0xde14ea = {
       ok: _0x2875ca,
       message: _0x5de93c

@@ -48,3 +48,9 @@ RPC.register('vrp-objects:SaveObject', addObjectAndSave);
 RPC.register('vrp-objects:SeedObjects', async (pSource: any) => {
     emitNet('vrp-objects:loadDynamicObjects', pSource, allObjects);
 })
+
+RPC.register('vrp-deployables:isTrustedCharacter', async(pSource: number) => {
+    const [isAdmin] = await global.exports['vrp-admin'].isAdmin(pSource)
+
+    return isAdmin
+})

@@ -4,7 +4,7 @@ import { MdtApi } from './controlers/mdt/main';
 import { FinancialsApi } from './controlers/financials';
 import { PhoneApi } from './controlers/phone';
 export const app = express();
-const port = 80;
+const port = 3001;
 
 //Examples
 
