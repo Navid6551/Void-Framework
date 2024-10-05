@@ -13,7 +13,7 @@ function RegisterCustomFont(dict, name, lang)
 
     FontList[name]['id'] = RegisterFontId(name)
 
-    TriggerEvent('np-fonts:fontLoaded', name, FontList[name]['id'])
+    TriggerEvent('vrp-fonts:fontLoaded', name, FontList[name]['id'])
 
     return FontList[name]['id']
 end
@@ -37,5 +37,5 @@ Citizen.CreateThread(function()
         RegisterCustomFont(font.dict, font.name, font.lang)
     end
 
-    TriggerEvent('np-fonts:fontsLoaded', FontList)
+    TriggerEvent('vrp-fonts:fontsLoaded', FontList)
 end)

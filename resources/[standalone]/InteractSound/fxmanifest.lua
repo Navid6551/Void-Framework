@@ -6,8 +6,8 @@ version '1.1.5'
 
 -- Client Scripts
 client_script {
-    '@np-errorlog/client/cl_errorlog.lua',
-    '@np-lib/client/cl_infinity.lua',
+    '@vrp-errorlog/client/cl_errorlog.lua',
+    '@vrp-lib/client/cl_infinity.lua',
     'client/main.lua'
 }
 
@@ -15,7 +15,7 @@ shared_script 'shared/sh_*.*'
 
 -- Server Scripts
 server_script {
-    '@np-lib/server/sv_infinity.lua',
+    '@vrp-lib/server/sv_infinity.lua',
     'server/main.lua'
 }
 

@@ -48,7 +48,7 @@ RegisterNetEvent("vrp-fx:graffiti:spray", function(pNetId, coords)
     local pCoords = GetEntityCoords(GetPlayerPed(src))
     local players = exports["vrp-infinity"]:GetNerbyPlayers(pCoords, 25)
     local ptDict, ptName = FX_LIST[1976].dict, FX_LIST[1976].fx
-
+    print(ptDict, ptName)
     local position = {
         offset = { x = 0.0, y = 0.0, z = 0.1 },
         rot = { x = 0.0, y = 0.0, z = 0.0 },

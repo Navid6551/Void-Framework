@@ -261,7 +261,7 @@ AddEventHandler('InteractSound_CL:playAlarm', function(position,clearAlarm)
 
 
     if failedAlarm then
-        TriggerEvent("np-housing:alarmFail")
+        TriggerEvent("vrp-housing:alarmFail")
         StartPositionalAudio(position, 70.0, "Alarm2", 0.2, false, 20.0, 0.1)
     end
 

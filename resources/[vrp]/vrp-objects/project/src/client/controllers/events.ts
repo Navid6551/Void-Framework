@@ -274,5 +274,5 @@ global.exports('GetVisibleEntities', getVisibleEntities);
 global.exports('GetvisibleObjects', getvisibleObjects);
 global.exports('GetEntityByObjectId', getEntityByObjectId);
 global.exports('GetObjectsByNamespace', getObjectsByNamespace);
-global.exports('DeleteObject', deleteObject);
+global.exports('DeleteObject', removeObject);
 global.exports('UpdateObject', updateObject);
